@@ -239,6 +239,19 @@ Notes:
 
 [^1]: Vector claims are not supported yet in RISC OS Pyromaniac or CMunge.
 
+### ROM resources
+
+| Name          | Filetype  | Lang      | C-state   | 64-state  |
+|---------------|-----------|-----------|-----------|-----------|
+| BootMenu      | Absolute  | C         | -         | Partial[^network][^link] |
+| Repeat        | Absolute  | C         | -         |           |
+
+Notes:
+
+[^network]: Network libraries are not currently implemented, so no networking is available.
+[^link]: Linking isn't available so dynamic loaded entries are not possible.
+
+
 ### Library files
 
 FIXME - To complete
