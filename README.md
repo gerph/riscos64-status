@@ -51,9 +51,9 @@ The following table shows the status of each module.
 | VideoHWVIDC               | Asm   |           |           |
 | VideoHWVF                 | Asm   |           |           |
 | VideoGuard                | Asm   |           |           |
-| OSCommands                | Asm   | In progress   |           |
+| OSCommands                | Asm   | In progress | In progress |
 | FSCommands                | Asm   |           |           |
-| ModuleCommands            | Asm   |           |           |
+| ModuleCommands            | Asm   | In progress | In progress |
 | ARM                       | Asm   |           |           |
 | BufferManager             | Asm   |           |           |
 | Debugger                  | Asm   |           |           |
