@@ -53,7 +53,7 @@ The following table shows the status of each module.
 | VideoGuard                | Asm   |           |           |
 | OSCommands                | Asm   | In progress | In progress |
 | FSCommands                | Asm   |           |           |
-| ModuleCommands            | Asm   | In progress | In progress |
+| ModuleCommands            | Asm   | Works[^cmungehelp] | Works[^cmungehelp] |
 | ARM                       | Asm   |           |           |
 | BufferManager             | Asm   |           |           |
 | Debugger                  | Asm   |           |           |
@@ -235,9 +235,9 @@ The following table shows the status of each module.
 | LibraryHelp               | C     | -         | Works     |
 | ErrorLog                  | C     | -         |           |
 
-Notes:
-
 [^1]: Vector claims are not supported yet in RISC OS Pyromaniac or CMunge.
+
+[^cmungehelp]: CMunge does not support help code yet.
 
 ### ROM resources
 
