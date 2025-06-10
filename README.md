@@ -38,6 +38,7 @@ The following table shows the status of each module.
 | OSSWIs                    | Asm   |           |           |
 | EvaluateExpression        | Asm   |           |           |
 | SystemVars                | Asm   |           |           |
+| FileTypes                 | Asm   | Works     | Works     |
 | FPEmulator                | Asm   |           |           |
 | SharedCLibrary            | C     | -         |           |
 | UnSqueezeAIF              | Asm   |           |           |
