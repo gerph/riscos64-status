@@ -64,6 +64,7 @@ The following table shows the status of each module.
 | RTCHW                     | Asm   |           |           |
 | OSPointer                 | Asm   |           |           |
 | Hourglass                 | Asm   | Partial   |           |
+| Portable                  | Asm   | Skeleton  |           |
 | FileSwitch                | Asm   |           |           |
 | Squash                    | Asm/C |           |           |
 | ResourceFS                | Asm   |           |           |
@@ -226,7 +227,7 @@ The following table shows the status of each module.
 | LegacyScreen              | Asm   |           |           |
 | BBCEconet                 | Asm   |           |           |
 | SpriteUtils               | Asm   |           |           |
-| OwnerBanner               | Asm   |           |           |
+| OwnerBanner               | Asm   | Started   |           |
 | IRQUtils                  | Asm   |           |           |
 | WindowUtils               | Asm   |           |           |
 | CallASWI                  | Asm   |           |           |
