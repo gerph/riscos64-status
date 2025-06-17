@@ -3,9 +3,9 @@
 This repository contains information about the status of RISC OS 64 ports of
 modules.
 
-## Modules
+## RISC OS components
 
-## Built modules
+### Built modules
 
 Some of the modules which have been ported can be found within this repository.
 
@@ -15,9 +15,9 @@ Some of the modules which have been ported can be found within this repository.
 Modules which are in the process of being created as C code may exist in both directories but may have incomplete implementations.
 
 
-## Current status
+### Current status
 
-The following table shows the status of each module.
+The following tables show the status of each module.
 
 * `Lang` indicates the RISC OS Classic implementation
 * `Filetype` indicates the filetype (for disc based components)
@@ -63,7 +63,7 @@ The following table shows the status of each module.
 | RTCAdjust                 | Asm   |           |           |
 | RTCHW                     | Asm   |           |           |
 | OSPointer                 | Asm   |           |           |
-| Hourglass                 | Asm   | Partial   |           |
+| Hourglass                 | Asm   | Partial[^hourglass] |           |
 | Portable                  | Asm   | Skeleton  |           |
 | FileSwitch                | Asm   |           |           |
 | Squash                    | Asm/C |           |           |
@@ -227,7 +227,7 @@ The following table shows the status of each module.
 | LegacyScreen              | Asm   |           |           |
 | BBCEconet                 | Asm   |           |           |
 | SpriteUtils               | Asm   |           |           |
-| OwnerBanner               | Asm   | Started   |           |
+| OwnerBanner               | Asm   | Started[^ownerbanner] |           |
 | IRQUtils                  | Asm   |           |           |
 | WindowUtils               | Asm   |           |           |
 | CallASWI                  | Asm   |           |           |
@@ -240,6 +240,8 @@ The following table shows the status of each module.
 [^1]: Vector claims are not supported yet in RISC OS Pyromaniac or CMunge.
 
 [^cmungehelp]: CMunge does not support help code yet.
+[^ownerbanner]: Only the text part of the banner is currently implemented.
+[^hourglass]: Although the base is in C, the generated sections are in assembler.
 
 ### ROM resources
 
@@ -261,6 +263,7 @@ FIXME - To complete
 | Name          | Filetype  | Lang      | C-state   | 64-state  |
 |---------------|-----------|-----------|-----------|-----------|
 | ForHooks      | Absolute  | C         | -         | Built     |
+
 
 ### Boot utilities
 
@@ -290,6 +293,16 @@ FIXME - To complete
 | UnplugTbox    | BASIC     | Script    | -         |           |
 | VProtect      | Module    | Binary    |           |           |
 
+
+## Libraries
+
+| Name          | Lang      | C-state   | 64-state  |
+|---------------|-----------|-----------|-----------|
+| C library     | C/Asm     | -         | Partial[^clib] |
+| OSLib         | DSL/Asm   | -         | Partial[^oslib] |
+
+[^clib]: C library has been reimplemented, using open source and custom components.
+[^oslib]: Most OSLib SWI interfaces have been implemented and exported, although some are not functional.
 
 
 ## Tools
@@ -329,3 +342,19 @@ This section lists the build system components and how they have been addressed.
 
   Not required, as disk space is cheap, and transmission time is low.
 
+* Docker build environment - Builds for 32bit and 64bit systems.
+
+  Functional as a tooling environment for building applications and modules,
+  using GCC 12 (crosstool-NG-1.26.0).
+
+
+## Services
+
+* RISC OS Pyromaniac demo shell - example RISC OS environment.
+
+  Available in 32bit and 64bit variants, with example applications present.
+
+* RISC OS Build service - API for building RISC OS applications.
+
+  Can run RISC OS Pyromaniac in 32-bit and 64-bit environments, allowing testing
+  of built RISC OS 64-bit utilities, absolutes and modules.
