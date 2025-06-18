@@ -5,14 +5,21 @@ modules.
 
 ## RISC OS components
 
-### Built modules
+### Built components
 
-Some of the modules which have been ported can be found within this repository.
+Some of the absolutes and modules which have been ported can be found within this repository.
 
-* The `rm32` directory contains the 32bit version of the module.
-* The `rm64` directory contains the 64bit version of the module.
+* The `rm32` directory contains the 32-bit version of modules.
+* The `rm64` directory contains the 64-bit version of modules.
+* The `aif32` directory contains the 32-bit version of absolutes.
+* The `aif64` directory contains the 64-bit version of absolutes.
 
-Modules which are in the process of being created as C code may exist in both directories but may have incomplete implementations.
+Absolutes and modules which are in the process of being created as C code may exist in both directories but may have incomplete implementations.
+
+The files within this repository have rudimentary tess applied to them;
+we test absolute by trying to execute it (if we can) and each module by
+trying to load it. This is limited, but it proves that the components at
+least start.
 
 
 ### Current status

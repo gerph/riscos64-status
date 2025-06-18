@@ -1,0 +1,57 @@
+---
+# RISC OS 64 CI build
+#
+# The 'release' job is triggered when a tag starting with a 'v' is created,
+# which will create a GitHub release for the repository with the name of the
+# version tag. The release will be a draft, and should be updated with
+# changes as you see fit.
+#
+
+name: RISC OS
+
+# Controls when the action will run. Triggers the workflow on:
+#   * push on any branch.
+#   * tag creation for tags beginning with a 'v'
+on:
+  push:
+    branches: ["*"]
+    tags: ["v*"]
+  # Pull request events happen on pull request state transitions, so we probably don't want this here.
+  #pull_request:
+  #  branches: ["*"]
+
+concurrency:
+  # Be nice to the build service and only submit a single job at a time.
+  group: riscos-build-service
+  cancel-in-progress: false
+
+jobs:
+  riscos-test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      - name: Obtain prerequisite build tool
+        run: |
+          # Fetch the build client
+          curl -s -L -o riscos-build-online https://github.com/gerph/robuild-client/releases/download/v0.06/riscos-build-online && chmod +x riscos-build-online
+
+      - name: Run tests on AIF AArch32
+        run: |
+          tests/run-tests.sh aif32
+
+      - name: Run tests on AIF AArch64
+        run: |
+          tests/run-tests.sh aif64
+
+      - name: Run tests on modules AArch32
+        run: |
+          tests/run-tests.sh rm32
+
+      - name: Run tests on modules AArch64
+        run: |
+          tests/run-tests.sh rm64
