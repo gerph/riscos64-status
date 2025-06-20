@@ -101,10 +101,10 @@ The following tables show the status of each module.
 | PipeFS                    | Asm   |           |           |
 | AIF                       | Asm   |           |           |
 | TransientUtility          | Asm   |           |           |
-| BASIC                     | Asm   |           |           |
+| BASIC                     | Asm   | In progress [^srevill] |           |
 | BASIC64                   | Asm   |           |           |
 | BASICTrans                | Asm   |           |           |
-| Obey                      | Asm   |           |           |
+| Obey                      | Asm   | Complete[^jstamp]      |           |
 | DDEUtils                  | Asm   |           |           |
 | PathUtils                 | C     | -         | Works     |
 | SysLog                    | C     | -         |           |
@@ -250,6 +250,8 @@ The following tables show the status of each module.
 [^cmungegeneric]: CMunge does not support generic veneers yet.
 [^ownerbanner]: Only the text part of the banner is currently implemented.
 [^hourglass]: Although the base is in C, the generated sections are in assembler.
+[^srevill]: Being worked on by Steve Revill.
+[^jstamp]: Completed by Julie Stamp.
 
 ### ROM resources
 
