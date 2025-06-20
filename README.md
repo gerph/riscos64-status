@@ -63,7 +63,7 @@ The following tables show the status of each module.
 | FSCommands                | Asm   |           |           |
 | ModuleCommands            | Asm   | Works[^cmungehelp] | Works[^cmungehelp] |
 | ARM                       | Asm   |           |           |
-| BufferManager             | Asm   |           |           |
+| BufferManager             | Asm   | In progress | Broken[^cmungegeneric] |
 | Debugger                  | Asm   |           |           |
 | RTC                       | Asm   | Works     | Partial[^1]   |
 | DMAManager                | Asm   |           |           |
@@ -247,6 +247,7 @@ The following tables show the status of each module.
 [^1]: Vector claims are not supported yet in RISC OS Pyromaniac or CMunge.
 
 [^cmungehelp]: CMunge does not support help code yet.
+[^cmungegeneric]: CMunge does not support generic veneers yet.
 [^ownerbanner]: Only the text part of the banner is currently implemented.
 [^hourglass]: Although the base is in C, the generated sections are in assembler.
 
@@ -256,8 +257,6 @@ The following tables show the status of each module.
 |---------------|-----------|-----------|-----------|-----------|
 | BootMenu      | Absolute  | C         | -         | Partial[^network][^link] |
 | Repeat        | Absolute  | C         | -         |           |
-
-Notes:
 
 [^network]: Network libraries are not currently implemented, so no networking is available.
 [^link]: Linking isn't available so dynamic loaded entries are not possible.
