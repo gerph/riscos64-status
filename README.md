@@ -64,7 +64,7 @@ The following tables show the status of each module.
 | ModuleCommands            | Asm   | Works[^cmungehelp] | Works[^cmungehelp] |
 | ARM                       | Asm   |           |           |
 | BufferManager             | Asm   | In progress | Broken[^cmungegeneric] |
-| Debugger                  | Asm   |           |           |
+| Debugger                  | Asm   | In progress |           |
 | RTC                       | Asm   | Works     | Partial[^1]   |
 | DMAManager                | Asm   |           |           |
 | RTCAdjust                 | Asm   |           |           |
