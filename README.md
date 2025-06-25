@@ -63,7 +63,7 @@ The following tables show the status of each module.
 | FSCommands                | Asm   |           |           |
 | ModuleCommands            | Asm   | Works[^cmungehelp] | Works[^cmungehelp] |
 | ARM                       | Asm   |           |           |
-| BufferManager             | Asm   | In progress | Broken[^cmungegeneric] |
+| BufferManager             | Asm   | In progress | Broken[^cmungegeneric][^buffermanager] |
 | Debugger                  | Asm   | In progress |           |
 | RTC                       | Asm   | Works     | Partial[^1]   |
 | DMAManager                | Asm   |           |           |
@@ -248,6 +248,7 @@ The following tables show the status of each module.
 
 [^cmungehelp]: CMunge does not support help code yet.
 [^cmungegeneric]: CMunge does not support generic veneers yet.
+[^buffermanager]: Buffer vectors InsV, RemV, CnPV have very poor interfaces, which should not be propagated into RISC OS 64.
 [^ownerbanner]: Only the text part of the banner is currently implemented.
 [^hourglass]: Although the base is in C, the generated sections are in assembler.
 [^srevill]: Being worked on by Steve Revill.
