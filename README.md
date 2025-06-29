@@ -233,7 +233,7 @@ The following tables show the status of each module.
 | LegacyBBC                 | Asm   |           |           |
 | LegacyScreen              | Asm   |           |           |
 | BBCEconet                 | Asm   |           |           |
-| SpriteUtils               | Asm   |           |           |
+| SpriteUtils               | Asm   | Started[^spriteutils][^cmungegeneric] |           |
 | OwnerBanner               | Asm   | Started[^ownerbanner] |           |
 | IRQUtils                  | Asm   |           |           |
 | WindowUtils               | Asm   |           |           |
@@ -250,6 +250,7 @@ The following tables show the status of each module.
 [^cmungegeneric]: CMunge does not support generic veneers yet.
 [^buffermanager]: Buffer vectors InsV, RemV, CnPV have very poor interfaces, which should not be propagated into RISC OS 64.
 [^ownerbanner]: Only the text part of the banner is currently implemented.
+[^spriteutils]: Does not support the vector handling yet.
 [^hourglass]: Although the base is in C, the generated sections are in assembler.
 [^srevill]: Being worked on by Steve Revill.
 [^jstamp]: Completed by Julie Stamp.
