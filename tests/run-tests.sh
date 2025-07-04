@@ -36,7 +36,7 @@ pass=0
 fail=0
 
 
-for file in $(find "$dir" -type f) ; do
+for file in $(find "$dir" -type f | sort) ; do
     leaf=$(basename "$file")
     if [[ "$file" =~ ^.*/([^/]*),...$ ]] ; then
         roname=${BASH_REMATCH[1]}
@@ -54,8 +54,15 @@ for file in $(find "$dir" -type f) ; do
     fi
     if [[ "$bintype" == "aif" ]] ; then
         cmd="/$dir.$roname"
+        if [[ -f "tests/$leaf.args" ]] ; then
+            cmd="$cmd $(cat tests/$leaf.args)"
+        fi
     elif [[ "$bintype" == "rm" ]] ; then
         cmd="RMLoad $dir.$roname"
+        modname="$roname"
+        if [[ -f "tests/$leaf.name" ]] ; then
+            modname="$(cat tests/$leaf.name)"
+        fi
     else
         failure "Do not know how to run this"
         fail=$((fail + 1))
@@ -81,9 +88,19 @@ jobs:
     # Commands which should be executed to perform the build.
     # The build will terminate if any command returns a non-0 return code or an error.
     script:
-      - echo *** Testing $roname
+      - PyromaniacDebug traceblock
+      - echo *** Loading $roname
       - echo $cmd
       - $cmd
+EOM
+    if [[ "$bintype" == "rm" ]] ; then
+        cat >> .robuild.yaml <<EOM
+      - echo *** Killing $modname
+      - RMKill $modname
+EOM
+    fi
+    cat >> .robuild.yaml <<EOM
+      - echo *** Done
 EOM
 
     zip -q9r /tmp/testrun.zip "$file" .robuild.yaml
