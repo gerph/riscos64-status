@@ -94,10 +94,12 @@ jobs:
       - $cmd
 EOM
     if [[ "$bintype" == "rm" ]] ; then
-        cat >> .robuild.yaml <<EOM
+        if [[ ! -f "tests/$leaf.nokill" ]] ; then
+            cat >> .robuild.yaml <<EOM
       - echo *** Killing $modname
       - RMKill $modname
 EOM
+        fi
     fi
     cat >> .robuild.yaml <<EOM
       - echo *** Done
