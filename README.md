@@ -127,7 +127,7 @@ The following tables show the status of each module.
 | Draw                      | Asm   |           |           |
 | SpriteExtend              | Asm/C |           |           |
 | ColourMap                 | C     | -         |           |
-| BlendTable                | C     | -         |           |
+| BlendTable                | C     | -         | Builds[^crash] |
 | InverseTable              | Asm   |           |           |
 | DrawFile                  | C     | -         |           |
 | FontMap                   | C     | -         |           |
@@ -255,6 +255,7 @@ The following tables show the status of each module.
 [^hourglass]: Although the base is in C, the generated sections are in assembler.
 [^srevill]: Being worked on by Steve Revill.
 [^jstamp]: Completed by Julie Stamp.
+[^crash]: Current crashes when run.
 
 ### ROM resources
 
@@ -269,33 +270,54 @@ The following tables show the status of each module.
 
 ### Library files
 
-FIXME - To complete
-
 | Name          | Filetype  | Lang      | C-state   | 64-state  |
 |---------------|-----------|-----------|-----------|-----------|
 | ForHooks      | Absolute  | C         | -         | Built     |
+| ImgConvert    | Absolute  | C         | -         | Built     |
+| MiniJTran     | Absolute  | C         | -         | Built     |
+| AddApp        | Utility   | Asm       |           |           |
+| AppSize       | Utility   | Asm       |           |           |
+| CDReinit      | Utility   | Asm       |           |           |
+| ClrMonitor    | Absolute  | C         | -         | Built     |
+| Do            | Utility   | Asm       |           |           |
+| FontChange    | BASIC     | Script    |           |           |
+| ForHooks      | Absolute  | C         | -         | Built     |
+| HOff          | BASIC     | Script    |           |           |
+| HOn           | BASIC     | Script    | -         | Built     |
+| IfThere       | Utility   | Asm       |           |           |
+| LoadCMOS      | Absolute  | C         | -         | [^libsupport] |
+| MD5Hash       | Absolute  | C         | -         | Built     |
+| MiniGZip      | Absolute  | C         | -         | [^libzlib] |
+| MiniGrep      | Absolute  | C         | -         | Built     |
+| MiniUnzip     | Absolute  | C         | -         | Built     |
+| MiniZip       | Absolute  | C         | -         | Built     |
+| Repeat        | Absolute  | C         | -         | [^csystem] |
+| SafeLogon     | Absolute  | C         | -         | Built     |
+| ScanLibs      | BASIC     | Script    | -         | Built     |
+| SysPaths      | Absolute  | C         | -         | [^libsupport] |
+| X             | Utility   | Asm       |           |           |
 
+[^libsupport]: The support library doesn't currently build for 64-bit.
+[^csystem]: The system() call is not currently implemented for 64-bit.
 
 ### Boot utilities
 
 | Name          | Filetype  | Lang      | C-state   | 64-state  |
 |---------------|-----------|-----------|-----------|-----------|
 | AddToRMA      | Utility   | Asm       |           |           |
-| BandLimit     | Absolute  | C         | -         |           |
+| BandLimit     | Absolute  | C         | -         | Built     |
 | BootLog       | Module    | C         | -         |           |
 | BootRun       | Obey      | Script    |           |           |
-| BootVars      | Absolute  | C         | -         |           |
-| CheckMouse    | Absolute  | C         | -         |           |
+| BootVars      | Absolute  | C         | -         | [^libsupport] |
+| CheckMouse    | Absolute  | C         | -         | Built     |
 | DeskCheck     | BASIC     | Script    |           |           |
 | DeskRun       | Obey      | Script    |           |           |
 | Desktop       | Desktop   | Script    |           |           |
 | ErrorLog      | Module    | C         | -         |           |
-| FileCoreCk    | Absolute  | C         | -         |           |
+| FileCoreCheck | Absolute  | C         | -         | [^csystem] |
 | FreePool      | Utility   | Asm       |           |           |
-| HOff          | BASIC     | Script    |           |           |
-| HOn           | BASIC     | Script    |           |           |
 | HWScan        | Absolute  | C         | -         |           |
-| LibraryHlp    | Module    | C         | -         |           |
+| LibraryHlp    | Module    | C         | -         | Works     |
 | MemFix        | Module    | Asm       |           |           |
 | PatchApp      | Module    | C         | -         |           |
 | SetChoices    | Obey      | Script    |           |           |
@@ -311,9 +333,62 @@ FIXME - To complete
 |---------------|-----------|-----------|-----------|
 | C library     | C/Asm     | -         | Partial[^clib] |
 | OSLib         | DSL/Asm   | -         | Partial[^oslib] |
+| Base64        | C         | -         | Exports   |
+| ANTMemLib     | C         | -         | |
+| AOFLink       | C         | -         | [^aoflink] |
+| Asm           | Asm       |           | |
+| AsmDebug      | Asm       |           | |
+| Base64        | C         | -         | Exports |
+| CLX           | C         | -         | Exports |
+| Configure     | C         | -         | [^libtoolbox] |
+| DES           | C         | -         | Exports |
+| Desk          | C         | -         | |
+| DeskLib       | C         | -         | |
+| FindResolver  | C         | -         | [^network] |
+| Fortify       | C         | -         | Exports |
+| GResolve      | C         | -         | [^network] |
+| GetOpt        | C         | -         | Exports |
+| IFCLib        | C         | -         | Exports |
+| INIRead       | C         | -         | Exports |
+| Interact      | C         | -         | Exports |
+| Interfaces    | C         | -         | [^network] |
+| JBacktrace    | C         | -         | [^architecture] |
+| JavaScript    | C         | -         | |
+| LongLong      | C         | -         | |
+| MD5           | C         | -         | Exports |
+| MemCheck      | C         | -         | [^architecture] |
+| MiniDump      | C         | -         | |
+| ModMalloc     | C         | -         | |
+| ModuleTask    | Asm       | -         | |
+| ModuleWrap    | Asm       | -         | |
+| PBTS          | C         | -         | |
+| PlainArgv     | C         | -         | |
+| RISC_OSLib    | C         | -         | |
+| RISC_OSLibSA  | C         | -         | |
+| ROLib         | C         | -         | Exports |
+| RegExp        | C         | -         | Exports |
+| Resolver      | C         | -         | [^network] |
+| SCLStubsG     | C         | -         | [^architecture] |
+| SHA1          | C         | -         | Exports |
+| SQLite        | C         | -         | |
+| Support       | C         | -         | |
+| TCPIPLibs     | C         | -         | |
+| TGRlib        | C         | -         | |
+| TIFF          | C         | -         | |
+| TaskWindow    | C         | -         | [^libtoolbox] |
+| Throwback     | C         | -         | Exports |
+| URLFetch      | C         | -         | Exports |
+| WebImage      | C         | -         | |
+| WimpKeyName   | C         | -         | Exports |
+| Zipper        | C         | -         | Exports |
+| mDNSCore      | C         | -         | Exports |
 
 [^clib]: C library has been reimplemented, using open source and custom components.
 [^oslib]: Most OSLib SWI interfaces have been implemented and exported, although some are not functional.
+
+[^aoflink]: AOFLink isn't relevant for 64-bit.
+[^libtoolbox]: Requires Toolbox libraries.
+[^architecture]: Isn't relevant for AArch64?
 
 
 ## Tools
