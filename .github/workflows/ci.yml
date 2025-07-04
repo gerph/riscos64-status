@@ -14,11 +14,11 @@ name: RISC OS
 #   * tag creation for tags beginning with a 'v'
 on:
   push:
-    branches: ["*"]
+    branches: ["main"]
     tags: ["v*"]
   # Pull request events happen on pull request state transitions, so we probably don't want this here.
-  #pull_request:
-  #  branches: ["*"]
+  pull_request:
+    branches: ["*"]
 
 concurrency:
   # Be nice to the build service and only submit a single job at a time.
@@ -30,6 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      checks: write
+      pull-requests: write
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -55,3 +57,14 @@ jobs:
       - name: Run tests on modules AArch64
         run: |
           tests/run-tests.sh rm64
+
+      - name: Publish Test Report
+        uses: mikepenz/action-junit-report@v5
+        if: success() || failure() # always run even if the previous step fails
+        with:
+          report_paths: 'tests/Test-*.xml'
+          comment: true
+          group_suite: true
+          verbose_summary: true
+          detailed_summary: true
+          include_passed: true
