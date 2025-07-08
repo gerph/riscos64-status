@@ -71,7 +71,7 @@ The following tables show the status of each module.
 | RTCHW                     | Asm   |           |           |
 | OSPointer                 | Asm   |           |           |
 | Hourglass                 | Asm   | Partial[^hourglass] |           |
-| Portable                  | Asm   | Skeleton  |           |
+| Portable                  | Asm   | Prototype works | Prototype works |
 | FileSwitch                | Asm   |           |           |
 | Squash                    | Asm/C |           |           |
 | ResourceFS                | Asm   |           |           |
@@ -88,7 +88,7 @@ The following tables show the status of each module.
 | SerialMouse               | Asm   |           |           |
 | PS2Driver                 | Asm   |           |           |
 | InternationalKeyboard     | Asm   |           |           |
-| KeyInput                  | C     | -         |           |
+| KeyInput                  | C     | -         | Built     |
 | FileCore                  | Asm   |           |           |
 | ADFS                      | Asm   |           |           |
 | ADFSFiler                 | Asm   |           |           |
@@ -127,7 +127,7 @@ The following tables show the status of each module.
 | Draw                      | Asm   |           |           |
 | SpriteExtend              | Asm/C |           |           |
 | ColourMap                 | C     | -         |           |
-| BlendTable                | C     | -         | Builds[^crash] |
+| BlendTable                | C     | -         | Builds    |
 | InverseTable              | Asm   |           |           |
 | DrawFile                  | C     | -         |           |
 | FontMap                   | C     | -         |           |
@@ -248,7 +248,7 @@ The following tables show the status of each module.
 
 [^cmungehelp]: CMunge does not support help code yet.
 [^cmungegeneric]: CMunge does not support generic veneers yet.
-[^debugger]: Debugger works, but does not have a 64bit build yet; error base may be wrong.
+[^debugger]: Debugger works, but doesn't have Thumb decoding.
 [^buffermanager]: Buffer vectors InsV, RemV, CnPV have very poor interfaces, which should not be propagated into RISC OS 64.
 [^ownerbanner]: Only the text part of the banner is currently implemented.
 [^spriteutils]: Does not support the vector handling yet.
