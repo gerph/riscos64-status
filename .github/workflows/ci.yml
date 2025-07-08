@@ -14,7 +14,7 @@ name: RISC OS
 #   * tag creation for tags beginning with a 'v'
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
     tags: ["v*"]
   # Pull request events happen on pull request state transitions, so we probably don't want this here.
   pull_request:
