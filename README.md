@@ -388,6 +388,7 @@ The following tables show the status of each module.
 
 [^aoflink]: AOFLink isn't relevant for 64-bit.
 [^libtoolbox]: Requires Toolbox libraries.
+[^libzlib]: Requires ZLib library.
 [^architecture]: Isn't relevant for AArch64?
 
 
