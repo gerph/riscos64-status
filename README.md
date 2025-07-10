@@ -63,7 +63,7 @@ The following tables show the status of each module.
 | FSCommands                | Asm   |           |           |
 | ModuleCommands            | Asm   | Works[^cmungehelp] | Works[^cmungehelp] |
 | ARM                       | Asm   |           |           |
-| BufferManager             | Asm   | In progress | Broken[^cmungegeneric][^buffermanager] |
+| BufferManager             | Asm   | In progress | Built[^buffermanager] |
 | Debugger                  | Asm   | In progress[^debugger] |           |
 | RTC                       | Asm   | Works     | Partial[^1]   |
 | DMAManager                | Asm   |           |           |
@@ -127,11 +127,11 @@ The following tables show the status of each module.
 | Draw                      | Asm   |           |           |
 | SpriteExtend              | Asm/C |           |           |
 | ColourMap                 | C     | -         |           |
-| BlendTable                | C     | -         | Builds    |
+| BlendTable                | C     | -         | Built     |
 | InverseTable              | Asm   |           |           |
 | DrawFile                  | C     | -         |           |
 | FontMap                   | C     | -         |           |
-| ZLib                      | C     | -         |           |
+| ZLib                      | C     | -         | Built     |
 | PNG                       | C     | -         |           |
 | ROMFonts                  | Asm   |           |           |
 | FontManager               | Asm   |           |           |
@@ -233,8 +233,8 @@ The following tables show the status of each module.
 | LegacyBBC                 | Asm   |           |           |
 | LegacyScreen              | Asm   |           |           |
 | BBCEconet                 | Asm   |           |           |
-| SpriteUtils               | Asm   | Started[^spriteutils][^cmungegeneric] |           |
-| OwnerBanner               | Asm   | Started[^ownerbanner] |           |
+| SpriteUtils               | Asm   | Built[^spriteutils] | Built[^spriteutils] |
+| OwnerBanner               | Asm   | Started[^ownerbanner] | Started[^ownerbanner] |
 | IRQUtils                  | Asm   |           |           |
 | WindowUtils               | Asm   |           |           |
 | CallASWI                  | Asm   |           |           |
@@ -242,13 +242,35 @@ The following tables show the status of each module.
 | AUNMsgs                   | Asm   |           |           |
 | !Alarm                    | BASIC |           |           |
 | LibraryHelp               | C     | -         | Works     |
-| ErrorLog                  | C     | -         |           |
+| ErrorLog                  | C     | -         | Built     |
+
+
+### System modules
+
+| Name                      | Lang  | C-state   | 64-state  |
+|---------------------------|-------|-----------|-----------|
+| RateTracker               | C     | -         | Built     |
+
+(to be updated)
+
+
+### Additional modules
+
+| Name                      | Lang  | C-state   | 64-state  |
+|---------------------------|-------|-----------|-----------|
+| IconBorderBeveled         | C     | -         | Built     |
+| IconBorderCrossy          | C     | -         | Built     |
+| IconBorderFob             | C     | -         | Built     |
+| IconBorderPlain           | C     | -         | Built     |
+| IconBorderPlainPopping    | C     | -         | Built     |
+| IconBorderSkins           | C     | -         | Built     |
+
 
 [^1]: Vector claims are not supported yet in RISC OS Pyromaniac or CMunge.
 
 [^cmungehelp]: CMunge does not support help code yet.
 [^cmungegeneric]: CMunge does not support generic veneers yet.
-[^debugger]: Debugger works, but doesn't have Thumb decoding.
+[^debugger]: Debugger works, but doesn't have Thumb decoding or breakpoints.
 [^buffermanager]: Buffer vectors InsV, RemV, CnPV have very poor interfaces, which should not be propagated into RISC OS 64.
 [^ownerbanner]: Only the text part of the banner is currently implemented.
 [^spriteutils]: Does not support the vector handling yet.
@@ -306,14 +328,14 @@ The following tables show the status of each module.
 |---------------|-----------|-----------|-----------|-----------|
 | AddToRMA      | Utility   | Asm       |           |           |
 | BandLimit     | Absolute  | C         | -         | Built     |
-| BootLog       | Module    | C         | -         |           |
+| BootLog       | Module    | C         | -         | Built     |
 | BootRun       | Obey      | Script    |           |           |
 | BootVars      | Absolute  | C         | -         | [^libsupport] |
 | CheckMouse    | Absolute  | C         | -         | Built     |
 | DeskCheck     | BASIC     | Script    |           |           |
 | DeskRun       | Obey      | Script    |           |           |
 | Desktop       | Desktop   | Script    |           |           |
-| ErrorLog      | Module    | C         | -         |           |
+| ErrorLog      | Module    | C         | -         | Built     |
 | FileCoreCheck | Absolute  | C         | -         | [^csystem] |
 | FreePool      | Utility   | Asm       |           |           |
 | HWScan        | Absolute  | C         | -         |           |
