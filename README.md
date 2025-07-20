@@ -77,7 +77,7 @@ The following tables show the status of each module.
 | ResourceFS                | Asm   |           |           |
 | ResourceFiler             | Asm   |           |           |
 | Messages                  | Asm   |           |           |
-| MessageTrans              | Asm   |           |           |
+| MessageTrans              | Asm   | Partial[^messagetrans] | Partial[^messagetrans] |
 | FSLock                    | Asm   |           |           |
 | TerritoryManager          | Asm   |           |           |
 | UK                        | Asm   |           |           |
@@ -278,6 +278,7 @@ The following tables show the status of each module.
 [^srevill]: Being worked on by Steve Revill.
 [^jstamp]: Completed by Julie Stamp.
 [^crash]: Current crashes when run.
+[^messagetrans]: Missing fallback for global messages and MakeMenus.
 
 ### ROM resources
 
