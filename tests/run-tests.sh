@@ -13,12 +13,35 @@ source "${scriptdir}/progress.sh"
 source "${scriptdir}/junitxml.sh"
 junitxml_tempdir ""
 
+# The binary names to match (or empty for all)
+match_name=
+
+while [[ $# -gt 1 && "${1:0:1}" == '-' ]] ; do
+    if [[ "$1" == "--match" ]] ; then
+        match_name=$2
+        shift
+        shift
+    else
+        echo "Unknown switch '$1'" >&2
+        exit 1
+    fi
+done
+
 dir=${1:-aif64}
 
 if [[ "$dir" == '-h' || "$dir" == '--help' ]] ; then
     echo "Run tests for the RISC OS binaries."
-    echo "Syntax: run-tests.sh <directory>"
+    echo "Syntax: run-tests.sh [--match <name>] <directory>"
     exit 0
+fi
+
+if [[ -x './riscos-build-online' ]] ; then
+    build_tool="./riscos-build-online"
+elif type -p riscos-build-online > /dev/null 2>/dev/null ; then
+    build_tool=$(type -p riscos-build-online)
+else
+    echo "The 'riscos-build-online' tool is required to run these tests"
+    exit 1
 fi
 
 if [[ "$dir" =~ ^(.*)32$ ]] ; then
@@ -38,13 +61,18 @@ elif [[ "$bintype" == "rm" ]] ; then
 fi
 
 
+JUNITXML_DIR=${JUNITXML_DIR:-${scriptdir}}
+JUNITXML_SUITE=${JUNITXML_SUITE:-${typename} (${arch})}
+JUNITXML_NAME=${JUNITXML_NAME:-Test-$typename-$arch.xml}
+
 echo "Testing $arch binaries of type $bintype"
 echo "************************************"
 
 # JUnit XML file to output.
-XML="${scriptdir}/Test-$typename-$arch.xml";
+XML="${JUNITXML_DIR}/${JUNITXML_NAME}";
+mkdir -p "${JUNITXML_DIR}"
 
-junitxml_testsuite "${typename^} ($arch)"
+junitxml_testsuite "${JUNITXML_SUITE}"
 junitxml_ci_properties
 
 
@@ -80,7 +108,9 @@ function finish() {
     junitxml_cleanup
 
     # Report the results
-    "${scriptdir}/junitxml.py" --show --summarise "$XML" || true
+    if [[ -x "${scriptdir}/junitxml.py" ]] ; then
+        "${scriptdir}/junitxml.py" --show --summarise "$XML" || true
+    fi
 
     if [[ "$junitxml_nfail" != 0 ]] ; then
         error "$junitxml_nfail tests failed ($junitxml_npass passed)"
@@ -122,32 +152,49 @@ function result() {
 
 for file in $(find "$dir" -type f | sort) ; do
     leaf=$(basename "$file")
-    if [[ "$file" =~ ^.*/([^/]*),...$ ]] ; then
+    rotype=unk
+    if [[ "$file" =~ ^.*/([^/]*),(...)$ ]] ; then
         roname=${BASH_REMATCH[1]}
+        rotype=${BASH_REMATCH[2]}
     else
         # Not a file with RISC OS extensions, so skipping
         continue
     fi
 
+    if [[ "$match_name" != '' && ! $leaf =~ $match_name ]] ; then
+        # Not one requested; skipping
+        continue
+    fi
+
+    params_prefix="tests/$leaf"
+
     echo
     start "$roname"
-    if [[ -f "tests/$leaf.disabled" ]] ; then
-        reason=$(cat "tests/$leaf.disabled")
+    if [[ -f "${params_prefix}.disabled" ]] ; then
+        reason=$(cat "${params_prefix}.disabled")
         echo "  Skipped${reason:+ ($reason)}"
-        # FIXME: This should be a skip, but junitxml.sh doesn't support that.
         result "skip" "$reason"
         continue
     fi
-    if [[ "$bintype" == "aif" ]] ; then
-        cmd="/$dir.$roname"
-        if [[ -f "tests/$leaf.args" ]] ; then
-            cmd="$cmd $(cat tests/$leaf.args)"
+    if [[ "$rotype" == 'ff8' || "$rotype" == 'ffc' ]] ; then
+        cmd="/$roname"
+        args=()
+        if [[ -f "${params_prefix}.args" ]] ; then
+            while read -r line ; do
+                args+=("$line")
+            done < "${params_prefix}.args"
+            if [[ "${#args}" == 0 ]] ; then
+                echo "File '${params_prefix}.args' was not read properly; does it end with a newline?" >&2
+                exit 1
+            fi
+        else
+            args=("")
         fi
-    elif [[ "$bintype" == "rm" ]] ; then
-        cmd="RMLoad $dir.$roname"
+    elif [[ "$rotype" == 'ffa' ]] ; then
+        cmd="RMLoad $roname"
         modname="$roname"
-        if [[ -f "tests/$leaf.name" ]] ; then
-            modname="$(cat tests/$leaf.name)"
+        if [[ -f "${params_prefix}.name" ]] ; then
+            modname="$(cat ${params_prefix}.name)"
         fi
     else
         result "fail" "Do not know how to run this"
@@ -155,6 +202,14 @@ for file in $(find "$dir" -type f | sort) ; do
         continue
     fi
 
+    extra_files=()
+    if [[ -f "${params_prefix}.files" ]] ; then
+        while read -r line ; do
+            extra_files+=("$dir/$line")
+        done < "${params_prefix}.files"
+    fi
+
+    # Header
     cat > .robuild.yaml <<EOM
 %YAML 1.0
 ---
@@ -166,21 +221,53 @@ jobs:
     # Env defines system variables which will be used within the environment.
     # Multiple variables may be assigned.
     env:
-      "Sys$Environment": ROBuild
+      "Sys\$Environment": ROBuild
 
     # Directory to change to before running script
-    #dir: <working directory>
+    dir: ${dir}
 
     # Commands which should be executed to perform the build.
     # The build will terminate if any command returns a non-0 return code or an error.
     script:
-      - PyromaniacDebug traceblock
+EOM
+
+    # Pre-load commands
+    if [[ -f "${params_prefix}.pre" ]] ; then
+        echo "      - echo *** Pre-commands $roname" >> .robuild.yaml
+        while read -r line ; do
+            echo "      - echo ***   $line" >> .robuild.yaml
+            echo "      - $line" >> .robuild.yaml
+        done < "${params_prefix}.pre"
+    fi
+
+    # Primary commands
+    echo "      - PyromaniacDebug traceblock" >> .robuild.yaml
+    if [[ "$rotype" == 'ff8' || "$rotype" == 'ffc' ]] ; then
+        echo "      - echo *** Running $roname" >> .robuild.yaml
+        for arg in "${args[@]}" ; do
+            echo "      - echo ***   $cmd $arg" >> .robuild.yaml
+            echo "      - $cmd $arg" >> .robuild.yaml
+        done
+    elif [[ "$rotype" == "ffa" ]] ; then
+            cat >> .robuild.yaml <<EOM
       - echo *** Loading $roname
-      - echo $cmd
+      - echo ***   $cmd
       - $cmd
 EOM
-    if [[ "$bintype" == "rm" ]] ; then
-        if [[ ! -f "tests/$leaf.nokill" ]] ; then
+    fi
+
+    # Post commands
+    if [[ -f "${params_prefix}.post" ]] ; then
+        echo "      - echo *** Post-commands $roname" >> .robuild.yaml
+        while read -r line ; do
+            echo "      - echo ***   $line" >> .robuild.yaml
+            echo "      - $line" >> .robuild.yaml
+        done < "${params_prefix}.post"
+    fi
+
+    # Finalisation commands
+    if [[ "$rotype" == "ffa" ]] ; then
+        if [[ ! -f "${params_prefix}.nokill" ]] ; then
             cat >> .robuild.yaml <<EOM
       - echo *** Killing $modname
       - RMKill $modname
@@ -191,8 +278,8 @@ EOM
       - echo *** Done
 EOM
 
-    zip -q9r /tmp/testrun.zip "$file" .robuild.yaml
-    if ./riscos-build-online -A "$arch" -t 30 -i /tmp/testrun.zip \
+    zip -q9r /tmp/testrun.zip "$file" "${extra_files[@]}" .robuild.yaml
+    if "$build_tool" -A "$arch" -t 30 -i /tmp/testrun.zip \
             | junitxml_output \
             | sed "s/^/  /" ; then
         rc=0
@@ -200,8 +287,8 @@ EOM
         rc=$?
     fi
 
-    if [[ -f "tests/$leaf.rc" ]] ; then
-        expectrc=$(cat "tests/$leaf.rc")
+    if [[ -f "${params_prefix}.rc" ]] ; then
+        expectrc=$(cat "${params_prefix}.rc")
     else
         expectrc=0
     fi
@@ -214,6 +301,8 @@ EOM
         pass=$((pass + 1))
     fi
 
+    # DEBUG: Only run a single test
+    #break
 done
 
 # We no longer need the robuild file
@@ -231,5 +320,3 @@ if [[ "$fail" != 0 ]] ; then
 else
     exit 0
 fi
-
-

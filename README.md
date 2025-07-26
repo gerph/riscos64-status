@@ -417,9 +417,97 @@ The following tables show the status of each module.
 
 ## Tools
 
-
 The tools for developing 64-bit components need to be created.
-This section lists the build system components and how they have been addressed.
+The table below shows information about various tools and their support:
+
+* *Tool*: Describes the intent of the tool.
+* *Name*: The particular variant of the tool described.
+* *Lang*: The implementation language (if relevant).
+* *C-state*: The status of the RISC OS implementation for 32bit.
+* *64-state*: The status of the RISC OS implementation for 64bit.
+* *Linux*: The status of a Linux version of the tool.
+* *Mac*: The status of the Mac version of the tool.
+* *Windows*: The status of the Windows version of the tool.
+
+### Primary toolchain
+
+| Tool          | Name                   | Lang      | C-state   | 64-state       | Linux                    | Mac                  | Windows        |
+|---------------|------------------------|-----------|-----------|----------------|--------------------------|----------------------|----------------|
+| C Compiler    | cc (Norcroft)          | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
+| C Compiler    | gcc (GCC)              | C         |           | N/A[^gcc]      | Works[^riscos64-cc]      | Via Docker           | Via WSL?       |
+| C Compiler    | tcc                    | C         |           | N/A[^tcc]      | No                       | Works[^tcc]          |                |
+| C++ Compiler  | c++ (Norcroft)         | C         | -         | N/A[^norcroft][^cfront] | N/A             | N/A                  | N/A            |
+| Assembler     | objasm (Norcroft)      | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
+| Assembler     | gas (GCC)              | C         |           | N/A[^gas]      | Works[^riscos64-objasm]  | Via Docker           | Via WSL?       |
+| Linker        | link (Norcroft)        | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
+| Linker        | ld (BinUtils)          | C         |           | N/A[^ld]       | Works[^riscos64-link]    | Via Docker           | Via WSL?       |
+| Lib maker     | libfile (Norcroft)     | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
+| Lib maker     | makealf                | C         | -         | N/A[^makealf]  | N/A                      | N/A                  | N/A            |
+| Lib maker     | ar (BinUtils)          | C         |           | N/A[^ar]       | Works[^riscos64-libfile] | Via Docker           | Via WSL?       |
+| Module header | cmhg (Norcroft)        | C         | -         | N/A[^norcroft][^cmhg] | N/A               | N/A                  | N/A            |
+| Module header | cmunge                 | C         | -         | Functional[^cmunge] | Works               | Works                | N/A            |
+| Make tool     | amu (Norcroft)         | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
+| Make tool     | make (GNU)             | C         |           | N/A[^make]     | Works[^make]             | Works[^make]         | Via WSL?       |
+| AOF-to-C      | aoftoc (Norcroft)      | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
+| Bin-to-AOF    | binaof (Norcroft)      | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
+| Decode AOF    | decaof (Norcroft)      | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
+| Code compress | squeeze (Norcroft)     | C         | -         | N/A[^norcroft][^squeeze] | N/A            | N/A                  | N/A            |
+| Code compress | modsqz (Norcroft)      | C         | -         | N/A[^norcroft][^modsqz] | N/A             | N/A                  | N/A            |
+
+
+
+### Additional tools
+
+| Tool         | Name                   | Lang      | C-state   | 64-state       | Linux                    | Mac                  | Windows        |
+|--------------|------------------------|-----------|-----------|----------------|--------------------------|----------------------|----------------|
+| Perl         | perl (5.001)           | C         | -         | Works[^perl]   |                          |                      |                |
+| Detokeniser  | basicdetokenise        | C         | -         |                |                          |                      |                |
+| Tokeniser    | basictokenise          | Perl      |           |                | Works                    | Works                |                |
+| Parser gen   | bison                  | C         | -         | Built[^bison]  |                          |                      |                |
+| OSLib gen    | defmod                 | C         | -         |                | N/A[^defmod]             |                      |                |
+| OSLib gen    | oslib parser           | Python    |           |                | Works[^defmod]           | Works[^defmod]       |                |
+| Lex analyser | flex                   | C         | -         | Built[^flex]   |                          |                      |                |
+| Header maker | hdrtoh                 | Perl      |           |                |                          |                      |                |
+| Cat file     | kitten                 | C         | -         | Works[^kitten] |                          |                      |                |
+| Mod decoder  | modservices            | C         | -         | Works[^modservices] |                     |                      |                |
+| Stream edit  | sed                    | C         | -         | Built[^sed]    |                          |                      |                |
+| Version Trans | vtranslate            | C         | -         | Works[^vtranslate]|                       |                      |                |
+
+[^norcroft]: The Norcroft toolchain only builds 32-bit binaries, so it is not useful to port this to RISC OS 64. As other compilers exist for AArch64 code, it is more sensible to use them instead of updating the aging Norcroft toolchain.
+[^cfront]: CFront hasn't even been attempted, as it is ancient and doesn't really support modern C++. It also doesn't built itself with C++ compilers.
+[^cmhg]: CMHG constructs the module header from binary code fragments, which would need to have significant changes to make it work with AArch64. CMunge is a better solution as it creates assembler files which can be examined and modified easily.
+[^modsqz]: Code compression is redundant these days as disc is cheap and fast.
+[^squeeze]: Code compression is redundant these days as disc is cheap and fast.
+[^cmunge]: CMunge has been updated to generate AArch64 module headers. Not all the interfaces are complete; in particular vector handlers cannot claim the vector as yet.
+[^gcc]: GCC has not been ported to RISC OS 64.
+[^tcc]: TCC has not been ported to RISC OS 64. It can be compiled for macOS and will create code suitable for use on RISC OS 64.
+[^gas]: GAS has not been ported to RISC OS 64. GAS has an ugly syntax, but can be used to build AArch64 binaries on other platforms.
+[^ld]: ld has not been ported to RISC OS 64.
+[^makealf]: MakeALF only operates on ALF files so has not been ported to RISC OS 64.
+[^ar]: ar has not been ported to RISC OS 64.
+[^make]: GNU make has not been ported to RISC OS 64. It can be used to orchestrate the building of AArch64 binaries for use with RISC OS 64 on other platforms, as a native tool.
+[^riscos64-cc]: The `riscos64-cc` tool has been created as a wrapper around `gcc` which sets up the necessary environment for building RISC OS 64 binaries.
+[^riscos64-objasm]: The `riscos64-objasm` tool has been created as a wrapper around `objasm2gas` and `as` which translates sources in `objasm` format to those that can be used by `as`, as ObjAsm is a much more familiar format for RISC OS users.
+[^riscos64-link]: The `riscos64-link` tool has been created as a wrapper around `ld` (with other tooling for function signatures and relocation code) to build RISC OS 64 binaries (AIF, RMF, Utility).
+[^riscos64-libfile]: The `riscos64-libfile` tool has been created as a wrapper around `ar`, which has `libfile` syntax to create libraries for RISC OS 64 (as a syntactic sugar).
+[^perl]: Perl in RISC OS 64 is functional, but cannot invoke commands due to the lack of `system` in the C library.
+[^bison]: Bison has been built but not tested in its built form.
+[^flex]: Flex has been built but not tested in its built form.
+[^defmod]: Defmod relies on AArch32 output, so is not useful for AArch64.
+[^oslib-parser]: The Python OSLib Parser can generate AArch64 code from OSLib def files.
+[^kitten]: A small version of cat.
+[^modservices]: Lists services used by modules. For AArch64 this is only dispatched through a table, so is trivial to decode.
+[^sed]: SEd has been built but not tested in its built form.
+[^vtranslate]: Version number translator has been built and works.
+
+The Docker build environment provides the build tooling for 32bit and 64bit systems.
+The environment is functional as a tooling environment for building applications, utilities and modules.
+It currently uses GCC 12 (crosstool-NG-1.26.0).
+
+
+### Norcroft tools
+
+This section lists the build system components from the regular Norcroft toolchain used on RISC OS, and how they have been addressed with the 64-bit world.
 
 * `amu` - make tool
 
@@ -452,10 +540,6 @@ This section lists the build system components and how they have been addressed.
 
   Not required, as disk space is cheap, and transmission time is low.
 
-* Docker build environment - Builds for 32bit and 64bit systems.
-
-  Functional as a tooling environment for building applications and modules,
-  using GCC 12 (crosstool-NG-1.26.0).
 
 
 ## Services
