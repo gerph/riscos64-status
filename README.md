@@ -244,6 +244,12 @@ The following tables show the status of each module.
 | LibraryHelp               | C     | -         | Works     |
 | ErrorLog                  | C     | -         | Built     |
 
+### New ROM modules
+
+| Name                      | C-state   | 64-state  |
+|---------------------------|-----------|-----------|
+| SystemVarsDefaults        | Works     | Works     |
+
 
 ### System modules
 
