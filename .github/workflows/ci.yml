@@ -69,3 +69,27 @@ jobs:
           verbose_summary: true
           detailed_summary: true
           include_passed: true
+
+  progress:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      - name: Generate statistics
+        run: |
+          utils/makestats.pl json > statistics.json
+
+      - name: Generate markdown
+        run: |
+          utils/makestats.pl md > statistics.md
+
+      - name: Report on progress
+        run: |
+          cat statistics.md >> $GITHUB_STEP_SUMMARY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RISC OS 64 Progress
+          path: statistics*
