@@ -3,9 +3,8 @@
 This repository contains information about the status of RISC OS 64 ports of
 modules.
 
-## RISC OS components
 
-### Built components
+## Built components
 
 Some of the absolutes and modules which have been ported can be found within this repository.
 
@@ -22,62 +21,103 @@ trying to load it. This is limited, but it proves that the components at
 least start.
 
 
-### Current status
+## Current status
 
-The following tables show the status of each module.
+The tables within this document indicate the status of each component.
 
 * `Lang` indicates the RISC OS Classic implementation
 * `Filetype` indicates the filetype (for disc based components)
-* `C-State` indicates whether there is a port to C (for Asm components)
-* `64-state` indicates whether the port works in 64-bit.
+* `C-State` indicates whether there is a port to C (for Asm components), or `-` if the source is already in C.
+* `64-state` indicates whether the port Functional in 64-bit.
+
+### Terminology
+
+The state of each component can be described in terms of how far developed it is.
+Whilst there will always be caveats on some components, using terminology that is
+understood will give a useful picture of the progress of the project.
+
+
+* `Investigate` - decide how to proceed
+* `Stub` - just the interface to the OS; no implementation.
+* `Prototype` - largely functional, but hardware implementation missing.
+* `Built` - component has been built into a binary, but it's not understooed whether it is working, or even useful.
+* `Internals` - internal implementation, but no OS wiring.
+* `Functional` - wired from OS interface to internals, but may be missing less used features, including I18N.
+* `Complete` - implemented completely.
+* `Tested` - implemented and tested manually.
+* `Automated` - testing has been automated.
+
+Although the functionality key covers `Complete`, `Tested`, and `Automated`, these stages are not part of the current phasing. These states are expected to be developed on an as-needed basis, as `Complete` would require a complete agreement on what was the complete functionality required, which it will be difficult to do.
+
+Prototype implementations are useful to allow hardware developers to integrate hardware specific components into the module for their specialised environment. As such a prototype component may bifurcate - there may remain a prototype implementation, which is complete and tested, and there may be a specialisation for hardware environments.
+
+
+```mermaid
+flowchart TD
+    Start[Investigate] --> Stub
+    Start --> Internals
+    Stub -->|Hardware dependant| Prototype
+    Stub -->|Already in C| Built
+    Stub -->|Implemented| Internals
+
+    Built --> Functional
+    Prototype --> Functional
+    Internals --> Functional
+    Functional --> Complete
+    Complete --> Tested
+    Tested --> Automated
+```
+
+
+## RISC OS components
 
 ### ROM modules
 
-| Name                      | Lang  | C-state   | 64-state  |
-|---------------------------|-------|-----------|-----------|
-| UtilityModule             | Asm   |           |           |
-| IRQ                       | Asm   |           |           |
-| TimerManager              | Asm   |           |           |
-| Podule                    | Asm   |           |           |
-| IIC                       | Asm   |           |           |
-| NVRAMHW                   | Asm   |           |           |
-| Conversions               | Asm   |           |           |
-| OSSWIs                    | Asm   |           |           |
-| EvaluateExpression        | Asm   |           |           |
-| SystemVars                | Asm   |           |           |
-| FileTypes                 | Asm   | Works     | Works     |
-| FPEmulator                | Asm   |           |           |
-| SharedCLibrary            | C     | -         |           |
-| UnSqueezeAIF              | Asm   |           |           |
-| AppPatcher                | Asm   |           |           |
-| DiagnosticDump            | C     | -         |           |
-| CFrontDemangler           | C     | -         |           |
-| ReadLine                  | Asm   | Works     | Partial[^1] |
-| CLIV                      | Asm   |           |           |
-| VideoTTX                  | C     | -         |           |
-| VideoSW                   | Asm   |           |           |
-| VideoHWVIDC               | Asm   |           |           |
-| VideoHWVF                 | Asm   |           |           |
-| VideoGuard                | Asm   |           |           |
-| OSCommands                | Asm   | In progress | In progress |
-| FSCommands                | Asm   |           |           |
-| ModuleCommands            | Asm   | Works[^cmungehelp] | Works[^cmungehelp] |
-| ARM                       | Asm   |           |           |
-| BufferManager             | Asm   | In progress | Built[^buffermanager] |
-| Debugger                  | Asm   | Works[^debugger] | Works[^debugger] |
-| RTC                       | Asm   | Works     | Partial[^1]   |
+| Name                      | Lang  | C-state       | 64-state      |
+|---------------------------|-------|---------------|---------------|
+| UtilityModule             | Asm   |               |               |
+| IRQ                       | Asm   |               |               |
+| TimerManager              | Asm   |               |               |
+| Podule                    | Asm   |               |               |
+| IIC                       | Asm   |               |               |
+| NVRAMHW                   | Asm   |               |               |
+| Conversions               | Asm   |               |               |
+| OSSWIs                    | Asm   |               |               |
+| EvaluateExpression        | Asm   |               |               |
+| SystemVars                | Asm   |               |               |
+| FileTypes                 | Asm   | Functional    | Functional    |
+| FPEmulator                | Asm   |               |               |
+| SharedCLibrary            | C     | -             |               |
+| UnSqueezeAIF              | Asm   |               |               |
+| AppPatcher                | Asm   |               |               |
+| DiagnosticDump            | C     | -             |               |
+| CFrontDemangler           | C     | -             |               |
+| ReadLine                  | Asm   | Functional    | Internals[^1] |
+| CLIV                      | Asm   |               |           |
+| VideoTTX                  | C     | -             |           |
+| VideoSW                   | Asm   |               |           |
+| VideoHWVIDC               | Asm   |               |           |
+| VideoHWVF                 | Asm   |               |           |
+| VideoGuard                | Asm   |               |           |
+| OSCommands                | Asm   | Stub          | Stub      |
+| FSCommands                | Asm   |               |           |
+| ModuleCommands            | Asm   | Functional[^cmungehelp] | Functional[^cmungehelp] |
+| ARM                       | Asm   |               |           |
+| BufferManager             | Asm   | Stub          | Stub[^buffermanager] |
+| Debugger                  | Asm   | Functional[^debugger] | Functional[^debugger] |
+| RTC                       | Asm   | Functional    | Internals[^1]   |
 | DMAManager                | Asm   |           |           |
 | RTCAdjust                 | Asm   |           |           |
 | RTCHW                     | Asm   |           |           |
 | OSPointer                 | Asm   |           |           |
-| Hourglass                 | Asm   | Partial[^hourglass] |           |
-| Portable                  | Asm   | Prototype works | Prototype works |
+| Hourglass                 | Asm   | Prototype[^hourglass] |           |
+| Portable                  | Asm   | Prototype | Prototype |
 | FileSwitch                | Asm   |           |           |
 | Squash                    | Asm/C |           |           |
 | ResourceFS                | Asm   |           |           |
 | ResourceFiler             | Asm   |           |           |
 | Messages                  | Asm   |           |           |
-| MessageTrans              | Asm   | Works[^messagetrans] | Works[^messagetrans] |
+| MessageTrans              | Asm   | Functional[^messagetrans] | Functional[^messagetrans] |
 | FSLock                    | Asm   |           |           |
 | TerritoryManager          | Asm   |           |           |
 | UK                        | Asm   |           |           |
@@ -101,12 +141,12 @@ The following tables show the status of each module.
 | PipeFS                    | Asm   |           |           |
 | AIF                       | Asm   |           |           |
 | TransientUtility          | Asm   |           |           |
-| BASIC                     | Asm   | In progress [^srevill] |           |
+| BASIC                     | Asm   | Stub[^srevill] |           |
 | BASIC64                   | Asm   |           |           |
 | BASICTrans                | Asm   |           |           |
 | Obey                      | Asm   | Complete[^jstamp]      |           |
 | DDEUtils                  | Asm   |           |           |
-| PathUtils                 | C     | -         | Works     |
+| PathUtils                 | C     | -         | Functional |
 | SysLog                    | C     | -         |           |
 | BootCommands              | C     | -         |           |
 | GameModes                 | Asm   |           |           |
@@ -120,7 +160,7 @@ The following tables show the status of each module.
 | Percussion                | Asm   |           |           |
 | SoundScheduler            | Asm   |           |           |
 | SharedSound               | Asm   |           |           |
-| SystemBell                | Asm   | Works     | Works     |
+| SystemBell                | Asm   | Functional | Functional |
 | DeviceFS                  | Asm   |           |           |
 | ParallelDeviceDriver      | Asm   |           |           |
 | ColourTrans               | Asm   |           |           |
@@ -148,10 +188,10 @@ The following tables show the status of each module.
 | ConvertXBM                | C     | -         |           |
 | ConvertPCX                | C     | -         |           |
 | ConvertClear              | C     | -         |           |
-| ImageFileRender           | C     | -         | Works     |
+| ImageFileRender           | C     | -         | Functional |
 | ImageFileRender_Artworks  | C     | -         |           |
 | Zipper                    | C     | -         |           |
-| PrinterBuffer             | Asm   | Works     | Works     |
+| PrinterBuffer             | Asm   | Functional | Functional |
 | PDriver                   | Asm   |           |           |
 | PDriverDP                 | Asm   |           |           |
 | PDumperSupport            | Asm   |           |           |
@@ -233,22 +273,22 @@ The following tables show the status of each module.
 | LegacyBBC                 | Asm   |           |           |
 | LegacyScreen              | Asm   |           |           |
 | BBCEconet                 | Asm   |           |           |
-| SpriteUtils               | Asm   | Built[^spriteutils] | Built[^spriteutils] |
-| OwnerBanner               | Asm   | Started[^ownerbanner] | Started[^ownerbanner] |
+| SpriteUtils               | Asm   | Stub[^spriteutils] | Stub[^spriteutils] |
+| OwnerBanner               | Asm   | Functional[^ownerbanner] | Functional[^ownerbanner] |
 | IRQUtils                  | Asm   |           |           |
 | WindowUtils               | Asm   |           |           |
 | CallASWI                  | Asm   |           |           |
 | BootNet                   | Asm   |           |           |
 | AUNMsgs                   | Asm   |           |           |
 | !Alarm                    | BASIC |           |           |
-| LibraryHelp               | C     | -         | Works     |
+| LibraryHelp               | C     | -         | Functional     |
 | ErrorLog                  | C     | -         | Built     |
 
 ### New ROM modules
 
 | Name                      | C-state   | 64-state  |
 |---------------------------|-----------|-----------|
-| SystemVarsDefaults        | Works     | Works     |
+| SystemVarsDefaults        | Functional     | Functional     |
 
 
 ### System modules
@@ -276,7 +316,7 @@ The following tables show the status of each module.
 
 [^cmungehelp]: CMunge does not support help code yet.
 [^cmungegeneric]: CMunge does not support generic veneers yet.
-[^debugger]: Debugger works in 32bit and 64bit, but doesn't decode AArch64.
+[^debugger]: Debugger Functional in 32bit and 64bit, but doesn't decode AArch64.
 [^buffermanager]: Buffer vectors InsV, RemV, CnPV have very poor interfaces, which should not be propagated into RISC OS 64.
 [^ownerbanner]: Only the text part of the banner is currently implemented.
 [^spriteutils]: Does not support the vector handling yet.
@@ -290,7 +330,7 @@ The following tables show the status of each module.
 
 | Name          | Filetype  | Lang      | C-state   | 64-state  |
 |---------------|-----------|-----------|-----------|-----------|
-| BootMenu      | Absolute  | C         | -         | Partial[^network][^link] |
+| BootMenu      | Absolute  | C         | -         | Functional[^network][^link] |
 | Repeat        | Absolute  | C         | -         |           |
 
 [^network]: Network libraries are not currently implemented, so no networking is available.
@@ -346,7 +386,7 @@ The following tables show the status of each module.
 | FileCoreCheck | Absolute  | C         | -         | [^csystem] |
 | FreePool      | Utility   | Asm       |           |           |
 | HWScan        | Absolute  | C         | -         |           |
-| LibraryHlp    | Module    | C         | -         | Works     |
+| LibraryHlp    | Module    | C         | -         | Functional     |
 | MemFix        | Module    | Asm       |           |           |
 | PatchApp      | Module    | C         | -         |           |
 | SetChoices    | Obey      | Script    |           |           |
@@ -358,59 +398,61 @@ The following tables show the status of each module.
 
 ## Libraries
 
+Libraries have a slightly different lifecycle, as they don't produce a tool or module themselves which is usable, but are used by others. As such, the `Built` state indicates that the library has been exported and is available for use - but that it hasn't been validated that it works properly.
+
 | Name          | Lang      | C-state   | 64-state  |
 |---------------|-----------|-----------|-----------|
-| C library     | C/Asm     | -         | Partial[^clib] |
-| OSLib         | DSL/Asm   | -         | Partial[^oslib] |
-| Base64        | C         | -         | Exports   |
+| C library     | C/Asm     | -         | Functional[^clib] |
+| OSLib         | DSL/Asm   |           | Functional[^oslib] |
+| Base64        | C         | -         | Built   |
 | ANTMemLib     | C         | -         | |
 | AOFLink       | C         | -         | [^aoflink] |
 | Asm           | Asm       |           | |
 | AsmDebug      | Asm       |           | |
-| Base64        | C         | -         | Exports |
-| CLX           | C         | -         | Exports |
+| Base64        | C         | -         | Built |
+| CLX           | C         | -         | Built |
 | Configure     | C         | -         | [^libtoolbox] |
-| DES           | C         | -         | Exports |
+| DES           | C         | -         | Built |
 | Desk          | C         | -         | |
 | DeskLib       | C         | -         | |
 | FindResolver  | C         | -         | [^network] |
-| Fortify       | C         | -         | Exports |
+| Fortify       | C         | -         | Built |
 | GResolve      | C         | -         | [^network] |
-| GetOpt        | C         | -         | Exports |
-| IFCLib        | C         | -         | Exports |
-| INIRead       | C         | -         | Exports |
-| Interact      | C         | -         | Exports |
+| GetOpt        | C         | -         | Built |
+| IFCLib        | C         | -         | Built |
+| INIRead       | C         | -         | Built |
+| Interact      | C         | -         | Built |
 | Interfaces    | C         | -         | [^network] |
 | JBacktrace    | C         | -         | [^architecture] |
 | JavaScript    | C         | -         | |
 | LongLong      | C         | -         | |
-| MD5           | C         | -         | Exports |
+| MD5           | C         | -         | Built |
 | MemCheck      | C         | -         | [^architecture] |
 | MiniDump      | C         | -         | |
 | ModMalloc     | C         | -         | |
-| ModuleTask    | Asm       | -         | |
-| ModuleWrap    | Asm       | -         | |
+| ModuleTask    | Asm       |           | |
+| ModuleWrap    | Asm       |           | |
 | PBTS          | C         | -         | |
 | PlainArgv     | C         | -         | |
 | RISC_OSLib    | C         | -         | |
 | RISC_OSLibSA  | C         | -         | |
-| ROLib         | C         | -         | Exports |
-| RegExp        | C         | -         | Exports |
+| ROLib         | C         | -         | Built |
+| RegExp        | C         | -         | Built |
 | Resolver      | C         | -         | [^network] |
 | SCLStubsG     | C         | -         | [^architecture] |
-| SHA1          | C         | -         | Exports |
+| SHA1          | C         | -         | Built |
 | SQLite        | C         | -         | |
 | Support       | C         | -         | |
 | TCPIPLibs     | C         | -         | |
 | TGRlib        | C         | -         | |
 | TIFF          | C         | -         | |
 | TaskWindow    | C         | -         | [^libtoolbox] |
-| Throwback     | C         | -         | Exports |
-| URLFetch      | C         | -         | Exports |
+| Throwback     | C         | -         | Built |
+| URLFetch      | C         | -         | Built |
 | WebImage      | C         | -         | |
-| WimpKeyName   | C         | -         | Exports |
-| Zipper        | C         | -         | Exports |
-| mDNSCore      | C         | -         | Exports |
+| WimpKeyName   | C         | -         | Built |
+| Zipper        | C         | -         | Built |
+| mDNSCore      | C         | -         | Built |
 
 [^clib]: C library has been reimplemented, using open source and custom components.
 [^oslib]: Most OSLib SWI interfaces have been implemented and exported, although some are not functional.
@@ -440,20 +482,21 @@ The table below shows information about various tools and their support:
 | Tool          | Name                   | Lang      | C-state   | 64-state       | Linux                    | Mac                  | Windows        |
 |---------------|------------------------|-----------|-----------|----------------|--------------------------|----------------------|----------------|
 | C Compiler    | cc (Norcroft)          | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
-| C Compiler    | gcc (GCC)              | C         |           | N/A[^gcc]      | Works[^riscos64-cc]      | Via Docker           | Via WSL?       |
-| C Compiler    | tcc                    | C         |           | N/A[^tcc]      | No                       | Works[^tcc]          |                |
+| C Compiler    | gcc (GCC)              | C         |           | N/A[^gcc]      | Functional[^riscos64-cc] | Via Docker           | Via WSL?       |
+| C Compiler    | tcc (as compiler)      | C         |           | Functional[^tcc] | No                     | Functional[^tcc]     |                |
 | C++ Compiler  | c++ (Norcroft)         | C         | -         | N/A[^norcroft][^cfront] | N/A             | N/A                  | N/A            |
 | Assembler     | objasm (Norcroft)      | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
-| Assembler     | gas (GCC)              | C         |           | N/A[^gas]      | Works[^riscos64-objasm]  | Via Docker           | Via WSL?       |
+| Assembler     | gas (GCC)              | C         |           | N/A[^gas]      | Functional[^riscos64-objasm]  | Via Docker      | Via WSL?       |
 | Linker        | link (Norcroft)        | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
-| Linker        | ld (BinUtils)          | C         |           | N/A[^ld]       | Works[^riscos64-link]    | Via Docker           | Via WSL?       |
+| Linker        | ld (BinUtils)          | C         |           | N/A[^ld]       | Functional[^riscos64-link]    | Via Docker      | Via WSL?       |
+| Linker        | tcc (as linker)        | C         |           | Built[^tcc]    | No                       | Built[^tcc]          |                |
 | Lib maker     | libfile (Norcroft)     | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
 | Lib maker     | makealf                | C         | -         | N/A[^makealf]  | N/A                      | N/A                  | N/A            |
-| Lib maker     | ar (BinUtils)          | C         |           | N/A[^ar]       | Works[^riscos64-libfile] | Via Docker           | Via WSL?       |
+| Lib maker     | ar (BinUtils)          | C         |           | N/A[^ar]       | Functional[^riscos64-libfile] | Via Docker      | Via WSL?       |
 | Module header | cmhg (Norcroft)        | C         | -         | N/A[^norcroft][^cmhg] | N/A               | N/A                  | N/A            |
-| Module header | cmunge                 | C         | -         | Functional[^cmunge] | Works               | Works                | N/A            |
+| Module header | cmunge                 | C         | -         | Functional[^cmunge] | Functional          | Functional           | N/A            |
 | Make tool     | amu (Norcroft)         | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
-| Make tool     | make (GNU)             | C         |           | N/A[^make]     | Works[^make]             | Works[^make]         | Via WSL?       |
+| Make tool     | make (GNU)             | C         |           | N/A[^make]     | Functional[^make]        | Functional[^make]    | Via WSL?       |
 | AOF-to-C      | aoftoc (Norcroft)      | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
 | Bin-to-AOF    | binaof (Norcroft)      | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
 | Decode AOF    | decaof (Norcroft)      | C         | -         | N/A[^norcroft] | N/A                      | N/A                  | N/A            |
@@ -466,18 +509,18 @@ The table below shows information about various tools and their support:
 
 | Tool         | Name                   | Lang      | C-state   | 64-state       | Linux                    | Mac                  | Windows        |
 |--------------|------------------------|-----------|-----------|----------------|--------------------------|----------------------|----------------|
-| Perl         | perl (5.001)           | C         | -         | Works[^perl]   |                          |                      |                |
+| Perl         | perl (5.001)           | C         | -         | Functional[^perl] |                       |                      |                |
 | Detokeniser  | basicdetokenise        | C         | -         |                |                          |                      |                |
-| Tokeniser    | basictokenise          | Perl      |           |                | Works                    | Works                |                |
+| Tokeniser    | basictokenise          | Perl      |           |                | Functional               | Functional                |                |
 | Parser gen   | bison                  | C         | -         | Built[^bison]  |                          |                      |                |
 | OSLib gen    | defmod                 | C         | -         |                | N/A[^defmod]             |                      |                |
-| OSLib gen    | oslib parser           | Python    |           |                | Works[^defmod]           | Works[^defmod]       |                |
+| OSLib gen    | oslib parser           | Python    |           |                | Functional[^defmod]      | Works[^defmod]       |                |
 | Lex analyser | flex                   | C         | -         | Built[^flex]   |                          |                      |                |
 | Header maker | hdrtoh                 | Perl      |           |                |                          |                      |                |
-| Cat file     | kitten                 | C         | -         | Works[^kitten] |                          |                      |                |
-| Mod decoder  | modservices            | C         | -         | Works[^modservices] |                     |                      |                |
+| Cat file     | kitten                 | C         | -         | Functional[^kitten] |                     |                      |                |
+| Mod decoder  | modservices            | C         | -         | Functional[^modservices] |                |                      |                |
 | Stream edit  | sed                    | C         | -         | Built[^sed]    |                          |                      |                |
-| Version Trans | vtranslate            | C         | -         | Works[^vtranslate]|                       |                      |                |
+| Version Trans | vtranslate            | C         | -         | Functional[^vtranslate]|                  |                      |                |
 
 [^norcroft]: The Norcroft toolchain only builds 32-bit binaries, so it is not useful to port this to RISC OS 64. As other compilers exist for AArch64 code, it is more sensible to use them instead of updating the aging Norcroft toolchain.
 [^cfront]: CFront hasn't even been attempted, as it is ancient and doesn't really support modern C++. It also doesn't built itself with C++ compilers.
@@ -486,7 +529,7 @@ The table below shows information about various tools and their support:
 [^squeeze]: Code compression is redundant these days as disc is cheap and fast.
 [^cmunge]: CMunge has been updated to generate AArch64 module headers. Not all the interfaces are complete; in particular vector handlers cannot claim the vector as yet.
 [^gcc]: GCC has not been ported to RISC OS 64.
-[^tcc]: TCC has not been ported to RISC OS 64. It can be compiled for macOS and will create code suitable for use on RISC OS 64.
+[^tcc]: TCC has been ported to RISC OS 64 and demonstrated to create objects that are linkable. It can be compiled for macOS and will create code suitable for use on RISC OS 64.
 [^gas]: GAS has not been ported to RISC OS 64. GAS has an ugly syntax, but can be used to build AArch64 binaries on other platforms.
 [^ld]: ld has not been ported to RISC OS 64.
 [^makealf]: MakeALF only operates on ALF files so has not been ported to RISC OS 64.
