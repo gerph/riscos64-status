@@ -24,6 +24,32 @@ in stages - the Kernel and the WindowManager are examples of this.
 Some lesser important modules are placed further down the phases, as they are not
 necessary to develop anything important.
 
+## Scope
+
+The scope of the phased development is purely restricted to the target of the
+RISC OS 64 environment, using a 32bit address space. This is intended to ensure
+that there is a solid deliverable with minimal changes necessary for application
+authors to build for that environment.
+
+Additionally, this phased work does not include any work on infrastructure,
+test environments, or tooling. Whilst much of this is already present, it is
+quite possible that in the future we will need more, and this can be worked
+into the plans at that time.
+
+## Future work
+
+It is likely that once parts of these phases have been firmed up, the
+implementation of the applications can also be updated. Applications will
+largely only require small changes to the types of objects.
+
+There will be more work necessary to provide an environment for booting and
+the style guide for application distribution. Within the standard boot
+sequence, it is desireable to provide both 32bit and 64bit components so
+that the same sequence can be used for both architectures (and, of course, any
+other architectures in the future). This will need some additional design,
+implementation and documentation.
+
+
 ## Functionality key, in mostly increasing functionality:
 
 * `Investigate` - decide how to proceed
@@ -36,7 +62,7 @@ necessary to develop anything important.
 * `Tested` - implemented and tested manually.
 * `Automated` - testing has been automated.
 
-Although the functionality key covers `Complete`, `Tested`, and `Automated`, these stages are not part of the current phasing. These states are expected to be developed on an as-needed basis, as 'Complete' would require a complete agreement on what was the complete functionality required, which it will be difficult to do.
+Although the functionality key covers `Complete`, `Tested`, and `Automated`, these stages are not part of the current phasing. These states are expected to be developed on an as-needed basis, as `Complete` would require a definition of what was the complete functionality required, which it will be difficult to do initially.
 
 ## Stacks and dependencies
 
@@ -53,21 +79,21 @@ functionality and completeness.
 
 The stacks defined are:
 
-* Audio - The sound system.
-* Compatibility - Support for legacy systems and future-proofing for later changes.
-* Core - Components upon which the system is based.
-* Desktop - User interfaces components for the windowing system.
-* FS - File system interfaces and drivers.
-* Graphics - Graphical I/O system.
-* HW - Hardware drivers and interfacing.
-* I/O - Keyboard, mouse, joystick, touchpad, VDU, serial, parallel, GPIO.
-* I18N - Internationalisation features, such as translation of text to other languages.
-* Kernel - Components which are, or were, core kernel functions in older systems.
-* L12N - Localisation features such as formatting of text.
-* Network - Econet and IP interfaces.
-* Printing - Printer output and support.
-* Reporting - Diagnostics and reporting functions.
-* Time - Date and time management.
+* `Audio` - The sound system.
+* `Compatibility` - Support for legacy systems and future-proofing for later changes.
+* `Core` - Components upon which the system is based.
+* `Desktop` - User interfaces components for the windowing system.
+* `FS` - File system interfaces and drivers.
+* `Graphics` - Graphical I/O system.
+* `HW` - Hardware drivers and interfacing.
+* `I/O` - Keyboard, mouse, joystick, touchpad, VDU, serial, parallel, GPIO.
+* `I18N` - Internationalisation features, such as translation of text to other languages.
+* `Kernel` - Components which are, or were, core kernel functions in older systems.
+* `L12N` - Localisation features such as formatting of text.
+* `Network` - Econet and IP interfaces.
+* `Printing` - Printer output and support.
+* `Reporting` - Diagnostics and reporting functions.
+* `Time` - Date and time management.
 
 ## Component separation
 
@@ -175,14 +201,16 @@ whether they need to be perpetuated.
 | CDFSResources             | FS             | Stub |
 | CDFS                      | FS             | Internals |
 | MimeMap                   | FS             | Functional |
+| BlockDevices              | FS             | Functional |
+| SystemDevices             | FS             | Internals |
 | Joystick                  | I/O            | Prototype |
 | Messages                  | I18N           | Stub |
 | RemotePrinterMessages     | Printing       | Stub |
-| ROMFonts                  | Graphics       | Stub |
 | AUNMsgs                   | Network        | Stub |
 | TerritoryManager          | L12N           | Stub |
 | UK                        | L12N           | Prototype |
 | International             | L12N           | Stub |
+| ROMFonts                  | Graphics       | Stub |
 | GameModes                 | Graphics       | Functional |
 | ScreenModes               | Graphics       | Investigate |
 | ColourTrans               | Graphics       | Stub |
@@ -202,8 +230,6 @@ whether they need to be perpetuated.
 | Percussion                | Audio          | Investigate |
 | SoundScheduler            | Audio          | Stub |
 | SharedSound               | Audio          | Stub |
-| BlockDevices              | FS             | Functional |
-| SystemDevices             | FS             | Internals |
 | Wimp:SWIs                 | Desktop        | Stub |
 | Wimp:TextRender           | Desktop        | Stub |
 | Wimp:Introspection        | Desktop        | Stub |
@@ -221,6 +247,36 @@ whether they need to be perpetuated.
 
 
 ## Phase 3: Stack wiring / advancing functionality
+
+Phase 3 is intended to start wiring up larges of the system to make
+it ready for higher level components. In particular, bringing up the
+filesystem stack and making the graphics system functional.
+
+To allow more foundations for the following phase, the WindowManager
+and some desktop components are fleshed out so that they can be
+integrated with other parts of the system. Many of the internals for
+the WindowManager are isolated and can be built up without worrying
+about other parts of the system. By preparing these they will be able
+to be integrated into functional components in the next phase.
+
+The filesystem should be able to be made functional for some of the
+base file systems like ResourceFS and the SystemDevices (assuming we
+actually wish to retain these). With BlockDevices having been added
+in phase 2, DOSFS should be able to be made functional.
+
+The graphics system can be brought up beyond having simple colours
+with ColourTrans, and the FontManager implemented in some form.
+
+With the sound system having been stubbed in the last phase, it should
+be possible to expand this into functional implementations for
+SoundChannels and the SoundScheduler, with the SoundDMA internals
+being set up so that a hardware implementation can be added later.
+
+The keyboard input system used within InternationalKeyboard needs
+a bit of thought, so stubbing it here would help set that up, and
+the KeyInput module will be trivial to provide as it is already
+in C.
+
 
 | Name                      | Stack          | Functionality |
 |---------------------------|----------------|---------------|
@@ -278,6 +334,28 @@ whether they need to be perpetuated.
 
 
 ## Phase 4: Desktop / Networking / advancing functionality
+
+Phase 4 is a large phase, bringing together a log of components.
+By the time we reach phase 4, a lot of the fundamentals should
+already be present, and hopefully there will be more people
+able to work on things. Whilst pulling together the Kernel and
+the Wimp will be jobs for individuals, many of the other
+components can be improved independantly.
+
+The graphics system should become largely complete by the end
+of this phase, allowing the other components to use its functions.
+This will allow the Wimp to be pulled together and developed in
+a more functional manner.
+
+Tasks should be able to be implemented, or ported to the 64bit
+environment at this point - although a lot of the functionality
+may still be sketchy.
+
+Having been recently updated, the Internet stack should be easy
+to update, although the drivers may have to come later. Components
+like the Econet module may be prototyped in advance of a hardware
+implementation (if any should even be produced).
+
 
 | Name                      | Stack          | Functionality |
 |---------------------------|----------------|---------------|
@@ -344,6 +422,32 @@ whether they need to be perpetuated.
 
 
 ## Phase 5: Hardware wiring / Printer / advancing functionality
+
+Phase 5 brings in the hardware drivers for different parts of the
+system, to ensure that we have the capability to run on real systems.
+It's possible that these drivers might actually get developed
+in advance of this phase, but full functionality might not get tied
+down until this point.
+
+Together with the hardware implementations, the graphics system can
+be finished off, bringing in components which are in C but had not
+yet been made to work, or creating simple implementations of assembler
+modules.
+
+The printing sysetm is a large part of this phase, though a lot of
+the work should be investigation to decide how to progress. It would
+help greatly if the share implementations used by the dumper modules
+were made more common, and the drivers refactored to make it easiser
+to add new systems. It's likely that this can be improved through a
+pipeline process, with bitmap and vector drivers separating and dumpers
+being given a separate system. However, this is open to more design
+work.
+
+Finalising the high level network stack components can be done here,
+as well as bringing in the compatibility layers for some of the old
+BBC interfaces. It is likely that new modules will be required to
+handle the legacy interfaces that are being replaced due to the
+RISC OS 64 design and implementations.
 
 | Name                      | Stack          | Functionality |
 |---------------------------|----------------|---------------|
@@ -413,6 +517,12 @@ whether they need to be perpetuated.
 
 ## Phase 6: Applications / advancing functionality
 
+Phase 6 focuses on the aplication support, bringing in the
+desktop and graphics components that allow some of the applications
+to work better. Additionally, the Toolbox stack can be updated to
+work within the new environment. This should be largely mechanical,
+as most of the Toolbox comprises C components.
+
 | Name                      | Stack          | Functionality |
 |---------------------------|----------------|---------------|
 | ZLib                      | Core           | Functional |
@@ -458,14 +568,22 @@ whether they need to be perpetuated.
 | ImageFileGadget           | Toolbox        | Functional |
 
 
-## Phase 7: Future proofing
+## Phase 7: Compatibility and future proofing
+
+In terms of future-proofing, there isn't a lot to include. However,
+I have set aside phase 7 to move components into if they're not needed
+at lower levels, and to introduce new modules needed by the system.
 
 | Name                      | Stack          | Functionality |
 |---------------------------|----------------|---------------|
 | AppPatcher                | Compatibility  | Functional |
 
 
-## Phase 8: Late stage development / not needed
+## Late stage development / not needed
+
+Not a phase, but there are certain components which are present in the
+usual OS, which may not be needed or which need much greater organisation
+within the RISC OS 64 system.
 
 | Name                      | Comments |
 |---------------------------|---------------|
@@ -484,7 +602,10 @@ whether they need to be perpetuated.
 | TaskWindow                | Complex; application model changes would help |
 
 
-## Definitely not required:
+### Definitely not required
+
+These are a number of modules that are not required for the RISC OS 64
+system.
 
 | Name                      | Reason |
 |---------------------------|---------------|
