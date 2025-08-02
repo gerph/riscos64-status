@@ -169,7 +169,9 @@ elsif ($format eq 'mmd')
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -181,10 +183,17 @@ elsif ($format eq 'mmd')
 gantt
     title Stack: $stack
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
 EOM
+        print $ofh "\n";
+
+        print $ofh "    section Components\n";
+        for my $phase (sort { $a <=> $b } keys %{ $plan->{'phases'} })
+        {
+            print $ofh "    Phase $phase  : heading, 190$phase, 1y\n"
+        }
         print $ofh "\n";
 
         for my $name (sort { $a cmp $b } keys %{ $plan->{'stacks'}->{$stack} })

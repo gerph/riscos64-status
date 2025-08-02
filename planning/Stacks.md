@@ -31,7 +31,9 @@ Phases document.
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -43,9 +45,18 @@ Phases document.
 gantt
     title Stack: Audio
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section Percussion
     Investigate  : investigate, 1902, 1y
@@ -94,7 +105,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -106,9 +119,18 @@ gantt
 gantt
     title Stack: Compatibility
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section AppPatcher
     Functional   : functional, 1907, 1y
@@ -143,7 +165,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -155,9 +179,18 @@ gantt
 gantt
     title Stack: Core
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section ARM
     Stub         : stub, 1901, 1y
@@ -222,7 +255,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -234,12 +269,18 @@ gantt
 gantt
     title Stack: Desktop
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
 
-    section (generic filer)
-    Functional   : functional, 1904, 1y
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section ClipboardHolder
     Functional   : functional, 1905, 1y
@@ -287,6 +328,9 @@ gantt
 
     section IconBorderRound
     Functional   : functional, 1906, 1y
+
+    section OmniDisc
+    Functional   : functional, 1904, 1y
 
     section Pinboard
     Investigate  : investigate, 1904, 1y
@@ -409,7 +453,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -421,9 +467,18 @@ gantt
 gantt
     title Stack: FS
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section AIF
     Functional   : functional, 1903, 1y
@@ -511,7 +566,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -523,9 +580,18 @@ gantt
 gantt
     title Stack: Graphics
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section BlendTable
     Functional   : functional, 1905, 1y
@@ -675,7 +741,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -687,9 +755,18 @@ gantt
 gantt
     title Stack: HW
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section CDFSSoftATAPI
     Investigate  : investigate, 1905, 1y
@@ -781,7 +858,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -793,9 +872,18 @@ gantt
 gantt
     title Stack: I18N
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section MessageTrans
     Functional   : functional, 1901, 1y
@@ -825,7 +913,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -837,9 +927,18 @@ gantt
 gantt
     title Stack: IO
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section BufferManager
     Functional   : functional, 1901, 1y
@@ -885,7 +984,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -897,9 +998,18 @@ gantt
 gantt
     title Stack: Kernel
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section Conversions
     Stub         : stub, 1901, 1y
@@ -1015,7 +1125,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -1027,9 +1139,18 @@ gantt
 gantt
     title Stack: L12N
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section International
     Stub         : stub, 1902, 1y
@@ -1065,7 +1186,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -1077,9 +1200,18 @@ gantt
 gantt
     title Stack: Network
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section AUNMsgs
     Stub         : stub, 1902, 1y
@@ -1157,7 +1289,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -1169,9 +1303,18 @@ gantt
 gantt
     title Stack: Printing
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section MakePSFont
     Functional   : functional, 1905, 1y
@@ -1238,7 +1381,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -1250,9 +1395,18 @@ gantt
 gantt
     title Stack: Reporting
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section ErrorLog
     Functional   : functional, 1901, 1y
@@ -1281,7 +1435,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -1293,9 +1449,18 @@ gantt
 gantt
     title Stack: Time
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section InternetTime
     Functional   : functional, 1905, 1y
@@ -1328,7 +1493,9 @@ gantt
             #complete { fill: #21B534 }
             #tested { fill: #4040A0 }
             #automated { fill: #903498 }
-            .grid text { text-anchor: start !important; }
+            .grid text { text-anchor: start !important;}
+            g text.sectionTitle:first-child { font-style: italic; }
+            #heading { rx: 0px; stroke: #487e3a; stroke-width: 1px; }
 
         gantt:
             useWidth: 800
@@ -1340,9 +1507,18 @@ gantt
 gantt
     title Stack: Toolbox
     dateFormat YYYY
-    axisFormat Phase %y
+    axisFormat
     tickInterval 12month
 
+
+    section Components
+    Phase 1  : heading, 1901, 1y
+    Phase 2  : heading, 1902, 1y
+    Phase 3  : heading, 1903, 1y
+    Phase 4  : heading, 1904, 1y
+    Phase 5  : heading, 1905, 1y
+    Phase 6  : heading, 1906, 1y
+    Phase 7  : heading, 1907, 1y
 
     section ColourDbox
     Functional   : functional, 1906, 1y
