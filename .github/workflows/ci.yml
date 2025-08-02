@@ -77,11 +77,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - name: Generate statistics
+      - name: Generate progress data
         run: |
           utils/makestats.pl json > statistics.json
 
-      - name: Generate markdown
+      - name: Generate progress markdown
         run: |
           utils/makestats.pl md > statistics.md
 
@@ -89,7 +89,23 @@ jobs:
         run: |
           cat statistics.md >> $GITHUB_STEP_SUMMARY
 
+      - name: Generate plan data
+        run: |
+          utils/plantogantt.pl > plan.json
+
+      - name: Generate plan mermaid files
+        run: |
+          utils/plantogantt.pl mmd
+
+      - name: Ensure that Stacks.md hadn't changed
+        run: |
+          utils/updatestacks.pl
+          git diff planning/Stacks.md
+
       - uses: actions/upload-artifact@v4
+        if: success() || failure()
         with:
           name: RISC OS 64 Progress
-          path: statistics*
+          path: |
+            statistics*
+            plan*
