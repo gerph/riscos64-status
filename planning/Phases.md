@@ -328,7 +328,7 @@ whether they need to be perpetuated.
 | Wimp:SpritePools          | Desktop        | Functional |
 | FilterManager             | Desktop        | Functional |
 | Desktop                   | Desktop        | Functional |
-| (generic filer)           | Desktop        | Functional | (OmniFiler?)
+| OmniDisc                  | Desktop        | Functional |
 | TaskManager               | Desktop        | Functional |
 | ShellCLI                  | Desktop        | Functional |
 | DragAnObject              | Desktop        | Stub |
