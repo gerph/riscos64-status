@@ -159,6 +159,18 @@ elsif ($format eq 'mmd')
     displayMode: compact
     config:
         theme: forest
+        themeCSS: |
+            #investigate { fill: #E03524 }
+            #stub { fill: #F07C12 }
+            #prototype { fill: #FFC200 }
+            #built { fill: #90BC1A }
+            #internals { fill: #1F64AD }
+            #functional { fill: #0095AC }
+            #complete { fill: #21B534 }
+            #tested { fill: #4040A0 }
+            #automated { fill: #903498 }
+            .grid text { text-anchor: start !important; }
+
         gantt:
             useWidth: 800
             rightPadding: 0
@@ -169,7 +181,7 @@ elsif ($format eq 'mmd')
 gantt
     title Stack: $stack
     dateFormat YYYY
-    axisFormat %y
+    axisFormat Phase %y
     tickInterval 12month
 
 EOM
@@ -182,7 +194,7 @@ EOM
             for my $phase (sort { $a <=> $b } keys %$comp)
             {
                 my $state = $comp->{$phase};
-                my $line = sprintf "    %-12s : , 190%i, 1y", $state, $phase;
+                my $line = sprintf "    %-12s : %s, 190%i, 1y", $state, lc($state), $phase;
                 print $ofh "$line\n";
             }
             print $ofh "\n";
