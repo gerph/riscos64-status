@@ -1,4 +1,4 @@
-#!/bin/perl
+#!/usr/bin/env perl
 ##
 # Make gantt charts for the different sections.
 #
@@ -183,7 +183,7 @@ elsif ($format eq 'mmd')
 gantt
     title Stack: $stack
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 EOM

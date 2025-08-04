@@ -45,7 +45,7 @@ Phases document.
 gantt
     title Stack: Audio
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -119,7 +119,7 @@ gantt
 gantt
     title Stack: Compatibility
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -179,7 +179,7 @@ gantt
 gantt
     title Stack: Core
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -269,7 +269,7 @@ gantt
 gantt
     title Stack: Desktop
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -467,7 +467,7 @@ gantt
 gantt
     title Stack: FS
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -580,7 +580,7 @@ gantt
 gantt
     title Stack: Graphics
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -755,7 +755,7 @@ gantt
 gantt
     title Stack: HW
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -872,7 +872,7 @@ gantt
 gantt
     title Stack: I18N
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -927,7 +927,7 @@ gantt
 gantt
     title Stack: IO
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -998,7 +998,7 @@ gantt
 gantt
     title Stack: Kernel
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -1139,7 +1139,7 @@ gantt
 gantt
     title Stack: L12N
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -1200,7 +1200,7 @@ gantt
 gantt
     title Stack: Network
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -1303,7 +1303,7 @@ gantt
 gantt
     title Stack: Printing
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -1395,7 +1395,7 @@ gantt
 gantt
     title Stack: Reporting
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -1449,7 +1449,7 @@ gantt
 gantt
     title Stack: Time
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -1507,7 +1507,7 @@ gantt
 gantt
     title Stack: Toolbox
     dateFormat YYYY
-    axisFormat
+    axisFormat  
     tickInterval 12month
 
 
@@ -1575,3 +1575,4 @@ gantt
     Functional   : functional, 1906, 1y
 
 ```
+
