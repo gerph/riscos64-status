@@ -316,7 +316,7 @@ flowchart TD
 
 [^cmungehelp]: CMunge does not support help code yet.
 [^cmungegeneric]: CMunge does not support generic veneers yet.
-[^debugger]: Debugger Functional in 32bit and 64bit, but doesn't decode AArch64.
+[^debugger]: Debugger Functional in 32bit and 64bit, and decodes ARM, Thumb and AArch64.
 [^buffermanager]: Buffer vectors InsV, RemV, CnPV have very poor interfaces, which should not be propagated into RISC OS 64.
 [^ownerbanner]: Only the text part of the banner is currently implemented.
 [^spriteutils]: Does not support the vector handling yet.
