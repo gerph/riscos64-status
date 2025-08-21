@@ -1,6 +1,31 @@
-#!/bin/perl
+#!/usr/bin/env perl
 ##
 # Make statistics from the repository
+#
+# totals.json contains a dictionary:
+#
+# '32bit' => {
+#     <section name> => {
+#         'states' => {
+#             <state> => [
+#                 <count>,
+#                 [ <component names> ],
+#               ]
+#           },
+#         'components' => {
+#             <component> => <state>
+#           },
+#       }
+#   },
+# '64bit' => {
+#     ... as above
+#   },
+# 'states' => [
+#     <state names>
+#   ],
+# 'sections' => [
+#     <section names>
+#   ]
 #
 
 use warnings;
@@ -26,6 +51,8 @@ my $totals = {
 };
 my $sec32 = undef;
 my $sec64 = undef;
+my $comp32 = undef;
+my $comp64 = undef;
 
 my @states = (
     'No work',
@@ -60,8 +87,12 @@ while (<$fh>)
         my %counts64 = map { ($_ => [0, []]) } @states;
         $sec32 = \%counts32;
         $sec64 = \%counts64;
-        $totals->{'32bit'}->{$section} = $sec32;
-        $totals->{'64bit'}->{$section} = $sec64;
+        $comp32 = {};
+        $comp64 = {};
+        $totals->{'32bit'}->{$section}->{'states'} = $sec32;
+        $totals->{'32bit'}->{$section}->{'components'} = $comp32;
+        $totals->{'64bit'}->{$section}->{'states'} = $sec64;
+        $totals->{'64bit'}->{$section}->{'components'} = $comp64;
         push @{ $totals->{'sections'} }, $section;
     }
     if ($intable == 0)
@@ -142,6 +173,7 @@ while (<$fh>)
 
                 $sec32->{$state32}->[0]++;
                 push @{ $sec32->{$state32}->[1] }, $name;
+                $comp32->{$name} = $state32;
             }
 
             if ($state64 ne 'N/A')
@@ -162,6 +194,7 @@ while (<$fh>)
 
                 $sec64->{$state64}->[0]++;
                 push @{ $sec64->{$state64}->[1] }, $name;
+                $comp64->{$name} = $state64;
             }
         }
         else
@@ -180,8 +213,8 @@ elsif ($format eq 'md')
     # Markdown format that shows how far we've got.
     for my $section (@$sections)
     {
-        if ($totals->{'32bit'}->{$section}->{'Total'}->[0] == 0 &&
-            $totals->{'64bit'}->{$section}->{'Total'}->[0] == 0)
+        if ($totals->{'32bit'}->{$section}->{'states'}->{'Total'}->[0] == 0 &&
+            $totals->{'64bit'}->{$section}->{'states'}->{'Total'}->[0] == 0)
         {
             next;
         }
@@ -197,7 +230,7 @@ elsif ($format eq 'md')
         # Write the 32bit lines
         for my $row ('32bit', '64bit')
         {
-            my $sec = $totals->{$row}->{$section};
+            my $sec = $totals->{$row}->{$section}->{'states'};
             print "| $row |";
             for my $state (@states)
             {

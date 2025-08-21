@@ -2,6 +2,28 @@
 ##
 # Make gantt charts for the different sections.
 #
+# plans.json contains a dictionary of:
+#
+# 'components' => {
+#     <component name> => {
+#         <phase number> => <state name>
+#       },
+#   },
+# 'stacks' => {
+#     <stack name> => {
+#         <component name => {
+#             <phase number> => <state name>
+#           },
+#       },
+#   },
+# 'phases' => {
+#     <phase number> => {
+#         'name' => <phase name>,
+#         'states' => {
+#           <component> => <phase>
+#       },
+#   },
+#
 
 use warnings;
 use strict;
