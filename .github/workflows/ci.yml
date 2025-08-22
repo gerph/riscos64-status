@@ -77,31 +77,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - name: Generate progress data
+      - name: Build the progress information
         run: |
+          make all
           utils/makestats.pl json > statistics.json
-
-      - name: Generate progress markdown
-        run: |
-          utils/makestats.pl md > statistics.md
 
       - name: Report on progress statistics
         run: |
           echo '# Progress statistics' >> $GITHUB_STEP_SUMMARY
           echo >> $GITHUB_STEP_SUMMARY
           cat statistics.md >> $GITHUB_STEP_SUMMARY
-
-      - name: Generate plan data
-        run: |
-          utils/plantogantt.pl > plan.json
-
-      - name: Generate plan mermaid files
-        run: |
-          utils/plantogantt.pl mmd
-
-      - name: Generate progress for the phases
-        run: |
-          utils/currenttogantt.pl plan.json statistics.json
 
       - name: Report on progress of phase 1
         run: |
@@ -114,17 +99,6 @@ jobs:
           cat planning/Phase-1.mmd >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
           echo >> $GITHUB_STEP_SUMMARY
-
-      # Note: We should probably write these to a Wiki page
-      - name: Ensure that Current.md hadn't changed
-        run: |
-          utils/updatecurrent.pl plan.json
-          git diff planning/Current.md
-
-      - name: Ensure that Stacks.md hadn't changed
-        run: |
-          utils/updatestacks.pl plan.json
-          git diff planning/Stacks.md
 
       - uses: actions/upload-artifact@v4
         if: success() || failure()
