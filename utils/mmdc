@@ -1,0 +1,134 @@
+#!/bin/bash
+##
+# Render mermaid diagrams to files.
+#
+# Syntax: mmdc <args>
+#
+
+set -e
+
+
+##
+# Remember the configuration file we're going to use.
+function set_configfile() {
+    local arg="$1"
+
+    configfile="$arg"
+    dockerargs+=(-v "$(realpath "$arg"):/custom-config.json")
+    mermaidargs+=(--configFile /custom-config.json)
+}
+
+
+##
+# Remember the output file we're going to use.
+function set_output() {
+    local arg="$1"
+    local remotename="$(basename "$arg")"
+
+    output="$arg"
+    if [[ ! -e "$arg" ]] ; then
+        touch "$arg"
+    fi
+    dockerargs+=(-v "$(realpath "$arg"):/data/$remotename")
+    mermaidargs+=(--output "/data/$remotename")
+}
+
+
+tempfile=
+function cleanup() {
+    if [[ "$tempfile" != '' && -f "$tempfile" ]] ; then
+        rm "$tempfile"
+    fi
+}
+trap cleanup EXIT
+
+
+dir=
+mermaidversion=latest
+mermaidargs=()
+dockerargs=()
+configfile=()
+switch=
+nextfile=true
+output=
+for arg in "$@" ; do
+    if [[ "${arg:0:1}" == '-' ]] ; then
+        switch=
+        if [[ "$arg" == '--pull' ]] ; then
+            docker pull "minlag/mermaid-cli:$mermaidversion"
+        else
+            mermaidargs+=("$arg")
+            if [[ "$arg" == '-w' || "$arg" == '--width' || \
+                  "$arg" == '-H' || "$arg" == '--height' || \
+                  "$arg" == '-e' || "$arg" == '--outputFormat' || \
+                  "$arg" == '-s' || "$arg" == '--scale' || \
+                  "$arg" == '-t' || "$arg" == '--theme' ]] ; then
+                nextfile=false
+
+            elif [[ "$arg" == '-c' || "$arg" == '--configFile' ]] ; then
+                switch=configFile
+                nextfile=false
+
+            elif [[ "$arg" == '-o' || "$arg" == '--output' ]] ; then
+                switch=output
+                nextfile=false
+            fi
+        fi
+
+    elif $nextfile ; then
+        # This is a filename to transform into the container
+
+        file=$(realpath "$arg")
+        argdir=$(dirname "$file")
+        if [[ "$dir" == '' ]] ; then
+            dir="$argdir"
+            dockerargs+=(-v "$dir:/data")
+
+        elif [[ "$argdir" != "$dir" ]] ; then
+            echo "Files should be in the same directory" >&2
+            exit 1
+
+        fi
+        argleaf=$(basename "$file")
+
+        mermaidargs+=("-i" "/data/$argleaf")
+
+    elif [[ "$switch" == 'output' ]] ; then
+        set_output "$arg"
+
+    elif [[ "$switch" == 'configFile' ]] ; then
+        set_configfile "$arg"
+
+    else
+        # This is a parameter value
+
+        mermaidargs+=("${arg}")
+    fi
+done
+
+if [[ "$configfile" == "" ]] ; then
+    tempfile=${TMPDIR:-/tmp}/mermaid-config.$$.json
+    cat > "$tempfile" <<EOM
+{
+  "flowchart": {
+    "useMaxWidth": false,
+    "htmlLabels": false
+  }
+}
+EOM
+    # No configuration was supplied, so we'll create a simple one which makes the SVG text work.
+    # https://github.com/mermaid-js/mermaid-cli/issues/112
+    set_configfile "$tempfile"
+fi
+
+set +e
+
+docker run --rm -u "$(id -u):$(id -g)" "${dockerargs[@]}" "minlag/mermaid-cli:${mermaidversion}" "${mermaidargs[@]}"
+rc=$?
+
+if [[ "$rc" != 0 ]] ; then
+    if [[ "$output" != '' ]] ; then
+        rm "$output"
+    fi
+fi
+exit $rc
