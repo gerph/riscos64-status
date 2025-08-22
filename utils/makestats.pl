@@ -2,7 +2,7 @@
 ##
 # Make statistics from the repository
 #
-# totals.json contains a dictionary:
+# statistics.json contains a dictionary:
 #
 # '32bit' => {
 #     <section name> => {
