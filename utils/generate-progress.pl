@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 ##
-# Update the Current.md file with the gantt charts
+# Generate the Progress.md file with the gantt charts
 #
 # We probably should write this to a wiki page and update it live.
 # Actually we should probably do that for all the planning documents.
@@ -11,9 +11,10 @@ use strict;
 
 use JSON;
 
-my $planjson = shift || die "Syntax: $0 <plans.json>";
+my $planjson = shift || die "Syntax: $0 <plans.json> <output.md>";
+my $output = shift || die "Syntax: $0 <plans.json> <output.md>";
 
-open(my $ifh, '<', 'planning/Current.md') || die "Cannot read Current.md: $!";
+open(my $ifh, '<', 'planning/Progress.md') || die "Cannot read Progress.md: $!";
 
 my @content;
 
@@ -61,7 +62,7 @@ EOM
     close($ifh);
 }
 
-open($ifh, '>', 'planning/Current.md') || die "Cannot re-rewrite Current.md: $!";
+open($ifh, '>', $output) || die "Cannot write $output: $!";
 for my $line (@content)
 {
     print $ifh $line;

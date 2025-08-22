@@ -39,7 +39,7 @@ if (!defined $format)
     $format = 'json';
 }
 
-open(my $fh, '<', 'README.md') || die "Cannot read README.md: $!\n";
+open(my $fh, '<', 'Status.md') || die "Cannot read Status.md: $!\n";
 
 my $section;
 my $intable = 0;

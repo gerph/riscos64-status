@@ -8,6 +8,10 @@ use strict;
 
 use JSON;
 
+# Whether the earlier phase information is included in each new phase.
+# (if I set this to 1, GitHub refuses to render the later phases)
+my $cumulative = 0;
+
 my $planjson = shift || die "Syntax: $0 <plans.json> <totals.json>";
 my $currentjson = shift || die "Syntax: $0 <plans.json> <totals.json>";
 
@@ -74,6 +78,8 @@ my $label_started = "▶  ";
 my $label_complete = "✔  ";
 my $label_incomplete = "...";
 
+my $last_phase = {};
+
 # For each phase in order
 for my $phasenum (sort { $a <=> $b } keys %{ $plan->{'phases'} })
 {
@@ -129,9 +135,21 @@ EOM
         printf $fh "    %-20s: %-18s%s, 1y\n", $state, lc $state . ",", $year;
     }
 
-    for my $component (sort { $a cmp $b } keys %$states)
+    my %states = %$states;
+    if ($cumulative)
     {
-        my $intended_state = $states->{$component};
+        for my $component (keys %$last_phase)
+        {
+            if (!defined $states{$component})
+            {
+                $states{$component} = $last_phase->{$component};
+            }
+        }
+    }
+
+    for my $component (sort { $a cmp $b } keys %states)
+    {
+        my $intended_state = $states{$component};
         my $state = $current->{'64bit'}->{'ROM modules'}->{'components'}->{$component};
         # Component <component> is intended to be in state <intended_state>
         # Component <component> is current in state <state> for ROM modules
@@ -161,4 +179,5 @@ EOM
             printf $fh "    %s    : %-18s, %i, 1y\n", $label, $style, $year;
         }
     }
+    $last_phase = \%states;
 }
