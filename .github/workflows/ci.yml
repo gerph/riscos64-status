@@ -7,7 +7,7 @@
 # changes as you see fit.
 #
 
-name: RISC OS
+name: Test all binaries
 
 # Controls when the action will run. Triggers the workflow on:
 #   * push on any branch.
@@ -80,7 +80,6 @@ jobs:
       - name: Build the progress information
         run: |
           make all
-          utils/makestats.pl json > statistics.json
 
       - name: Report on progress statistics
         run: |
@@ -107,4 +106,4 @@ jobs:
           path: |
             statistics*
             plan*.*
-            planning/*.mmd
+            wiki-update/*

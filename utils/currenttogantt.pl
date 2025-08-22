@@ -9,7 +9,8 @@ use strict;
 use JSON;
 
 # Whether the earlier phase information is included in each new phase.
-my $cumulative = 1;
+# (if I set this to 1, GitHub refuses to render the later phases)
+my $cumulative = 0;
 
 my $planjson = shift || die "Syntax: $0 <plans.json> <totals.json>";
 my $currentjson = shift || die "Syntax: $0 <plans.json> <totals.json>";

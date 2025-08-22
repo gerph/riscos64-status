@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 ##
-# Update the Stacks.md file with the gantt charts
+# Generate the Stacks.md file with the gantt charts
 #
 
 use warnings;
@@ -8,7 +8,8 @@ use strict;
 
 use JSON;
 
-my $planjson = shift || die "Syntax: $0 <plans.json>";
+my $planjson = shift || die "Syntax: $0 <plans.json> <output.md>";
+my $output = shift || die "Syntax: $0 <plans.json> <output.md>";
 
 open(my $ifh, '<', 'planning/Stacks.md') || die "Cannot read Stacks.md: $!";
 
@@ -59,7 +60,7 @@ EOM
     close($ifh);
 }
 
-open($ifh, '>', 'planning/Stacks.md') || die "Cannot re-rewrite Stacks.md: $!";
+open($ifh, '>', $output) || die "Cannot create $output: $!";
 for my $line (@content)
 {
     print $ifh $line;

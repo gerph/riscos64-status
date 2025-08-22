@@ -36,8 +36,6 @@ if (!defined $format)
     $format = 'json';
 }
 
-open(my $fh, '<', 'planning/Phases.md') || die "Cannot read Phases.md: $!\n";
-
 my $section;
 my $phase;
 my $intable = 0;
@@ -71,98 +69,113 @@ my @states = (
 
 my $sections = [];
 
-while (<$fh>)
+sub parse_phase
 {
-    chomp;
-    my $line = $_;
-    $line =~ s/^ +//;
-    $line =~ s/ +$//;
-    if ($line =~ /^## Phase (\d+): *(.*)$/)
+    my ($phasenum) = @_;
+    open(my $fh, '<', "planning/Phase-$phasenum.md") || die "Cannot read Phase-$phasenum.md: $!\n";
+
+    while (<$fh>)
     {
-        $phase = $1;
-        my $name = $2;
-        $plan->{'phases'}->{$phase} = {
-                'name' => $name,
-                'states' => {}, # Component => state
-            };
-    }
-    if ($intable == 0)
-    {
-        # Check for the start of the table
-        if ($line =~ s/^\|//)
+        chomp;
+        my $line = $_;
+        $line =~ s/^ +//;
+        $line =~ s/ +$//;
+        if ($line =~ /^# Phase (\d+): *(.*)$/)
         {
-            $intable = 1;
-            my @labels = map { my $l = $_;
-                               $l =~ s/^ +//;
-                               $l =~ s/ +$//;
-                               $l;
-                         } split /\|/, $line;
-            my $index = 0;
-            %headings = ();
-            for my $label (@labels)
-            {
-                $headings{$label} = $index;
-                $index++;
-            }
+            $phase = $1;
+            my $name = $2;
+            $plan->{'phases'}->{$phase} = {
+                    'name' => $name,
+                    'states' => {}, # Component => state
+                };
         }
-    }
-    else
-    {
-        # We're in a table
-        if ($line eq '')
+        if ($intable == 0)
         {
-            $intable = 0;
-        }
-        elsif ($line =~ /^\|-/)
-        {
-            # The heading divider
-        }
-        elsif (!defined $headings{'Stack'})
-        {
-            # Ignore any table line for tables that don't have a stack
-        }
-        elsif ($line =~ s/^\|//)
-        {
-            # Table row
-            my @labels = map { my $l = $_;
-                               $l =~ s/\[\^[^\]]+\]//g; # Remove footnotes
-                               $l =~ s/^ +//;
-                               $l =~ s/ +$//;
-                               $l;
-                         } split /\|/, $line;
-
-            my $name = $labels[$headings{'Name'}];
-            my $stack = $labels[$headings{'Stack'}];
-            my $state = $labels[$headings{'Functionality'}];
-
-            $stack =~ s!/!!; # Fix I/O!
-
-            # Phases
-            $plan->{'phases'}->{$phase}->{'states'}->{$name} = $state;
-
-            # Components
-            if (!defined $plan->{'components'}->{$name})
+            # Check for the start of the table
+            if ($line =~ s/^\|//)
             {
-                $plan->{'components'}->{$name} = {};
-            }
-            $plan->{'components'}->{$name}->{$phase} = $state;
-
-            # Stacks
-            if (!defined $plan->{'stacks'}->{$stack})
-            {
-                $plan->{'stacks'}->{$stack} = {};
-            }
-            if (!defined $plan->{'stacks'}->{$stack}->{$name})
-            {
-                $plan->{'stacks'}->{$stack}->{$name} = $plan->{'components'}->{$name};
+                $intable = 1;
+                my @labels = map { my $l = $_;
+                                   $l =~ s/^ +//;
+                                   $l =~ s/ +$//;
+                                   $l;
+                             } split /\|/, $line;
+                my $index = 0;
+                %headings = ();
+                for my $label (@labels)
+                {
+                    $headings{$label} = $index;
+                    $index++;
+                }
             }
         }
         else
         {
-            die "Unrecognised table line: $line\n";
+            # We're in a table
+            if ($line eq '')
+            {
+                $intable = 0;
+            }
+            elsif ($line =~ /^\|-/)
+            {
+                # The heading divider
+            }
+            elsif (!defined $headings{'Stack'})
+            {
+                # Ignore any table line for tables that don't have a stack
+            }
+            elsif ($line =~ s/^\|//)
+            {
+                # Table row
+                my @labels = map { my $l = $_;
+                                   $l =~ s/\[\^[^\]]+\]//g; # Remove footnotes
+                                   $l =~ s/^ +//;
+                                   $l =~ s/ +$//;
+                                   $l;
+                             } split /\|/, $line;
+
+                my $name = $labels[$headings{'Name'}];
+                my $stack = $labels[$headings{'Stack'}];
+                my $state = $labels[$headings{'Functionality'}];
+
+                $stack =~ s!/!!; # Fix I/O!
+
+                # Phases
+                $plan->{'phases'}->{$phase}->{'states'}->{$name} = $state;
+
+                # Components
+                if (!defined $plan->{'components'}->{$name})
+                {
+                    $plan->{'components'}->{$name} = {};
+                }
+                $plan->{'components'}->{$name}->{$phase} = $state;
+
+                # Stacks
+                if (!defined $plan->{'stacks'}->{$stack})
+                {
+                    $plan->{'stacks'}->{$stack} = {};
+                }
+                if (!defined $plan->{'stacks'}->{$stack}->{$name})
+                {
+                    $plan->{'stacks'}->{$stack}->{$name} = $plan->{'components'}->{$name};
+                }
+            }
+            else
+            {
+                die "Unrecognised table line: $line\n";
+            }
         }
     }
 }
+
+my $phasenum = 1;
+while (-f "planning/Phase-$phasenum.md")
+{
+    print STDERR "Reading phase document: $phasenum\n";
+    parse_phase($phasenum);
+    $phasenum++;
+}
+
 
 if ($format eq 'json')
 {

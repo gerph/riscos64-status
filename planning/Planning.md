@@ -27,7 +27,7 @@ necessary to develop anything important.
 ## Scope
 
 The scope of the phased development is purely restricted to the target of the
-RISC OS 64 environment, using a 32bit address space. This is intended to ensure
+RISC OS 64 environment, using a 32-bit address space. This is intended to ensure
 that there is a solid deliverable with minimal changes necessary for application
 authors to build for that environment.
 
@@ -110,5 +110,53 @@ separately.
 
 The breakdown of the work can be viewed in two ways:
 
-* [Broken down by the Phases](Phases.md)
-* [Broken down by the Stacks](Stacks.md)
+* Broken down by the Phases
+    * [Phase 1: Simple modules and stubs](Phase-1)
+    * [Phase 2: Stub implemented / advancing functionality](Phase-2)
+    * [Phase 3: Stack wiring / advancing functionality](Phase-3)
+    * [Phase 4: Desktop / Networking / advancing functionality](Phase-4)
+    * [Phase 5: Hardware wiring / Printer / advancing functionality](Phase-5)
+    * [Phase 6: Applications / advancing functionality](Phase-6)
+    * [Phase 7: Compatibility and future proofing](Phase-7)
+* [Broken down by the Stacks](Stacks)
+
+
+## Late stage development / not needed
+
+Not a phase, but there are certain components which are present in the
+usual OS, which may not be needed or which need much greater organisation
+within the RISC OS 64 system.
+
+| Name                      | Comments |
+|---------------------------|---------------|
+| FPEmulator                | FP emulation not required |
+| SharedCLibrary            | Shared C library not required |
+| UnSqueezeAIF              | Compressed modules not required |
+| ADFS                      | Replace with block device drivers |
+| ResourceFiler             | Replace with OmniFiler |
+| ADFSFiler                 | Replace with OmniFiler |
+| RAMFSFiler                | Replace with OmniFiler |
+| CDFSFiler                 | Replace with OmniFiler |
+| NetFiler                  | Replace with OmniFiler |
+| BASIC64                   | Replaced by configurable BASIC module |
+| BASICTrans                | Not required |
+| SuperSample               | May not be required if FontManager does that job |
+| TaskWindow                | Complex; application model changes would help |
+
+
+### Definitely not required
+
+These are a number of modules that are not required for the RISC OS 64
+system.
+
+| Name                      | Reason |
+|---------------------------|---------------|
+| CFrontDemangler           | CFront not supplied |
+| VideoHWVIDC               | VIDC not required for modern devices |
+| VideoHWVF                 | VF not required for modern devices |
+| WindowUtils               | Patches no longer necessary |
+| CallASWI                  | Built in to modern systems |
+| IRQUtils                  | Patches no longer necessary (although the invaders game might be interesting) |
+| ImageFileRender_Artworks  | Not required without AWRender |
+| !Alarm module             | Not required; move to application |
+

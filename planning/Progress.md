@@ -1,12 +1,12 @@
-# Current status of RISC OS 64 components
+# Progress RISC OS 64 ROM-like components
 
 ## Summary
 
 This document is based on the planned phases of development (described in
-[Phases](Phases.md) and the current status (as reported in the
-[README](../README.md). The document shows the current status of each
+[Phases](Phases)) and the current status (as reported in the
+[Status](Status)). The document shows the current progress of each
 component which is meant to be delivered within a phase. The completion
-of a given status implies that all the statuses before have been
+of a given functionality implies that all the functionanities before have been
 completed.
 
 As with the Phases described, this progress only shows information on the

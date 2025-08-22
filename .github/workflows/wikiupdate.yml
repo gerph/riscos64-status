@@ -10,7 +10,7 @@ name: Wiki update
 #   * push on master.
 on:
   push:
-    branches: ["master", "introduce-current-charts-to-plans"]
+    branches: ["master"]
 
 concurrency:
   # Be nice to the build service and only submit a single job at a time.
@@ -18,7 +18,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  changelog:
+  wiki:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     permissions:
@@ -29,35 +29,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - name: Prepare the directory for updates
+      - name: Build all the docuemnts
         run: |
-          mkdir wiki-update
-
-      - name: Generate progress data
-        run: |
-          utils/makestats.pl json > statistics.json
-
-      - name: Generate progress markdown
-        run: |
-          utils/makestats.pl md > statistics.md
+          make all
 
       - name: Report on progress statistics
         run: |
           echo '# Progress statistics' >> $GITHUB_STEP_SUMMARY
           echo >> $GITHUB_STEP_SUMMARY
           cat statistics.md >> $GITHUB_STEP_SUMMARY
-
-      - name: Generate plan data
-        run: |
-          utils/plantogantt.pl > plan.json
-
-      - name: Generate plan mermaid files
-        run: |
-          utils/plantogantt.pl mmd
-
-      - name: Generate progress for the phases
-        run: |
-          utils/currenttogantt.pl plan.json statistics.json
 
       - name: Report on progress of phase 1
         run: |
@@ -70,19 +50,6 @@ jobs:
           cat planning/Phase-1.mmd >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
           echo >> $GITHUB_STEP_SUMMARY
-
-      # Note: We should probably write these to a Wiki page
-      - name: Generate the current status page
-        run: |
-          utils/updatecurrent.pl plan.json
-
-      - name: Generate the Stacks information page
-        run: |
-          utils/updatestacks.pl plan.json
-
-      - name: Copy Updated markdown files for the Wiki
-        run: |
-          cp planning/*.md wiki-update/
 
       # See: https://github.com/marketplace/actions/wiki-page-creator-action
       - name: Upload documents to Wiki
