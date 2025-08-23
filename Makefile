@@ -52,7 +52,7 @@ wiki-update/Planning.md: planning/Planning.md | wiki-update
 	cp $? $@
 
 wiki-update/Status.md: Status.md | wiki-update
-	cp $? $@
+	utils/fixupfootnotes.pl $? $@
 
 wiki-update/Phase-%.md: planning/Phase-%.md planning/Phase-1.mmd utils/generate-phases.pl | wiki-update
 	utils/generate-phases.pl $* $@
