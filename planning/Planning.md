@@ -55,7 +55,7 @@ implementation and documentation.
 * `Investigate` - decide how to proceed
 * `Stub` - just the interface to the OS; no implementation.
 * `Prototype` - largely functional, but hardware implementation missing.
-* `Built` - component has been built into a binary, but it's not understooed whether it is working, or even useful.
+* `Built` - component has been built into a binary, but it's not understood whether it is working, or even useful.
 * `Internals` - internal implementation, but no OS wiring.
 * `Functional` - wired from OS interface to internals, but may be missing less used features, including I18N.
 * `Complete` - implemented completely.
