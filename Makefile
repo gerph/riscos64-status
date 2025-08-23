@@ -51,6 +51,9 @@ wiki-update/Stacks.md: utils/generate-stacks.pl planning/Stacks.md plan.json | w
 wiki-update/Planning.md: planning/Planning.md | wiki-update
 	cp $? $@
 
+wiki-update/Terminology.md: planning/Terminology.md | wiki-update
+	cp $? $@
+
 wiki-update/Status.md: Status.md | wiki-update
 	utils/fixupfootnotes.pl $? $@
 

@@ -50,50 +50,14 @@ other architectures in the future). This will need some additional design,
 implementation and documentation.
 
 
-## Functionality key, in mostly increasing functionality:
+## Functionality
 
-* `Investigate` - decide how to proceed
-* `Stub` - just the interface to the OS; no implementation.
-* `Prototype` - largely functional, but hardware implementation missing.
-* `Built` - component has been built into a binary, but it's not understood whether it is working, or even useful.
-* `Internals` - internal implementation, but no OS wiring.
-* `Functional` - wired from OS interface to internals, but may be missing less used features, including I18N.
-* `Complete` - implemented completely.
-* `Tested` - implemented and tested manually.
-* `Automated` - testing has been automated.
+The terms used in describing the functionality can be found in the [Terminology document](Terminology#functionality).
 
-Although the functionality key covers `Complete`, `Tested`, and `Automated`, these stages are not part of the current phasing. These states are expected to be developed on an as-needed basis, as `Complete` would require a definition of what was the complete functionality required, which it will be difficult to do initially.
+## Stacks
 
-## Stacks and dependencies
+RISC OS comprises a number of different 'stacks' of related technologies, built upon one another. The stack names and their meaning can be found in the [Terminology document](Terminology#stacks).
 
-There are multiple stacks within RISC OS, being a highly modular system, which
-allows the functionality of the system to be tailored for different purposes.
-Whilst not all of the components are necessary for a functioning system, they
-build up to make a system that users are familiar with.
-
-The stack areas are somewhat arbitrary for some components, as they may straddle
-multiple stacks. However, for simplicity, I have selected a single stack to
-assign each component to. This allows progress within the stacks to be tracked
-independant of the phases, and to allow better reasoning about system
-functionality and completeness.
-
-The stacks defined are:
-
-* `Audio` - The sound system.
-* `Compatibility` - Support for legacy systems and future-proofing for later changes.
-* `Core` - Components upon which the system is based.
-* `Desktop` - User interfaces components for the windowing system.
-* `FS` - File system interfaces and drivers.
-* `Graphics` - Graphical I/O system.
-* `HW` - Hardware drivers and interfacing.
-* `I/O` - Keyboard, mouse, joystick, touchpad, VDU, serial, parallel, GPIO.
-* `I18N` - Internationalisation features, such as translation of text to other languages.
-* `Kernel` - Components which are, or were, core kernel functions in older systems.
-* `L12N` - Localisation features such as formatting of text.
-* `Network` - Econet and IP interfaces.
-* `Printing` - Printer output and support.
-* `Reporting` - Diagnostics and reporting functions.
-* `Time` - Date and time management.
 
 ## Component separation
 
@@ -103,6 +67,10 @@ that the separation may result in individual modules being created, rather than 
 parts being amalgamated into a single component. In particular, the Kernel and the
 WindowManager are separated into their component parts and can be worked on
 separately.
+
+The component names are represented thus: `Component:Function`
+
+For example, the component `Kernel:Modules` would be the sub-section of the Kernel which handles most of the functionality related to Module handling. As the sub-sections will inevitably need to interact with other sections, the boundary may be blurry, but the core features should be clear from the name.
 
 
 

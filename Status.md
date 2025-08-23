@@ -15,44 +15,7 @@ For a phase-focused view of the status, see the [Progress page](Progress).
 
 ## Terminology
 
-The state of each component can be described in terms of how far developed it is.
-Whilst there will always be caveats on some components, using terminology that is
-understood will give a useful picture of the progress of the project.
-
-
-* `Investigate` - decide how to proceed
-* `Stub` - just the interface to the OS; no implementation.
-* `Prototype` - largely functional, but hardware implementation missing.
-* `Built` - component has been built into a binary, but it's not understooed whether it is working, or even useful.
-* `Internals` - internal implementation, but no OS wiring.
-* `Functional` - wired from OS interface to internals, but may be missing less used features, including I18N.
-* `Complete` - implemented completely.
-* `Tested` - implemented and tested manually.
-* `Automated` - testing has been automated.
-
-Although the functionality key covers `Complete`, `Tested`, and `Automated`, these stages are not part of the current phasing. These states are expected to be developed on an as-needed basis, as `Complete` would require a complete agreement on what was the complete functionality required, which it will be difficult to do.
-
-Prototype implementations are useful to allow hardware developers to integrate hardware specific components into the module for their specialised environment. As such a prototype component may bifurcate - there may remain a prototype implementation, which is complete and tested, and there may be a specialisation for hardware environments.
-
-The following diagram shows the expected flow for most components. There may be deviation in some cases, but in general many will follow this pattern.
-
-
-```mermaid
-flowchart TD
-    Start[Investigate] --> Stub
-    Start --> Internals
-    Stub -->|Hardware dependant| Prototype
-    Stub -->|Already in C| Built
-    Stub -->|Implemented| Internals
-
-    Built --> Functional
-    Prototype --> Functional
-    Internals --> Functional
-    Functional --> Complete
-    Complete --> Tested
-    Tested --> Automated
-```
-
+Details of the terminology can be found in the [Terminology document](Terminology).
 
 ## RISC OS components
 
