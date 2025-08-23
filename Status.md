@@ -96,7 +96,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | DDEUtils                  | Asm   |           |           |
 | PathUtils                 | C     | -         | Functional |
 | SysLog                    | C     | -         |           |
-| BootCommands              | C     | -         |           |
+| BootCommands              | C     | -         | Functional[^bootcmds] |
 | GameModes                 | Asm   |           |           |
 | ScreenModes               | Asm   |           |           |
 | ScreenBlanker             | Asm   |           |           |
@@ -274,6 +274,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 [^jstamp]: Completed by Julie Stamp.
 [^crash]: Current crashes when run.
 [^messagetrans]: Missing dictionary calls.
+[^bootcmds]: BootCommands works, but its implementation isn't sane for the `AppSize` command at all - it manipulates the RMA, not the application slot size.
 
 ### ROM resources
 
