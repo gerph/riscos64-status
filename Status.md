@@ -117,7 +117,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | ColourMap                 | C     | -         |           |
 | BlendTable                | C     | -         | Built     |
 | InverseTable              | Asm   |           |           |
-| DrawFile                  | C     | -         |           |
+| DrawFile                  | C     | -         | Built[^drawfile] |
 | FontMap                   | C     | -         |           |
 | ZLib                      | C     | -         | Built     |
 | PNG                       | C     | -         |           |
@@ -275,6 +275,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 [^crash]: Current crashes when run.
 [^messagetrans]: Missing dictionary calls.
 [^bootcmds]: BootCommands works, but its implementation isn't sane for the `AppSize` command at all - it manipulates the RMA, not the application slot size.
+[^drawfile]: Built but doesn't work as the structures are not the right sizes in memory. Also doesn't have any colour mapping or IFC support.
 
 ### ROM resources
 
