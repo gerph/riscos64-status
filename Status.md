@@ -157,7 +157,12 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | FilterManager             | Asm   |           |           |
 | RedrawManager             | Asm   |           |           |
 | Desktop                   | Asm   |           |           |
-| IconBorderPlain           | C     | -         |           |
+| IconBorderBeveled         | C     | -         | Built     |
+| IconBorderFob             | C     | -         | Built     |
+| IconBorderCross           | C     | -         | Built     |
+| IconBorderLoop            | C     | -         | Built     |
+| IconBorderPopping         | C     | -         | Built     |
+| IconBorderPlain           | C     | -         | Built     |
 | IconBorderRound           | C     | -         |           |
 | TaskManager               | Asm   |           |           |
 | ShellCLI                  | Asm   |           |           |
@@ -336,7 +341,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | ErrorLog      | Module    | C         | -         | Built     |
 | FileCoreCheck | Absolute  | C         | -         | [^csystem] |
 | FreePool      | Utility   | Asm       |           |           |
-| HWScan        | Absolute  | C         | -         |           |
+| HWScan        | Absolute  | C         | -         | Built     |
 | LibraryHlp    | Module    | C         | -         | Functional     |
 | MemFix        | Module    | Asm       |           |           |
 | PatchApp      | Module    | C         | -         |           |
