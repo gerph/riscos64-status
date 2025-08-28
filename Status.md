@@ -152,7 +152,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | PDumperLJ                 | Asm   |           |           |
 | PDriverPS                 | Asm   |           |           |
 | MakePSFont                | Asm   |           |           |
-| RemotePrinterSupport      | C     | -         |           |
+| RemotePrinterSupport      | C     | -         | Built     |
 | RemotePrinterMessages     | Asm   |           |           |
 | WindowManager             | Asm/C |           |           |
 | FilterManager             | Asm   |           |           |
