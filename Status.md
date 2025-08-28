@@ -136,7 +136,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | ConvertSprite             | C     | -         |           |
 | ConvertSun                | C     | -         | Built     |
 | ConvertXBM                | C     | -         |           |
-| ConvertClear              | Asm   | -         |           |
+| ConvertClear              | Asm   |           |           |
 | ImageFileRender           | C     | -         | Functional |
 | ImageFileRender_Artworks  | C     | -         |           |
 | Zipper                    | C     | -         |           |
