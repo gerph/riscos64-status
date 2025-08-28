@@ -127,15 +127,16 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | ImageFileConvert          | C     | -         |           |
 | CompressJPEG              | C     | -         |           |
 | ConvertPNG                | C     | -         |           |
-| ConvertBMP                | C     | -         |           |
+| ConvertBMP                | C     | -         | Built     |
+| ConvertDoom               | C     | -         | Built     |
 | ConvertGIF                | C     | -         |           |
-| ConvertICO                | C     | -         |           |
-| ConvertPNM                | C     | -         |           |
+| ConvertICO                | C     | -         | Built     |
+| ConvertPCX                | C     | -         | Built     |
+| ConvertPNM                | C     | -         | Built     |
 | ConvertSprite             | C     | -         |           |
-| ConvertSun                | C     | -         |           |
+| ConvertSun                | C     | -         | Built     |
 | ConvertXBM                | C     | -         |           |
-| ConvertPCX                | C     | -         |           |
-| ConvertClear              | C     | -         |           |
+| ConvertClear              | Asm   | -         |           |
 | ImageFileRender           | C     | -         | Functional |
 | ImageFileRender_Artworks  | C     | -         |           |
 | Zipper                    | C     | -         |           |
@@ -390,6 +391,7 @@ Libraries have a slightly different lifecycle, as they don't produce a tool or m
 | ModuleWrap    | Asm       |           | |
 | PBTS          | C         | -         | |
 | PlainArgv     | C         | -         | |
+| PNG           | C         | -         | |
 | RISC_OSLibSA  | C         | -         | Built |
 | ROLib         | C         | -         | Built |
 | RegExp        | C         | -         | Built |
@@ -409,6 +411,7 @@ Libraries have a slightly different lifecycle, as they don't produce a tool or m
 | WebImage:GIF      | C     | -         | Built |
 | WimpKeyName   | C         | -         | Built |
 | Zipper        | C         | -         | Built |
+| ZLib          | C         | -         |  |
 | mDNSCore      | C         | -         | Built |
 
 [^clib]: C library has been reimplemented, using open source and custom components.
