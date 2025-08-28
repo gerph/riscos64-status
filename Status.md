@@ -29,11 +29,11 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Podule                    | Asm   |               |               |
 | IIC                       | Asm   |               |               |
 | NVRAMHW                   | Asm   |               |               |
-| Conversions               | Asm   |               |               |
+| Conversions               | Asm   | Complete      | Complete      |
 | OSSWIs                    | Asm   |               |               |
 | EvaluateExpression        | Asm   |               |               |
 | SystemVars                | Asm   |               |               |
-| FileTypes                 | Asm   | Functional    | Functional    |
+| FileTypes                 | Asm   | Complete      | Complete      |
 | FPEmulator                | Asm   |               |               |
 | SharedCLibrary            | C     | -             |               |
 | UnSqueezeAIF              | Asm   |               |               |
@@ -99,7 +99,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | BootCommands              | C     | -         | Functional[^bootcmds] |
 | GameModes                 | Asm   |           |           |
 | ScreenModes               | Asm   |           |           |
-| ScreenBlanker             | Asm   |           |           |
+| ScreenBlanker             | Asm   |           | Investigate          |
 | ScrSaver                  | C     | -         |           |
 | SoundDMA                  | Asm   |           |           |
 | SoundChannels             | Asm   |           |           |
@@ -354,7 +354,7 @@ Libraries have a slightly different lifecycle, as they don't produce a tool or m
 | Name          | Lang      | C-state   | 64-state  |
 |---------------|-----------|-----------|-----------|
 | C library     | C/Asm     | -         | Functional[^clib] |
-| OSLib         | DSL/Asm   |           | Functional[^oslib] |
+| OSLib         | DSL/Asm   |           | Complete[^oslib] |
 | Base64        | C         | -         | Built   |
 | ANTMemLib     | C         | -         | |
 | AOFLink       | C         | -         | [^aoflink] |
@@ -385,32 +385,34 @@ Libraries have a slightly different lifecycle, as they don't produce a tool or m
 | ModuleWrap    | Asm       |           | |
 | PBTS          | C         | -         | |
 | PlainArgv     | C         | -         | |
-| RISC_OSLib    | C         | -         | |
-| RISC_OSLibSA  | C         | -         | |
+| RISC_OSLibSA  | C         | -         | Built |
 | ROLib         | C         | -         | Built |
 | RegExp        | C         | -         | Built |
 | Resolver      | C         | -         | [^network] |
 | SCLStubsG     | C         | -         | [^architecture] |
 | SHA1          | C         | -         | Built |
 | SQLite        | C         | -         | |
-| Support       | C         | -         | |
+| Support       | C         | -         | Built[^support] |
 | TCPIPLibs     | C         | -         | |
 | TGRlib        | C         | -         | |
 | TIFF          | C         | -         | |
 | TaskWindow    | C         | -         | [^libtoolbox] |
 | Throwback     | C         | -         | Built |
 | URLFetch      | C         | -         | Built |
-| WebImage      | C         | -         | |
+| WebImage:WebImage | C     | -         | Built |
+| WebImage:XBM      | C     | -         | Built |
+| WebImage:GIF      | C     | -         | Built |
 | WimpKeyName   | C         | -         | Built |
 | Zipper        | C         | -         | Built |
 | mDNSCore      | C         | -         | Built |
 
 [^clib]: C library has been reimplemented, using open source and custom components.
-[^oslib]: Most OSLib SWI interfaces have been implemented and exported, although some are not functional.
+[^oslib]: OSLib for RISC OS 64 is now complete.
 
 [^aoflink]: AOFLink isn't relevant for 64-bit.
 [^libtoolbox]: Requires Toolbox libraries.
 [^libzlib]: Requires ZLib library.
+[^support]: Support library is mostly built with a few internal libs missing.
 [^architecture]: Isn't relevant for AArch64?
 
 
