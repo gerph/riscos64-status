@@ -1,0 +1,89 @@
+# Module: SystemVars
+
+## Discovered features
+
+
+* Has dynamic code
+* Has kernel collusion
+* Sets variables
+* Uses dynamic area
+
+---
+
+## Provides
+
+### Functionality
+
+
+* Os swis
+
+### Commands
+
+
+*None*
+
+
+### SWIs
+
+
+*None*
+
+
+### Services
+
+
+*None*
+
+
+### Vectors
+
+
+*None*
+
+
+### Events
+
+
+*None*
+
+
+### UpCalls
+
+
+*None*
+
+
+---
+
+## Issues calls to
+
+### Services
+
+
+*None*
+
+
+### Vectors
+
+
+*None*
+
+
+### Events
+
+
+*None*
+
+
+### UpCalls
+
+
+*None*
+
+
+### Modules
+
+
+* `MessageTrans`
+
+
