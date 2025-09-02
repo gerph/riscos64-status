@@ -15,8 +15,9 @@
 
 ### Functionality
 
-
-* License info
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | License info |
 
 ### Commands
 
@@ -33,9 +34,11 @@
 ### Services
 
 
-* `Service_ErrorEnding`
-* `Service_ErrorStarting`
-* `Service_TaskManagerAcknowledgements`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ErrorEnding` |
+| [X]      | [ ]       | `Service_ErrorStarting` |
+| [X]      | [ ]       | `Service_TaskManagerAcknowledgements` |
 
 
 ### Vectors
@@ -63,7 +66,9 @@
 ### Services
 
 
-* `Service_TaskManagerAcknowledgements`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_TaskManagerAcknowledgements` |
 
 
 ### Vectors

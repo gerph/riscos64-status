@@ -16,9 +16,10 @@
 
 ### Functionality
 
-
-* Dci4 statistics
-* License info
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Dci4 statistics |
+| [ ]      | [ ]       | License info |
 
 ### Commands
 
@@ -29,18 +30,22 @@
 ### SWIs
 
 
-* `Mbuf_OpenSession` (&4A580)
-* `Mbuf_CloseSession` (&4A581)
-* `Mbuf_Memory` (&4A582)
-* `Mbuf_Statistic` (&4A583)
-* `Mbuf_Control` (&4A584)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Mbuf_OpenSession` (&4A580) |
+| [ ]      | [ ]       | `Mbuf_CloseSession` (&4A581) |
+| [ ]      | [ ]       | `Mbuf_Memory` (&4A582) |
+| [ ]      | [ ]       | `Mbuf_Statistic` (&4A583) |
+| [ ]      | [ ]       | `Mbuf_Control` (&4A584) |
 
 
 ### Services
 
 
-* `Service_StatisticEnumerate`
-* `Service_TaskManagerAcknowledgements`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_StatisticEnumerate` |
+| [ ]      | [ ]       | `Service_TaskManagerAcknowledgements` |
 
 
 ### Vectors
@@ -68,7 +73,9 @@
 ### Services
 
 
-* `Service_MbufManagerStatus`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_MbufManagerStatus` |
 
 
 ### Vectors

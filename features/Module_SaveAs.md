@@ -3,6 +3,7 @@
 ## Discovered features
 
 
+* Accesses task memory
 * Has services
 * Has services fast
 * Has swis
@@ -15,9 +16,10 @@
 
 ### Functionality
 
-
-* Resourcefs files
-* Toolbox object
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Resourcefs files |
+| [X]      | [ ]       | Toolbox object |
 
 ### Commands
 
@@ -28,18 +30,22 @@
 ### SWIs
 
 
-* `SaveAs_ClassSWI` (&82BC0)
-* `SaveAs_PostFilter` (&82BC1)
-* `SaveAs_PreFilter` (&82BC2)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `SaveAs_ClassSWI` (&82BC0) |
+| [X]      | [ ]       | `SaveAs_PostFilter` (&82BC1) |
+| [X]      | [ ]       | `SaveAs_PreFilter` (&82BC2) |
 
 
 ### Services
 
 
-* `Service_ResourceFSStarting`
-* `Service_ToolboxStarting`
-* `Service_ToolboxTaskBorn`
-* `Service_ToolboxTaskDied`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ResourceFSStarting` |
+| [X]      | [ ]       | `Service_ToolboxStarting` |
+| [X]      | [ ]       | `Service_ToolboxTaskBorn` |
+| [X]      | [ ]       | `Service_ToolboxTaskDied` |
 
 
 ### Vectors

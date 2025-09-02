@@ -3,6 +3,7 @@
 ## Discovered features
 
 
+* Accesses task memory
 * Has argument parsing
 * Has services
 * Has services fast
@@ -15,14 +16,17 @@
 
 ### Functionality
 
-
-* Default desktop application
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Default desktop application |
 
 ### Commands
 
 
-* `*Desktop_WindowScroll`
-* `*WimpScroll`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*Desktop_WindowScroll` |
+| [X]      | [ ]       | `*WimpScroll` |
 
 
 ### SWIs
@@ -34,20 +38,26 @@
 ### Services
 
 
-* `Service_StartWimp`
-* `Service_StartedWimp`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_StartWimp` |
+| [X]      | [ ]       | `Service_StartedWimp` |
 
 
 ### Vectors
 
 
-* `EventV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `EventV` |
 
 
 ### Events
 
 
-* `Event_Expansion`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Event_Expansion` |
 
 
 ### UpCalls

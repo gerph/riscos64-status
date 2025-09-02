@@ -16,24 +16,29 @@
 
 ### Functionality
 
-
-* Ppp server
-* Ppp transport
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Ppp server |
+| [X]      | [ ]       | Ppp transport |
 
 ### Commands
 
 
-* `*PPPoEClient`
-* `*PPPoEInfo`
-* `*PPPoELog`
-* `*PPPoEServer`
-* `*PPPoEStop`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*PPPoEClient` |
+| [X]      | [ ]       | `*PPPoEInfo` |
+| [X]      | [ ]       | `*PPPoELog` |
+| [X]      | [ ]       | `*PPPoEServer` |
+| [X]      | [ ]       | `*PPPoEStop` |
 
 
 ### SWIs
 
 
-* `PPPoE_Transmit` (&58140)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `PPPoE_Transmit` (&58140) |
 
 
 ### Services
@@ -67,7 +72,9 @@
 ### Services
 
 
-* `Service_EnumerateNetworkDrivers`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_EnumerateNetworkDrivers` |
 
 
 ### Vectors

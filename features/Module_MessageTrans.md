@@ -14,6 +14,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -26,24 +28,28 @@
 ### SWIs
 
 
-* `MessageTrans_FileInfo` (&41500)
-* `MessageTrans_OpenFile` (&41501)
-* `MessageTrans_Lookup` (&41502)
-* `MessageTrans_MakeMenus` (&41503)
-* `MessageTrans_CloseFile` (&41504)
-* `MessageTrans_EnumerateTokens` (&41505)
-* `MessageTrans_ErrorLookup` (&41506)
-* `MessageTrans_GSLookup` (&41507)
-* `MessageTrans_CopyError` (&41508)
-* `MessageTrans_Dictionary` (&41509)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `MessageTrans_FileInfo` (&41500) |
+| [ ]      | [ ]       | `MessageTrans_OpenFile` (&41501) |
+| [ ]      | [ ]       | `MessageTrans_Lookup` (&41502) |
+| [ ]      | [ ]       | `MessageTrans_MakeMenus` (&41503) |
+| [ ]      | [ ]       | `MessageTrans_CloseFile` (&41504) |
+| [ ]      | [ ]       | `MessageTrans_EnumerateTokens` (&41505) |
+| [ ]      | [ ]       | `MessageTrans_ErrorLookup` (&41506) |
+| [ ]      | [ ]       | `MessageTrans_GSLookup` (&41507) |
+| [ ]      | [ ]       | `MessageTrans_CopyError` (&41508) |
+| [ ]      | [ ]       | `MessageTrans_Dictionary` (&41509) |
 
 
 ### Services
 
 
-* `Service_ResourceFSDying`
-* `Service_ResourceFSStarted`
-* `Service_TerritoryStarted`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_ResourceFSDying` |
+| [ ]      | [ ]       | `Service_ResourceFSStarted` |
+| [ ]      | [ ]       | `Service_TerritoryStarted` |
 
 
 ### Vectors
@@ -71,7 +77,9 @@
 ### Services
 
 
-* `?`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `?` |
 
 
 ### Vectors

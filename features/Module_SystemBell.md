@@ -3,9 +3,9 @@
 ## Discovered features
 
 
-* Does sound output
 * Has services
 * Has services fast
+* Has sound output
 
 ---
 
@@ -13,6 +13,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -31,7 +33,9 @@
 ### Services
 
 
-* `Service_ExternalBell`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_ExternalBell` |
 
 
 ### Vectors

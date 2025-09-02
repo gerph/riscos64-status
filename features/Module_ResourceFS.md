@@ -15,27 +15,34 @@
 
 ### Functionality
 
-
-* Filesystem
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Filesystem |
 
 ### Commands
 
 
-* `*ResourceFS`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*ResourceFS` |
 
 
 ### SWIs
 
 
-* `ResourceFS_RegisterFiles` (&41B40)
-* `ResourceFS_DeregisterFiles` (&41B41)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `ResourceFS_RegisterFiles` (&41B40) |
+| [ ]      | [ ]       | `ResourceFS_DeregisterFiles` (&41B41) |
 
 
 ### Services
 
 
-* `Service_FSRedeclare`
-* `Service_TerritoryStarted`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_FSRedeclare` |
+| [ ]      | [ ]       | `Service_TerritoryStarted` |
 
 
 ### Vectors
@@ -63,9 +70,11 @@
 ### Services
 
 
-* `Service_ResourceFSDying`
-* `Service_ResourceFSStarted`
-* `Service_ResourceFSStarting`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_ResourceFSDying` |
+| [ ]      | [ ]       | `Service_ResourceFSStarted` |
+| [ ]      | [ ]       | `Service_ResourceFSStarting` |
 
 
 ### Vectors
@@ -83,7 +92,9 @@
 ### UpCalls
 
 
-* `UpCall_ModifyingFile`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `UpCall_ModifyingFile` |
 
 
 ### Modules

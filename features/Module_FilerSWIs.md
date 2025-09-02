@@ -13,6 +13,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -25,15 +27,19 @@
 ### SWIs
 
 
-* `FilerAction_SendSelectedDirectory` (&40F80)
-* `FilerAction_SendSelectedFile` (&40F81)
-* `FilerAction_SendStartOperation` (&40F82)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `FilerAction_SendSelectedDirectory` (&40F80) |
+| [ ]      | [ ]       | `FilerAction_SendSelectedFile` (&40F81) |
+| [ ]      | [ ]       | `FilerAction_SendStartOperation` (&40F82) |
 
 
 ### Services
 
 
-* `Service_WimpCloseDown`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_WimpCloseDown` |
 
 
 ### Vectors

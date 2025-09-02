@@ -13,14 +13,18 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*Cache`
-* `*Configure Cache`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Cache` |
+| [ ]      | [ ]       | `*Configure Cache` |
 
 
 ### SWIs

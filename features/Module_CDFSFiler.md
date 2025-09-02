@@ -17,14 +17,17 @@
 
 ### Functionality
 
-
-* Desktop filer icon
-* Resourcefs files
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Desktop filer icon |
+| [X]      | [ ]       | Resourcefs files |
 
 ### Commands
 
 
-* `*Desktop_CDFSFiler`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*Desktop_CDFSFiler` |
 
 
 ### SWIs
@@ -36,13 +39,15 @@
 ### Services
 
 
-* `Service_DiscDismounted`
-* `Service_FilerDying`
-* `Service_Memory`
-* `Service_MessageFileClosed`
-* `Service_Reset`
-* `Service_StartFiler`
-* `Service_StartedFiler`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DiscDismounted` |
+| [X]      | [ ]       | `Service_FilerDying` |
+| [X]      | [ ]       | `Service_Memory` |
+| [X]      | [ ]       | `Service_MessageFileClosed` |
+| [X]      | [ ]       | `Service_Reset` |
+| [X]      | [ ]       | `Service_StartFiler` |
+| [X]      | [ ]       | `Service_StartedFiler` |
 
 
 ### Vectors

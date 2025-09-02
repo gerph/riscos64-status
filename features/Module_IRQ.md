@@ -11,9 +11,10 @@
 
 ### Functionality
 
-
-* Hardware driver
-* Os swis
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Hardware driver |
+| [ ]      | [ ]       | Os swis |
 
 ### Commands
 
@@ -58,7 +59,9 @@
 ### Services
 
 
-* `Service_DeviceReregister`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_DeviceReregister` |
 
 
 ### Vectors

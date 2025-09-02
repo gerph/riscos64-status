@@ -13,6 +13,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -31,13 +33,17 @@
 ### Services
 
 
-* `Service_Reset`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_Reset` |
 
 
 ### Vectors
 
 
-* `EconetV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `EconetV` |
 
 
 ### Events

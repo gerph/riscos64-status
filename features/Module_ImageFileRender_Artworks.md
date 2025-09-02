@@ -17,8 +17,9 @@
 
 ### Functionality
 
-
-* Image rendering
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Image rendering |
 
 ### Commands
 
@@ -29,8 +30,10 @@
 ### SWIs
 
 
-* `IFRArtworks_Render` (&56880)
-* `IFRArtworks_BBox` (&56881)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `IFRArtworks_Render` (&56880) |
+| [X]      | [ ]       | `IFRArtworks_BBox` (&56881) |
 
 
 ### Services

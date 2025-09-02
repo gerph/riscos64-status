@@ -3,12 +3,13 @@
 ## Discovered features
 
 
-* Does file access
-* Does sound output
 * Has application environment
 * Has dynamic code
+* Has file access
+* Has pointer control
 * Has services
 * Has services fast
+* Has sound output
 * Uses console input
 * Uses console output
 * Uses graphics output
@@ -19,13 +20,17 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*BASIC`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*BASIC` |
 
 
 ### SWIs
@@ -37,7 +42,9 @@
 ### Services
 
 
-* `Service_Memory`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_Memory` |
 
 
 ### Vectors

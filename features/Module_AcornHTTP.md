@@ -17,8 +17,10 @@
 
 ### Functionality
 
-
-* Resourcefs files
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Resourcefs files |
+| [X]      | [ ]       | Url fetcher |
 
 ### Commands
 
@@ -29,70 +31,72 @@
 ### SWIs
 
 
-* `HTTP_GetData` (&83F80)
-* `HTTP_Status` (&83F81)
-* `HTTP_ReadData` (&83F82)
-* `HTTP_Stop` (&83F83)
-* `HTTP_4` (&83F84)
-* `HTTP_5` (&83F85)
-* `HTTP_6` (&83F86)
-* `HTTP_7` (&83F87)
-* `HTTP_8` (&83F88)
-* `HTTP_9` (&83F89)
-* `HTTP_10` (&83F8A)
-* `HTTP_11` (&83F8B)
-* `HTTP_12` (&83F8C)
-* `HTTP_13` (&83F8D)
-* `HTTP_14` (&83F8E)
-* `HTTP_15` (&83F8F)
-* `HTTP_SecureGetData` (&83F90)
-* `HTTP_SecureStatus` (&83F91)
-* `HTTP_SecureReadData` (&83F92)
-* `HTTP_SecureStop` (&83F93)
-* `HTTP_20` (&83F94)
-* `HTTP_21` (&83F95)
-* `HTTP_22` (&83F96)
-* `HTTP_23` (&83F97)
-* `HTTP_24` (&83F98)
-* `HTTP_25` (&83F99)
-* `HTTP_26` (&83F9A)
-* `HTTP_27` (&83F9B)
-* `HTTP_28` (&83F9C)
-* `HTTP_29` (&83F9D)
-* `HTTP_30` (&83F9E)
-* `HTTP_31` (&83F9F)
-* `HTTP_32` (&83FA0)
-* `HTTP_33` (&83FA1)
-* `HTTP_34` (&83FA2)
-* `HTTP_35` (&83FA3)
-* `HTTP_36` (&83FA4)
-* `HTTP_37` (&83FA5)
-* `HTTP_38` (&83FA6)
-* `HTTP_39` (&83FA7)
-* `HTTP_40` (&83FA8)
-* `HTTP_41` (&83FA9)
-* `HTTP_42` (&83FAA)
-* `HTTP_43` (&83FAB)
-* `HTTP_44` (&83FAC)
-* `HTTP_45` (&83FAD)
-* `HTTP_46` (&83FAE)
-* `HTTP_47` (&83FAF)
-* `HTTP_48` (&83FB0)
-* `HTTP_49` (&83FB1)
-* `HTTP_50` (&83FB2)
-* `HTTP_51` (&83FB3)
-* `HTTP_52` (&83FB4)
-* `HTTP_53` (&83FB5)
-* `HTTP_54` (&83FB6)
-* `HTTP_55` (&83FB7)
-* `HTTP_56` (&83FB8)
-* `HTTP_57` (&83FB9)
-* `HTTP_58` (&83FBA)
-* `HTTP_59` (&83FBB)
-* `HTTP_60` (&83FBC)
-* `HTTP_AddCookie` (&83FBD)
-* `HTTP_ConsumeCookie` (&83FBE)
-* `HTTP_EnumerateCookies` (&83FBF)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `HTTP_GetData` (&83F80) |
+| [X]      | [ ]       | `HTTP_Status` (&83F81) |
+| [X]      | [ ]       | `HTTP_ReadData` (&83F82) |
+| [X]      | [ ]       | `HTTP_Stop` (&83F83) |
+| [X]      | [ ]       | `HTTP_4` (&83F84) |
+| [X]      | [ ]       | `HTTP_5` (&83F85) |
+| [X]      | [ ]       | `HTTP_6` (&83F86) |
+| [X]      | [ ]       | `HTTP_7` (&83F87) |
+| [X]      | [ ]       | `HTTP_8` (&83F88) |
+| [X]      | [ ]       | `HTTP_9` (&83F89) |
+| [X]      | [ ]       | `HTTP_10` (&83F8A) |
+| [X]      | [ ]       | `HTTP_11` (&83F8B) |
+| [X]      | [ ]       | `HTTP_12` (&83F8C) |
+| [X]      | [ ]       | `HTTP_13` (&83F8D) |
+| [X]      | [ ]       | `HTTP_14` (&83F8E) |
+| [X]      | [ ]       | `HTTP_15` (&83F8F) |
+| [X]      | [ ]       | `HTTP_SecureGetData` (&83F90) |
+| [X]      | [ ]       | `HTTP_SecureStatus` (&83F91) |
+| [X]      | [ ]       | `HTTP_SecureReadData` (&83F92) |
+| [X]      | [ ]       | `HTTP_SecureStop` (&83F93) |
+| [X]      | [ ]       | `HTTP_20` (&83F94) |
+| [X]      | [ ]       | `HTTP_21` (&83F95) |
+| [X]      | [ ]       | `HTTP_22` (&83F96) |
+| [X]      | [ ]       | `HTTP_23` (&83F97) |
+| [X]      | [ ]       | `HTTP_24` (&83F98) |
+| [X]      | [ ]       | `HTTP_25` (&83F99) |
+| [X]      | [ ]       | `HTTP_26` (&83F9A) |
+| [X]      | [ ]       | `HTTP_27` (&83F9B) |
+| [X]      | [ ]       | `HTTP_28` (&83F9C) |
+| [X]      | [ ]       | `HTTP_29` (&83F9D) |
+| [X]      | [ ]       | `HTTP_30` (&83F9E) |
+| [X]      | [ ]       | `HTTP_31` (&83F9F) |
+| [X]      | [ ]       | `HTTP_32` (&83FA0) |
+| [X]      | [ ]       | `HTTP_33` (&83FA1) |
+| [X]      | [ ]       | `HTTP_34` (&83FA2) |
+| [X]      | [ ]       | `HTTP_35` (&83FA3) |
+| [X]      | [ ]       | `HTTP_36` (&83FA4) |
+| [X]      | [ ]       | `HTTP_37` (&83FA5) |
+| [X]      | [ ]       | `HTTP_38` (&83FA6) |
+| [X]      | [ ]       | `HTTP_39` (&83FA7) |
+| [X]      | [ ]       | `HTTP_40` (&83FA8) |
+| [X]      | [ ]       | `HTTP_41` (&83FA9) |
+| [X]      | [ ]       | `HTTP_42` (&83FAA) |
+| [X]      | [ ]       | `HTTP_43` (&83FAB) |
+| [X]      | [ ]       | `HTTP_44` (&83FAC) |
+| [X]      | [ ]       | `HTTP_45` (&83FAD) |
+| [X]      | [ ]       | `HTTP_46` (&83FAE) |
+| [X]      | [ ]       | `HTTP_47` (&83FAF) |
+| [X]      | [ ]       | `HTTP_48` (&83FB0) |
+| [X]      | [ ]       | `HTTP_49` (&83FB1) |
+| [X]      | [ ]       | `HTTP_50` (&83FB2) |
+| [X]      | [ ]       | `HTTP_51` (&83FB3) |
+| [X]      | [ ]       | `HTTP_52` (&83FB4) |
+| [X]      | [ ]       | `HTTP_53` (&83FB5) |
+| [X]      | [ ]       | `HTTP_54` (&83FB6) |
+| [X]      | [ ]       | `HTTP_55` (&83FB7) |
+| [X]      | [ ]       | `HTTP_56` (&83FB8) |
+| [X]      | [ ]       | `HTTP_57` (&83FB9) |
+| [X]      | [ ]       | `HTTP_58` (&83FBA) |
+| [X]      | [ ]       | `HTTP_59` (&83FBB) |
+| [X]      | [ ]       | `HTTP_60` (&83FBC) |
+| [X]      | [ ]       | `HTTP_AddCookie` (&83FBD) |
+| [X]      | [ ]       | `HTTP_ConsumeCookie` (&83FBE) |
+| [X]      | [ ]       | `HTTP_EnumerateCookies` (&83FBF) |
 
 
 ### Services
@@ -156,5 +160,6 @@
 * `ResourceFS`
 * `SharedCLibrary`
 * `Socket`
+* `URL`
 
 

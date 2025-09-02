@@ -14,6 +14,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -26,10 +28,12 @@
 ### SWIs
 
 
-* `Ping_Start` (&53C00)
-* `Ping_Check` (&53C01)
-* `Ping_Status` (&53C02)
-* `Ping_Discard` (&53C03)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Ping_Start` (&53C00) |
+| [X]      | [ ]       | `Ping_Check` (&53C01) |
+| [X]      | [ ]       | `Ping_Status` (&53C02) |
+| [X]      | [ ]       | `Ping_Discard` (&53C03) |
 
 
 ### Services
@@ -41,13 +45,17 @@
 ### Vectors
 
 
-* `EventV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `EventV` |
 
 
 ### Events
 
 
-* `Event_Internet`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Event_Internet` |
 
 
 ### UpCalls

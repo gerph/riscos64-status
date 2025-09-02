@@ -12,8 +12,9 @@
 
 ### Functionality
 
-
-*None found*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Clock driver |
 
 ### Commands
 
@@ -36,7 +37,9 @@
 ### Vectors
 
 
-* `RTCV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `RTCV` |
 
 
 ### Events

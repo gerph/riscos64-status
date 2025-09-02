@@ -17,25 +17,33 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*DiagnosticDump`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*DiagnosticDump` |
 
 
 ### SWIs
 
 
-* `DiagnosticDump_Write` (&58B00)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `DiagnosticDump_Write` (&58B00) |
 
 
 ### Services
 
 
-* `Service_APCSBacktrace`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_APCSBacktrace` |
 
 
 ### Vectors
@@ -63,7 +71,9 @@
 ### Services
 
 
-* `Service_APCSBacktrace`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_APCSBacktrace` |
 
 
 ### Vectors

@@ -15,8 +15,10 @@
 
 ### Functionality
 
-
-* Printer driver
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Graphics extension |
+| [ ]      | [ ]       | Printer driver |
 
 ### Commands
 
@@ -33,17 +35,21 @@
 ### Services
 
 
-* `Service_ModeChange`
-* `Service_PDriverGetSharedMessagesFile`
-* `Service_PDriverStarting`
-* `Service_WimpReportError`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_ModeChange` |
+| [ ]      | [ ]       | `Service_PDriverGetSharedMessagesFile` |
+| [ ]      | [ ]       | `Service_PDriverStarting` |
+| [ ]      | [ ]       | `Service_WimpReportError` |
 
 
 ### Vectors
 
 
-* `?`
-* `SpriteV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `?` |
+| [ ]      | [ ]       | `SpriteV` |
 
 
 ### Events
@@ -65,16 +71,20 @@
 ### Services
 
 
-* `?`
-* `Service_PDriverGetMessages`
-* `Service_PDumperDying`
-* `Service_Print`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `?` |
+| [ ]      | [ ]       | `Service_PDriverGetMessages` |
+| [ ]      | [ ]       | `Service_PDumperDying` |
+| [ ]      | [ ]       | `Service_Print` |
 
 
 ### Vectors
 
 
-* `PaletteV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `PaletteV` |
 
 
 ### Events

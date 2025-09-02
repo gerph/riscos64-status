@@ -13,8 +13,9 @@
 
 ### Functionality
 
-
-* Database result sets
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Database result sets |
 
 ### Commands
 

@@ -14,8 +14,9 @@
 
 ### Functionality
 
-
-* Resourcefs files
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Resourcefs files |
 
 ### Commands
 
@@ -26,10 +27,12 @@
 ### SWIs
 
 
-* `TinySupport_Init` (&82C40)
-* `TinySupport_Die` (&82C41)
-* `TinySupport_Init2` (&82C42)
-* `TinySupport_Share` (&82C43)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `TinySupport_Init` (&82C40) |
+| [X]      | [ ]       | `TinySupport_Die` (&82C41) |
+| [X]      | [ ]       | `TinySupport_Init2` (&82C42) |
+| [X]      | [ ]       | `TinySupport_Share` (&82C43) |
 
 
 ### Services
@@ -63,7 +66,9 @@
 ### Services
 
 
-* `535617`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `&82c41` |
 
 
 ### Vectors

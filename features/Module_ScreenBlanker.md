@@ -4,6 +4,7 @@
 
 
 * Has background processing
+* Has pointer control
 * Has services
 * Has services fast
 * Has swis
@@ -16,41 +17,53 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*BlankTime`
-* `*DPMSTime`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*BlankTime` |
+| [ ]      | [ ]       | `*DPMSTime` |
 
 
 ### SWIs
 
 
-* `ScreenBlanker_Control` (&43100)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `ScreenBlanker_Control` (&43100) |
 
 
 ### Services
 
 
-* `Service_ModeChange`
-* `Service_Reset`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_ModeChange` |
+| [ ]      | [ ]       | `Service_Reset` |
 
 
 ### Vectors
 
 
-* `EventV`
-* `INSV`
-* `WrchV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `EventV` |
+| [ ]      | [ ]       | `INSV` |
+| [ ]      | [ ]       | `WrchV` |
 
 
 ### Events
 
 
-* `Event_Keyboard`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Event_Keyboard` |
 
 
 ### UpCalls
@@ -66,14 +79,18 @@
 ### Services
 
 
-* `?`
-* `Service_ScreenBlanking`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `?` |
+| [ ]      | [ ]       | `Service_ScreenBlanking` |
 
 
 ### Vectors
 
 
-* `PaletteV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `PaletteV` |
 
 
 ### Events

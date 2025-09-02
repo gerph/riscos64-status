@@ -15,9 +15,10 @@
 
 ### Functionality
 
-
-* Resourcefs files
-* Toolbox object
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Resourcefs files |
+| [X]      | [ ]       | Toolbox object |
 
 ### Commands
 
@@ -28,19 +29,23 @@
 ### SWIs
 
 
-* `FontDbox_ClassSWI` (&82A00)
-* `FontDbox_PostFilter` (&82A01)
-* `FontDbox_PreFilter` (&82A02)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `FontDbox_ClassSWI` (&82A00) |
+| [X]      | [ ]       | `FontDbox_PostFilter` (&82A01) |
+| [X]      | [ ]       | `FontDbox_PreFilter` (&82A02) |
 
 
 ### Services
 
 
-* `Service_FontsChanged`
-* `Service_ResourceFSStarting`
-* `Service_ToolboxStarting`
-* `Service_ToolboxTaskBorn`
-* `Service_ToolboxTaskDied`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_FontsChanged` |
+| [X]      | [ ]       | `Service_ResourceFSStarting` |
+| [X]      | [ ]       | `Service_ToolboxStarting` |
+| [X]      | [ ]       | `Service_ToolboxTaskBorn` |
+| [X]      | [ ]       | `Service_ToolboxTaskDied` |
 
 
 ### Vectors

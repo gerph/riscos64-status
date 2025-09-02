@@ -12,6 +12,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -24,15 +26,17 @@
 ### SWIs
 
 
-* `Portable_Speed` (&42FC0)
-* `Portable_Control` (&42FC1)
-* `Portable_ReadBMUVariable` (&42FC2)
-* `Portable_WriteBMUVariable` (&42FC3)
-* `Portable_CommandBMU` (&42FC4)
-* `Portable_ReadFeatures` (&42FC5)
-* `Portable_Idle` (&42FC6)
-* `Portable_Stop` (&42FC7)
-* `Portable_Status` (&42FC8)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Portable_Speed` (&42FC0) |
+| [X]      | [ ]       | `Portable_Control` (&42FC1) |
+| [X]      | [ ]       | `Portable_ReadBMUVariable` (&42FC2) |
+| [X]      | [ ]       | `Portable_WriteBMUVariable` (&42FC3) |
+| [X]      | [ ]       | `Portable_CommandBMU` (&42FC4) |
+| [X]      | [ ]       | `Portable_ReadFeatures` (&42FC5) |
+| [X]      | [ ]       | `Portable_Idle` (&42FC6) |
+| [X]      | [ ]       | `Portable_Stop` (&42FC7) |
+| [X]      | [ ]       | `Portable_Status` (&42FC8) |
 
 
 ### Services
@@ -66,7 +70,9 @@
 ### Services
 
 
-* `Service_Portable`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_Portable` |
 
 
 ### Vectors
@@ -78,7 +84,9 @@
 ### Events
 
 
-* `Event_PortableBMU`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Event_PortableBMU` |
 
 
 ### UpCalls

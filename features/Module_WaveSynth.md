@@ -15,8 +15,9 @@
 
 ### Functionality
 
-
-* Sound voice
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Sound voice |
 
 ### Commands
 
@@ -33,8 +34,10 @@
 ### Services
 
 
-* `Service_ResourceFSStarted`
-* `Service_Sound`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_ResourceFSStarted` |
+| [ ]      | [ ]       | `Service_Sound` |
 
 
 ### Vectors

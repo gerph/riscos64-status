@@ -13,6 +13,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -25,9 +27,11 @@
 ### SWIs
 
 
-* `BASICTrans_HELP` (&42C80)
-* `BASICTrans_Error` (&42C81)
-* `BASICTrans_Message` (&42C82)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `BASICTrans_HELP` (&42C80) |
+| [ ]      | [ ]       | `BASICTrans_Error` (&42C81) |
+| [ ]      | [ ]       | `BASICTrans_Message` (&42C82) |
 
 
 ### Services

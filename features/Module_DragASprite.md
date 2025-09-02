@@ -12,6 +12,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -24,8 +26,10 @@
 ### SWIs
 
 
-* `DragASprite_Start` (&42400)
-* `DragASprite_Stop` (&42401)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `DragASprite_Start` (&42400) |
+| [ ]      | [ ]       | `DragASprite_Stop` (&42401) |
 
 
 ### Services

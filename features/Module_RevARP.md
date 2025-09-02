@@ -14,6 +14,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -26,8 +28,10 @@
 ### SWIs
 
 
-* `Rarp_Configure` (&55CC0)
-* `Rarp_Lookup` (&55CC1)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Rarp_Configure` (&55CC0) |
+| [X]      | [ ]       | `Rarp_Lookup` (&55CC1) |
 
 
 ### Services
@@ -39,13 +43,17 @@
 ### Vectors
 
 
-* `EventV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `EventV` |
 
 
 ### Events
 
 
-* `Event_Internet`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Event_Internet` |
 
 
 ### UpCalls

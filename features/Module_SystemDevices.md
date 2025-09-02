@@ -3,7 +3,7 @@
 ## Discovered features
 
 
-* Does file access
+* Has file access
 * Has nvram state
 * Has services
 * Has services fast
@@ -17,8 +17,9 @@
 
 ### Functionality
 
-
-* Filesystem
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Filesystem |
 
 ### Commands
 
@@ -35,7 +36,9 @@
 ### Services
 
 
-* `Service_FSRedeclare`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_FSRedeclare` |
 
 
 ### Vectors

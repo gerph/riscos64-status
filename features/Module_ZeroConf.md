@@ -18,8 +18,9 @@
 
 ### Functionality
 
-
-* Dci4 statistics
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Dci4 statistics |
 
 ### Commands
 
@@ -30,30 +31,38 @@
 ### SWIs
 
 
-* `ZeroConf_Control` (&56A00)
-* `ZeroConf_Status` (&56A01)
-* `ZeroConf_DCI4Statistics` (&56A02)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `ZeroConf_Control` (&56A00) |
+| [X]      | [ ]       | `ZeroConf_Status` (&56A01) |
+| [X]      | [ ]       | `ZeroConf_DCI4Statistics` (&56A02) |
 
 
 ### Services
 
 
-* `Service_DCIDriverStatus`
-* `Service_DCIProtocolStatus`
-* `Service_InternetStatus`
-* `Service_StatisticEnumerate`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DCIDriverStatus` |
+| [X]      | [ ]       | `Service_DCIProtocolStatus` |
+| [X]      | [ ]       | `Service_InternetStatus` |
+| [X]      | [ ]       | `Service_StatisticEnumerate` |
 
 
 ### Vectors
 
 
-* `EventV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `EventV` |
 
 
 ### Events
 
 
-* `Event_Internet`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Event_Internet` |
 
 
 ### UpCalls
@@ -69,7 +78,9 @@
 ### Services
 
 
-* `Service_InternetStatus`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_InternetStatus` |
 
 
 ### Vectors

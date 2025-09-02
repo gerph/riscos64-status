@@ -3,7 +3,7 @@
 ## Discovered features
 
 
-* Does file access
+* Has file access
 * Has services
 * Has services fast
 * Has swis
@@ -18,29 +18,36 @@
 
 ### Functionality
 
-
-* Resourcefs files
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Resourcefs files |
 
 ### Commands
 
 
-* `*SoundFileForceClose`
-* `*SoundFileInfo`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*SoundFileForceClose` |
+| [X]      | [ ]       | `*SoundFileInfo` |
 
 
 ### SWIs
 
 
-* `SoundFile_Open` (&4AEC0)
-* `SoundFile_Close` (&4AEC1)
-* `SoundFile_ReadData` (&4AEC2)
-* `SoundFile_MiscOp` (&4AEC3)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `SoundFile_Open` (&4AEC0) |
+| [X]      | [ ]       | `SoundFile_Close` (&4AEC1) |
+| [X]      | [ ]       | `SoundFile_ReadData` (&4AEC2) |
+| [X]      | [ ]       | `SoundFile_MiscOp` (&4AEC3) |
 
 
 ### Services
 
 
-* `Service_ResourceFSStarting`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ResourceFSStarting` |
 
 
 ### Vectors
@@ -68,7 +75,9 @@
 ### Services
 
 
-* `Service_SoundFileIdentify`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_SoundFileIdentify` |
 
 
 ### Vectors

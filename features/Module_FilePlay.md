@@ -12,22 +12,28 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*FilePlay`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*FilePlay` |
 
 
 ### SWIs
 
 
-* `FilePlay_Play` (&4EF80)
-* `FilePlay_Stop` (&4EF81)
-* `FilePlay_Control` (&4EF82)
-* `FilePlay_Status` (&4EF83)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `FilePlay_Play` (&4EF80) |
+| [X]      | [ ]       | `FilePlay_Stop` (&4EF81) |
+| [X]      | [ ]       | `FilePlay_Control` (&4EF82) |
+| [X]      | [ ]       | `FilePlay_Status` (&4EF83) |
 
 
 ### Services

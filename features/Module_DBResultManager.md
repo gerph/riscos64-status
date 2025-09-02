@@ -12,25 +12,31 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*DBResultSources`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*DBResultSources` |
 
 
 ### SWIs
 
 
-* `DBResultManager_Register` (&57D40)
-* `DBResultManager_Deregister` (&57D41)
-* `DBResultManager_Start` (&57D42)
-* `DBResultManager_ReadData` (&57D43)
-* `DBResultManager_End` (&57D44)
-* `DBResultManager_Open` (&57D45)
-* `DBResultManager_Close` (&57D46)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `DBResultManager_Register` (&57D40) |
+| [X]      | [ ]       | `DBResultManager_Deregister` (&57D41) |
+| [X]      | [ ]       | `DBResultManager_Start` (&57D42) |
+| [X]      | [ ]       | `DBResultManager_ReadData` (&57D43) |
+| [X]      | [ ]       | `DBResultManager_End` (&57D44) |
+| [X]      | [ ]       | `DBResultManager_Open` (&57D45) |
+| [X]      | [ ]       | `DBResultManager_Close` (&57D46) |
 
 
 ### Services
@@ -64,8 +70,10 @@
 ### Services
 
 
-* `36864`
-* `36865`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `&9000` |
+| [X]      | [ ]       | `&9001` |
 
 
 ### Vectors

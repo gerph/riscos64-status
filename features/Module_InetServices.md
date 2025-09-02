@@ -17,30 +17,38 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*Inet_DecodeError`
-* `*Inet_ServiceByName`
-* `*Inet_ServiceByPort`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*Inet_DecodeError` |
+| [X]      | [ ]       | `*Inet_ServiceByName` |
+| [X]      | [ ]       | `*Inet_ServiceByPort` |
 
 
 ### SWIs
 
 
-* `InetServices_GetServiceByPort` (&55640)
-* `InetServices_GetServiceByName` (&55641)
-* `InetServices_DecodeError` (&55642)
-* `InetServices_GetServicesMenu` (&55643)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `InetServices_GetServiceByPort` (&55640) |
+| [X]      | [ ]       | `InetServices_GetServiceByName` (&55641) |
+| [X]      | [ ]       | `InetServices_DecodeError` (&55642) |
+| [X]      | [ ]       | `InetServices_GetServicesMenu` (&55643) |
 
 
 ### Services
 
 
-* `Service_InternetVars`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_InternetVars` |
 
 
 ### Vectors
@@ -68,7 +76,9 @@
 ### Services
 
 
-* `Service_InetServices`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_InetServices` |
 
 
 ### Vectors

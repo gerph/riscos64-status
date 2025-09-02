@@ -16,8 +16,9 @@
 
 ### Functionality
 
-
-*None found*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Cli processor |
 
 ### Commands
 
@@ -34,13 +35,17 @@
 ### Services
 
 
-* `Service_ModuleStatus`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_ModuleStatus` |
 
 
 ### Vectors
 
 
-* `CliV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `CliV` |
 
 
 ### Events
@@ -62,8 +67,10 @@
 ### Services
 
 
-* `Service_SyntaxError`
-* `Service_UKCommand`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_SyntaxError` |
+| [ ]      | [ ]       | `Service_UKCommand` |
 
 
 ### Vectors

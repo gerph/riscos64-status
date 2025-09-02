@@ -3,9 +3,9 @@
 ## Discovered features
 
 
-* Does directory access
-* Does file access
 * Has background processing
+* Has directory access
+* Has file access
 * Has nvram state
 * Has services
 * Has services fast
@@ -22,68 +22,79 @@
 
 ### Functionality
 
-
-* Desktop filer icon
-* Filesystem
-* Freeway resources
-* Internet service
-* Resourcefs files
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Desktop filer icon |
+| [X]      | [ ]       | Filesystem |
+| [X]      | [ ]       | Freeway resources |
+| [X]      | [ ]       | Internet service |
+| [X]      | [ ]       | Resourcefs files |
 
 ### Commands
 
 
-* `*Configure ShareBoot`
-* `*Desktop_ShareFSFiler`
-* `*Dismount`
-* `*Free`
-* `*Share`
-* `*ShareFS`
-* `*ShareFSCache`
-* `*ShareFSCacheType`
-* `*ShareFSIcon`
-* `*ShareFSLogoff`
-* `*ShareFSLogon`
-* `*ShareFSWindow`
-* `*Shares`
-* `*UnShare`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*Configure ShareBoot` |
+| [X]      | [ ]       | `*Desktop_ShareFSFiler` |
+| [X]      | [ ]       | `*Dismount` |
+| [X]      | [ ]       | `*Free` |
+| [X]      | [ ]       | `*Share` |
+| [X]      | [ ]       | `*ShareFS` |
+| [X]      | [ ]       | `*ShareFSCache` |
+| [X]      | [ ]       | `*ShareFSCacheType` |
+| [X]      | [ ]       | `*ShareFSIcon` |
+| [X]      | [ ]       | `*ShareFSLogoff` |
+| [X]      | [ ]       | `*ShareFSLogon` |
+| [X]      | [ ]       | `*ShareFSWindow` |
+| [X]      | [ ]       | `*Shares` |
+| [X]      | [ ]       | `*UnShare` |
 
 
 ### SWIs
 
 
-* `ShareFS_CreateShare` (&47AC0)
-* `ShareFS_StopShare` (&47AC1)
-* `ShareFS_EnumerateShares` (&47AC2)
-* `ShareFS_IdentifyShare` (&47AC3)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `ShareFS_CreateShare` (&47AC0) |
+| [X]      | [ ]       | `ShareFS_StopShare` (&47AC1) |
+| [X]      | [ ]       | `ShareFS_EnumerateShares` (&47AC2) |
+| [X]      | [ ]       | `ShareFS_IdentifyShare` (&47AC3) |
 
 
 ### Services
 
 
-* `Service_DCIProtocolStatus`
-* `Service_DiscDismounted`
-* `Service_FSRedeclare`
-* `Service_FilerDying`
-* `Service_FreewayStarting`
-* `Service_FreewayTerminating`
-* `Service_InternetStatus`
-* `Service_PostInit`
-* `Service_ShutDownComplete`
-* `Service_StartFiler`
-* `Service_StartedFiler`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DCIProtocolStatus` |
+| [X]      | [ ]       | `Service_DiscDismounted` |
+| [X]      | [ ]       | `Service_FSRedeclare` |
+| [X]      | [ ]       | `Service_FilerDying` |
+| [X]      | [ ]       | `Service_FreewayStarting` |
+| [X]      | [ ]       | `Service_FreewayTerminating` |
+| [X]      | [ ]       | `Service_InternetStatus` |
+| [X]      | [ ]       | `Service_PostInit` |
+| [X]      | [ ]       | `Service_ShutDownComplete` |
+| [X]      | [ ]       | `Service_StartFiler` |
+| [X]      | [ ]       | `Service_StartedFiler` |
 
 
 ### Vectors
 
 
-* `EventV`
-* `UpCallV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `EventV` |
+| [X]      | [ ]       | `UpCallV` |
 
 
 ### Events
 
 
-* `Event_Internet`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Event_Internet` |
 
 
 ### UpCalls
@@ -99,18 +110,22 @@
 ### Services
 
 
-* `Service_RemoteFSExport`
-* `Service_RemoteFSVolume`
-* `Service_ShareDStarting`
-* `Service_ShareDTerminating`
-* `Service_Sharing`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_RemoteFSExport` |
+| [X]      | [ ]       | `Service_RemoteFSVolume` |
+| [X]      | [ ]       | `Service_ShareDStarting` |
+| [X]      | [ ]       | `Service_ShareDTerminating` |
+| [X]      | [ ]       | `Service_Sharing` |
 
 
 ### Vectors
 
 
-* `?`
-* `EconetV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `?` |
+| [X]      | [ ]       | `EconetV` |
 
 
 ### Events
@@ -122,9 +137,11 @@
 ### UpCalls
 
 
-* `UpCall_MediaNotKnown`
-* `UpCall_MediaSearchEnd`
-* `UpCall_ModifyingFile`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `UpCall_MediaNotKnown` |
+| [X]      | [ ]       | `UpCall_MediaSearchEnd` |
+| [X]      | [ ]       | `UpCall_ModifyingFile` |
 
 
 ### Modules

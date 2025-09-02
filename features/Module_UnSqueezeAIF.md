@@ -14,8 +14,9 @@
 
 ### Functionality
 
-
-* Executable handling
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Executable handling |
 
 ### Commands
 
@@ -32,7 +33,9 @@
 ### Services
 
 
-* `Service_UKCompression`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_UKCompression` |
 
 
 ### Vectors

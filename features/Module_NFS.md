@@ -21,43 +21,50 @@
 
 ### Functionality
 
-
-* Filesystem
-* Internet service
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Filesystem |
+| [X]      | [ ]       | Internet service |
 
 ### Commands
 
 
-* `*Bye`
-* `*CacheSize`
-* `*CacheTime`
-* `*Dismount`
-* `*Free`
-* `*Logon`
-* `*Mount`
-* `*NFS`
-* `*NFSBoot`
-* `*NFSInfo`
-* `*PacketSize`
-* `*Timeout`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*Bye` |
+| [X]      | [ ]       | `*CacheSize` |
+| [X]      | [ ]       | `*CacheTime` |
+| [X]      | [ ]       | `*Dismount` |
+| [X]      | [ ]       | `*Free` |
+| [X]      | [ ]       | `*Logon` |
+| [X]      | [ ]       | `*Mount` |
+| [X]      | [ ]       | `*NFS` |
+| [X]      | [ ]       | `*NFSBoot` |
+| [X]      | [ ]       | `*NFSInfo` |
+| [X]      | [ ]       | `*PacketSize` |
+| [X]      | [ ]       | `*Timeout` |
 
 
 ### SWIs
 
 
-* `NFS_Mount` (&410C0)
-* `NFS_MountList` (&410C1)
-* `NFS_SetUser` (&410C2)
-* `NFS_Dismount` (&410C3)
-* `NFS_MountInfo` (&410C4)
-* `NFS_FreeSpace` (&410C5)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `NFS_Mount` (&410C0) |
+| [X]      | [ ]       | `NFS_MountList` (&410C1) |
+| [X]      | [ ]       | `NFS_SetUser` (&410C2) |
+| [X]      | [ ]       | `NFS_Dismount` (&410C3) |
+| [X]      | [ ]       | `NFS_MountInfo` (&410C4) |
+| [X]      | [ ]       | `NFS_FreeSpace` (&410C5) |
 
 
 ### Services
 
 
-* `Service_DCIProtocolStatus`
-* `Service_FSRedeclare`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DCIProtocolStatus` |
+| [X]      | [ ]       | `Service_FSRedeclare` |
 
 
 ### Vectors
@@ -85,8 +92,10 @@
 ### Services
 
 
-* `Service_DiscDismounted`
-* `Service_NFS`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DiscDismounted` |
+| [X]      | [ ]       | `Service_NFS` |
 
 
 ### Vectors

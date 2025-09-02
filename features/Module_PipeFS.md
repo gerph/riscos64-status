@@ -3,8 +3,8 @@
 ## Discovered features
 
 
-* Does file access
 * Has background processing
+* Has file access
 * Has services
 * Has services fast
 * Uses console output
@@ -18,13 +18,16 @@
 
 ### Functionality
 
-
-* Filesystem
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Filesystem |
 
 ### Commands
 
 
-* `*PipeCopy`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*PipeCopy` |
 
 
 ### SWIs
@@ -36,7 +39,9 @@
 ### Services
 
 
-* `Service_FSRedeclare`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_FSRedeclare` |
 
 
 ### Vectors
@@ -82,9 +87,11 @@
 ### UpCalls
 
 
-* `UpCall_ModifyingFile`
-* `UpCall_Sleep`
-* `UpCall_SleepNoMore`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `UpCall_ModifyingFile` |
+| [ ]      | [ ]       | `UpCall_Sleep` |
+| [ ]      | [ ]       | `UpCall_SleepNoMore` |
 
 
 ### Modules

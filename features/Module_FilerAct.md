@@ -3,8 +3,8 @@
 ## Discovered features
 
 
-* Does file access
 * Has application environment
+* Has file access
 * Has services
 * Has services fast
 * Is c
@@ -17,13 +17,17 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*Filer_Action`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*Filer_Action` |
 
 
 ### SWIs
@@ -35,8 +39,10 @@
 ### Services
 
 
-* `Service_Memory`
-* `Service_Reset`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_Memory` |
+| [X]      | [ ]       | `Service_Reset` |
 
 
 ### Vectors
@@ -82,7 +88,9 @@
 ### UpCalls
 
 
-* `UpCall_NewApplication`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `UpCall_NewApplication` |
 
 
 ### Modules

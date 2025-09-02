@@ -3,9 +3,9 @@
 ## Discovered features
 
 
-* Does file access
 * Has application environment
 * Has dynamic code
+* Has file access
 * Has kernel collusion
 * Has services
 * Has services fast
@@ -18,13 +18,17 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*AIF`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*AIF` |
 
 
 ### SWIs
@@ -36,13 +40,17 @@
 ### Services
 
 
-* `Service_FSRedeclare`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_FSRedeclare` |
 
 
 ### Vectors
 
 
-* `FSCV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `FSCV` |
 
 
 ### Events
@@ -64,7 +72,9 @@
 ### Services
 
 
-* `Service_UKCompression`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_UKCompression` |
 
 
 ### Vectors

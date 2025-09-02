@@ -3,7 +3,7 @@
 ## Discovered features
 
 
-* Does disc access
+* Has disc access
 * Has nvram state
 * Has swis
 * Uses dynamic area
@@ -15,26 +15,31 @@
 
 ### Functionality
 
-
-* Filecore filesystem
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Filecore filesystem |
 
 ### Commands
 
 
-* `*Ram`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Ram` |
 
 
 ### SWIs
 
 
-* `RamFS_DiscOp` (&40780)
-* `RamFS_NOP` (&40781)
-* `RamFS_Drives` (&40782)
-* `RamFS_FreeSpace` (&40783)
-* `RamFS_DescribeDisc` (&40785)
-* `RamFS_DiscOp64` (&40786)
-* `RamFS_MiscOp` (&4078C)
-* `RamFS_SectorDiscOp` (&4078D)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `RamFS_DiscOp` (&40780) |
+| [ ]      | [ ]       | `RamFS_NOP` (&40781) |
+| [ ]      | [ ]       | `RamFS_Drives` (&40782) |
+| [ ]      | [ ]       | `RamFS_FreeSpace` (&40783) |
+| [ ]      | [ ]       | `RamFS_DescribeDisc` (&40785) |
+| [ ]      | [ ]       | `RamFS_DiscOp64` (&40786) |
+| [ ]      | [ ]       | `RamFS_MiscOp` (&4078C) |
+| [ ]      | [ ]       | `RamFS_SectorDiscOp` (&4078D) |
 
 
 ### Services
@@ -68,7 +73,9 @@
 ### Services
 
 
-* `Service_DiscDismounted`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_DiscDismounted` |
 
 
 ### Vectors

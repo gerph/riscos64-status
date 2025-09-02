@@ -14,6 +14,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -26,7 +28,9 @@
 ### SWIs
 
 
-* `MakePSFont_MakeFont` (&43440)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `MakePSFont_MakeFont` (&43440) |
 
 
 ### Services

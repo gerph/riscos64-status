@@ -3,6 +3,8 @@
 ## Discovered features
 
 
+* Has background processing
+* Has pointer control
 * Has services
 * Has services fast
 * Has swis
@@ -13,38 +15,48 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*HOff`
-* `*HOn`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*HOff` |
+| [ ]      | [ ]       | `*HOn` |
 
 
 ### SWIs
 
 
-* `Hourglass_On` (&406C0)
-* `Hourglass_Off` (&406C1)
-* `Hourglass_Smash` (&406C2)
-* `Hourglass_Start` (&406C3)
-* `Hourglass_Percentage` (&406C4)
-* `Hourglass_LEDs` (&406C5)
-* `Hourglass_Colours` (&406C6)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Hourglass_On` (&406C0) |
+| [ ]      | [ ]       | `Hourglass_Off` (&406C1) |
+| [ ]      | [ ]       | `Hourglass_Smash` (&406C2) |
+| [ ]      | [ ]       | `Hourglass_Start` (&406C3) |
+| [ ]      | [ ]       | `Hourglass_Percentage` (&406C4) |
+| [ ]      | [ ]       | `Hourglass_LEDs` (&406C5) |
+| [ ]      | [ ]       | `Hourglass_Colours` (&406C6) |
 
 
 ### Services
 
 
-* `Service_Error`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_Error` |
 
 
 ### Vectors
 
 
-* `TickerV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `TickerV` |
 
 
 ### Events

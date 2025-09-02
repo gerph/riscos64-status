@@ -13,13 +13,16 @@
 
 ### Functionality
 
-
-* Executable handling
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Executable handling |
 
 ### Commands
 
 
-* `*LegacyExec`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*LegacyExec` |
 
 
 ### SWIs
@@ -31,7 +34,9 @@
 ### Services
 
 
-* `Service_UKCompression`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_UKCompression` |
 
 
 ### Vectors

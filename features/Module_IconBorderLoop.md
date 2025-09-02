@@ -14,8 +14,9 @@
 
 ### Functionality
 
-
-* Desktop icon redraw
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Desktop icon redraw |
 
 ### Commands
 
@@ -32,7 +33,9 @@
 ### Services
 
 
-* `Service_FilterManagerInstalled`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_FilterManagerInstalled` |
 
 
 ### Vectors

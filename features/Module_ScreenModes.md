@@ -16,28 +16,36 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*LoadModeFile`
-* `*VIDCBandwidthLimit`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*LoadModeFile` |
+| [X]      | [ ]       | `*VIDCBandwidthLimit` |
 
 
 ### SWIs
 
 
-* `ScreenModes_ReadInfo` (&487C0)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `ScreenModes_ReadInfo` (&487C0) |
 
 
 ### Services
 
 
-* `Service_DisplayChanged`
-* `Service_EnumerateScreenModes`
-* `Service_ModeExtension`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DisplayChanged` |
+| [X]      | [ ]       | `Service_EnumerateScreenModes` |
+| [X]      | [ ]       | `Service_ModeExtension` |
 
 
 ### Vectors
@@ -65,7 +73,9 @@
 ### Services
 
 
-* `?`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `?` |
 
 
 ### Vectors

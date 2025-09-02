@@ -15,13 +15,17 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*CommandCache`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*CommandCache` |
 
 
 ### SWIs
@@ -39,7 +43,9 @@
 ### Vectors
 
 
-* `FSCV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `FSCV` |
 
 
 ### Events
@@ -61,7 +67,9 @@
 ### Services
 
 
-* `Service_UKCompression`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_UKCompression` |
 
 
 ### Vectors

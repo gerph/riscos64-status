@@ -13,6 +13,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -25,9 +27,11 @@
 ### SWIs
 
 
-* `DrawChart_Render` (&574C0)
-* `DrawChart_DrawFile` (&574C1)
-* `DrawChart_CheckPoint` (&574C2)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `DrawChart_Render` (&574C0) |
+| [X]      | [ ]       | `DrawChart_DrawFile` (&574C1) |
+| [X]      | [ ]       | `DrawChart_CheckPoint` (&574C2) |
 
 
 ### Services

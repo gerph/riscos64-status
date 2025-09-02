@@ -15,8 +15,9 @@
 
 ### Functionality
 
-
-* Image conversion
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Image conversion |
 
 ### Commands
 
@@ -27,9 +28,11 @@
 ### SWIs
 
 
-* `ConvertPNG_Info` (&564C0)
-* `ConvertPNG_CreateSprite` (&564C1)
-* `ConvertPNG_CreatePNG` (&564C2)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `ConvertPNG_Info` (&564C0) |
+| [X]      | [ ]       | `ConvertPNG_CreateSprite` (&564C1) |
+| [X]      | [ ]       | `ConvertPNG_CreatePNG` (&564C2) |
 
 
 ### Services

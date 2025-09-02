@@ -16,39 +16,43 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*Break`
-* `*ChangeDynamicArea`
-* `*Commands`
-* `*Configure`
-* `*Echo`
-* `*Error`
-* `*FX`
-* `*FileCommands`
-* `*GO`
-* `*GOS`
-* `*Help`
-* `*IF`
-* `*Ignore`
-* `*Key`
-* `*PowerOn`
-* `*Quit`
-* `*Reset`
-* `*Set`
-* `*SetEval`
-* `*SetMacro`
-* `*Shadow`
-* `*Show`
-* `*Status`
-* `*Syntax`
-* `*TV`
-* `*Time`
-* `*Unset`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Break` |
+| [ ]      | [ ]       | `*ChangeDynamicArea` |
+| [ ]      | [ ]       | `*Commands` |
+| [ ]      | [ ]       | `*Configure` |
+| [ ]      | [ ]       | `*Echo` |
+| [ ]      | [ ]       | `*Error` |
+| [ ]      | [ ]       | `*FX` |
+| [ ]      | [ ]       | `*FileCommands` |
+| [ ]      | [ ]       | `*GO` |
+| [ ]      | [ ]       | `*GOS` |
+| [ ]      | [ ]       | `*Help` |
+| [ ]      | [ ]       | `*IF` |
+| [ ]      | [ ]       | `*Ignore` |
+| [ ]      | [ ]       | `*Key` |
+| [ ]      | [ ]       | `*PowerOn` |
+| [ ]      | [ ]       | `*Quit` |
+| [ ]      | [ ]       | `*Reset` |
+| [ ]      | [ ]       | `*Set` |
+| [ ]      | [ ]       | `*SetEval` |
+| [ ]      | [ ]       | `*SetMacro` |
+| [ ]      | [ ]       | `*Shadow` |
+| [ ]      | [ ]       | `*Show` |
+| [ ]      | [ ]       | `*Status` |
+| [ ]      | [ ]       | `*Syntax` |
+| [ ]      | [ ]       | `*TV` |
+| [ ]      | [ ]       | `*Time` |
+| [ ]      | [ ]       | `*Unset` |
 
 
 ### SWIs
@@ -88,11 +92,13 @@
 ### Services
 
 
-* `?`
-* `Service_Help`
-* `Service_HelpQuery`
-* `Service_UKConfig`
-* `Service_UKStatus`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `?` |
+| [ ]      | [ ]       | `Service_Help` |
+| [ ]      | [ ]       | `Service_HelpQuery` |
+| [ ]      | [ ]       | `Service_UKConfig` |
+| [ ]      | [ ]       | `Service_UKStatus` |
 
 
 ### Vectors

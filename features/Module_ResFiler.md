@@ -15,13 +15,16 @@
 
 ### Functionality
 
-
-* Desktop filer icon
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Desktop filer icon |
 
 ### Commands
 
 
-* `*Desktop_ResourceFiler`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Desktop_ResourceFiler` |
 
 
 ### SWIs
@@ -33,11 +36,13 @@
 ### Services
 
 
-* `Service_FilerDying`
-* `Service_MessageFileClosed`
-* `Service_Reset`
-* `Service_StartFiler`
-* `Service_StartedFiler`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_FilerDying` |
+| [ ]      | [ ]       | `Service_MessageFileClosed` |
+| [ ]      | [ ]       | `Service_Reset` |
+| [ ]      | [ ]       | `Service_StartFiler` |
+| [ ]      | [ ]       | `Service_StartedFiler` |
 
 
 ### Vectors

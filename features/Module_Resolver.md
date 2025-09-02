@@ -20,42 +20,51 @@
 
 ### Functionality
 
-
-* Dci4 statistics
-* Internet service
-* Mdns service
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Dci4 statistics |
+| [X]      | [ ]       | Internet service |
+| [X]      | [ ]       | Mdns service |
 
 ### Commands
 
 
-* `*ResolverConfig`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*ResolverConfig` |
 
 
 ### SWIs
 
 
-* `Resolver_GetHostByName` (&46000)
-* `Resolver_GetHost` (&46001)
-* `Resolver_GetCache` (&46002)
-* `Resolver_CacheControl` (&46003)
-* `Resolver_DCI4Statistics` (&46004)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Resolver_GetHostByName` (&46000) |
+| [X]      | [ ]       | `Resolver_GetHost` (&46001) |
+| [X]      | [ ]       | `Resolver_GetCache` (&46002) |
+| [X]      | [ ]       | `Resolver_CacheControl` (&46003) |
+| [X]      | [ ]       | `Resolver_DCI4Statistics` (&46004) |
 
 
 ### Services
 
 
-* `Service_DCIDriverStatus`
-* `Service_DCIProtocolStatus`
-* `Service_InternetStatus`
-* `Service_InternetVars`
-* `Service_StatisticEnumerate`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DCIDriverStatus` |
+| [X]      | [ ]       | `Service_DCIProtocolStatus` |
+| [X]      | [ ]       | `Service_InternetStatus` |
+| [X]      | [ ]       | `Service_InternetVars` |
+| [X]      | [ ]       | `Service_StatisticEnumerate` |
 
 
 ### Vectors
 
 
-* `?`
-* `UpCallV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `?` |
+| [X]      | [ ]       | `UpCallV` |
 
 
 ### Events
@@ -77,7 +86,9 @@
 ### Services
 
 
-* `Service_InternetVars`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_InternetVars` |
 
 
 ### Vectors
@@ -89,13 +100,17 @@
 ### Events
 
 
-* `Event_Internet`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Event_Internet` |
 
 
 ### UpCalls
 
 
-* `UpCall_Sleep`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `UpCall_Sleep` |
 
 
 ### Modules

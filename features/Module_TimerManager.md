@@ -12,8 +12,9 @@
 
 ### Functionality
 
-
-* Hardware driver
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Hardware driver |
 
 ### Commands
 
@@ -24,11 +25,13 @@
 ### SWIs
 
 
-* `TimerManager_ReturnNumber` (&58B80)
-* `TimerManager_Claim` (&58B81)
-* `TimerManager_Release` (&58B82)
-* `TimerManager_SetRate` (&58B83)
-* `TimerManager_Convert` (&58B84)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `TimerManager_ReturnNumber` (&58B80) |
+| [ ]      | [ ]       | `TimerManager_Claim` (&58B81) |
+| [ ]      | [ ]       | `TimerManager_Release` (&58B82) |
+| [ ]      | [ ]       | `TimerManager_SetRate` (&58B83) |
+| [ ]      | [ ]       | `TimerManager_Convert` (&58B84) |
 
 
 ### Services

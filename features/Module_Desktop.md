@@ -3,9 +3,9 @@
 ## Discovered features
 
 
-* Does directory access
-* Does file access
 * Has argument parsing
+* Has directory access
+* Has file access
 * Has nvram state
 * Is desktop application
 * Sets variables
@@ -17,13 +17,17 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*Desktop`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Desktop` |
 
 
 ### SWIs
@@ -63,9 +67,11 @@
 ### Services
 
 
-* `Service_DesktopWelcome`
-* `Service_StartWimp`
-* `Service_StartedWimp`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_DesktopWelcome` |
+| [ ]      | [ ]       | `Service_StartWimp` |
+| [ ]      | [ ]       | `Service_StartedWimp` |
 
 
 ### Vectors

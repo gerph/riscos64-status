@@ -16,9 +16,10 @@
 
 ### Functionality
 
-
-* Dci4 statistics
-* Internet service
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Dci4 statistics |
+| [X]      | [ ]       | Internet service |
 
 ### Commands
 
@@ -29,38 +30,46 @@
 ### SWIs
 
 
-* `ResolverMDNS_DCI4Statistics` (&57DC0)
-* `ResolverMDNS_RegisterService` (&57DC1)
-* `ResolverMDNS_DeregisterService` (&57DC2)
-* `ResolverMDNS_Resolve` (&57DC3)
-* `ResolverMDNS_GetHost` (&57DC4)
-* `ResolverMDNS_BrowseStart` (&57DC5)
-* `ResolverMDNS_BrowseRead` (&57DC6)
-* `ResolverMDNS_BrowseStop` (&57DC7)
-* `ResolverMDNS_GetDomains` (&57DC8)
-* `ResolverMDNS_ConvertTXT` (&57DC9)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `ResolverMDNS_DCI4Statistics` (&57DC0) |
+| [X]      | [ ]       | `ResolverMDNS_RegisterService` (&57DC1) |
+| [X]      | [ ]       | `ResolverMDNS_DeregisterService` (&57DC2) |
+| [X]      | [ ]       | `ResolverMDNS_Resolve` (&57DC3) |
+| [X]      | [ ]       | `ResolverMDNS_GetHost` (&57DC4) |
+| [X]      | [ ]       | `ResolverMDNS_BrowseStart` (&57DC5) |
+| [X]      | [ ]       | `ResolverMDNS_BrowseRead` (&57DC6) |
+| [X]      | [ ]       | `ResolverMDNS_BrowseStop` (&57DC7) |
+| [X]      | [ ]       | `ResolverMDNS_GetDomains` (&57DC8) |
+| [X]      | [ ]       | `ResolverMDNS_ConvertTXT` (&57DC9) |
 
 
 ### Services
 
 
-* `Service_DCIDriverStatus`
-* `Service_DCIProtocolStatus`
-* `Service_InternetStatus`
-* `Service_InternetVars`
-* `Service_StatisticEnumerate`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DCIDriverStatus` |
+| [X]      | [ ]       | `Service_DCIProtocolStatus` |
+| [X]      | [ ]       | `Service_InternetStatus` |
+| [X]      | [ ]       | `Service_InternetVars` |
+| [X]      | [ ]       | `Service_StatisticEnumerate` |
 
 
 ### Vectors
 
 
-* `EventV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `EventV` |
 
 
 ### Events
 
 
-* `Event_Internet`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Event_Internet` |
 
 
 ### UpCalls
@@ -88,7 +97,9 @@
 ### Events
 
 
-* `Event_Internet`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Event_Internet` |
 
 
 ### UpCalls

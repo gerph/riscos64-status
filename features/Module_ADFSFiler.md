@@ -3,8 +3,8 @@
 ## Discovered features
 
 
-* Does disc access
 * Has argument parsing
+* Has disc access
 * Has nvram state
 * Has services
 * Has services fast
@@ -19,13 +19,16 @@
 
 ### Functionality
 
-
-* Desktop filer icon
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Desktop filer icon |
 
 ### Commands
 
 
-* `*Desktop_ADFSFiler`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Desktop_ADFSFiler` |
 
 
 ### SWIs
@@ -37,17 +40,21 @@
 ### Services
 
 
-* `Service_FilerDying`
-* `Service_MessageFileClosed`
-* `Service_Reset`
-* `Service_StartFiler`
-* `Service_StartedFiler`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_FilerDying` |
+| [ ]      | [ ]       | `Service_MessageFileClosed` |
+| [ ]      | [ ]       | `Service_Reset` |
+| [ ]      | [ ]       | `Service_StartFiler` |
+| [ ]      | [ ]       | `Service_StartedFiler` |
 
 
 ### Vectors
 
 
-* `UpCallV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `UpCallV` |
 
 
 ### Events
@@ -69,8 +76,10 @@
 ### Services
 
 
-* `Service_EnumerateFormats`
-* `Service_IdentifyDisc`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_EnumerateFormats` |
+| [ ]      | [ ]       | `Service_IdentifyDisc` |
 
 
 ### Vectors

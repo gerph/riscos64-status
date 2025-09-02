@@ -3,8 +3,8 @@
 ## Discovered features
 
 
-* Does file access
 * Has application environment
+* Has file access
 * Has services
 * Has services fast
 * Sets variables
@@ -17,9 +17,11 @@
 
 ### Functionality
 
-
-* Printer driver
-* Resourcefs files
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Graphics extension |
+| [ ]      | [ ]       | Printer driver |
+| [ ]      | [ ]       | Resourcefs files |
 
 ### Commands
 
@@ -36,18 +38,22 @@
 ### Services
 
 
-* `Service_ModeChange`
-* `Service_PDriverGetSharedMessagesFile`
-* `Service_PDriverStarting`
-* `Service_ResourceFSStarting`
-* `Service_WimpReportError`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_ModeChange` |
+| [ ]      | [ ]       | `Service_PDriverGetSharedMessagesFile` |
+| [ ]      | [ ]       | `Service_PDriverStarting` |
+| [ ]      | [ ]       | `Service_ResourceFSStarting` |
+| [ ]      | [ ]       | `Service_WimpReportError` |
 
 
 ### Vectors
 
 
-* `?`
-* `SpriteV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `?` |
+| [ ]      | [ ]       | `SpriteV` |
 
 
 ### Events
@@ -69,14 +75,18 @@
 ### Services
 
 
-* `Service_PDriverGetMessages`
-* `Service_Print`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_PDriverGetMessages` |
+| [ ]      | [ ]       | `Service_Print` |
 
 
 ### Vectors
 
 
-* `PaletteV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `PaletteV` |
 
 
 ### Events

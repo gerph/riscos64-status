@@ -14,13 +14,16 @@
 
 ### Functionality
 
-
-* Default desktop application
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Default desktop application |
 
 ### Commands
 
 
-* `*Desktop_DiscSpaceCheck`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*Desktop_DiscSpaceCheck` |
 
 
 ### SWIs
@@ -32,8 +35,10 @@
 ### Services
 
 
-* `Service_StartWimp`
-* `Service_StartedWimp`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_StartWimp` |
+| [X]      | [ ]       | `Service_StartedWimp` |
 
 
 ### Vectors

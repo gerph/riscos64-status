@@ -11,8 +11,9 @@
 
 ### Functionality
 
-
-*None found*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Nvram |
 
 ### Commands
 
@@ -35,7 +36,9 @@
 ### Vectors
 
 
-* `NVRAMV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `NVRAMV` |
 
 
 ### Events

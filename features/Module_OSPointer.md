@@ -14,10 +14,10 @@
 
 ### Functionality
 
-
-* Buffers
-* Os swis
-* Video driver
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Buffers |
+| [ ]      | [ ]       | Os swis |
 
 ### Commands
 
@@ -34,26 +34,32 @@
 ### Services
 
 
-* `Service_BufferStarting`
-* `Service_DisplayChanged`
-* `Service_ModeChange`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_BufferStarting` |
+| [ ]      | [ ]       | `Service_DisplayChanged` |
+| [ ]      | [ ]       | `Service_ModeChange` |
 
 
 ### Vectors
 
 
-* `ByteV`
-* `EventV`
-* `KEYV`
-* `MouseV`
-* `WordV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `ByteV` |
+| [ ]      | [ ]       | `EventV` |
+| [ ]      | [ ]       | `KEYV` |
+| [ ]      | [ ]       | `MouseV` |
+| [ ]      | [ ]       | `WordV` |
 
 
 ### Events
 
 
-* `Event_Expansion`
-* `Event_VSync`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Event_Expansion` |
+| [ ]      | [ ]       | `Event_VSync` |
 
 
 ### UpCalls
@@ -75,19 +81,23 @@
 ### Vectors
 
 
-* `INSV`
-* `KEYV`
-* `PointerV`
-* `REMV`
-* `VideoV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `INSV` |
+| [ ]      | [ ]       | `KEYV` |
+| [ ]      | [ ]       | `PointerV` |
+| [ ]      | [ ]       | `REMV` |
+| [ ]      | [ ]       | `VideoV` |
 
 
 ### Events
 
 
-* `Event_Expansion`
-* `Event_Keyboard`
-* `Event_Mouse`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Event_Expansion` |
+| [ ]      | [ ]       | `Event_Keyboard` |
+| [ ]      | [ ]       | `Event_Mouse` |
 
 
 ### UpCalls

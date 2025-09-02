@@ -12,6 +12,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -24,10 +26,12 @@
 ### SWIs
 
 
-* `KeyInput_Check` (&58540)
-* `KeyInput_CheckMultiple` (&58541)
-* `KeyInput_Scan` (&58542)
-* `KeyInput_ScanMultiple` (&58543)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `KeyInput_Check` (&58540) |
+| [X]      | [ ]       | `KeyInput_CheckMultiple` (&58541) |
+| [X]      | [ ]       | `KeyInput_Scan` (&58542) |
+| [X]      | [ ]       | `KeyInput_ScanMultiple` (&58543) |
 
 
 ### Services
@@ -39,7 +43,9 @@
 ### Vectors
 
 
-* `KEYV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `KEYV` |
 
 
 ### Events
@@ -67,7 +73,9 @@
 ### Vectors
 
 
-* `?`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `?` |
 
 
 ### Events

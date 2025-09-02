@@ -20,56 +20,63 @@
 
 ### Functionality
 
-
-* Desktop filter
-* Resourcefs files
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Desktop filter |
+| [X]      | [ ]       | Resourcefs files |
 
 ### Commands
 
 
-* `*Toolbox_Objects`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*Toolbox_Objects` |
 
 
 ### SWIs
 
 
-* `Toolbox_CreateObject` (&44EC0)
-* `Toolbox_DeleteObject` (&44EC1)
-* `Toolbox_CopyObject` (&44EC2)
-* `Toolbox_ShowObject` (&44EC3)
-* `Toolbox_HideObject` (&44EC4)
-* `Toolbox_GetObjectInfo` (&44EC5)
-* `Toolbox_ObjectMiscOp` (&44EC6)
-* `Toolbox_SetClientHandle` (&44EC7)
-* `Toolbox_GetClientHandle` (&44EC8)
-* `Toolbox_GetObjectClass` (&44EC9)
-* `Toolbox_GetParent` (&44ECA)
-* `Toolbox_GetAncestor` (&44ECB)
-* `Toolbox_GetTemplateName` (&44ECC)
-* `Toolbox_RaiseToolboxEvent` (&44ECD)
-* `Toolbox_GetSysInfo` (&44ECE)
-* `Toolbox_Initialise` (&44ECF)
-* `Toolbox_LoadResources` (&44ED0)
-* `Toolbox_NULL` (&44ED1)
-* `Toolbox_TimerOp` (&44EF8)
-* `Toolbox_Memory` (&44EF9)
-* `Toolbox_DeRegisterObjectModule` (&44EFA)
-* `Toolbox_TemplateLookUp` (&44EFB)
-* `Toolbox_GetInternalHandle` (&44EFC)
-* `Toolbox_RegisterObjectModule` (&44EFD)
-* `Toolbox_RegisterPreFilter` (&44EFE)
-* `Toolbox_RegisterPostFilter` (&44EFF)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Toolbox_CreateObject` (&44EC0) |
+| [X]      | [ ]       | `Toolbox_DeleteObject` (&44EC1) |
+| [X]      | [ ]       | `Toolbox_CopyObject` (&44EC2) |
+| [X]      | [ ]       | `Toolbox_ShowObject` (&44EC3) |
+| [X]      | [ ]       | `Toolbox_HideObject` (&44EC4) |
+| [X]      | [ ]       | `Toolbox_GetObjectInfo` (&44EC5) |
+| [X]      | [ ]       | `Toolbox_ObjectMiscOp` (&44EC6) |
+| [X]      | [ ]       | `Toolbox_SetClientHandle` (&44EC7) |
+| [X]      | [ ]       | `Toolbox_GetClientHandle` (&44EC8) |
+| [X]      | [ ]       | `Toolbox_GetObjectClass` (&44EC9) |
+| [X]      | [ ]       | `Toolbox_GetParent` (&44ECA) |
+| [X]      | [ ]       | `Toolbox_GetAncestor` (&44ECB) |
+| [X]      | [ ]       | `Toolbox_GetTemplateName` (&44ECC) |
+| [X]      | [ ]       | `Toolbox_RaiseToolboxEvent` (&44ECD) |
+| [X]      | [ ]       | `Toolbox_GetSysInfo` (&44ECE) |
+| [X]      | [ ]       | `Toolbox_Initialise` (&44ECF) |
+| [X]      | [ ]       | `Toolbox_LoadResources` (&44ED0) |
+| [X]      | [ ]       | `Toolbox_NULL` (&44ED1) |
+| [X]      | [ ]       | `Toolbox_TimerOp` (&44EF8) |
+| [X]      | [ ]       | `Toolbox_Memory` (&44EF9) |
+| [X]      | [ ]       | `Toolbox_DeRegisterObjectModule` (&44EFA) |
+| [X]      | [ ]       | `Toolbox_TemplateLookUp` (&44EFB) |
+| [X]      | [ ]       | `Toolbox_GetInternalHandle` (&44EFC) |
+| [X]      | [ ]       | `Toolbox_RegisterObjectModule` (&44EFD) |
+| [X]      | [ ]       | `Toolbox_RegisterPreFilter` (&44EFE) |
+| [X]      | [ ]       | `Toolbox_RegisterPostFilter` (&44EFF) |
 
 
 ### Services
 
 
-* `Service_DynamicAreaRenumber`
-* `Service_FilterManagerInstalled`
-* `Service_Memory`
-* `Service_PostInit`
-* `Service_ResourceFSStarting`
-* `Service_WimpCloseDown`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DynamicAreaRenumber` |
+| [X]      | [ ]       | `Service_FilterManagerInstalled` |
+| [X]      | [ ]       | `Service_Memory` |
+| [X]      | [ ]       | `Service_PostInit` |
+| [X]      | [ ]       | `Service_ResourceFSStarting` |
+| [X]      | [ ]       | `Service_WimpCloseDown` |
 
 
 ### Vectors
@@ -97,10 +104,12 @@
 ### Services
 
 
-* `?`
-* `Service_ToolboxDying`
-* `Service_ToolboxSubMenu`
-* `Service_ToolboxTaskBorn`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `?` |
+| [X]      | [ ]       | `Service_ToolboxDying` |
+| [X]      | [ ]       | `Service_ToolboxSubMenu` |
+| [X]      | [ ]       | `Service_ToolboxTaskBorn` |
 
 
 ### Vectors

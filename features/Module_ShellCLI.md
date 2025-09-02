@@ -18,28 +18,36 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*ShellCLI`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*ShellCLI` |
 
 
 ### SWIs
 
 
-* `Shell_Create` (&805C0)
-* `Shell_Destroy` (&805C1)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Shell_Create` (&805C0) |
+| [ ]      | [ ]       | `Shell_Destroy` (&805C1) |
 
 
 ### Services
 
 
-* `Service_Memory`
-* `Service_Reset`
-* `Service_WimpCloseDown`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_Memory` |
+| [ ]      | [ ]       | `Service_Reset` |
+| [ ]      | [ ]       | `Service_WimpCloseDown` |
 
 
 ### Vectors

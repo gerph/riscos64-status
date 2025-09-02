@@ -16,9 +16,10 @@
 
 ### Functionality
 
-
-* Resourcefs files
-* Toolbox object
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Resourcefs files |
+| [X]      | [ ]       | Toolbox object |
 
 ### Commands
 
@@ -29,20 +30,24 @@
 ### SWIs
 
 
-* `Menu_ClassSWI` (&828C0)
-* `Menu_PostFilter` (&828C1)
-* `Menu_PreFilter` (&828C2)
-* `Menu_UpdateTree` (&828C3)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Menu_ClassSWI` (&828C0) |
+| [X]      | [ ]       | `Menu_PostFilter` (&828C1) |
+| [X]      | [ ]       | `Menu_PreFilter` (&828C2) |
+| [X]      | [ ]       | `Menu_UpdateTree` (&828C3) |
 
 
 ### Services
 
 
-* `Service_ResourceFSStarting`
-* `Service_ToolboxStarting`
-* `Service_ToolboxSubMenu`
-* `Service_ToolboxTaskBorn`
-* `Service_ToolboxTaskDied`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ResourceFSStarting` |
+| [X]      | [ ]       | `Service_ToolboxStarting` |
+| [X]      | [ ]       | `Service_ToolboxSubMenu` |
+| [X]      | [ ]       | `Service_ToolboxTaskBorn` |
+| [X]      | [ ]       | `Service_ToolboxTaskDied` |
 
 
 ### Vectors
@@ -70,7 +75,9 @@
 ### Services
 
 
-* `Service_ToolboxSubMenu`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ToolboxSubMenu` |
 
 
 ### Vectors

@@ -15,13 +15,16 @@
 
 ### Functionality
 
-
-* Default desktop application
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Default desktop application |
 
 ### Commands
 
 
-* `*Desktop_DisplayManager`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Desktop_DisplayManager` |
 
 
 ### SWIs
@@ -33,13 +36,15 @@
 ### Services
 
 
-* `Service_CalibrationChanged`
-* `Service_ModeChange`
-* `Service_ModeFileChanged`
-* `Service_Reset`
-* `Service_StartWimp`
-* `Service_StartedWimp`
-* `Service_WimpPalette`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_CalibrationChanged` |
+| [ ]      | [ ]       | `Service_ModeChange` |
+| [ ]      | [ ]       | `Service_ModeFileChanged` |
+| [ ]      | [ ]       | `Service_Reset` |
+| [ ]      | [ ]       | `Service_StartWimp` |
+| [ ]      | [ ]       | `Service_StartedWimp` |
+| [ ]      | [ ]       | `Service_WimpPalette` |
 
 
 ### Vectors
@@ -73,7 +78,9 @@
 ### Vectors
 
 
-* `PaletteV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `PaletteV` |
 
 
 ### Events

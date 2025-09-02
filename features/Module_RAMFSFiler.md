@@ -16,13 +16,16 @@
 
 ### Functionality
 
-
-* Desktop filer icon
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Desktop filer icon |
 
 ### Commands
 
 
-* `*Desktop_RAMFSFiler`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Desktop_RAMFSFiler` |
 
 
 ### SWIs
@@ -34,11 +37,13 @@
 ### Services
 
 
-* `Service_FilerDying`
-* `Service_MessageFileClosed`
-* `Service_Reset`
-* `Service_StartFiler`
-* `Service_StartedFiler`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_FilerDying` |
+| [ ]      | [ ]       | `Service_MessageFileClosed` |
+| [ ]      | [ ]       | `Service_Reset` |
+| [ ]      | [ ]       | `Service_StartFiler` |
+| [ ]      | [ ]       | `Service_StartedFiler` |
 
 
 ### Vectors
@@ -66,7 +71,9 @@
 ### Services
 
 
-* `Service_StartUpFS`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_StartUpFS` |
 
 
 ### Vectors

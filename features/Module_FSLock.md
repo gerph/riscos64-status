@@ -15,22 +15,28 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*FSLock_ChangePassword`
-* `*FSLock_Lock`
-* `*FSLock_Status`
-* `*FSLock_Unlock`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*FSLock_ChangePassword` |
+| [ ]      | [ ]       | `*FSLock_Lock` |
+| [ ]      | [ ]       | `*FSLock_Status` |
+| [ ]      | [ ]       | `*FSLock_Unlock` |
 
 
 ### SWIs
 
 
-* `FSLock_Version` (&44780)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `FSLock_Version` (&44780) |
 
 
 ### Services
@@ -42,8 +48,10 @@
 ### Vectors
 
 
-* `ByteV`
-* `FSCV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `ByteV` |
+| [ ]      | [ ]       | `FSCV` |
 
 
 ### Events

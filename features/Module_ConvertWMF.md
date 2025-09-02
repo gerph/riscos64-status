@@ -15,8 +15,9 @@
 
 ### Functionality
 
-
-* Image conversion
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Image conversion |
 
 ### Commands
 
@@ -33,7 +34,9 @@
 ### Services
 
 
-* `Service_ModeChange`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ModeChange` |
 
 
 ### Vectors

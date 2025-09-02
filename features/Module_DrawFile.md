@@ -18,27 +18,34 @@
 
 ### Functionality
 
-
-* Image conversion
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Image conversion |
 
 ### Commands
 
 
-* `*Render`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*Render` |
 
 
 ### SWIs
 
 
-* `DrawFile_Render` (&45540)
-* `DrawFile_BBox` (&45541)
-* `DrawFile_DeclareFonts` (&45542)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `DrawFile_Render` (&45540) |
+| [X]      | [ ]       | `DrawFile_BBox` (&45541) |
+| [X]      | [ ]       | `DrawFile_DeclareFonts` (&45542) |
 
 
 ### Services
 
 
-* `Service_ResourceFSStarting`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ResourceFSStarting` |
 
 
 ### Vectors
@@ -66,8 +73,10 @@
 ### Services
 
 
-* `Service_DrawObjectDeclareFonts`
-* `Service_DrawObjectRender`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DrawObjectDeclareFonts` |
+| [X]      | [ ]       | `Service_DrawObjectRender` |
 
 
 ### Vectors

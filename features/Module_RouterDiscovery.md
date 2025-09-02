@@ -18,42 +18,53 @@
 
 ### Functionality
 
-
-* Dci4 statistics
-* Internet configuration
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Dci4 statistics |
+| [X]      | [ ]       | Internet configuration |
 
 ### Commands
 
 
-* `*RouterDiscovery`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*RouterDiscovery` |
 
 
 ### SWIs
 
 
-* `RouterDiscovery_Control` (&57D80)
-* `RouterDiscovery_Status` (&57D81)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `RouterDiscovery_Control` (&57D80) |
+| [X]      | [ ]       | `RouterDiscovery_Status` (&57D81) |
 
 
 ### Services
 
 
-* `Service_DCIDriverStatus`
-* `Service_DCIProtocolStatus`
-* `Service_InternetStatus`
-* `Service_StatisticEnumerate`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DCIDriverStatus` |
+| [X]      | [ ]       | `Service_DCIProtocolStatus` |
+| [X]      | [ ]       | `Service_InternetStatus` |
+| [X]      | [ ]       | `Service_StatisticEnumerate` |
 
 
 ### Vectors
 
 
-* `EventV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `EventV` |
 
 
 ### Events
 
 
-* `Event_Internet`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Event_Internet` |
 
 
 ### UpCalls
@@ -69,7 +80,9 @@
 ### Services
 
 
-* `Service_InternetStatus`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_InternetStatus` |
 
 
 ### Vectors

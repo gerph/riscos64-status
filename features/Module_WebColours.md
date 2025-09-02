@@ -12,6 +12,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -24,10 +26,12 @@
 ### SWIs
 
 
-* `WebColours_HTML4ToName` (&54700)
-* `WebColours_HTML4ToNumber` (&54701)
-* `WebColours_CSSToName` (&54702)
-* `WebColours_CSSToNumber` (&54703)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `WebColours_HTML4ToName` (&54700) |
+| [X]      | [ ]       | `WebColours_HTML4ToNumber` (&54701) |
+| [X]      | [ ]       | `WebColours_CSSToName` (&54702) |
+| [X]      | [ ]       | `WebColours_CSSToNumber` (&54703) |
 
 
 ### Services

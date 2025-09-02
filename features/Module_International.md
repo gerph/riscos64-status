@@ -15,18 +15,22 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*Alphabet`
-* `*Alphabets`
-* `*Configure Country`
-* `*Countries`
-* `*Country`
-* `*Keyboard`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Alphabet` |
+| [ ]      | [ ]       | `*Alphabets` |
+| [ ]      | [ ]       | `*Configure Country` |
+| [ ]      | [ ]       | `*Countries` |
+| [ ]      | [ ]       | `*Country` |
+| [ ]      | [ ]       | `*Keyboard` |
 
 
 ### SWIs
@@ -38,7 +42,9 @@
 ### Services
 
 
-* `Service_International`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_International` |
 
 
 ### Vectors
@@ -66,7 +72,9 @@
 ### Services
 
 
-* `Service_International`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_International` |
 
 
 ### Vectors

@@ -14,6 +14,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -32,14 +34,18 @@
 ### Services
 
 
-* `Service_DisplayChanged`
-* `Service_ModeChange`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DisplayChanged` |
+| [X]      | [ ]       | `Service_ModeChange` |
 
 
 ### Vectors
 
 
-* `FileV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `FileV` |
 
 
 ### Events

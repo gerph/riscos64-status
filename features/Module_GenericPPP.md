@@ -18,8 +18,9 @@
 
 ### Functionality
 
-
-* Dci4 driver
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Dci4 driver |
 
 ### Commands
 
@@ -30,38 +31,42 @@
 ### SWIs
 
 
-* `GenericPPP_Register` (&58380)
-* `GenericPPP_Deregister` (&58381)
-* `GenericPPP_GetInfo` (&58382)
-* `GenericPPP_ShowState` (&58383)
-* `GenericPPP_4` (&58384)
-* `GenericPPP_5` (&58385)
-* `GenericPPP_6` (&58386)
-* `GenericPPP_7` (&58387)
-* `GenericPPP_8` (&58388)
-* `GenericPPP_9` (&58389)
-* `GenericPPP_10` (&5838A)
-* `GenericPPP_11` (&5838B)
-* `GenericPPP_12` (&5838C)
-* `GenericPPP_13` (&5838D)
-* `GenericPPP_14` (&5838E)
-* `GenericPPP_15` (&5838F)
-* `GenericPPP_DCIVersion` (&58390)
-* `GenericPPP_Inquire` (&58391)
-* `GenericPPP_GetNetworkMTU` (&58392)
-* `GenericPPP_SetNetworkMTU` (&58393)
-* `GenericPPP_Transmit` (&58394)
-* `GenericPPP_Filter` (&58395)
-* `GenericPPP_Stats` (&58396)
-* `GenericPPP_MulticastRequest` (&58397)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `GenericPPP_Register` (&58380) |
+| [X]      | [ ]       | `GenericPPP_Deregister` (&58381) |
+| [X]      | [ ]       | `GenericPPP_GetInfo` (&58382) |
+| [X]      | [ ]       | `GenericPPP_ShowState` (&58383) |
+| [X]      | [ ]       | `GenericPPP_4` (&58384) |
+| [X]      | [ ]       | `GenericPPP_5` (&58385) |
+| [X]      | [ ]       | `GenericPPP_6` (&58386) |
+| [X]      | [ ]       | `GenericPPP_7` (&58387) |
+| [X]      | [ ]       | `GenericPPP_8` (&58388) |
+| [X]      | [ ]       | `GenericPPP_9` (&58389) |
+| [X]      | [ ]       | `GenericPPP_10` (&5838A) |
+| [X]      | [ ]       | `GenericPPP_11` (&5838B) |
+| [X]      | [ ]       | `GenericPPP_12` (&5838C) |
+| [X]      | [ ]       | `GenericPPP_13` (&5838D) |
+| [X]      | [ ]       | `GenericPPP_14` (&5838E) |
+| [X]      | [ ]       | `GenericPPP_15` (&5838F) |
+| [X]      | [ ]       | `GenericPPP_DCIVersion` (&58390) |
+| [X]      | [ ]       | `GenericPPP_Inquire` (&58391) |
+| [X]      | [ ]       | `GenericPPP_GetNetworkMTU` (&58392) |
+| [X]      | [ ]       | `GenericPPP_SetNetworkMTU` (&58393) |
+| [X]      | [ ]       | `GenericPPP_Transmit` (&58394) |
+| [X]      | [ ]       | `GenericPPP_Filter` (&58395) |
+| [X]      | [ ]       | `GenericPPP_Stats` (&58396) |
+| [X]      | [ ]       | `GenericPPP_MulticastRequest` (&58397) |
 
 
 ### Services
 
 
-* `Service_DCIDriverStatus`
-* `Service_DCIProtocolStatus`
-* `Service_EnumerateNetworkDrivers`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DCIDriverStatus` |
+| [X]      | [ ]       | `Service_DCIProtocolStatus` |
+| [X]      | [ ]       | `Service_EnumerateNetworkDrivers` |
 
 
 ### Vectors
@@ -89,9 +94,11 @@
 ### Services
 
 
-* `Service_DCIDriverStatus`
-* `Service_DCIFrameTypeFree`
-* `Service_GenericPPPState`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DCIDriverStatus` |
+| [X]      | [ ]       | `Service_DCIFrameTypeFree` |
+| [X]      | [ ]       | `Service_GenericPPPState` |
 
 
 ### Vectors

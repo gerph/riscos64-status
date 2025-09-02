@@ -11,6 +11,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -23,8 +25,10 @@
 ### SWIs
 
 
-* `Super_Sample90` (&40D80)
-* `Super_Sample45` (&40D81)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Super_Sample90` (&40D80) |
+| [ ]      | [ ]       | `Super_Sample45` (&40D81) |
 
 
 ### Services

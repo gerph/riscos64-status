@@ -3,8 +3,8 @@
 ## Discovered features
 
 
-* Does serial access
 * Has background processing
+* Has serial access
 * Has services
 * Has services fast
 * Has swis
@@ -18,6 +18,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -30,26 +32,32 @@
 ### SWIs
 
 
-* `RemotePrinterSupport_ReadPollwordLocation` (&47980)
-* `RemotePrinterSupport_GetNextEvent` (&47981)
-* `RemotePrinterSupport_ReadUniqueAddress` (&47982)
-* `RemotePrinterSupport_Enable` (&47983)
-* `RemotePrinterSupport_Disable` (&47984)
-* `RemotePrinterSupport_EnableUpcalls` (&47985)
-* `RemotePrinterSupport_DisableUpcalls` (&47986)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `RemotePrinterSupport_ReadPollwordLocation` (&47980) |
+| [X]      | [ ]       | `RemotePrinterSupport_GetNextEvent` (&47981) |
+| [X]      | [ ]       | `RemotePrinterSupport_ReadUniqueAddress` (&47982) |
+| [X]      | [ ]       | `RemotePrinterSupport_Enable` (&47983) |
+| [X]      | [ ]       | `RemotePrinterSupport_Disable` (&47984) |
+| [X]      | [ ]       | `RemotePrinterSupport_EnableUpcalls` (&47985) |
+| [X]      | [ ]       | `RemotePrinterSupport_DisableUpcalls` (&47986) |
 
 
 ### Services
 
 
-* `Service_FreewayStarting`
-* `Service_FreewayTerminating`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_FreewayStarting` |
+| [X]      | [ ]       | `Service_FreewayTerminating` |
 
 
 ### Vectors
 
 
-* `?`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `?` |
 
 
 ### Events

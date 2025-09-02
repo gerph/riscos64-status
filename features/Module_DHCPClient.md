@@ -17,32 +17,39 @@
 
 ### Functionality
 
-
-* Dci4 statistics
-* Internet configuration
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Dci4 statistics |
+| [X]      | [ ]       | Internet configuration |
 
 ### Commands
 
 
-* `*DHCP`
-* `*DHCPStatus`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*DHCP` |
+| [X]      | [ ]       | `*DHCPStatus` |
 
 
 ### SWIs
 
 
-* `DHCPClient_Control` (&55E00)
-* `DHCPClient_State` (&55E01)
-* `DHCPClient_Enumerate` (&55E02)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `DHCPClient_Control` (&55E00) |
+| [X]      | [ ]       | `DHCPClient_State` (&55E01) |
+| [X]      | [ ]       | `DHCPClient_Enumerate` (&55E02) |
 
 
 ### Services
 
 
-* `Service_DCIDriverStatus`
-* `Service_DCIProtocolStatus`
-* `Service_InternetStatus`
-* `Service_StatisticEnumerate`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DCIDriverStatus` |
+| [X]      | [ ]       | `Service_DCIProtocolStatus` |
+| [X]      | [ ]       | `Service_InternetStatus` |
+| [X]      | [ ]       | `Service_StatisticEnumerate` |
 
 
 ### Vectors
@@ -70,7 +77,9 @@
 ### Services
 
 
-* `Service_InternetStatus`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_InternetStatus` |
 
 
 ### Vectors

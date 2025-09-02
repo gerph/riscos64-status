@@ -14,8 +14,9 @@
 
 ### Functionality
 
-
-* Default desktop application
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Default desktop application |
 
 ### Commands
 
@@ -32,10 +33,12 @@
 ### Services
 
 
-* `Service_ScreenBlanking`
-* `Service_ScreenRestored`
-* `Service_ShutDownComplete`
-* `Service_StartWimp`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ScreenBlanking` |
+| [X]      | [ ]       | `Service_ScreenRestored` |
+| [X]      | [ ]       | `Service_ShutDownComplete` |
+| [X]      | [ ]       | `Service_StartWimp` |
 
 
 ### Vectors

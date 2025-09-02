@@ -15,9 +15,10 @@
 
 ### Functionality
 
-
-* Resourcefs files
-* Toolbox object
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Resourcefs files |
+| [X]      | [ ]       | Toolbox object |
 
 ### Commands
 
@@ -28,18 +29,22 @@
 ### SWIs
 
 
-* `Scale_ClassSWI` (&82C00)
-* `Scale_PostFilter` (&82C01)
-* `Scale_PreFilter` (&82C02)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Scale_ClassSWI` (&82C00) |
+| [X]      | [ ]       | `Scale_PostFilter` (&82C01) |
+| [X]      | [ ]       | `Scale_PreFilter` (&82C02) |
 
 
 ### Services
 
 
-* `Service_ResourceFSStarting`
-* `Service_ToolboxStarting`
-* `Service_ToolboxTaskBorn`
-* `Service_ToolboxTaskDied`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ResourceFSStarting` |
+| [X]      | [ ]       | `Service_ToolboxStarting` |
+| [X]      | [ ]       | `Service_ToolboxTaskBorn` |
+| [X]      | [ ]       | `Service_ToolboxTaskDied` |
 
 
 ### Vectors

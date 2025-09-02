@@ -17,25 +17,30 @@
 
 ### Functionality
 
-
-* Internet service
-* Ppp server
-* Ppp transport
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Internet service |
+| [X]      | [ ]       | Ppp server |
+| [X]      | [ ]       | Ppp transport |
 
 ### Commands
 
 
-* `*PPPoTCPClient`
-* `*PPPoTCPInfo`
-* `*PPPoTCPLog`
-* `*PPPoTCPServer`
-* `*PPPoTCPStop`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*PPPoTCPClient` |
+| [X]      | [ ]       | `*PPPoTCPInfo` |
+| [X]      | [ ]       | `*PPPoTCPLog` |
+| [X]      | [ ]       | `*PPPoTCPServer` |
+| [X]      | [ ]       | `*PPPoTCPStop` |
 
 
 ### SWIs
 
 
-* `PPPoTCP_Transmit` (&583C0)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `PPPoTCP_Transmit` (&583C0) |
 
 
 ### Services
@@ -47,7 +52,9 @@
 ### Vectors
 
 
-* `EventV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `EventV` |
 
 
 ### Events

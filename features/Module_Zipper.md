@@ -15,8 +15,9 @@
 
 ### Functionality
 
-
-* License info
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | License info |
 
 ### Commands
 
@@ -27,34 +28,38 @@
 ### SWIs
 
 
-* `Zipper_UnZipOpen` (&559C0)
-* `Zipper_UnZipClose` (&559C1)
-* `Zipper_UnZipInfo` (&559C2)
-* `Zipper_UnZipEnumerate` (&559C3)
-* `Zipper_UnZipFileInfo` (&559C4)
-* `Zipper_UnZipFileOpen` (&559C5)
-* `Zipper_UnZipFileClose` (&559C6)
-* `Zipper_UnZipFileRead` (&559C7)
-* `Zipper_UnZipFileEOF` (&559C8)
-* `Zipper_9` (&559C9)
-* `Zipper_10` (&559CA)
-* `Zipper_11` (&559CB)
-* `Zipper_12` (&559CC)
-* `Zipper_13` (&559CD)
-* `Zipper_14` (&559CE)
-* `Zipper_15` (&559CF)
-* `Zipper_ZipOpen` (&559D0)
-* `Zipper_ZipClose` (&559D1)
-* `Zipper_ZipFileOpen` (&559D2)
-* `Zipper_ZipFileClose` (&559D3)
-* `Zipper_ZipFileWrite` (&559D4)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Zipper_UnZipOpen` (&559C0) |
+| [X]      | [ ]       | `Zipper_UnZipClose` (&559C1) |
+| [X]      | [ ]       | `Zipper_UnZipInfo` (&559C2) |
+| [X]      | [ ]       | `Zipper_UnZipEnumerate` (&559C3) |
+| [X]      | [ ]       | `Zipper_UnZipFileInfo` (&559C4) |
+| [X]      | [ ]       | `Zipper_UnZipFileOpen` (&559C5) |
+| [X]      | [ ]       | `Zipper_UnZipFileClose` (&559C6) |
+| [X]      | [ ]       | `Zipper_UnZipFileRead` (&559C7) |
+| [X]      | [ ]       | `Zipper_UnZipFileEOF` (&559C8) |
+| [X]      | [ ]       | `Zipper_9` (&559C9) |
+| [X]      | [ ]       | `Zipper_10` (&559CA) |
+| [X]      | [ ]       | `Zipper_11` (&559CB) |
+| [X]      | [ ]       | `Zipper_12` (&559CC) |
+| [X]      | [ ]       | `Zipper_13` (&559CD) |
+| [X]      | [ ]       | `Zipper_14` (&559CE) |
+| [X]      | [ ]       | `Zipper_15` (&559CF) |
+| [X]      | [ ]       | `Zipper_ZipOpen` (&559D0) |
+| [X]      | [ ]       | `Zipper_ZipClose` (&559D1) |
+| [X]      | [ ]       | `Zipper_ZipFileOpen` (&559D2) |
+| [X]      | [ ]       | `Zipper_ZipFileClose` (&559D3) |
+| [X]      | [ ]       | `Zipper_ZipFileWrite` (&559D4) |
 
 
 ### Services
 
 
-* `Service_TaskManagerAcknowledgements`
-* `Service_WimpCloseDown`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_TaskManagerAcknowledgements` |
+| [X]      | [ ]       | `Service_WimpCloseDown` |
 
 
 ### Vectors
@@ -82,7 +87,9 @@
 ### Services
 
 
-* `Service_TaskManagerAcknowledgements`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_TaskManagerAcknowledgements` |
 
 
 ### Vectors

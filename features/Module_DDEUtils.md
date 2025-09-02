@@ -14,45 +14,54 @@
 
 ### Functionality
 
-
-* Code variables
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Code variables |
 
 ### Commands
 
 
-* `*Prefix`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Prefix` |
 
 
 ### SWIs
 
 
-* `DDEUtils_Prefix` (&42580)
-* `DDEUtils_SetCLSize` (&42581)
-* `DDEUtils_SetCL` (&42582)
-* `DDEUtils_GetCLSize` (&42583)
-* `DDEUtils_GetCl` (&42584)
-* `DDEUtils_ThrowbackRegister` (&42585)
-* `DDEUtils_ThrowbackUnRegister` (&42586)
-* `DDEUtils_ThrowbackStart` (&42587)
-* `DDEUtils_ThrowbackSend` (&42588)
-* `DDEUtils_ThrowbackEnd` (&42589)
-* `DDEUtils_ReadPrefix` (&4258A)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `DDEUtils_Prefix` (&42580) |
+| [ ]      | [ ]       | `DDEUtils_SetCLSize` (&42581) |
+| [ ]      | [ ]       | `DDEUtils_SetCL` (&42582) |
+| [ ]      | [ ]       | `DDEUtils_GetCLSize` (&42583) |
+| [ ]      | [ ]       | `DDEUtils_GetCl` (&42584) |
+| [ ]      | [ ]       | `DDEUtils_ThrowbackRegister` (&42585) |
+| [ ]      | [ ]       | `DDEUtils_ThrowbackUnRegister` (&42586) |
+| [ ]      | [ ]       | `DDEUtils_ThrowbackStart` (&42587) |
+| [ ]      | [ ]       | `DDEUtils_ThrowbackSend` (&42588) |
+| [ ]      | [ ]       | `DDEUtils_ThrowbackEnd` (&42589) |
+| [ ]      | [ ]       | `DDEUtils_ReadPrefix` (&4258A) |
 
 
 ### Services
 
 
-* `Service_Reset`
-* `Service_WimpCloseDown`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_Reset` |
+| [ ]      | [ ]       | `Service_WimpCloseDown` |
 
 
 ### Vectors
 
 
-* `FSCV`
-* `FileV`
-* `FindV`
-* `GBPBV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `FSCV` |
+| [ ]      | [ ]       | `FileV` |
+| [ ]      | [ ]       | `FindV` |
+| [ ]      | [ ]       | `GBPBV` |
 
 
 ### Events

@@ -14,8 +14,9 @@
 
 ### Functionality
 
-
-* Hardware driver
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Hardware driver |
 
 ### Commands
 
@@ -32,15 +33,19 @@
 ### Services
 
 
-* `Service_Portable`
-* `Service_Reset`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_Portable` |
+| [ ]      | [ ]       | `Service_Reset` |
 
 
 ### Vectors
 
 
-* `KEYV`
-* `PointerV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `KEYV` |
+| [ ]      | [ ]       | `PointerV` |
 
 
 ### Events
@@ -68,7 +73,9 @@
 ### Vectors
 
 
-* `KEYV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `KEYV` |
 
 
 ### Events

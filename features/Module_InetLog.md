@@ -14,6 +14,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -26,9 +28,11 @@
 ### SWIs
 
 
-* `InetLog_Start` (&58A80)
-* `InetLog_Stop` (&58A81)
-* `InetLog_Capture` (&58A82)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `InetLog_Start` (&58A80) |
+| [X]      | [ ]       | `InetLog_Stop` (&58A81) |
+| [X]      | [ ]       | `InetLog_Capture` (&58A82) |
 
 
 ### Services

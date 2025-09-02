@@ -3,12 +3,12 @@
 ## Discovered features
 
 
-* Does file access
-* Does serial access
-* Does sound output
+* Has file access
 * Has kernel collusion
+* Has serial access
 * Has services
 * Has services fast
+* Has sound output
 * Uses console input
 * Uses console output
 
@@ -18,8 +18,9 @@
 
 ### Functionality
 
-
-*None found*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Cli extension |
 
 ### Commands
 
@@ -36,14 +37,18 @@
 ### Services
 
 
-* `Service_UKCommand`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_UKCommand` |
 
 
 ### Vectors
 
 
-* `ByteV`
-* `WordV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `ByteV` |
+| [ ]      | [ ]       | `WordV` |
 
 
 ### Events
@@ -65,13 +70,17 @@
 ### Services
 
 
-* `?`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `?` |
 
 
 ### Vectors
 
 
-* `CNPV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `CNPV` |
 
 
 ### Events

@@ -12,8 +12,9 @@
 
 ### Functionality
 
-
-*None found*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Video driver |
 
 ### Commands
 
@@ -36,7 +37,9 @@
 ### Vectors
 
 
-* `VideoV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `VideoV` |
 
 
 ### Events

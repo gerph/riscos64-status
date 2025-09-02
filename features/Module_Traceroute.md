@@ -14,6 +14,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -26,11 +28,13 @@
 ### SWIs
 
 
-* `Traceroute_Start` (&53C40)
-* `Traceroute_Check` (&53C41)
-* `Traceroute_Status` (&53C42)
-* `Traceroute_Discard` (&53C43)
-* `Traceroute_Decode` (&53C44)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Traceroute_Start` (&53C40) |
+| [X]      | [ ]       | `Traceroute_Check` (&53C41) |
+| [X]      | [ ]       | `Traceroute_Status` (&53C42) |
+| [X]      | [ ]       | `Traceroute_Discard` (&53C43) |
+| [X]      | [ ]       | `Traceroute_Decode` (&53C44) |
 
 
 ### Services
@@ -42,13 +46,17 @@
 ### Vectors
 
 
-* `EventV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `EventV` |
 
 
 ### Events
 
 
-* `Event_Internet`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Event_Internet` |
 
 
 ### UpCalls

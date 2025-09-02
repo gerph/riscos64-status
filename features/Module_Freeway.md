@@ -19,39 +19,48 @@
 
 ### Functionality
 
-
-* Internet service
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Internet service |
 
 ### Commands
 
 
-* `*FwShow`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*FwShow` |
 
 
 ### SWIs
 
 
-* `Freeway_Register` (&47A80)
-* `Freeway_Write` (&47A81)
-* `Freeway_Read` (&47A82)
-* `Freeway_Enumerate` (&47A83)
-* `Freeway_Status` (&47A84)
-* `Freeway_Serial` (&47A85)
-* `Freeway_Remote` (&47A86)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Freeway_Register` (&47A80) |
+| [X]      | [ ]       | `Freeway_Write` (&47A81) |
+| [X]      | [ ]       | `Freeway_Read` (&47A82) |
+| [X]      | [ ]       | `Freeway_Enumerate` (&47A83) |
+| [X]      | [ ]       | `Freeway_Status` (&47A84) |
+| [X]      | [ ]       | `Freeway_Serial` (&47A85) |
+| [X]      | [ ]       | `Freeway_Remote` (&47A86) |
 
 
 ### Services
 
 
-* `Service_DCIDriverStatus`
-* `Service_DCIProtocolStatus`
-* `Service_InternetStatus`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DCIDriverStatus` |
+| [X]      | [ ]       | `Service_DCIProtocolStatus` |
+| [X]      | [ ]       | `Service_InternetStatus` |
 
 
 ### Vectors
 
 
-* `?`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `?` |
 
 
 ### Events
@@ -73,7 +82,9 @@
 ### Services
 
 
-* `?`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `?` |
 
 
 ### Vectors
@@ -91,7 +102,9 @@
 ### UpCalls
 
 
-* `UpCall_Freeway`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `UpCall_Freeway` |
 
 
 ### Modules

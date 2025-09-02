@@ -17,9 +17,10 @@
 
 ### Functionality
 
-
-* Dci4 statistics
-* Internet service
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Dci4 statistics |
+| [X]      | [ ]       | Internet service |
 
 ### Commands
 
@@ -30,26 +31,34 @@
 ### SWIs
 
 
-* `InternetTime_DCI4Statistics` (&578C0)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `InternetTime_DCI4Statistics` (&578C0) |
 
 
 ### Services
 
 
-* `Service_DCIProtocolStatus`
-* `Service_StatisticEnumerate`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DCIProtocolStatus` |
+| [X]      | [ ]       | `Service_StatisticEnumerate` |
 
 
 ### Vectors
 
 
-* `EventV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `EventV` |
 
 
 ### Events
 
 
-* `Event_Internet`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Event_Internet` |
 
 
 ### UpCalls

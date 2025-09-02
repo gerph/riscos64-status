@@ -16,24 +16,29 @@
 
 ### Functionality
 
-
-* Image rendering
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Image rendering |
 
 ### Commands
 
 
-* `*ImageFileConverters`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*ImageFileConverters` |
 
 
 ### SWIs
 
 
-* `ImageFileConvert_Convert` (&56840)
-* `ImageFileConvert_MiscOp` (&56841)
-* `ImageFileConvert_ConverterInfo` (&56842)
-* `ImageFileConvert_Register` (&56843)
-* `ImageFileConvert_Deregister` (&56844)
-* `ImageFileConvert_EnumerateConverters` (&56845)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `ImageFileConvert_Convert` (&56840) |
+| [X]      | [ ]       | `ImageFileConvert_MiscOp` (&56841) |
+| [X]      | [ ]       | `ImageFileConvert_ConverterInfo` (&56842) |
+| [X]      | [ ]       | `ImageFileConvert_Register` (&56843) |
+| [X]      | [ ]       | `ImageFileConvert_Deregister` (&56844) |
+| [X]      | [ ]       | `ImageFileConvert_EnumerateConverters` (&56845) |
 
 
 ### Services
@@ -67,9 +72,11 @@
 ### Services
 
 
-* `Service_ImageFileConvert_ConverterChanged`
-* `Service_ImageFileConvert_Dying`
-* `Service_ImageFileConvert_Started`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ImageFileConvert_ConverterChanged` |
+| [X]      | [ ]       | `Service_ImageFileConvert_Dying` |
+| [X]      | [ ]       | `Service_ImageFileConvert_Started` |
 
 
 ### Vectors

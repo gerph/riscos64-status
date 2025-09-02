@@ -3,8 +3,8 @@
 ## Discovered features
 
 
-* Does disc access
-* Does file access
+* Has disc access
+* Has file access
 * Has services
 * Has services fast
 * Has swis
@@ -19,38 +19,45 @@
 
 ### Functionality
 
-
-* Disc layouts
-* Image filesystem
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Disc layouts |
+| [X]      | [ ]       | Image filesystem |
 
 ### Commands
 
 
-* `*CopyBoot`
-* `*DOSMap`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*CopyBoot` |
+| [X]      | [ ]       | `*DOSMap` |
 
 
 ### SWIs
 
 
-* `DOSFS_DiscFormat` (&44B00)
-* `DOSFS_LayoutStructure` (&44B01)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `DOSFS_DiscFormat` (&44B00) |
+| [X]      | [ ]       | `DOSFS_LayoutStructure` (&44B01) |
 
 
 ### Services
 
 
-* `Service_CloseFile`
-* `Service_DisplayFormatHelp`
-* `Service_EnumerateFormats`
-* `Service_FSRedeclare`
-* `Service_IdentifyDisc`
-* `Service_IdentifyFormat`
-* `Service_LookupFileType`
-* `Service_Memory`
-* `Service_Reset`
-* `Service_StartUpFS`
-* `Service_WimpSaveDesktop`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_CloseFile` |
+| [X]      | [ ]       | `Service_DisplayFormatHelp` |
+| [X]      | [ ]       | `Service_EnumerateFormats` |
+| [X]      | [ ]       | `Service_FSRedeclare` |
+| [X]      | [ ]       | `Service_IdentifyDisc` |
+| [X]      | [ ]       | `Service_IdentifyFormat` |
+| [X]      | [ ]       | `Service_LookupFileType` |
+| [X]      | [ ]       | `Service_Memory` |
+| [X]      | [ ]       | `Service_Reset` |
+| [X]      | [ ]       | `Service_StartUpFS` |
+| [X]      | [ ]       | `Service_WimpSaveDesktop` |
 
 
 ### Vectors

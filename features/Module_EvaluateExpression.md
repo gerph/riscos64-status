@@ -12,13 +12,16 @@
 
 ### Functionality
 
-
-* Os swis
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Os swis |
 
 ### Commands
 
 
-* `*Eval`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Eval` |
 
 
 ### SWIs

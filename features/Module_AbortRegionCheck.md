@@ -12,6 +12,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -36,7 +38,9 @@
 ### Vectors
 
 
-* `ErrorV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `ErrorV` |
 
 
 ### Events

@@ -17,27 +17,35 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*MimeMap`
-* `*ReadMimeMap`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*MimeMap` |
+| [X]      | [ ]       | `*ReadMimeMap` |
 
 
 ### SWIs
 
 
-* `MimeMap_Translate` (&50B00)
-* `MimeMap_Configure` (&50B01)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `MimeMap_Translate` (&50B00) |
+| [X]      | [ ]       | `MimeMap_Configure` (&50B01) |
 
 
 ### Services
 
 
-* `Service_InternetVars`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_InternetVars` |
 
 
 ### Vectors

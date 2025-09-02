@@ -13,6 +13,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -31,16 +33,20 @@
 ### Services
 
 
-* `Service_DisplayChanged`
-* `Service_DisplayStatus`
-* `Service_ErrorStarting`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DisplayChanged` |
+| [X]      | [ ]       | `Service_DisplayStatus` |
+| [X]      | [ ]       | `Service_ErrorStarting` |
 
 
 ### Vectors
 
 
-* `ByteV`
-* `RdchV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `ByteV` |
+| [X]      | [ ]       | `RdchV` |
 
 
 ### Events

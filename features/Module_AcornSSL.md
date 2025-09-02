@@ -1,11 +1,9 @@
-# Module: WakeOnLAN
+# Module: AcornSSL
 
 ## Discovered features
 
 
-* Has swis
-* Is c
-* Uses internet
+*None*
 
 ---
 
@@ -21,17 +19,13 @@
 ### Commands
 
 
-| In 32bit | In 64 bit | Interface |
-|----------|-----------|-----------|
-| [X]      | [ ]       | `*WakeOnLAN` |
+*None*
 
 
 ### SWIs
 
 
-| In 32bit | In 64 bit | Interface |
-|----------|-----------|-----------|
-| [X]      | [ ]       | `WakeOnLAN_Wake` (&58080) |
+*None*
 
 
 ### Services
@@ -89,9 +83,6 @@
 ### Modules
 
 
-* `MessageTrans`
-* `SharedCLibrary`
-* `Socket`
-* `WakeOnLAN`
+* `Font`
 
 

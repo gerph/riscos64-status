@@ -13,6 +13,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -25,9 +27,11 @@
 ### SWIs
 
 
-* `UUID_Convert` (&582C0)
-* `UUID_Create` (&582C1)
-* `UUID_Compare` (&582C2)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `UUID_Convert` (&582C0) |
+| [X]      | [ ]       | `UUID_Create` (&582C1) |
+| [X]      | [ ]       | `UUID_Compare` (&582C2) |
 
 
 ### Services

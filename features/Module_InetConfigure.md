@@ -15,13 +15,16 @@
 
 ### Functionality
 
-
-* Internet configuration
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Internet configuration |
 
 ### Commands
 
 
-* `*Configure InternetIP`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*Configure InternetIP` |
 
 
 ### SWIs
@@ -33,8 +36,10 @@
 ### Services
 
 
-* `Service_DCIDriverStatus`
-* `Service_DCIProtocolStatus`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_DCIDriverStatus` |
+| [X]      | [ ]       | `Service_DCIProtocolStatus` |
 
 
 ### Vectors

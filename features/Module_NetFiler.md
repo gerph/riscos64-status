@@ -3,7 +3,7 @@
 ## Discovered features
 
 
-* Does file access
+* Has file access
 * Has nvram state
 * Has services
 * Has services fast
@@ -18,13 +18,16 @@
 
 ### Functionality
 
-
-* Desktop filer icon
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Desktop filer icon |
 
 ### Commands
 
 
-* `*Desktop_NetFiler`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Desktop_NetFiler` |
 
 
 ### SWIs
@@ -36,25 +39,31 @@
 ### Services
 
 
-* `Service_FilerDying`
-* `Service_MessageFileClosed`
-* `Service_ModeChange`
-* `Service_NetFS`
-* `Service_Reset`
-* `Service_StartFiler`
-* `Service_StartedFiler`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_FilerDying` |
+| [ ]      | [ ]       | `Service_MessageFileClosed` |
+| [ ]      | [ ]       | `Service_ModeChange` |
+| [ ]      | [ ]       | `Service_NetFS` |
+| [ ]      | [ ]       | `Service_Reset` |
+| [ ]      | [ ]       | `Service_StartFiler` |
+| [ ]      | [ ]       | `Service_StartedFiler` |
 
 
 ### Vectors
 
 
-* `EventV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `EventV` |
 
 
 ### Events
 
 
-* `Event_Econet_OSProc`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Event_Econet_OSProc` |
 
 
 ### UpCalls

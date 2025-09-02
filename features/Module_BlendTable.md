@@ -13,20 +13,26 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*BlendTables`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*BlendTables` |
 
 
 ### SWIs
 
 
-* `BlendTable_GenerateTable` (&56280)
-* `BlendTable_UnlockTable` (&56281)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `BlendTable_GenerateTable` (&56280) |
+| [X]      | [ ]       | `BlendTable_UnlockTable` (&56281) |
 
 
 ### Services

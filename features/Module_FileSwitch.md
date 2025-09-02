@@ -3,10 +3,10 @@
 ## Discovered features
 
 
-* Does directory access
-* Does file access
 * Has application environment
+* Has directory access
 * Has dynamic code
+* Has file access
 * Has nvram state
 * Has services
 * Has services fast
@@ -22,39 +22,43 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*Back`
-* `*CDir`
-* `*Cat`
-* `*Configure FileSystem`
-* `*Configure Truncate`
-* `*Copy`
-* `*Count`
-* `*Dir`
-* `*EnumDir`
-* `*Ex`
-* `*FileInfo`
-* `*Info`
-* `*LCat`
-* `*LEx`
-* `*Lib`
-* `*NoDir`
-* `*NoLib`
-* `*NoURD`
-* `*Rename`
-* `*Run`
-* `*SetType`
-* `*Shut`
-* `*ShutDown`
-* `*Stamp`
-* `*URD`
-* `*Up`
-* `*Wipe`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Back` |
+| [ ]      | [ ]       | `*CDir` |
+| [ ]      | [ ]       | `*Cat` |
+| [ ]      | [ ]       | `*Configure FileSystem` |
+| [ ]      | [ ]       | `*Configure Truncate` |
+| [ ]      | [ ]       | `*Copy` |
+| [ ]      | [ ]       | `*Count` |
+| [ ]      | [ ]       | `*Dir` |
+| [ ]      | [ ]       | `*EnumDir` |
+| [ ]      | [ ]       | `*Ex` |
+| [ ]      | [ ]       | `*FileInfo` |
+| [ ]      | [ ]       | `*Info` |
+| [ ]      | [ ]       | `*LCat` |
+| [ ]      | [ ]       | `*LEx` |
+| [ ]      | [ ]       | `*Lib` |
+| [ ]      | [ ]       | `*NoDir` |
+| [ ]      | [ ]       | `*NoLib` |
+| [ ]      | [ ]       | `*NoURD` |
+| [ ]      | [ ]       | `*Rename` |
+| [ ]      | [ ]       | `*Run` |
+| [ ]      | [ ]       | `*SetType` |
+| [ ]      | [ ]       | `*Shut` |
+| [ ]      | [ ]       | `*ShutDown` |
+| [ ]      | [ ]       | `*Stamp` |
+| [ ]      | [ ]       | `*URD` |
+| [ ]      | [ ]       | `*Up` |
+| [ ]      | [ ]       | `*Wipe` |
 
 
 ### SWIs
@@ -66,19 +70,23 @@
 ### Services
 
 
-* `Service_CloseFile`
-* `Service_DiscDismounted`
-* `Service_Memory`
-* `Service_Reset`
-* `Service_StartUpFS`
-* `Service_TerritoryStarted`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_CloseFile` |
+| [ ]      | [ ]       | `Service_DiscDismounted` |
+| [ ]      | [ ]       | `Service_Memory` |
+| [ ]      | [ ]       | `Service_Reset` |
+| [ ]      | [ ]       | `Service_StartUpFS` |
+| [ ]      | [ ]       | `Service_TerritoryStarted` |
 
 
 ### Vectors
 
 
-* `?`
-* `UpCallV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `?` |
+| [ ]      | [ ]       | `UpCallV` |
 
 
 ### Events
@@ -100,10 +108,12 @@
 ### Services
 
 
-* `Service_CloseFile`
-* `Service_FSRedeclare`
-* `Service_LookupFileType`
-* `Service_NewApplication`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_CloseFile` |
+| [ ]      | [ ]       | `Service_FSRedeclare` |
+| [ ]      | [ ]       | `Service_LookupFileType` |
+| [ ]      | [ ]       | `Service_NewApplication` |
 
 
 ### Vectors
@@ -121,8 +131,10 @@
 ### UpCalls
 
 
-* `UpCall_ModifyingFile`
-* `UpCall_NewApplication`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `UpCall_ModifyingFile` |
+| [ ]      | [ ]       | `UpCall_NewApplication` |
 
 
 ### Modules

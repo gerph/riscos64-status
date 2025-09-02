@@ -14,13 +14,16 @@
 
 ### Functionality
 
-
-* Sound driver
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Sound driver |
 
 ### Commands
 
 
-* `*RateTrackerState`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*RateTrackerState` |
 
 
 ### SWIs
@@ -32,8 +35,10 @@
 ### Services
 
 
-* `Service_Sound`
-* `Service_SoundControl`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_Sound` |
+| [X]      | [ ]       | `Service_SoundControl` |
 
 
 ### Vectors

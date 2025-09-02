@@ -16,8 +16,9 @@
 
 ### Functionality
 
-
-* Hardware driver
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Hardware driver |
 
 ### Commands
 
@@ -28,24 +29,30 @@
 ### SWIs
 
 
-* `Parallel_HardwareAddress` (&42EC0)
-* `Parallel_Op` (&42EC1)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Parallel_HardwareAddress` (&42EC0) |
+| [ ]      | [ ]       | `Parallel_Op` (&42EC1) |
 
 
 ### Services
 
 
-* `Service_DeviceDead`
-* `Service_DeviceFSDying`
-* `Service_DeviceFSStarting`
-* `Service_Portable`
-* `Service_Reset`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_DeviceDead` |
+| [ ]      | [ ]       | `Service_DeviceFSDying` |
+| [ ]      | [ ]       | `Service_DeviceFSStarting` |
+| [ ]      | [ ]       | `Service_Portable` |
+| [ ]      | [ ]       | `Service_Reset` |
 
 
 ### Vectors
 
 
-* `UpCallV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `UpCallV` |
 
 
 ### Events
@@ -85,9 +92,11 @@
 ### UpCalls
 
 
-* `UpCall_DeviceError`
-* `UpCall_MediaNotPresent`
-* `UpCall_MediaSearchEndMessage`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `UpCall_DeviceError` |
+| [ ]      | [ ]       | `UpCall_MediaNotPresent` |
+| [ ]      | [ ]       | `UpCall_MediaSearchEndMessage` |
 
 
 ### Modules

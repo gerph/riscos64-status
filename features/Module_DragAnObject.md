@@ -12,6 +12,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -24,8 +26,10 @@
 ### SWIs
 
 
-* `DragAnObject_Start` (&49C40)
-* `DragAnObject_Stop` (&49C41)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `DragAnObject_Start` (&49C40) |
+| [ ]      | [ ]       | `DragAnObject_Stop` (&49C41) |
 
 
 ### Services

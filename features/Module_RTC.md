@@ -11,8 +11,9 @@
 
 ### Functionality
 
-
-* Os swis
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Os swis |
 
 ### Commands
 
@@ -35,7 +36,9 @@
 ### Vectors
 
 
-* `WordV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `WordV` |
 
 
 ### Events
@@ -57,13 +60,17 @@
 ### Services
 
 
-* `Service_RTCSynchronised`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_RTCSynchronised` |
 
 
 ### Vectors
 
 
-* `RTCV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `RTCV` |
 
 
 ### Events

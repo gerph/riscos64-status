@@ -14,8 +14,9 @@
 
 ### Functionality
 
-
-* Resourcefs files
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Resourcefs files |
 
 ### Commands
 
@@ -26,14 +27,18 @@
 ### SWIs
 
 
-* `FontMap_Translate` (&57F00)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `FontMap_Translate` (&57F00) |
 
 
 ### Services
 
 
-* `Service_FontsChanged`
-* `Service_ResourceFSStarting`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_FontsChanged` |
+| [X]      | [ ]       | `Service_ResourceFSStarting` |
 
 
 ### Vectors

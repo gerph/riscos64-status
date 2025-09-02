@@ -12,24 +12,28 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*Modules`
-* `*RMClear`
-* `*RMEnsure`
-* `*RMFaster`
-* `*RMInsert`
-* `*RMKill`
-* `*RMLoad`
-* `*RMReInit`
-* `*RMRun`
-* `*RMTidy`
-* `*ROMModules`
-* `*Unplug`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Modules` |
+| [ ]      | [ ]       | `*RMClear` |
+| [ ]      | [ ]       | `*RMEnsure` |
+| [ ]      | [ ]       | `*RMFaster` |
+| [ ]      | [ ]       | `*RMInsert` |
+| [ ]      | [ ]       | `*RMKill` |
+| [ ]      | [ ]       | `*RMLoad` |
+| [ ]      | [ ]       | `*RMReInit` |
+| [ ]      | [ ]       | `*RMRun` |
+| [ ]      | [ ]       | `*RMTidy` |
+| [ ]      | [ ]       | `*ROMModules` |
+| [ ]      | [ ]       | `*Unplug` |
 
 
 ### SWIs

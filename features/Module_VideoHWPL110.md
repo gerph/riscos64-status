@@ -13,8 +13,10 @@
 
 ### Functionality
 
-
-* Display driver
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Display driver |
+| [ ]      | [ ]       | Video driver |
 
 ### Commands
 
@@ -31,14 +33,18 @@
 ### Services
 
 
-* `Service_MonitorLeadTranslation`
-* `Service_PreReset`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_MonitorLeadTranslation` |
+| [ ]      | [ ]       | `Service_PreReset` |
 
 
 ### Vectors
 
 
-* `VideoV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `VideoV` |
 
 
 ### Events

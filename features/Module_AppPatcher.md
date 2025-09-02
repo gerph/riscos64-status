@@ -15,13 +15,16 @@
 
 ### Functionality
 
-
-* Executable handling
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Executable handling |
 
 ### Commands
 
 
-* `*PatchStats`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*PatchStats` |
 
 
 ### SWIs
@@ -33,8 +36,10 @@
 ### Services
 
 
-* `Service_ModulePreInit`
-* `Service_UKCompression`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ModulePreInit` |
+| [X]      | [ ]       | `Service_UKCompression` |
 
 
 ### Vectors

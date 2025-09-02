@@ -12,6 +12,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -24,11 +26,13 @@
 ### SWIs
 
 
-* `PPPServerConfig_CreateServer` (&58400)
-* `PPPServerConfig_DestroyServer` (&58401)
-* `PPPServerConfig_ReadConfiguration` (&58402)
-* `PPPServerConfig_UserOp` (&58403)
-* `PPPServerConfig_ShowState` (&58404)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `PPPServerConfig_CreateServer` (&58400) |
+| [X]      | [ ]       | `PPPServerConfig_DestroyServer` (&58401) |
+| [X]      | [ ]       | `PPPServerConfig_ReadConfiguration` (&58402) |
+| [X]      | [ ]       | `PPPServerConfig_UserOp` (&58403) |
+| [X]      | [ ]       | `PPPServerConfig_ShowState` (&58404) |
 
 
 ### Services

@@ -14,8 +14,9 @@
 
 ### Functionality
 
-
-* License info
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | License info |
 
 ### Commands
 
@@ -26,13 +27,17 @@
 ### SWIs
 
 
-* `ATAPI_GetDrives` (&4A740)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `ATAPI_GetDrives` (&4A740) |
 
 
 ### Services
 
 
-* `Service_TaskManagerAcknowledgements`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_TaskManagerAcknowledgements` |
 
 
 ### Vectors
@@ -60,8 +65,10 @@
 ### Services
 
 
-* `?`
-* `Service_TaskManagerAcknowledgements`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `?` |
+| [ ]      | [ ]       | `Service_TaskManagerAcknowledgements` |
 
 
 ### Vectors

@@ -12,8 +12,9 @@
 
 ### Functionality
 
-
-* Image conversion
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Image conversion |
 
 ### Commands
 

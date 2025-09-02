@@ -13,6 +13,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -25,7 +27,9 @@
 ### SWIs
 
 
-* `IIC_Control` (&240)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `IIC_Control` (&240) |
 
 
 ### Services

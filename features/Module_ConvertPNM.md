@@ -13,9 +13,10 @@
 
 ### Functionality
 
-
-* Image conversion
-* License info
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Image conversion |
+| [X]      | [ ]       | License info |
 
 ### Commands
 
@@ -32,7 +33,9 @@
 ### Services
 
 
-* `Service_TaskManagerAcknowledgements`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_TaskManagerAcknowledgements` |
 
 
 ### Vectors

@@ -12,6 +12,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -24,9 +26,11 @@
 ### SWIs
 
 
-* `FPEmulator_Version` (&40480)
-* `FPEmulator_DeactivateContext` (&40481)
-* `FPEmulator_ActivateContext` (&40482)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `FPEmulator_Version` (&40480) |
+| [ ]      | [ ]       | `FPEmulator_DeactivateContext` (&40481) |
+| [ ]      | [ ]       | `FPEmulator_ActivateContext` (&40482) |
 
 
 ### Services

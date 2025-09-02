@@ -15,27 +15,30 @@
 
 ### Functionality
 
-
-*None found*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Graphics extension |
 
 ### Commands
 
 
-* `*SChoose`
-* `*SCopy`
-* `*SDelete`
-* `*SFlipX`
-* `*SFlipY`
-* `*SGet`
-* `*SInfo`
-* `*SList`
-* `*SLoad`
-* `*SMerge`
-* `*SNew`
-* `*SRename`
-* `*SSave`
-* `*ScreenLoad`
-* `*ScreenSave`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*SChoose` |
+| [ ]      | [ ]       | `*SCopy` |
+| [ ]      | [ ]       | `*SDelete` |
+| [ ]      | [ ]       | `*SFlipX` |
+| [ ]      | [ ]       | `*SFlipY` |
+| [ ]      | [ ]       | `*SGet` |
+| [ ]      | [ ]       | `*SInfo` |
+| [ ]      | [ ]       | `*SList` |
+| [ ]      | [ ]       | `*SLoad` |
+| [ ]      | [ ]       | `*SMerge` |
+| [ ]      | [ ]       | `*SNew` |
+| [ ]      | [ ]       | `*SRename` |
+| [ ]      | [ ]       | `*SSave` |
+| [ ]      | [ ]       | `*ScreenLoad` |
+| [ ]      | [ ]       | `*ScreenSave` |
 
 
 ### SWIs
@@ -53,7 +56,9 @@
 ### Vectors
 
 
-* `SpriteV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `SpriteV` |
 
 
 ### Events

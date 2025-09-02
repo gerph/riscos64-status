@@ -13,13 +13,17 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*CFrontDemangle`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*CFrontDemangle` |
 
 
 ### SWIs
@@ -31,7 +35,9 @@
 ### Services
 
 
-* `Service_APCSBacktrace`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_APCSBacktrace` |
 
 
 ### Vectors

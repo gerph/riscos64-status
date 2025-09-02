@@ -3,8 +3,8 @@
 ## Discovered features
 
 
-* Does file access
 * Has dynamic code
+* Has file access
 * Has services
 * Has services fast
 * Is c
@@ -16,13 +16,17 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*TransientUtility`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*TransientUtility` |
 
 
 ### SWIs
@@ -34,13 +38,17 @@
 ### Services
 
 
-* `Service_FSRedeclare`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_FSRedeclare` |
 
 
 ### Vectors
 
 
-* `FSCV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `FSCV` |
 
 
 ### Events

@@ -3,8 +3,8 @@
 ## Discovered features
 
 
-* Does file access
 * Has argument parsing
+* Has file access
 * Has kernel collusion
 * Has nvram state
 * Uses console input
@@ -16,28 +16,32 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*Append`
-* `*Build`
-* `*Close`
-* `*Create`
-* `*Delete`
-* `*Dump`
-* `*Exec`
-* `*List`
-* `*Load`
-* `*Opt`
-* `*Print`
-* `*Remove`
-* `*Save`
-* `*Spool`
-* `*SpoolOn`
-* `*Type`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Append` |
+| [ ]      | [ ]       | `*Build` |
+| [ ]      | [ ]       | `*Close` |
+| [ ]      | [ ]       | `*Create` |
+| [ ]      | [ ]       | `*Delete` |
+| [ ]      | [ ]       | `*Dump` |
+| [ ]      | [ ]       | `*Exec` |
+| [ ]      | [ ]       | `*List` |
+| [ ]      | [ ]       | `*Load` |
+| [ ]      | [ ]       | `*Opt` |
+| [ ]      | [ ]       | `*Print` |
+| [ ]      | [ ]       | `*Remove` |
+| [ ]      | [ ]       | `*Save` |
+| [ ]      | [ ]       | `*Spool` |
+| [ ]      | [ ]       | `*SpoolOn` |
+| [ ]      | [ ]       | `*Type` |
 
 
 ### SWIs

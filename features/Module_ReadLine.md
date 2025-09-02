@@ -11,8 +11,10 @@
 
 ### Functionality
 
-
-* Os swis
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Console line input |
+| [ ]      | [ ]       | Os swis |
 
 ### Commands
 
@@ -35,7 +37,9 @@
 ### Vectors
 
 
-* `ReadLineV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `ReadLineV` |
 
 
 ### Events
@@ -63,7 +67,9 @@
 ### Vectors
 
 
-* `ReadLineV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `ReadLineV` |
 
 
 ### Events

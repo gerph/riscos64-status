@@ -18,35 +18,43 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*BreakClr`
-* `*BreakList`
-* `*BreakSet`
-* `*Continue`
-* `*Debug`
-* `*InitStore`
-* `*Memory`
-* `*MemoryA`
-* `*MemoryI`
-* `*ShowRegs`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*BreakClr` |
+| [ ]      | [ ]       | `*BreakList` |
+| [ ]      | [ ]       | `*BreakSet` |
+| [ ]      | [ ]       | `*Continue` |
+| [ ]      | [ ]       | `*Debug` |
+| [ ]      | [ ]       | `*InitStore` |
+| [ ]      | [ ]       | `*Memory` |
+| [ ]      | [ ]       | `*MemoryA` |
+| [ ]      | [ ]       | `*MemoryI` |
+| [ ]      | [ ]       | `*ShowRegs` |
 
 
 ### SWIs
 
 
-* `Debugger_Disassemble` (&40380)
-* `Debugger_DisassembleThumb` (&40381)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Debugger_Disassemble` (&40380) |
+| [ ]      | [ ]       | `Debugger_DisassembleThumb` (&40381) |
 
 
 ### Services
 
 
-* `Service_Reset`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_Reset` |
 
 
 ### Vectors

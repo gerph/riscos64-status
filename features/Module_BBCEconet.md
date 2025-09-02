@@ -12,6 +12,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -36,8 +38,10 @@
 ### Vectors
 
 
-* `ByteV`
-* `WordV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `ByteV` |
+| [ ]      | [ ]       | `WordV` |
 
 
 ### Events

@@ -17,36 +17,45 @@
 
 ### Functionality
 
-
-* Default desktop application
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Default desktop application |
 
 ### Commands
 
 
-* `*Desktop_Free`
-* `*ShowFree`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Desktop_Free` |
+| [ ]      | [ ]       | `*ShowFree` |
 
 
 ### SWIs
 
 
-* `Free_Register` (&444C0)
-* `Free_DeRegister` (&444C1)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Free_Register` (&444C0) |
+| [ ]      | [ ]       | `Free_DeRegister` (&444C1) |
 
 
 ### Services
 
 
-* `Service_MemoryMoved`
-* `Service_Reset`
-* `Service_StartWimp`
-* `Service_StartedWimp`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_MemoryMoved` |
+| [ ]      | [ ]       | `Service_Reset` |
+| [ ]      | [ ]       | `Service_StartWimp` |
+| [ ]      | [ ]       | `Service_StartedWimp` |
 
 
 ### Vectors
 
 
-* `UpCallV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `UpCallV` |
 
 
 ### Events

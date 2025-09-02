@@ -15,8 +15,9 @@
 
 ### Functionality
 
-
-* Hardware driver
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Hardware driver |
 
 ### Commands
 
@@ -27,21 +28,25 @@
 ### SWIs
 
 
-* `DMA_RegisterChannel` (&46140)
-* `DMA_DeregisterChannel` (&46141)
-* `DMA_QueueTransfer` (&46142)
-* `DMA_TerminateTransfer` (&46143)
-* `DMA_SuspendTransfer` (&46144)
-* `DMA_ResumeTransfer` (&46145)
-* `DMA_ExamineTransfer` (&46146)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `DMA_RegisterChannel` (&46140) |
+| [ ]      | [ ]       | `DMA_DeregisterChannel` (&46141) |
+| [ ]      | [ ]       | `DMA_QueueTransfer` (&46142) |
+| [ ]      | [ ]       | `DMA_TerminateTransfer` (&46143) |
+| [ ]      | [ ]       | `DMA_SuspendTransfer` (&46144) |
+| [ ]      | [ ]       | `DMA_ResumeTransfer` (&46145) |
+| [ ]      | [ ]       | `DMA_ExamineTransfer` (&46146) |
 
 
 ### Services
 
 
-* `Service_PagesSafe`
-* `Service_PagesUnsafe`
-* `Service_Reset`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_PagesSafe` |
+| [ ]      | [ ]       | `Service_PagesUnsafe` |
+| [ ]      | [ ]       | `Service_Reset` |
 
 
 ### Vectors

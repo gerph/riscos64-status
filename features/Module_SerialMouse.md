@@ -3,8 +3,9 @@
 ## Discovered features
 
 
-* Does file access
-* Does serial access
+* Has background processing
+* Has file access
+* Has serial access
 * Has services
 * Has services fast
 * Uses messagetrans
@@ -15,6 +16,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -33,14 +36,18 @@
 ### Services
 
 
-* `Service_Reset`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_Reset` |
 
 
 ### Vectors
 
 
-* `PointerV`
-* `TickerV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `PointerV` |
+| [ ]      | [ ]       | `TickerV` |
 
 
 ### Events
@@ -68,7 +75,9 @@
 ### Vectors
 
 
-* `KEYV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `KEYV` |
 
 
 ### Events

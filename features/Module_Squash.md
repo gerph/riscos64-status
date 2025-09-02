@@ -13,6 +13,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -25,8 +27,10 @@
 ### SWIs
 
 
-* `Squash_Compress` (&42700)
-* `Squash_Decompress` (&42701)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Squash_Compress` (&42700) |
+| [ ]      | [ ]       | `Squash_Decompress` (&42701) |
 
 
 ### Services

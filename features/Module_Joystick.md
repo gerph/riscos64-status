@@ -13,6 +13,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -25,9 +27,11 @@
 ### SWIs
 
 
-* `Joystick_Read` (&43F40)
-* `Joystick_CalibrateTopRight` (&43F41)
-* `Joystick_CalibrateBottomLeft` (&43F42)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Joystick_Read` (&43F40) |
+| [ ]      | [ ]       | `Joystick_CalibrateTopRight` (&43F41) |
+| [ ]      | [ ]       | `Joystick_CalibrateBottomLeft` (&43F42) |
 
 
 ### Services
@@ -39,13 +43,17 @@
 ### Vectors
 
 
-* `EventV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `EventV` |
 
 
 ### Events
 
 
-* `Event_VSync`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Event_VSync` |
 
 
 ### UpCalls

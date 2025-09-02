@@ -3,9 +3,9 @@
 ## Discovered features
 
 
-* Does file access
 * Has application environment
 * Has dynamic code
+* Has file access
 * Has services
 * Has services fast
 * Sets variables
@@ -17,13 +17,17 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*Obey`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Obey` |
 
 
 ### SWIs
@@ -35,14 +39,18 @@
 ### Services
 
 
-* `Service_NewApplication`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_NewApplication` |
 
 
 ### Vectors
 
 
-* `ErrorV`
-* `UpCallV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `ErrorV` |
+| [ ]      | [ ]       | `UpCallV` |
 
 
 ### Events

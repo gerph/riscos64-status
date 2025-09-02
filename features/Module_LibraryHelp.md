@@ -3,7 +3,7 @@
 ## Discovered features
 
 
-* Does directory access
+* Has directory access
 * Has services
 * Has services fast
 * Is c
@@ -15,8 +15,9 @@
 
 ### Functionality
 
-
-*None found*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Help extension |
 
 ### Commands
 
@@ -33,7 +34,9 @@
 ### Services
 
 
-* `Service_HelpQuery`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_HelpQuery` |
 
 
 ### Vectors

@@ -17,38 +17,45 @@
 
 ### Functionality
 
-
-* Econet service
-* Filesystem
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Econet service |
+| [ ]      | [ ]       | Filesystem |
 
 ### Commands
 
 
-* `*Configure PS`
-* `*ListPS`
-* `*PS`
-* `*SetPS`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Configure PS` |
+| [ ]      | [ ]       | `*ListPS` |
+| [ ]      | [ ]       | `*PS` |
+| [ ]      | [ ]       | `*SetPS` |
 
 
 ### SWIs
 
 
-* `NetPrint_ReadPSNumber` (&40200)
-* `NetPrint_SetPSNumber` (&40201)
-* `NetPrint_ReadPSName` (&40202)
-* `NetPrint_SetPSName` (&40203)
-* `NetPrint_ReadPSTimeouts` (&40204)
-* `NetPrint_SetPSTimeouts` (&40205)
-* `NetPrint_BindPSName` (&40206)
-* `NetPrint_ListServers` (&40207)
-* `NetPrint_ConvertStatusToString` (&40208)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `NetPrint_ReadPSNumber` (&40200) |
+| [ ]      | [ ]       | `NetPrint_SetPSNumber` (&40201) |
+| [ ]      | [ ]       | `NetPrint_ReadPSName` (&40202) |
+| [ ]      | [ ]       | `NetPrint_SetPSName` (&40203) |
+| [ ]      | [ ]       | `NetPrint_ReadPSTimeouts` (&40204) |
+| [ ]      | [ ]       | `NetPrint_SetPSTimeouts` (&40205) |
+| [ ]      | [ ]       | `NetPrint_BindPSName` (&40206) |
+| [ ]      | [ ]       | `NetPrint_ListServers` (&40207) |
+| [ ]      | [ ]       | `NetPrint_ConvertStatusToString` (&40208) |
 
 
 ### Services
 
 
-* `Service_FSRedeclare`
-* `Service_ReAllocatePorts`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_FSRedeclare` |
+| [ ]      | [ ]       | `Service_ReAllocatePorts` |
 
 
 ### Vectors
@@ -76,13 +83,17 @@
 ### Services
 
 
-* `Service_NetPrintCheckD1`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_NetPrintCheckD1` |
 
 
 ### Vectors
 
 
-* `EconetV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `EconetV` |
 
 
 ### Events

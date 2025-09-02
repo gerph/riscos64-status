@@ -14,8 +14,9 @@
 
 ### Functionality
 
-
-* System banner
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | System banner |
 
 ### Commands
 
@@ -32,8 +33,10 @@
 ### Services
 
 
-* `Service_DesktopWelcome`
-* `Service_OSInitBanner`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_DesktopWelcome` |
+| [ ]      | [ ]       | `Service_OSInitBanner` |
 
 
 ### Vectors

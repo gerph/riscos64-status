@@ -15,9 +15,10 @@
 
 ### Functionality
 
-
-* Resourcefs files
-* Window gadget
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Resourcefs files |
+| [X]      | [ ]       | Window gadget |
 
 ### Commands
 
@@ -34,8 +35,10 @@
 ### Services
 
 
-* `Service_ModeChange`
-* `Service_ResourceFSStarting`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ModeChange` |
+| [X]      | [ ]       | `Service_ResourceFSStarting` |
 
 
 ### Vectors

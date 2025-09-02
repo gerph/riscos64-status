@@ -13,8 +13,9 @@
 
 ### Functionality
 
-
-* Buffers
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Buffers |
 
 ### Commands
 
@@ -31,7 +32,9 @@
 ### Services
 
 
-* `Service_BufferStarting`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_BufferStarting` |
 
 
 ### Vectors

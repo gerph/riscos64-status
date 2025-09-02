@@ -15,9 +15,10 @@
 
 ### Functionality
 
-
-* Resourcefs files
-* Toolbox object
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Resourcefs files |
+| [X]      | [ ]       | Toolbox object |
 
 ### Commands
 
@@ -28,19 +29,23 @@
 ### SWIs
 
 
-* `FontMenu_ClassSWI` (&82A40)
-* `FontMenu_PostFilter` (&82A41)
-* `FontMenu_PreFilter` (&82A42)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `FontMenu_ClassSWI` (&82A40) |
+| [X]      | [ ]       | `FontMenu_PostFilter` (&82A41) |
+| [X]      | [ ]       | `FontMenu_PreFilter` (&82A42) |
 
 
 ### Services
 
 
-* `Service_ResourceFSStarting`
-* `Service_ToolboxStarting`
-* `Service_ToolboxSubMenu`
-* `Service_ToolboxTaskBorn`
-* `Service_ToolboxTaskDied`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ResourceFSStarting` |
+| [X]      | [ ]       | `Service_ToolboxStarting` |
+| [X]      | [ ]       | `Service_ToolboxSubMenu` |
+| [X]      | [ ]       | `Service_ToolboxTaskBorn` |
+| [X]      | [ ]       | `Service_ToolboxTaskDied` |
 
 
 ### Vectors
@@ -68,7 +73,9 @@
 ### Services
 
 
-* `Service_ToolboxSubMenu`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ToolboxSubMenu` |
 
 
 ### Vectors

@@ -3,8 +3,8 @@
 ## Discovered features
 
 
-* Does file access
 * Has argument parsing
+* Has file access
 * Has nvram state
 * Has services
 * Has services fast
@@ -19,21 +19,24 @@
 
 ### Functionality
 
-
-* Default desktop application
-* Desktop filer icon
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Default desktop application |
+| [ ]      | [ ]       | Desktop filer icon |
 
 ### Commands
 
 
-* `*AddTinyDir`
-* `*BackDrop`
-* `*Desktop_Pinboard`
-* `*Pin`
-* `*Pinboard`
-* `*PinboardOptions`
-* `*RemoveTinyDir`
-* `*XPin`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*AddTinyDir` |
+| [ ]      | [ ]       | `*BackDrop` |
+| [ ]      | [ ]       | `*Desktop_Pinboard` |
+| [ ]      | [ ]       | `*Pin` |
+| [ ]      | [ ]       | `*Pinboard` |
+| [ ]      | [ ]       | `*PinboardOptions` |
+| [ ]      | [ ]       | `*RemoveTinyDir` |
+| [ ]      | [ ]       | `*XPin` |
 
 
 ### SWIs
@@ -45,11 +48,13 @@
 ### Services
 
 
-* `Service_Memory`
-* `Service_Reset`
-* `Service_StartFiler`
-* `Service_StartWimp`
-* `Service_StartedWimp`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_Memory` |
+| [ ]      | [ ]       | `Service_Reset` |
+| [ ]      | [ ]       | `Service_StartFiler` |
+| [ ]      | [ ]       | `Service_StartWimp` |
+| [ ]      | [ ]       | `Service_StartedWimp` |
 
 
 ### Vectors

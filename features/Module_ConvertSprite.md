@@ -15,8 +15,9 @@
 
 ### Functionality
 
-
-* Image conversion
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Image conversion |
 
 ### Commands
 
@@ -27,7 +28,9 @@
 ### SWIs
 
 
-* `ConvertSprite_CreateSprite` (&56800)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `ConvertSprite_CreateSprite` (&56800) |
 
 
 ### Services

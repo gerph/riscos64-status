@@ -3,7 +3,7 @@
 ## Discovered features
 
 
-* Does serial access
+* Has serial access
 * Has services
 * Has services fast
 * Uses messagetrans
@@ -14,6 +14,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -32,14 +34,18 @@
 ### Services
 
 
-* `Service_Reset`
-* `Service_SerialDevice`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_Reset` |
+| [ ]      | [ ]       | `Service_SerialDevice` |
 
 
 ### Vectors
 
 
-* `?`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `?` |
 
 
 ### Events
@@ -61,7 +67,9 @@
 ### Services
 
 
-* `Service_SerialDevice`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_SerialDevice` |
 
 
 ### Vectors

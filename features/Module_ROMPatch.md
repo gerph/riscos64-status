@@ -16,13 +16,17 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*ROMPatch`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*ROMPatch` |
 
 
 ### SWIs
@@ -34,7 +38,9 @@
 ### Services
 
 
-* `Service_PreReset`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_PreReset` |
 
 
 ### Vectors

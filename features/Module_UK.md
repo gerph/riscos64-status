@@ -15,8 +15,9 @@
 
 ### Functionality
 
-
-* Territory
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Territory |
 
 ### Commands
 
@@ -33,7 +34,9 @@
 ### Services
 
 
-* `Service_TerritoryManagerLoaded`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_TerritoryManagerLoaded` |
 
 
 ### Vectors

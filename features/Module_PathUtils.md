@@ -13,23 +13,29 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*AppPath`
-* `*PrepPath`
-* `*RemPath`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*AppPath` |
+| [X]      | [ ]       | `*PrepPath` |
+| [X]      | [ ]       | `*RemPath` |
 
 
 ### SWIs
 
 
-* `PathUtils_EnumeratePath` (&53B80)
-* `PathUtils_JoinPath` (&53B81)
-* `PathUtils_RemovePath` (&53B82)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `PathUtils_EnumeratePath` (&53B80) |
+| [X]      | [ ]       | `PathUtils_JoinPath` (&53B81) |
+| [X]      | [ ]       | `PathUtils_RemovePath` (&53B82) |
 
 
 ### Services

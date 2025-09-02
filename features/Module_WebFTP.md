@@ -14,23 +14,28 @@
 
 ### Functionality
 
-
-* Internet service
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Internet service |
 
 ### Commands
 
 
-* `*WebFTPinfo`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*WebFTPinfo` |
 
 
 ### SWIs
 
 
-* `WebFTP_Open` (&83BC0)
-* `WebFTP_Status` (&83BC1)
-* `WebFTP_Close` (&83BC2)
-* `WebFTP_CloseIdle` (&83BC3)
-* `WebFTP_4` (&83BC4)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `WebFTP_Open` (&83BC0) |
+| [X]      | [ ]       | `WebFTP_Status` (&83BC1) |
+| [X]      | [ ]       | `WebFTP_Close` (&83BC2) |
+| [X]      | [ ]       | `WebFTP_CloseIdle` (&83BC3) |
+| [X]      | [ ]       | `WebFTP_4` (&83BC4) |
 
 
 ### Services
@@ -42,7 +47,9 @@
 ### Vectors
 
 
-* `EventV`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `EventV` |
 
 
 ### Events

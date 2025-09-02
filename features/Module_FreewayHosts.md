@@ -13,8 +13,9 @@
 
 ### Functionality
 
-
-* Freeway resources
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Freeway resources |
 
 ### Commands
 
@@ -31,9 +32,11 @@
 ### Services
 
 
-* `Service_FreewayStarting`
-* `Service_InternetVars`
-* `Service_ShutDownComplete`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_FreewayStarting` |
+| [X]      | [ ]       | `Service_InternetVars` |
+| [X]      | [ ]       | `Service_ShutDownComplete` |
 
 
 ### Vectors

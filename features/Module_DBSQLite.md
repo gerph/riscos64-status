@@ -17,8 +17,9 @@
 
 ### Functionality
 
-
-* Database result sets
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Database result sets |
 
 ### Commands
 
@@ -29,11 +30,13 @@
 ### SWIs
 
 
-* `DBSQLite_Open` (&57D00)
-* `DBSQLite_Close` (&57D01)
-* `DBSQLite_SQLStart` (&57D02)
-* `DBSQLite_SQLRow` (&57D03)
-* `DBSQLite_SQLEnd` (&57D04)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `DBSQLite_Open` (&57D00) |
+| [X]      | [ ]       | `DBSQLite_Close` (&57D01) |
+| [X]      | [ ]       | `DBSQLite_SQLStart` (&57D02) |
+| [X]      | [ ]       | `DBSQLite_SQLRow` (&57D03) |
+| [X]      | [ ]       | `DBSQLite_SQLEnd` (&57D04) |
 
 
 ### Services

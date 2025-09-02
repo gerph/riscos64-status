@@ -14,28 +14,34 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
 ### Commands
 
 
-* `*ImageFileRenderers`
-* `*ImageFileViewer`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*ImageFileRenderers` |
+| [X]      | [ ]       | `*ImageFileViewer` |
 
 
 ### SWIs
 
 
-* `ImageFileRender_Render` (&562C0)
-* `ImageFileRender_BBox` (&562C1)
-* `ImageFileRender_Transform` (&562C2)
-* `ImageFileRender_DeclareFonts` (&562C3)
-* `ImageFileRender_Info` (&562C4)
-* `ImageFileRender_RendererInfo` (&562C5)
-* `ImageFileRender_Register` (&562C6)
-* `ImageFileRender_Deregister` (&562C7)
-* `ImageFileRender_EnumerateRenderers` (&562C8)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `ImageFileRender_Render` (&562C0) |
+| [X]      | [ ]       | `ImageFileRender_BBox` (&562C1) |
+| [X]      | [ ]       | `ImageFileRender_Transform` (&562C2) |
+| [X]      | [ ]       | `ImageFileRender_DeclareFonts` (&562C3) |
+| [X]      | [ ]       | `ImageFileRender_Info` (&562C4) |
+| [X]      | [ ]       | `ImageFileRender_RendererInfo` (&562C5) |
+| [X]      | [ ]       | `ImageFileRender_Register` (&562C6) |
+| [X]      | [ ]       | `ImageFileRender_Deregister` (&562C7) |
+| [X]      | [ ]       | `ImageFileRender_EnumerateRenderers` (&562C8) |
 
 
 ### Services
@@ -69,9 +75,11 @@
 ### Services
 
 
-* `Service_ImageFileRender_Dying`
-* `Service_ImageFileRender_RendererChanged`
-* `Service_ImageFileRender_Started`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ImageFileRender_Dying` |
+| [X]      | [ ]       | `Service_ImageFileRender_RendererChanged` |
+| [X]      | [ ]       | `Service_ImageFileRender_Started` |
 
 
 ### Vectors

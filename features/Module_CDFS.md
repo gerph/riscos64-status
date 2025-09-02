@@ -3,7 +3,7 @@
 ## Discovered features
 
 
-* Does cd access
+* Has cd access
 * Has nvram state
 * Has services
 * Has services fast
@@ -20,50 +20,57 @@
 
 ### Functionality
 
-
-* Filesystem
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | Filesystem |
 
 ### Commands
 
 
-* `*Bye`
-* `*CDDevices`
-* `*CDFS`
-* `*CDSpeed`
-* `*Configure CDROMBuffers`
-* `*Configure CDROMDrives`
-* `*Dismount`
-* `*Drive`
-* `*Eject`
-* `*Lock`
-* `*Mount`
-* `*Play`
-* `*PlayList`
-* `*PlayMSF`
-* `*Stop`
-* `*Supported`
-* `*Unlock`
-* `*Whichdisc`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*Bye` |
+| [ ]      | [ ]       | `*CDDevices` |
+| [ ]      | [ ]       | `*CDFS` |
+| [ ]      | [ ]       | `*CDSpeed` |
+| [ ]      | [ ]       | `*Configure CDROMBuffers` |
+| [ ]      | [ ]       | `*Configure CDROMDrives` |
+| [ ]      | [ ]       | `*Dismount` |
+| [ ]      | [ ]       | `*Drive` |
+| [ ]      | [ ]       | `*Eject` |
+| [ ]      | [ ]       | `*Lock` |
+| [ ]      | [ ]       | `*Mount` |
+| [ ]      | [ ]       | `*Play` |
+| [ ]      | [ ]       | `*PlayList` |
+| [ ]      | [ ]       | `*PlayMSF` |
+| [ ]      | [ ]       | `*Stop` |
+| [ ]      | [ ]       | `*Supported` |
+| [ ]      | [ ]       | `*Unlock` |
+| [ ]      | [ ]       | `*Whichdisc` |
 
 
 ### SWIs
 
 
-* `CDFS_ConvertDriveToDevice` (&41E80)
-* `CDFS_SetBufferSize` (&41E81)
-* `CDFS_GetBufferSize` (&41E82)
-* `CDFS_SetNumberOfDrives` (&41E83)
-* `CDFS_GetNumberOfDrives` (&41E84)
-* `CDFS_GiveFileType` (&41E85)
-* `CDFS_DescribeDisc` (&41E86)
-* `CDFS_WhereIsFile` (&41E87)
-* `CDFS_Truncation` (&41E88)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `CDFS_ConvertDriveToDevice` (&41E80) |
+| [ ]      | [ ]       | `CDFS_SetBufferSize` (&41E81) |
+| [ ]      | [ ]       | `CDFS_GetBufferSize` (&41E82) |
+| [ ]      | [ ]       | `CDFS_SetNumberOfDrives` (&41E83) |
+| [ ]      | [ ]       | `CDFS_GetNumberOfDrives` (&41E84) |
+| [ ]      | [ ]       | `CDFS_GiveFileType` (&41E85) |
+| [ ]      | [ ]       | `CDFS_DescribeDisc` (&41E86) |
+| [ ]      | [ ]       | `CDFS_WhereIsFile` (&41E87) |
+| [ ]      | [ ]       | `CDFS_Truncation` (&41E88) |
 
 
 ### Services
 
 
-* `Service_FSRedeclare`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_FSRedeclare` |
 
 
 ### Vectors
@@ -91,7 +98,9 @@
 ### Services
 
 
-* `Service_DiscDismounted`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_DiscDismounted` |
 
 
 ### Vectors
@@ -109,8 +118,10 @@
 ### UpCalls
 
 
-* `UpCall_MediaNotPresent`
-* `UpCall_MediaSearchEnd`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `UpCall_MediaNotPresent` |
+| [ ]      | [ ]       | `UpCall_MediaSearchEnd` |
 
 
 ### Modules

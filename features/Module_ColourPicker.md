@@ -19,39 +19,46 @@
 
 ### Functionality
 
-
-* Desktop filter
-* Resourcefs files
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Desktop filter |
+| [X]      | [ ]       | Resourcefs files |
 
 ### Commands
 
 
-* `*ModelList`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `*ModelList` |
 
 
 ### SWIs
 
 
-* `ColourPicker_RegisterModel` (&47700)
-* `ColourPicker_DeregisterModel` (&47701)
-* `ColourPicker_OpenDialogue` (&47702)
-* `ColourPicker_CloseDialogue` (&47703)
-* `ColourPicker_UpdateDialogue` (&47704)
-* `ColourPicker_ReadDialogue` (&47705)
-* `ColourPicker_SetColour` (&47706)
-* `ColourPicker_HelpReply` (&47707)
-* `ColourPicker_ModelSWI` (&47708)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `ColourPicker_RegisterModel` (&47700) |
+| [X]      | [ ]       | `ColourPicker_DeregisterModel` (&47701) |
+| [X]      | [ ]       | `ColourPicker_OpenDialogue` (&47702) |
+| [X]      | [ ]       | `ColourPicker_CloseDialogue` (&47703) |
+| [X]      | [ ]       | `ColourPicker_UpdateDialogue` (&47704) |
+| [X]      | [ ]       | `ColourPicker_ReadDialogue` (&47705) |
+| [X]      | [ ]       | `ColourPicker_SetColour` (&47706) |
+| [X]      | [ ]       | `ColourPicker_HelpReply` (&47707) |
+| [X]      | [ ]       | `ColourPicker_ModelSWI` (&47708) |
 
 
 ### Services
 
 
-* `Service_ColourPickerLoaded`
-* `Service_ModeChange`
-* `Service_ResourceFSStarted`
-* `Service_TerritoryStarted`
-* `Service_WimpCloseDown`
-* `Service_WimpPalette`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_ColourPickerLoaded` |
+| [X]      | [ ]       | `Service_ModeChange` |
+| [X]      | [ ]       | `Service_ResourceFSStarted` |
+| [X]      | [ ]       | `Service_TerritoryStarted` |
+| [X]      | [ ]       | `Service_WimpCloseDown` |
+| [X]      | [ ]       | `Service_WimpPalette` |
 
 
 ### Vectors
@@ -79,8 +86,10 @@
 ### Services
 
 
-* `?`
-* `Service_ColourPickerLoaded`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `?` |
+| [X]      | [ ]       | `Service_ColourPickerLoaded` |
 
 
 ### Vectors

@@ -14,9 +14,10 @@
 
 ### Functionality
 
-
-* Image conversion
-* License info
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | Image conversion |
+| [X]      | [ ]       | License info |
 
 ### Commands
 
@@ -27,13 +28,17 @@
 ### SWIs
 
 
-* `ConvertBMP_CreateSpriteFromDIB` (&58940)
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `ConvertBMP_CreateSpriteFromDIB` (&58940) |
 
 
 ### Services
 
 
-* `Service_TaskManagerAcknowledgements`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_TaskManagerAcknowledgements` |
 
 
 ### Vectors
@@ -61,7 +66,9 @@
 ### Services
 
 
-* `Service_TaskManagerAcknowledgements`
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `Service_TaskManagerAcknowledgements` |
 
 
 ### Vectors
