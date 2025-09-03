@@ -22,18 +22,19 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `*Modules` |
-| [ ]      | [ ]       | `*RMClear` |
-| [ ]      | [ ]       | `*RMEnsure` |
+| [X]      | [X]       | `*Modules` |
+| [ ]      | [ ]       | `*Help Modules` |
+| [X]      | [X]       | `*RMClear` |
+| [X]      | [X]       | `*RMEnsure` |
 | [ ]      | [ ]       | `*RMFaster` |
-| [ ]      | [ ]       | `*RMInsert` |
-| [ ]      | [ ]       | `*RMKill` |
-| [ ]      | [ ]       | `*RMLoad` |
-| [ ]      | [ ]       | `*RMReInit` |
-| [ ]      | [ ]       | `*RMRun` |
-| [ ]      | [ ]       | `*RMTidy` |
-| [ ]      | [ ]       | `*ROMModules` |
-| [ ]      | [ ]       | `*Unplug` |
+| [X]      | [X]       | `*RMInsert` |
+| [X]      | [X]       | `*RMKill` |
+| [X]      | [X]       | `*RMLoad` |
+| [X]      | [X]       | `*RMReInit` |
+| [X]      | [X]       | `*RMRun` |
+| [X]      | [X]       | `*RMTidy` |
+| [X]      | [X]       | `*ROMModules` |
+| [X]      | [X]       | `*Unplug` |
 
 
 ### SWIs

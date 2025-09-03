@@ -2,7 +2,7 @@
 
 ## Discovered features
 
-
+* Uses console input
 * Uses console output
 
 ---
@@ -13,7 +13,7 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Console line input |
+| [X]      | [ ]       | Console line input |
 | [ ]      | [ ]       | Os swis |
 
 ### Commands
@@ -25,7 +25,10 @@
 ### SWIs
 
 
-*None*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [X]      | [ ]       | `OS_ReadLine` |
+| [X]      | [ ]       | `OS_ReadLine32` |
 
 
 ### Services
@@ -39,7 +42,7 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `ReadLineV` |
+| [X]      | [ ]       | `ReadLineV` |
 
 
 ### Events
@@ -69,7 +72,7 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `ReadLineV` |
+| [X]      | [ ]       | `ReadLineV` |
 
 
 ### Events

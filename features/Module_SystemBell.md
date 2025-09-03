@@ -35,7 +35,7 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Service_ExternalBell` |
+| [X]      | [X]       | `Service_ExternalBell` |
 
 
 ### Vectors

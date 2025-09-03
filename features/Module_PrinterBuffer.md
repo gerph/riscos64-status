@@ -15,7 +15,7 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Buffers |
+| [X]      | [ ]       | Buffer for PrinterDriver |
 
 ### Commands
 
@@ -34,7 +34,7 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Service_BufferStarting` |
+| [X]      | [ ]       | `Service_BufferStarting` |
 
 
 ### Vectors

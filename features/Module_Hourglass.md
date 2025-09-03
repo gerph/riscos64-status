@@ -25,8 +25,8 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `*HOff` |
-| [ ]      | [ ]       | `*HOn` |
+| [X]      | [ ]       | `*HOff` |
+| [X]      | [ ]       | `*HOn` |
 
 
 ### SWIs
@@ -34,13 +34,13 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Hourglass_On` (&406C0) |
-| [ ]      | [ ]       | `Hourglass_Off` (&406C1) |
-| [ ]      | [ ]       | `Hourglass_Smash` (&406C2) |
-| [ ]      | [ ]       | `Hourglass_Start` (&406C3) |
-| [ ]      | [ ]       | `Hourglass_Percentage` (&406C4) |
-| [ ]      | [ ]       | `Hourglass_LEDs` (&406C5) |
-| [ ]      | [ ]       | `Hourglass_Colours` (&406C6) |
+| [X]      | [ ]       | `Hourglass_On` (&406C0) |
+| [X]      | [ ]       | `Hourglass_Off` (&406C1) |
+| [X]      | [ ]       | `Hourglass_Smash` (&406C2) |
+| [X]      | [ ]       | `Hourglass_Start` (&406C3) |
+| [X]      | [ ]       | `Hourglass_Percentage` (&406C4) |
+| [X]      | [ ]       | `Hourglass_LEDs` (&406C5) |
+| [X]      | [ ]       | `Hourglass_Colours` (&406C6) |
 
 
 ### Services

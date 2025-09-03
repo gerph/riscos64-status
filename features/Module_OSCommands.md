@@ -26,33 +26,34 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `*Break` |
+| [ ]      | [ ]       | `*Help Break` |
 | [ ]      | [ ]       | `*ChangeDynamicArea` |
-| [ ]      | [ ]       | `*Commands` |
+| [ ]      | [ ]       | `*Help Commands` |
 | [ ]      | [ ]       | `*Configure` |
-| [ ]      | [ ]       | `*Echo` |
-| [ ]      | [ ]       | `*Error` |
-| [ ]      | [ ]       | `*FX` |
+| [X]      | [X]       | `*Echo` |
+| [X]      | [X]       | `*Error` |
+| [X]      | [X]       | `*FX` |
 | [ ]      | [ ]       | `*FileCommands` |
 | [ ]      | [ ]       | `*GO` |
 | [ ]      | [ ]       | `*GOS` |
 | [ ]      | [ ]       | `*Help` |
-| [ ]      | [ ]       | `*IF` |
+| [X]      | [X]       | `*IF` |
 | [ ]      | [ ]       | `*Ignore` |
-| [ ]      | [ ]       | `*Key` |
-| [ ]      | [ ]       | `*PowerOn` |
-| [ ]      | [ ]       | `*Quit` |
-| [ ]      | [ ]       | `*Reset` |
-| [ ]      | [ ]       | `*Set` |
-| [ ]      | [ ]       | `*SetEval` |
-| [ ]      | [ ]       | `*SetMacro` |
+| [X]      | [X]       | `*Key` |
+| [ ]      | [ ]       | `*Help PowerOn` |
+| [X]      | [X]       | `*Quit` |
+| [ ]      | [ ]       | `*Help Reset` |
+| [X]      | [X]       | `*Set` |
+| [X]      | [X]       | `*SetEval` |
+| [X]      | [X]       | `*SetMacro` |
+| [X]      | [X]       | `*SetEvalMacro` (optionally) |
 | [ ]      | [ ]       | `*Shadow` |
-| [ ]      | [ ]       | `*Show` |
+| [X]      | [X]       | `*Show` |
 | [ ]      | [ ]       | `*Status` |
-| [ ]      | [ ]       | `*Syntax` |
-| [ ]      | [ ]       | `*TV` |
-| [ ]      | [ ]       | `*Time` |
-| [ ]      | [ ]       | `*Unset` |
+| [ ]      | [ ]       | `*Help Syntax` |
+| [X]      | [X]       | `*TV` |
+| [X]      | [X]       | `*Time` |
+| [X]      | [X]       | `*Unset` |
 
 
 ### SWIs

@@ -13,8 +13,7 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-
-*None found*
+| [X]      | [X]       | Configures variables from file |
 
 ### Commands
 

@@ -24,21 +24,21 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `*SChoose` |
-| [ ]      | [ ]       | `*SCopy` |
-| [ ]      | [ ]       | `*SDelete` |
-| [ ]      | [ ]       | `*SFlipX` |
-| [ ]      | [ ]       | `*SFlipY` |
-| [ ]      | [ ]       | `*SGet` |
-| [ ]      | [ ]       | `*SInfo` |
-| [ ]      | [ ]       | `*SList` |
-| [ ]      | [ ]       | `*SLoad` |
-| [ ]      | [ ]       | `*SMerge` |
-| [ ]      | [ ]       | `*SNew` |
-| [ ]      | [ ]       | `*SRename` |
-| [ ]      | [ ]       | `*SSave` |
-| [ ]      | [ ]       | `*ScreenLoad` |
-| [ ]      | [ ]       | `*ScreenSave` |
+| [X]      | [X]       | `*SChoose` |
+| [X]      | [X]       | `*SCopy` |
+| [X]      | [X]       | `*SDelete` |
+| [X]      | [X]       | `*SFlipX` |
+| [X]      | [X]       | `*SFlipY` |
+| [X]      | [X]       | `*SGet` |
+| [X]      | [X]       | `*SInfo` |
+| [X]      | [X]       | `*SList` |
+| [X]      | [X]       | `*SLoad` |
+| [X]      | [X]       | `*SMerge` |
+| [X]      | [X]       | `*SNew` |
+| [X]      | [X]       | `*SRename` |
+| [X]      | [X]       | `*SSave` |
+| [X]      | [X]       | `*ScreenLoad` |
+| [X]      | [X]       | `*ScreenSave` |
 
 
 ### SWIs
