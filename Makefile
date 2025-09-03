@@ -55,7 +55,8 @@ wiki-update/Terminology.md: planning/Terminology.md | wiki-update
 	cp $? $@
 
 wiki-update/Status.md: Status.md | wiki-update
-	utils/fixupfootnotes.pl $? $@
+	utils/fixupfootnotes.pl $? tmp-status.md
+	utils/linkmodulefeatures.pl tmp-status.md $@
 
 wiki-update/Phase-%.md: planning/Phase-%.md planning/Phase-1.mmd utils/generate-phases.pl | wiki-update
 	utils/generate-phases.pl $* $@
