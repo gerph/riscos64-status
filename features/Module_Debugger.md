@@ -20,24 +20,27 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-
-*None found*
+| [X]      | [ ]       | Breakpoints |
+| [X]      | [X]       | ARM32 default in ARM32 host, AArch64 default in AArch64 host |
+| [X]      | [X]       | Provides comments on immediate constants |
+| [ ]      | [ ]       | Uses MessageTrans |
 
 ### Commands
 
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `*BreakClr` |
-| [ ]      | [ ]       | `*BreakList` |
-| [ ]      | [ ]       | `*BreakSet` |
-| [ ]      | [ ]       | `*Continue` |
-| [ ]      | [ ]       | `*Debug` |
-| [ ]      | [ ]       | `*InitStore` |
-| [ ]      | [ ]       | `*Memory` |
-| [ ]      | [ ]       | `*MemoryA` |
-| [ ]      | [ ]       | `*MemoryI` |
-| [ ]      | [ ]       | `*ShowRegs` |
+| [X]      | [ ]       | `*BreakClr` |
+| [X]      | [ ]       | `*BreakList` |
+| [X]      | [ ]       | `*BreakSet` |
+| [X]      | [ ]       | `*Continue` |
+| [X]      | [ ]       | `*Debug` |
+| [X]      | [X]       | `*InitStore` |
+| [X]      | [X]       | `*Memory` |
+| [X]      | [X]       | `*MemoryA` |
+| [X]      | [X]       | `*MemoryI` |
+| [X]      | [X]       | `*DumpI` |
+| [X]      | [X]       | `*ShowRegs` |
 
 
 ### SWIs
@@ -45,8 +48,12 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Debugger_Disassemble` (&40380) |
-| [ ]      | [ ]       | `Debugger_DisassembleThumb` (&40381) |
+| [X]      | [X]       | `Debugger_Disassemble` (&40380) |
+| [X]      | [X]       | `Debugger_DisassembleThumb` (&40381) |
+| [ ]      | [ ]       | `Debugger_Flags` (&40382) |
+| [ ]      | [ ]       | `Debugger_CPU` (&40383) |
+| [ ]      | [ ]       | `Debugger_DisassemblePlus` (&40384) |
+| [X]      | [X]       | `Debugger_DisassembleArch` (&40385) |
 
 
 ### Services
