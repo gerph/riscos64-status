@@ -129,13 +129,13 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | ConvertPNG                | C     | -         |           |
 | ConvertBMP                | C     | -         | Built     |
 | ConvertDoom               | C     | -         | Built     |
-| ConvertGIF                | C     | -         |           |
+| ConvertGIF                | C     | -         | Built     |
 | ConvertICO                | C     | -         | Built     |
 | ConvertPCX                | C     | -         | Built     |
 | ConvertPNM                | C     | -         | Built     |
 | ConvertSprite             | C     | -         |           |
 | ConvertSun                | C     | -         | Built     |
-| ConvertXBM                | C     | -         |           |
+| ConvertXBM                | C     | -         | Built     |
 | ConvertClear              | Asm   |           |           |
 | ImageFileRender           | C     | -         | Functional |
 | ImageFileRender_Artworks  | C     | -         |           |
