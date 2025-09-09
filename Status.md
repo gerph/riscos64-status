@@ -482,6 +482,9 @@ The table below shows information about various tools and their support:
 | Mod decoder  | modservices            | C         | -         | Functional[^modservices] |                |                      |                |
 | Stream edit  | sed                    | C         | -         | Built[^sed]    |                          |                      |                |
 | Version Trans | vtranslate            | C         | -         | Functional[^vtranslate]|                  |                      |                |
+| Binary includes | binaof              | C         | -         | N/A[^norcroft][^binaof] | N/A             | N/A                  | N/A            |
+| Resource mods | modgen                | C         | -         | Functional[^modgen] | N/A                 | N/A                  | N/A            |
+| Resource includes | resgen            | C         | -         | N/A[^norcroft][^resgen] | N/A             | N/A                  | N/A            |
 
 [^norcroft]: The Norcroft toolchain only builds 32-bit binaries, so it is not useful to port this to RISC OS 64. As other compilers exist for AArch64 code, it is more sensible to use them instead of updating the aging Norcroft toolchain.
 [^cfront]: CFront hasn't even been attempted, as it is ancient and doesn't really support modern C++. It also doesn't built itself with C++ compilers.
@@ -509,6 +512,9 @@ The table below shows information about various tools and their support:
 [^modservices]: Lists services used by modules. For AArch64 this is only dispatched through a table, so is trivial to decode.
 [^sed]: SEd has been built but not tested in its built form.
 [^vtranslate]: Version number translator has been built and works.
+[^binaof]: BinAOF creates AOF files directly, so isn't useful for non-32bit systems. Similar tools like `bin2c` might be a suitable alternative in the future.
+[^modgen]: ModGen creates a module which just contains resources (like the Messages module).
+[^resgen]: ResGen builds resource contents that we can register, but as an AOF file. It would be handy to replace this with a tool that created ELF as well.
 
 The Docker build environment provides the build tooling for 32bit and 64bit systems.
 The environment is functional as a tooling environment for building applications, utilities and modules.
