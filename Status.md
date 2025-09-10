@@ -62,7 +62,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Portable                  | Asm   | Prototype | Prototype |
 | FileSwitch                | Asm   |           |           |
 | Squash                    | Asm/C |           |           |
-| ResourceFS                | Asm   |           |           |
+| ResourceFS                | Asm   | Stub      | Stub      |
 | ResourceFiler             | Asm   |           |           |
 | Messages                  | Asm   |           |           |
 | MessageTrans              | Asm   | Functional[^messagetrans] | Functional[^messagetrans] |
