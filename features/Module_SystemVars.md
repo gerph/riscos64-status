@@ -1,5 +1,15 @@
 # Module: SystemVars
 
+## Overview
+
+SystemVars handles the environment variables registration and reading.
+In RISC OS Select it also handled:
+
+* `OS_GSTrans`, `OS_GSRead`, `OS_GSInit`
+* Setting of the default variables.
+
+These functions should be split into a separate component.
+
 ## Discovered features
 
 
@@ -16,7 +26,10 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Os swis |
+| [ ]      | [ ]       | String variables |
+| [ ]      | [ ]       | Macro variables |
+| [ ]      | [ ]       | Code variables |
+| [ ]      | [ ]       | Code variables with workspace (introduced in Select) |
 
 ### Commands
 
@@ -27,7 +40,13 @@
 ### SWIs
 
 
-*None*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `OS_GSInit` (not sure this should be here) |
+| [ ]      | [ ]       | `OS_GSRead` (not sure this should be here) |
+| [ ]      | [ ]       | `OS_GSTrans` (not sure this should be here) |
+| [ ]      | [ ]       | `OS_ReadVarVal` |
+| [ ]      | [ ]       | `OS_SetVarVal` |
 
 
 ### Services

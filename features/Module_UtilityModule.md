@@ -1,4 +1,4 @@
-# Module: ShellCLI
+# Module: UtilityModule
 
 ## Discovered features
 
@@ -6,7 +6,6 @@
 * Has application environment
 * Has services
 * Has services fast
-* Has swis
 * Is desktop application
 * Uses console input
 * Uses console output
@@ -20,7 +19,6 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Notice on how to return to desktop |
 | [ ]      | [ ]       | Command line prompt shown with `CLI$Prompt` |
 | [ ]      | [ ]       | Errors are reported |
 | [ ]      | [ ]       | Exits are trapped |
@@ -33,17 +31,13 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `*ShellCLI` |
+| [ ]      | [ ]       | `*GOS` |
 
 
 ### SWIs
 
 
-| In 32bit | In 64 bit | Interface |
-|----------|-----------|-----------|
-| [ ]      | [ ]       | `Shell_Create` (&805C0) |
-| [ ]      | [ ]       | `Shell_Destroy` (&805C1) |
-
+*None*
 
 ### Services
 
@@ -52,7 +46,6 @@
 |----------|-----------|-----------|
 | [ ]      | [ ]       | `Service_Memory` |
 | [ ]      | [ ]       | `Service_Reset` |
-| [ ]      | [ ]       | `Service_WimpCloseDown` |
 
 
 ### Vectors
@@ -105,7 +98,4 @@
 
 
 * `MessageTrans`
-* `Shell`
-* `Wimp`
-
 
