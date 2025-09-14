@@ -160,9 +160,9 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Desktop                   | Asm   |           |           |
 | IconBorderBeveled         | C     | -         | Built     |
 | IconBorderFob             | C     | -         | Built     |
-| IconBorderCross           | C     | -         | Built     |
+| IconBorderCrossy          | C     | -         | Built     |
 | IconBorderLoop            | C     | -         | Built     |
-| IconBorderPopping         | C     | -         | Built     |
+| IconBorderPlainPopping    | C     | -         | Built     |
 | IconBorderPlain           | C     | -         | Built     |
 | IconBorderRound           | C     | -         |           |
 | TaskManager               | Asm   |           |           |
