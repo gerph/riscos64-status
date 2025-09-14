@@ -1,9 +1,12 @@
-# Module: URL
+# Module: SystemVarsDefaults
 
 ## Discovered features
 
 
-*None*
+* Has dynamic code
+* Has kernel collusion
+* Is c
+* Sets variables
 
 ---
 
@@ -11,6 +14,8 @@
 
 ### Functionality
 
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
 
 *None found*
 
@@ -81,6 +86,7 @@
 ### Modules
 
 
-*None*
+* `MessageTrans`
+* `SharedCLibrary`
 
 
