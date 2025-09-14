@@ -188,7 +188,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Internet                  | C     | -         |           |
 | InetServices              | C     | -         |           |
 | Resolver                  | C     | -         |           |
-| MimeMap                   | C     | -         |           |
+| MimeMap                   | C     | Built     | Built     |
 | InternetTime              | C     | -         |           |
 | InetConfigure             | C     | -         |           |
 | DHCPClient                | C     | -         |           |
