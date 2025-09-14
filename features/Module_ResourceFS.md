@@ -18,6 +18,7 @@
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [ ]      | [ ]       | Filesystem |
+| [ ]      | [ ]       | Can list files |
 
 ### Commands
 
@@ -32,8 +33,8 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `ResourceFS_RegisterFiles` (&41B40) |
-| [ ]      | [ ]       | `ResourceFS_DeregisterFiles` (&41B41) |
+| [X]      | [ ]       | `ResourceFS_RegisterFiles` (&41B40) |
+| [X]      | [ ]       | `ResourceFS_DeregisterFiles` (&41B41) |
 
 
 ### Services
@@ -72,9 +73,9 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Service_ResourceFSDying` |
-| [ ]      | [ ]       | `Service_ResourceFSStarted` |
-| [ ]      | [ ]       | `Service_ResourceFSStarting` |
+| [X]      | [ ]       | `Service_ResourceFSDying` |
+| [X]      | [ ]       | `Service_ResourceFSStarted` |
+| [X]      | [ ]       | `Service_ResourceFSStarting` |
 
 
 ### Vectors
