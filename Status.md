@@ -41,8 +41,8 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | DiagnosticDump            | C     | -             |               |
 | CFrontDemangler           | C     | -             |               |
 | ReadLine                  | Asm   | Functional    | Internals[^1] |
-| CLIV                      | Asm   |               |           |
-| VideoTTX                  | C     | -             |           |
+| CLIV                      | Asm   |               |               |
+| VideoTTX                  | C     | -             | Built         |
 | VideoSW                   | Asm   |               |           |
 | VideoHWVIDC               | Asm   |               |           |
 | VideoHWVF                 | Asm   |               |           |
