@@ -343,9 +343,9 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | FileCoreCheck | Absolute  | C         | -         | [^csystem] |
 | FreePool      | Utility   | Asm       |           |           |
 | HWScan        | Absolute  | C         | -         | Built     |
-| LibraryHlp    | Module    | C         | -         | Functional     |
+| LibraryHelp   | Module    | C         | -         | Functional     |
 | MemFix        | Module    | Asm       |           |           |
-| PatchApp      | Module    | C         | -         |           |
+| AppPatcher    | Module    | C         | -         |           |
 | SetChoices    | Obey      | Script    |           |           |
 | ShrinkRMA     | Utility   | Asm       |           |           |
 | Softload      | Absolute  | C         | -         |           |
