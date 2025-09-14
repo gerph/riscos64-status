@@ -46,7 +46,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | VideoSW                   | Asm   |               |           |
 | VideoHWVIDC               | Asm   |               |           |
 | VideoHWVF                 | Asm   |               |           |
-| VideoGuard                | Asm   |               |           |
+| VideoGuard                | C     | Built         | Built     |
 | OSCommands                | Asm   | Stub          | Stub      |
 | FSCommands                | Asm   |               |           |
 | ModuleCommands            | Asm   | Functional[^cmungehelp] | Functional[^cmungehelp] |

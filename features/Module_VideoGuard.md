@@ -15,6 +15,9 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [X]      | [X]       | Detects configured display present on startup |
+| [X]      | [X]       | Selects another display if configured display is not available |
+| [X]      | [X]       | Input forces a display reselection if not present |
 
 *None found*
 
@@ -35,9 +38,9 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [X]      | [ ]       | `Service_DisplayChanged` |
-| [X]      | [ ]       | `Service_DisplayStatus` |
-| [X]      | [ ]       | `Service_ErrorStarting` |
+| [X]      | [X]       | `Service_DisplayChanged` |
+| [X]      | [X]       | `Service_DisplayStatus` |
+| [X]      | [X]       | `Service_ErrorStarting` |
 
 
 ### Vectors
@@ -45,8 +48,8 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [X]      | [ ]       | `ByteV` |
-| [X]      | [ ]       | `RdchV` |
+| [X]      | [X]       | `ByteV` |
+| [X]      | [X]       | `RdchV` |
 
 
 ### Events
