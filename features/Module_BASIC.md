@@ -53,7 +53,8 @@
 | [ ]      | [ ]       | Keyword `DEF` |
 | [ ]      | [ ]       | Keyword `DEG` |
 | [ ]      | [ ]       | Keyword `DELETE` |
-| [ ]      | [ ]       | Keyword `DIM` |
+| [ ]      | [ ]       | Keyword `DIM` array |
+| [ ]      | [ ]       | Keyword `DIM` memory reservation|
 | [ ]      | [ ]       | Keyword `DIV` |
 | [ ]      | [ ]       | Keyword `DRAW` |
 | [ ]      | [ ]       | Keyword `EDIT` |
@@ -84,7 +85,8 @@
 | [ ]      | [ ]       | Keyword `GOTO` |
 | [ ]      | [ ]       | Keyword `HELP` |
 | [ ]      | [ ]       | Keyword `HIMEM` |
-| [ ]      | [ ]       | Keyword `IF` |
+| [ ]      | [ ]       | Keyword `IF` (single line) |
+| [ ]      | [ ]       | Keyword `IF` (multi-line) |
 | [ ]      | [ ]       | Keyword `INKEY` |
 | [ ]      | [ ]       | Keyword `INKEY$` |
 | [ ]      | [ ]       | Keyword `INPUT` |
@@ -189,7 +191,21 @@
 | [ ]      | [ ]       | Keyword `WHEN` |
 | [ ]      | [ ]       | Keyword `WHILE` |
 | [ ]      | [ ]       | Keyword `WIDTH` |
-*None found*
+| [ ]      | [ ]       | Number formats with `@%` (`G` general format) |
+| [ ]      | [ ]       | Number formats with `@%` (`E` exponent format) |
+| [ ]      | [ ]       | Number formats with `@%` (`F` fixed format) |
+| [ ]      | [ ]       | Number formats with `@%` (numeric form) |
+| [ ]      | [ ]       | Number formats with `@%` (string form) |
+| [ ]      | [ ]       | Command line entry with `-quit` |
+| [ ]      | [ ]       | Command line entry with `-load` |
+| [ ]      | [ ]       | Command line entry with `-chain` |
+| [ ]      | [ ]       | Command line entry will implicitly `TEXTLOAD` files |
+| [ ]      | [ ]       | Memory access with `?` (byte) |
+| [ ]      | [ ]       | Memory access with `!` (word) |
+| [ ]      | [ ]       | Memory access with `|` (BASIC float) |
+| [ ]      | [ ]       | Memory access with `$` (string) |
+| [ ]      | [ ]       | ARM assembler |
+| [ ]      | [ ]       | AArch64 assembler |
 
 ### Commands
 
