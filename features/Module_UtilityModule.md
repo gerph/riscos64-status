@@ -6,7 +6,6 @@
 * Has application environment
 * Has services
 * Has services fast
-* Is desktop application
 * Uses console input
 * Uses console output
 * Uses messagetrans
