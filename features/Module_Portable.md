@@ -3,8 +3,13 @@
 ## Discovered features
 
 
+* Has background processing
+* Has nvram state
+* Has services
 * Has swis
-* Is c
+* Is hardware specific
+* Uses console output
+* Uses messagetrans
 
 ---
 
@@ -14,13 +19,14 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-
-*None found*
+| [ ]      | [ ]       | Hardware driver |
 
 ### Commands
 
 
-*None*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `*FreezeTime` |
 
 
 ### SWIs
@@ -48,13 +54,19 @@
 ### Vectors
 
 
-*None*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `EventV` |
+| [ ]      | [ ]       | `KEYV` |
+| [ ]      | [ ]       | `PaletteV` |
 
 
 ### Events
 
 
-*None*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `Event_Keyboard` |
 
 
 ### UpCalls
@@ -78,7 +90,10 @@
 ### Vectors
 
 
-*None*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `KEYV` |
+| [ ]      | [ ]       | `PaletteV` |
 
 
 ### Events
@@ -98,7 +113,11 @@
 ### Modules
 
 
+* `ADFS`
+* `IIC`
 * `MessageTrans`
-* `SharedCLibrary`
+* `Portable`
+* `ScreenBlanker`
+* `Sound`
 
 
