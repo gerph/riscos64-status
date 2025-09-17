@@ -37,5 +37,7 @@ make progress on areas of the system to progress the whole.
 ## Development status
 
 The [current development status](https://github.com/gerph/riscos64-status/wiki/Status)
-for each components can be found in the Wiki.
+for each component can be found in the Wiki.
+
+The progress on [each phase of the development](https://github.com/gerph/riscos64-status/wiki/Progress) is also available.
 
