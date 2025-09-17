@@ -9,6 +9,7 @@
 * Has services
 * Has services fast
 * Has swis
+* Uses console input
 * Uses console output
 * Uses messagetrans
 

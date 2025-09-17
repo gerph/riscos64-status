@@ -14,7 +14,7 @@
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [X]      | [ ]       | Console line input |
-| [ ]      | [ ]       | Os swis |
+| [X]      | [ ]       | OS swis |
 
 ### Commands
 

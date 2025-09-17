@@ -11,6 +11,7 @@
 * Has services
 * Has services fast
 * Sets variables
+* Uses console input
 * Uses console output
 * Uses dynamic area
 * Uses heap dynamic area

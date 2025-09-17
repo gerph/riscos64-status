@@ -8,6 +8,7 @@
 * Has file access
 * Has swis
 * Sets variables
+* Uses console input
 * Uses console output
 * Uses messagetrans
 
