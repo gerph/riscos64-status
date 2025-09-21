@@ -26,7 +26,7 @@ These functions should be split into a separate component.
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | String variables |
+| [X]      | [X]       | String variables |
 | [ ]      | [ ]       | Macro variables |
 | [ ]      | [ ]       | Code variables |
 | [ ]      | [ ]       | Code variables with workspace (introduced in Select) |

@@ -32,7 +32,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Conversions               | Asm   | Complete      | Complete      |
 | OSSWIs                    | Asm   |               |               |
 | EvaluateExpression        | Asm   |               |               |
-| SystemVars                | Asm   |               |               |
+| SystemVars                | Asm   | Stub          | Stub          |
 | FileTypes                 | Asm   | Complete      | Complete      |
 | FPEmulator                | Asm   |               |               |
 | SharedCLibrary            | C     | -             |               |
