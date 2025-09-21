@@ -1,5 +1,9 @@
 # Module: SuperSample
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/supersample.html)
+
 ## Discovered features
 
 

@@ -1,5 +1,9 @@
 # Module: Desktop
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/desktop.html)
+
 ## Discovered features
 
 

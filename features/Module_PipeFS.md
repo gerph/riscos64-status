@@ -1,5 +1,9 @@
 # Module: PipeFS
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/pipefs.html)
+
 ## Discovered features
 
 

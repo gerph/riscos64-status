@@ -1,5 +1,9 @@
 # Module: Hourglass
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/hourglass.html)
+
 ## Discovered features
 
 

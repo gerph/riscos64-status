@@ -1,5 +1,10 @@
 # Module: ADFS
 
+
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/adfsnew.html)
+
 ## Discovered features
 
 

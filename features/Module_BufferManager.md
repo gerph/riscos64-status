@@ -1,5 +1,10 @@
 # Module: BufferManager
 
+
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/bufferman.html)
+
 ## Discovered features
 
 

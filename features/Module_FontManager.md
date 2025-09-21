@@ -1,5 +1,9 @@
 # Module: FontManager
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/fontmanager.html)
+
 ## Discovered features
 
 

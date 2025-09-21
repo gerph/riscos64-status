@@ -1,5 +1,9 @@
 # Module: DragASprite
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/dragasprite.html)
+
 ## Discovered features
 
 

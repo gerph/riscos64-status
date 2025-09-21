@@ -1,5 +1,9 @@
 # Module: Internet
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/internet.html)
+
 ## Discovered features
 
 

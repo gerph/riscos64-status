@@ -1,5 +1,9 @@
 # Module: NetPrint
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/netprint.html)
+
 ## Discovered features
 
 

@@ -9,6 +9,7 @@
 * Has services fast
 * Is c
 * Sets variables
+* Uses console input
 * Uses messagetrans
 
 ---

@@ -1,5 +1,9 @@
 # Module: ShellCLI
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/shellcli.html)
+
 ## Discovered features
 
 

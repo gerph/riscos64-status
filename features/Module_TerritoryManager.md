@@ -1,5 +1,9 @@
 # Module: TerritoryManager
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/territory.html)
+
 ## Discovered features
 
 

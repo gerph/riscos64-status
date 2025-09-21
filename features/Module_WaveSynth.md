@@ -1,5 +1,9 @@
 # Module: WaveSynth
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/wavesynth.html)
+
 ## Discovered features
 
 

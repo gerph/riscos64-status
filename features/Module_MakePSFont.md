@@ -1,5 +1,9 @@
 # Module: MakePSFont
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/makepsfont.html)
+
 ## Discovered features
 
 

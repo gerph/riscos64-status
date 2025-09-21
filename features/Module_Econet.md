@@ -1,5 +1,9 @@
 # Module: Econet
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/medeco.html)
+
 ## Discovered features
 
 

@@ -1,5 +1,9 @@
 # Module: SystemDevices
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/systemdevs.html)
+
 ## Discovered features
 
 

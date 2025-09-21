@@ -1,5 +1,9 @@
 # Module: International
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/international.html)
+
 ## Discovered features
 
 

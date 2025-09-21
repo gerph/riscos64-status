@@ -1,5 +1,10 @@
 # Module: CompressJPEG
 
+
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/compressjpeg.html)
+
 ## Discovered features
 
 

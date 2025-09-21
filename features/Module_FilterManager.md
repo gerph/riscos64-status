@@ -1,5 +1,9 @@
 # Module: FilterManager
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/filterman.html)
+
 ## Discovered features
 
 

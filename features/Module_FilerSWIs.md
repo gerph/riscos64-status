@@ -1,5 +1,9 @@
 # Module: FilerSWIs
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/fileraction.html)
+
 ## Discovered features
 
 

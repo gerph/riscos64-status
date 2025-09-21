@@ -1,5 +1,9 @@
 # Module: DragAnObject
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/draganobject.html)
+
 ## Discovered features
 
 

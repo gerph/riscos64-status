@@ -1,5 +1,9 @@
 # Module: MessageTrans
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/messagetrans.html)
+
 ## Discovered features
 
 

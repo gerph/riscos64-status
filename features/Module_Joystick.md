@@ -1,5 +1,9 @@
 # Module: Joystick
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/16bitjoystick.html)
+
 ## Discovered features
 
 

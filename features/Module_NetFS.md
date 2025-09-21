@@ -1,5 +1,9 @@
 # Module: NetFS
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/netfs.html)
+
 ## Discovered features
 
 

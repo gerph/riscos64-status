@@ -1,5 +1,10 @@
 # Module: BBCEconet
 
+
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/bbceconet.html)
+
 ## Discovered features
 
 

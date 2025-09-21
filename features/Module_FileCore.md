@@ -1,5 +1,9 @@
 # Module: FileCore
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/filecorenew.html)
+
 ## Discovered features
 
 

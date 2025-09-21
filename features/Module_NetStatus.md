@@ -1,5 +1,9 @@
 # Module: NetStatus
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/netstatus.html)
+
 ## Discovered features
 
 

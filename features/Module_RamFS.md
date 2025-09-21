@@ -1,5 +1,9 @@
 # Module: RamFS
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/ramfs.html)
+
 ## Discovered features
 
 

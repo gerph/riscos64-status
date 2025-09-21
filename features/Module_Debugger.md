@@ -1,5 +1,9 @@
 # Module: Debugger
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/debugger.html)
+
 ## Discovered features
 
 

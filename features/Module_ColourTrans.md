@@ -1,5 +1,10 @@
 # Module: ColourTrans
 
+
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/colourtrans.html)
+
 ## Discovered features
 
 

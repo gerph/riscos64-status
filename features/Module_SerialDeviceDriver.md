@@ -1,5 +1,9 @@
 # Module: SerialDeviceDriver
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/serparpt.html)
+
 ## Discovered features
 
 

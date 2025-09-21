@@ -1,5 +1,9 @@
 # Module: Free
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/freenew.html)
+
 ## Discovered features
 
 

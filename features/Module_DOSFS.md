@@ -1,5 +1,9 @@
 # Module: DOSFS
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/dosfsnew.html)
+
 ## Discovered features
 
 

@@ -1,5 +1,9 @@
 # Module: Squash
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/squash.html)
+
 ## Discovered features
 
 

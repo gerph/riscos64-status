@@ -1,5 +1,9 @@
 # Module: DeviceFS
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/devicefs.html)
+
 ## Discovered features
 
 

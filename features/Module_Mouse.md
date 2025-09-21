@@ -1,5 +1,9 @@
 # Module: Mouse
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/kbdmouse.html)
+
 ## Discovered features
 
 

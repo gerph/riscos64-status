@@ -1,5 +1,9 @@
 # Module: FileSwitch
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/fileswitchnew.html)
+
 ## Discovered features
 
 

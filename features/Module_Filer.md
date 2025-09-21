@@ -1,5 +1,9 @@
 # Module: Filer
 
+## Documentation
+
+URL: [PRM](http://www.riscos.com/support/developers/prm/filers.html)
+
 ## Discovered features
 
 
