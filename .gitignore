@@ -4,3 +4,6 @@ Test-*.xml
 plan.json
 statistics.*
 wiki-update/
+*.elf
+*.syms
+
