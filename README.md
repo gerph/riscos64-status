@@ -15,7 +15,7 @@ Some of the absolutes and modules which have been ported can be found within thi
 
 Absolutes and modules which are in the process of being created as C code may exist in both directories but may have incomplete implementations.
 
-The files within this repository have rudimentary tess applied to them;
+The files within this repository have rudimentary tests applied to them;
 we test absolute by trying to execute it (if we can) and each module by
 trying to load it. This is limited, but it proves that the components at
 least start.
