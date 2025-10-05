@@ -29,7 +29,11 @@ These functions should be split into a separate component.
 | [X]      | [ ]       | String variables |
 | [X]      | [ ]       | Number variables |
 | [X]      | [ ]       | Evaulated variables |
-| [ ]      | [ ]       | Macro variables |
+| [X]      | [ ]       | Macro variables |
+| [X]      | [ ]       | Creating variables |
+| [X]      | [ ]       | Reading variables |
+| [X]      | [ ]       | Updating variables |
+| [X]      | [ ]       | Deleting variables |
 | [ ]      | [ ]       | Code variables |
 | [ ]      | [ ]       | Code variables with workspace (introduced in Select) |
 
