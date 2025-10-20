@@ -7,7 +7,7 @@ The tables within this document indicate the status of each component.
 * `Lang` indicates the RISC OS Classic implementation
 * `Filetype` indicates the filetype (for disc based components)
 * `C-State` indicates whether there is a port to C (for Asm components), or `-` if the source is already in C.
-* `64-state` indicates whether the port Functional in 64-bit.
+* `64-state` indicates how functional the component is in 64-bit.
 
 There are footnotes beside the component state notes which indicate how far the development has progressed, limitations, or changes in the implementation of the component.
 
