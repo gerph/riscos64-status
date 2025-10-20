@@ -10,6 +10,7 @@ all: \
 		plan.json \
 		planning/Stack-Audio.mmd \
 		planning/Phase-1.mmd \
+		wiki-update/Terminology.md \
 		wiki-update/Status.md \
 		wiki-update/Planning.md \
 		wiki-update/Progress.md \
