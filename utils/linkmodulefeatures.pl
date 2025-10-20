@@ -126,12 +126,17 @@ for $_ (split /\n/, $content)
                 {
                     my $name = $1;
                     $name =~ s/:/_/;  # Sub-component will just get underscores in the name
-                    if (-f "features/Module_$name.md")
+                    my $linkname = $name;
+                    $linkname =~ s/Wimp/WindowManager/;
+                    if (-f "features/Module_$linkname.md")
                     {
-                        $line =~ s/^\|( *)([A-Za-z_0-9]+)( *)\|/|${1}[${2}](Module_${2})${3}|/;
-                        print "Line fix: $line\n";
+                        $line =~ s/^\|( *)([A-Za-z_0-9:]+)( *)\|/|${1}[${2}](Module_$linkname)${3}|/;
 
-                        copy_md("features/Module_$name.md", "$moddir/Module_$name.md");
+                        copy_md("features/Module_$linkname.md", "$moddir/Module_$linkname.md");
+                    }
+                    else
+                    {
+                        print "Warning: No module link for $linkname\n";
                     }
                 }
             }
