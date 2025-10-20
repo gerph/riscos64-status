@@ -22,7 +22,9 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/resourcefs.html)
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [ ]      | [ ]       | Filesystem |
-| [ ]      | [ ]       | Can list files |
+| [X]      | [ ]       | Can list files |
+| [X]      | [ ]       | Can export files |
+
 
 ### Commands
 

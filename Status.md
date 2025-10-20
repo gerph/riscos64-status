@@ -32,7 +32,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Conversions               | Asm   | Complete      | Complete      |
 | OSSWIs                    | Asm   |               |               |
 | EvaluateExpression        | Asm   |               |               |
-| SystemVars                | Asm   | Stub          | Stub          |
+| SystemVars                | Asm   | Internals     | Stub          |
 | FileTypes                 | Asm   | Complete      | Complete      |
 | FPEmulator                | Asm   |               |               |
 | SharedCLibrary            | C     | -             |               |
@@ -62,7 +62,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Portable                  | Asm   | Prototype | Prototype |
 | FileSwitch                | Asm   |           |           |
 | Squash                    | Asm/C |           |           |
-| ResourceFS                | Asm   | Stub      | Stub      |
+| ResourceFS                | Asm   | Internals | Internals |
 | ResourceFiler             | Asm   |           |           |
 | Messages                  | Asm   |           |           |
 | MessageTrans              | Asm   | Functional[^messagetrans] | Functional[^messagetrans] |

@@ -8,7 +8,7 @@ In RISC OS Select it also handled:
 * `OS_GSTrans`, `OS_GSRead`, `OS_GSInit`
 * Setting of the default variables.
 
-These functions should be split into a separate component.
+These functions might be split into a separate component.
 
 ## Discovered features
 
@@ -28,13 +28,13 @@ These functions should be split into a separate component.
 |----------|-----------|-----------|
 | [X]      | [ ]       | String variables |
 | [X]      | [ ]       | Number variables |
-| [X]      | [ ]       | Evaulated variables |
+| [X]      | [ ]       | Evaluated variables |
 | [X]      | [ ]       | Macro variables |
 | [X]      | [ ]       | Creating variables |
 | [X]      | [ ]       | Reading variables |
 | [X]      | [ ]       | Updating variables |
 | [X]      | [ ]       | Deleting variables |
-| [ ]      | [ ]       | Code variables |
+| [X]      | [X]       | Code variables |
 | [ ]      | [ ]       | Code variables with workspace (introduced in Select) |
 
 ### Commands
