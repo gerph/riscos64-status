@@ -59,7 +59,8 @@ wiki-update/Status.md: Status.md | wiki-update
 	utils/linkmodulefeatures.pl tmp-status.md $@
 
 wiki-update/Phase-%.md: planning/Phase-%.md planning/Phase-1.mmd utils/generate-phases.pl | wiki-update
-	utils/generate-phases.pl $* $@
+	utils/generate-phases.pl $* tmp-phase-$*
+	utils/linkmodulefeatures.pl tmp-phase-$* $@
 
 wiki-update:
 	mkdir -p wiki-update

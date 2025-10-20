@@ -71,7 +71,7 @@ for $_ (split /\n/, $content)
     if ($intable == 0)
     {
         # Check for the start of the table
-        if ($line =~ s/^\|//)
+        if ($line =~ /^\|/)
         {
             $intable = 1;
             my @labels = map { my $l = $_;
@@ -95,7 +95,7 @@ for $_ (split /\n/, $content)
         {
             $intable = 0;
         }
-        elsif ($line =~ /^\|-/)
+        elsif ($line =~ /^\| *-/)
         {
             # The heading divider
         }
@@ -121,12 +121,14 @@ for $_ (split /\n/, $content)
             else
             {
                 # See if we can link the module file
-                if ($line =~ /^\| *([A-Za-z_0-9]+) *\|/)
+                if ($line =~ /^\| *([A-Za-z_0-9:]+) *\|/)
                 {
                     my $name = $1;
+                    $name =~ s/:/_/;  # Sub-component will just get underscores in the name
                     if (-f "features/Module_$name.md")
                     {
                         $line =~ s/^\|( *)([A-Za-z_0-9]+)( *)\|/|${1}[${2}](Module_${2})${3}|/;
+                        print "Line fix: $line\n";
 
                         copy_md("features/Module_$name.md", "$moddir/Module_$name.md");
                     }
