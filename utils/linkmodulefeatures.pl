@@ -63,7 +63,8 @@ for $_ (split /\n/, $content)
 {
     chomp;
     my $line = $_;
-    $line =~ s/ +$//;
+    # If we strip trailing text, we get broken mermaid docs.
+    #$line =~ s/ +$//;
     if ($line =~ /^### (.*)$/)
     {
         $section = $1;
