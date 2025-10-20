@@ -34,7 +34,7 @@ The following diagram shows the expected flow for most components. There may be 
 flowchart TD
     Start[Investigate] --> Stub
     Start --> Internals
-    Stub -->|Hardware dependant| Prototype
+    Stub -->|Hardware dependent| Prototype
     Stub -->|Already in C| Built
     Stub -->|Implemented| Internals
 
@@ -57,7 +57,7 @@ build up to make a system that users are familiar with.
 The stack areas are somewhat arbitrary for some components, as they may straddle
 multiple stacks. However, for simplicity, I have selected a single stack to
 assign each component to. This allows progress within the stacks to be tracked
-independant of the phases, and to allow better reasoning about system
+independent of the phases, and to allow better reasoning about system
 functionality and completeness.
 
 The stacks defined are:

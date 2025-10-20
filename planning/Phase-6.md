@@ -2,7 +2,7 @@
 
 ## Summary
 
-Phase 6 focuses on the aplication support, bringing in the
+Phase 6 focuses on the application support, bringing in the
 desktop and graphics components that allow some of the applications
 to work better. Additionally, the Toolbox stack can be updated to
 work within the new environment. This should be largely mechanical,

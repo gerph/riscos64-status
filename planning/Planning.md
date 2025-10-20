@@ -44,7 +44,7 @@ largely only require small changes to the types of objects.
 
 There will be more work necessary to provide an environment for booting and
 the style guide for application distribution. Within the standard boot
-sequence, it is desireable to provide both 32bit and 64bit components so
+sequence, it is desirable to provide both 32bit and 64bit components so
 that the same sequence can be used for both architectures (and, of course, any
 other architectures in the future). This will need some additional design,
 implementation and documentation.

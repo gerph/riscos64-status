@@ -1,4 +1,4 @@
-# Module: WindowManager
+# Module: WindowManager (Templates)
 
 ## Documentation
 

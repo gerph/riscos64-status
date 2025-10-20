@@ -7,7 +7,7 @@ By the time we reach phase 4, a lot of the fundamentals should
 already be present, and hopefully there will be more people
 able to work on things. Whilst pulling together the Kernel and
 the Wimp will be jobs for individuals, many of the other
-components can be improved independantly.
+components can be improved independently.
 
 The graphics system should become largely complete by the end
 of this phase, allowing the other components to use its functions.
