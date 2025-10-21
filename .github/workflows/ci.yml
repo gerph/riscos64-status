@@ -16,6 +16,12 @@ on:
   push:
     branches: ["master"]
     tags: ["v*"]
+    paths:
+      - rm32/**
+      - rm64/**
+      - aif32/**
+      - aif64/**
+      - tests/**
   # Pull request events happen on pull request state transitions, so we probably don't want this here.
   pull_request:
     branches: ["*"]
@@ -28,7 +34,7 @@ concurrency:
 jobs:
   riscos-test:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     permissions:
       contents: read
       checks: write
