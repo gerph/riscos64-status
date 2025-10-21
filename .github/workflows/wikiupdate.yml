@@ -38,6 +38,7 @@ jobs:
           echo '# Progress statistics' >> $GITHUB_STEP_SUMMARY
           echo >> $GITHUB_STEP_SUMMARY
           cat statistics.md >> $GITHUB_STEP_SUMMARY
+          cp statistics.md wiki-update/Statistics.md
 
       - name: Report on progress of phase 1
         run: |
