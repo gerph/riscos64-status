@@ -1,5 +1,14 @@
 # Module: WindowManager (Text rendering)
 
+## Summary
+
+The text rendering within the WindowManager is a big part of how icons
+are drawn, and affects the operations that can be used on the rest of the
+system. Text rendering can be initially implemented in the form of the
+`Wimp_TextOp` operations, and then expanded to be used by other parts of
+the system.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
@@ -19,6 +28,8 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [ ]      | [ ]       | System font rendering |
 | [ ]      | [ ]       | Default font from NVRAM |
 | [ ]      | [ ]       | Symbol substitution |
+| [ ]      | [ ]       | Truncate with ellipsis |
+| [ ]      | [ ]       | Read split point |
 
 ### Commands
 
