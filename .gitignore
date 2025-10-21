@@ -6,4 +6,5 @@ statistics.*
 wiki-update/
 *.elf
 *.syms
+tmp-*
 
