@@ -1,5 +1,10 @@
 # Module: UtilityModule
 
+## Summary
+
+The UtilityModule only provides a single function - that of the 'supervisor'
+environment, triggered on entry of the module.
+
 ## Discovered features
 
 
