@@ -78,7 +78,8 @@ my $label_started = "▶  ";
 my $label_complete = "✔  ";
 my $label_incomplete = "...";
 
-my $last_phase = {};
+my %last_phase;
+my %last_expected_phase;
 
 # For each phase in order
 for my $phasenum (sort { $a <=> $b } keys %{ $plan->{'phases'} })
@@ -101,10 +102,13 @@ EOM
     {
         my $n = lc $state;
         my $colour = $state_colours{$state};
-        print $fh "            #${n} { fill: $colour; }\n";
-        print $fh "            #${n}_started { fill: $colour; opacity: 72%; }\n";
-        print $fh "            #${n}_none { fill: $colour; opacity: 33%;}\n";
-        print $fh "            #${n}_none-text { fill: none;}\n";
+        print $fh <<EOM
+            #${n} { fill: $colour; }
+            #${n}_started { fill: $colour; opacity: 72%; }
+            #${n}_expected { fill: $colour; opacity: 72%; }
+            #${n}_none { fill: $colour; opacity: 33%; }
+            #${n}_none-text { fill: none; }
+EOM
     }
     print $fh <<EOM;
 
@@ -138,14 +142,17 @@ EOM
     my %states = %$states;
     if ($cumulative)
     {
-        for my $component (keys %$last_phase)
+        for my $component (keys %last_phase)
         {
             if (!defined $states{$component})
             {
-                $states{$component} = $last_phase->{$component};
+                $states{$component} = $last_phase{$component};
             }
         }
     }
+
+    my $blocks_in_this_phase = 0;
+    my $blocks_completed_in_this_phase = 0;
 
     for my $component (sort { $a cmp $b } keys %states)
     {
@@ -173,11 +180,35 @@ EOM
             my $year = lc $state_sequence->[$n]->[1];
             if ($n > $current_num)
             {
-                $style .= "_none"
+                if ($n <= ($last_expected_phase{$component} // -1))
+                {
+                    $style .= "_expected";
+                }
+                else
+                {
+                    $style .= "_none";
+                }
+            }
+            if ($n <= $intended_num &&
+                $n >= ($last_expected_phase{$component} // -1))
+            {
+                # This is something we intended to in this phase
+                $blocks_in_this_phase += 1;
+                if ($current_num >= $n)
+                {
+                    # And we've done this block!
+                    $blocks_completed_in_this_phase += 1;
+                }
             }
 
             printf $fh "    %s    : %-18s, %i, 1y\n", $label, $style, $year;
         }
+        $last_expected_phase{$component} = $intended_num;
     }
-    $last_phase = \%states;
+    printf "Phase #%i : %-54s : %3i / %3i blocks : %5.2f %%\n", $phasenum, $name,
+                                                                $blocks_completed_in_this_phase,
+                                                                $blocks_in_this_phase,
+                                                                ($blocks_completed_in_this_phase / $blocks_in_this_phase) * 100;
+
+    %last_phase = (%last_phase, %states);
 }
