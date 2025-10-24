@@ -27,7 +27,6 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [ ]      | [ ]       | Wimp$Font* honoured |
 | [ ]      | [ ]       | System font rendering |
 | [ ]      | [ ]       | Default font from NVRAM |
-| [ ]      | [ ]       | Symbol substitution |
 | [ ]      | [ ]       | Truncate with ellipsis |
 | [ ]      | [ ]       | Read split point |
 

@@ -77,6 +77,7 @@ in C.
 | Free                      | Desktop        | Internals |
 | Filer                     | Desktop        | Internals |
 | FilerSWIs                 | Desktop        | Functional |
+| Wimp:CommandWindow        | Desktop        | Internals |
 | Wimp:IconRender           | Desktop        | Internals |
 | Wimp:SpriteRender         | Desktop        | Internals |
 | Wimp:SpritePools          | Desktop        | Internals |
