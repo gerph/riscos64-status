@@ -71,3 +71,68 @@ jobs:
             statistics*
             plan*.*
             planning/*.mmd
+            planning/*.svg
+
+      # https://github.com/marketplace/actions/deploy-to-gist
+      - name: Upload percentages as gists (Phase 1)
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_PAT }}
+          gist_id: c26e8457269506554ec1f7533d2f9aed
+          gist_file_name: Progress-1.svg
+          file_path: planning/Progress-1.svg
+          file_type: text
+
+      - name: Upload percentages as gists (Phase 2)
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_PAT }}
+          gist_id: c26e8457269506554ec1f7533d2f9aed
+          gist_file_name: Progress-2.svg
+          file_path: planning/Progress-2.svg
+          file_type: text
+
+      - name: Upload percentages as gists (Phase 3)
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_PAT }}
+          gist_id: c26e8457269506554ec1f7533d2f9aed
+          gist_file_name: Progress-3.svg
+          file_path: planning/Progress-3.svg
+          file_type: text
+
+      - name: Upload percentages as gists (Phase 4)
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_PAT }}
+          gist_id: c26e8457269506554ec1f7533d2f9aed
+          gist_file_name: Progress-4.svg
+          file_path: planning/Progress-4.svg
+          file_type: text
+
+      - name: Upload percentages as gists (Phase 5)
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_PAT }}
+          gist_id: c26e8457269506554ec1f7533d2f9aed
+          gist_file_name: Progress-5.svg
+          file_path: planning/Progress-5.svg
+          file_type: text
+
+      - name: Upload percentages as gists (Phase 6)
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_PAT }}
+          gist_id: c26e8457269506554ec1f7533d2f9aed
+          gist_file_name: Progress-6.svg
+          file_path: planning/Progress-6.svg
+          file_type: text
+
+      - name: Upload percentages as gists (Phase 7)
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_PAT }}
+          gist_id: c26e8457269506554ec1f7533d2f9aed
+          gist_file_name: Progress-7.svg
+          file_path: planning/Progress-7.svg
+          file_type: text

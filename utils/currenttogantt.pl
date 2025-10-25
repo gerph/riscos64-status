@@ -50,6 +50,27 @@ my %state_colours = (
     );
 
 
+sub percent_colour {
+    my ($percent) = @_;
+    if ($percent <= 20) {
+        return "red";
+    }
+    elsif ($percent <= 30) {
+        return "orange";
+    }
+    elsif ($percent <= 40) {
+        return "yellow";
+    }
+    elsif ($percent <= 50) {
+        return "yellowgreen";
+    }
+    elsif ($percent <= 70) {
+        return "green";
+    }
+
+    return "brightgreen";
+}
+
 my $state_sequence = [];
 my $state_lookup = {};
 my $num = 0;
@@ -212,6 +233,7 @@ EOM
                                                                 $blocks_in_this_phase,
                                                                 $percent;
 
+    my $percent_colour = percent_colour($percent_int);
     open($fh, '>', "planning/Progress-$phasenum.svg") || die "Cannot write phase progress file: $!\n";
     print $fh <<EOM;
 <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Phase $phasenum: $percent_int%" width="96" height="20">
@@ -225,7 +247,7 @@ EOM
  </clipPath>
  <g clip-path="url(#r)">
   <rect width="53" height="20" fill="#555"/>
-  <rect x="53" width="43" height="20" fill="#97ca00"/>
+  <rect x="53" width="43" height="20" fill="$percent_colour"/>
   <rect width="96" height="20" fill="url(#s)"/>
  </g>
  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
