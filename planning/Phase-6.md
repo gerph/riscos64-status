@@ -1,5 +1,7 @@
 # Phase 6: Applications / advancing functionality
 
+[![Progress of phase 6](https://gist.githubusercontent.com/gerph/c26e8457269506554ec1f7533d2f9aed/raw/Progress-6.svg)](https://github.com/gerph/riscos64-status/wiki/Phase-6)
+
 ## Summary
 
 Phase 6 focuses on the application support, bringing in the

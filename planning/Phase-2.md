@@ -1,5 +1,7 @@
 # Phase 2: Stub implemented / advancing functionality
 
+[![Progress of phase 2](https://gist.githubusercontent.com/gerph/c26e8457269506554ec1f7533d2f9aed/raw/Progress-2.svg)](https://github.com/gerph/riscos64-status/wiki/Phase-2)
+
 ## Summary
 
 Phase 2 will continue the process of firming up modules with stub

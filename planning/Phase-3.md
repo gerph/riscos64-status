@@ -1,5 +1,7 @@
 # Phase 3: Stack wiring / advancing functionality
 
+[![Progress of phase 3](https://gist.githubusercontent.com/gerph/c26e8457269506554ec1f7533d2f9aed/raw/Progress-3.svg)](https://github.com/gerph/riscos64-status/wiki/Phase-3)
+
 ## Summary
 
 Phase 3 is intended to start wiring up larges of the system to make

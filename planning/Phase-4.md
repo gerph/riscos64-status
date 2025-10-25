@@ -1,5 +1,7 @@
 # Phase 4: Desktop / Networking / advancing functionality
 
+[![Progress of phase 4](https://gist.githubusercontent.com/gerph/c26e8457269506554ec1f7533d2f9aed/raw/Progress-4.svg)](https://github.com/gerph/riscos64-status/wiki/Phase-4)
+
 ## Summary
 
 Phase 4 is a large phase, bringing together a log of components.

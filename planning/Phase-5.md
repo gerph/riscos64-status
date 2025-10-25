@@ -1,5 +1,7 @@
 # Phase 5: Hardware wiring / Printer / advancing functionality
 
+[![Progress of phase 5](https://gist.githubusercontent.com/gerph/c26e8457269506554ec1f7533d2f9aed/raw/Progress-5.svg)](https://github.com/gerph/riscos64-status/wiki/Phase-5)
+
 ## Summary
 
 Phase 5 brings in the hardware drivers for different parts of the
