@@ -205,10 +205,36 @@ EOM
         }
         $last_expected_phase{$component} = $intended_num;
     }
+    my $percent = ($blocks_completed_in_this_phase / $blocks_in_this_phase) * 100;
+    my $percent_int = int(($blocks_completed_in_this_phase / $blocks_in_this_phase) * 100);
     printf "Phase #%i : %-54s : %3i / %3i blocks : %5.2f %%\n", $phasenum, $name,
                                                                 $blocks_completed_in_this_phase,
                                                                 $blocks_in_this_phase,
-                                                                ($blocks_completed_in_this_phase / $blocks_in_this_phase) * 100;
+                                                                $percent;
 
+    open($fh, '>', "planning/Progress-$phasenum.svg") || die "Cannot write phase progress file: $!\n";
+    print $fh <<EOM;
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Phase $phasenum: $percent_int%" width="96" height="20">
+<title>Phase $phasenum: $percent_int%</title>
+ <linearGradient id="s" x2="0" y2="100%">
+  <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+  <stop offset="1" stop-opacity=".1"/>
+ </linearGradient>
+ <clipPath id="r">
+  <rect width="96" height="20" rx="3" fill="#fff"/>
+ </clipPath>
+ <g clip-path="url(#r)">
+  <rect width="53" height="20" fill="#555"/>
+  <rect x="53" width="43" height="20" fill="#97ca00"/>
+  <rect width="96" height="20" fill="url(#s)"/>
+ </g>
+ <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
+  <text aria-hidden="true" x="275" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="430">Phase $phasenum</text>
+  <text x="275" y="140" transform="scale(.1)" fill="#fff" textLength="430">Phase $phasenum</text>
+  <text aria-hidden="true" x="735" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)">$percent_int%</text>
+  <text x="735" y="140" transform="scale(.1)" fill="#fff">$percent_int%</text>
+ </g>
+</svg>
+EOM
     %last_phase = (%last_phase, %states);
 }
