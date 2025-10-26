@@ -26,16 +26,16 @@ These functions might be split into a separate component.
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [X]      | [ ]       | String variables |
-| [X]      | [ ]       | Number variables |
-| [X]      | [ ]       | Evaluated variables |
-| [X]      | [ ]       | Macro variables |
-| [X]      | [ ]       | Creating variables |
-| [X]      | [ ]       | Reading variables |
-| [X]      | [ ]       | Updating variables |
-| [X]      | [ ]       | Deleting variables |
+| [X]      | [X]       | String variables |
+| [X]      | [X]       | Number variables |
+| [X]      | [X]       | Evaluated variables |
+| [X]      | [X]       | Macro variables |
+| [X]      | [X]       | Creating variables |
+| [X]      | [X]       | Reading variables |
+| [X]      | [X]       | Updating variables |
+| [X]      | [X]       | Deleting variables |
 | [X]      | [X]       | Code variables |
-| [ ]      | [ ]       | Code variables with workspace (introduced in Select) |
+| [X]      | [X]       | Code variables with workspace (introduced in Select) |
 
 ### Commands
 
@@ -51,8 +51,8 @@ These functions might be split into a separate component.
 | [ ]      | [ ]       | `OS_GSInit` (not sure this should be here) |
 | [ ]      | [ ]       | `OS_GSRead` (not sure this should be here) |
 | [ ]      | [ ]       | `OS_GSTrans` (not sure this should be here) |
-| [ ]      | [ ]       | `OS_ReadVarVal` |
-| [ ]      | [ ]       | `OS_SetVarVal` |
+| [X]      | [X]       | `OS_ReadVarVal` |
+| [X]      | [X]       | `OS_SetVarVal` |
 
 
 ### Services
