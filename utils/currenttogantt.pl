@@ -352,6 +352,7 @@ EOM
 
     for my $row (@{ $component_state{$component} })
     {
+        $row =~ s/_none/_expected/g;
         print $fh $row;
     }
     close($fh);
