@@ -102,15 +102,8 @@ my $label_incomplete = "...";
 my %last_phase;
 my %last_expected_phase;
 
-# For each phase in order
-for my $phasenum (sort { $a <=> $b } keys %{ $plan->{'phases'} })
-{
-    open(my $fh, '>', "planning/Phase-$phasenum.mmd") || die "Cannot write phase document: $!\n";
-    my $phase = $plan->{'phases'}->{$phasenum};
-    my $name = $phase->{'name'};
-    my $states = $phase->{'states'};
-
-    print $fh <<EOM;
+my $frontmatter;
+$frontmatter = <<EOM;
 ---
     # Frontmatter config, YAML comments
     displayMode: compact
@@ -118,20 +111,20 @@ for my $phasenum (sort { $a <=> $b } keys %{ $plan->{'phases'} })
         theme: forest
         themeCSS: |
 EOM
-    # Write out the state colours
-    for my $state (sort { $a cmp $b } keys %state_colours)
-    {
-        my $n = lc $state;
-        my $colour = $state_colours{$state};
-        print $fh <<EOM
+# Write out the state colours
+for my $state (sort { $a cmp $b } keys %state_colours)
+{
+    my $n = lc $state;
+    my $colour = $state_colours{$state};
+    $frontmatter .= <<EOM
             #${n} { fill: $colour; }
             #${n}_started { fill: $colour; opacity: 72%; }
             #${n}_expected { fill: $colour; opacity: 72%; }
             #${n}_none { fill: $colour; opacity: 33%; }
             #${n}_none-text { fill: none; }
 EOM
-    }
-    print $fh <<EOM;
+}
+$frontmatter .= <<EOM;
 
             .grid text { text-anchor: start !important;}
             g text.sectionTitle:first-child { font-style: italic; }
@@ -144,6 +137,28 @@ EOM
             leftPadding: 150
             topAxis: true  #false
             numberSectionStyles: 2
+EOM
+
+my %component_state;
+
+my $headings;
+for my $pair (@$state_sequence)
+{
+    my $state = $pair->[0];
+    my $year = $pair->[1];
+    $headings .= sprintf "    %-20s: %-18s%s, 1y\n", $state, lc $state . ",", $year;
+}
+
+# For each phase in order
+for my $phasenum (sort { $a <=> $b } keys %{ $plan->{'phases'} })
+{
+    open(my $fh, '>', "planning/Phase-$phasenum.mmd") || die "Cannot write phase document: $!\n";
+    my $phase = $plan->{'phases'}->{$phasenum};
+    my $name = $phase->{'name'};
+    my $states = $phase->{'states'};
+
+    print $fh <<EOM;
+$frontmatter
 ---
 gantt
     title Phase $phasenum: $name
@@ -152,13 +167,8 @@ gantt
     tickInterval 12month
 
     section Components / Status
+$headings
 EOM
-    for my $pair (@$state_sequence)
-    {
-        my $state = $pair->[0];
-        my $year = $pair->[1];
-        printf $fh "    %-20s: %-18s%s, 1y\n", $state, lc $state . ",", $year;
-    }
 
     my %states = %$states;
     if ($cumulative)
@@ -185,8 +195,9 @@ EOM
         {
             $state = 'No work';
         }
-        print $fh "\n";
-        print $fh "    section $component\n";
+        my $row = '';
+        $row .= "\n";
+        $row .= "    section $component\n";
         my $intended_num = $state_lookup->{$intended_state};
         my $current_num = $state eq 'No work' ? -1 : $state_lookup->{$state};
         if (!defined $current_num)
@@ -222,9 +233,18 @@ EOM
                 }
             }
 
-            printf $fh "    %s    : %-18s, %i, 1y\n", $label, $style, $year;
+            $row .= sprintf "    %s    : %-18s, %i, 1y\n", $label, $style, $year;
         }
+        print $fh $row;
         $last_expected_phase{$component} = $intended_num;
+
+        if (!defined $component_state{$component})
+        {
+            $component_state{$component} = [];
+        }
+
+        $row =~ s/section .*?\n/section Phase #$phasenum\n/;
+        push @{ $component_state{$component} }, $row;
     }
     my $percent = ($blocks_completed_in_this_phase / $blocks_in_this_phase) * 100;
     my $percent_int = int(($blocks_completed_in_this_phase / $blocks_in_this_phase) * 100);
@@ -259,4 +279,43 @@ EOM
 </svg>
 EOM
     %last_phase = (%last_phase, %states);
+}
+
+
+for my $component (keys %component_state)
+{
+    my $filename = $component;
+    $filename =~ s/^Wimp:/WindowManager:/;
+    $filename =~ s/:/_/;
+    $filename = "features/Module_$filename.mmd";
+    open(my $fh, '>', $filename) || die "Cannot write component progress $filename: $!\n";
+    my $head = "$frontmatter";
+    $head =~ s/_none-text/_expected-text/g;
+    print $fh $head;
+    print $fh <<EOM;
+---
+gantt
+    title $component development
+    dateFormat YYYY
+    axisFormat  
+    tickInterval 12month
+
+    section Phase / Status
+$headings
+EOM
+
+    my $lastrow = "$component_state{$component}->[-1]";
+    $lastrow =~ s/^.*_expected.*?\n//mg;
+    $lastrow =~ s/^.*_none.*?\n//mg;
+    $lastrow =~ s/section .*$/section Current status/m;
+    print $fh $lastrow;
+
+    for my $row (@{ $component_state{$component} })
+    {
+        $row =~ s/^.*_expected.*?\n//mg;
+        $row =~ s/_none/_expected/g;
+        $row =~ s/: ([a-z]+) /: ${1}_expected /g;
+        print $fh $row;
+    }
+    close($fh);
 }

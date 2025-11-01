@@ -41,11 +41,29 @@ sub copy_md
     my ($src, $dst) = @_;
     open(my $ifh, '<', $src) || die "Cannot read md src $src: $!";
     open(my $ofh, '>', $dst) || die "Cannot write md dst $dst: $!";
+    my $heading = 1;
     while (<$ifh>)
     {
         s/ \[ \] / :black_square_button: /g;
         s/ \[X\] / :white_check_mark: /g;
         print $ofh "$_";
+        if ($heading)
+        {
+            $heading = 0;
+            my $mmd = "$src";
+            $mmd =~ s/\.md$/.mmd/;
+            if ($mmd ne $src && -f $mmd)
+            {
+                print $ofh "\n## Development status\n";
+                print $ofh "\n```mermaid\n";
+                open(my $mfh, '<', $mmd) || die "Cannot read mmd src $mmd: $!\n";
+                while (<$mfh>)
+                {
+                    print $ofh $_;
+                }
+                print $ofh "\n```\n";
+            }
+        }
     }
     close($ifh);
     close($ofh);
