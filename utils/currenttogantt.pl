@@ -98,6 +98,12 @@ for my $state (@{ $current->{'states'} })
 my $label_started = "▶  ";
 my $label_complete = "✔  ";
 my $label_incomplete = "...";
+my $labels = {
+    'started' => $label_started,
+    'complete' => $label_complete,
+    'incomplete' => $label_incomplete,
+    'expected' => $label_incomplete,
+};
 
 my %last_phase;
 my %last_expected_phase;
@@ -149,6 +155,44 @@ for my $pair (@$state_sequence)
     $headings .= sprintf "    %-20s: %-18s%s, 1y\n", $state, lc $state . ",", $year;
 }
 
+sub make_row
+{
+    my ($title, $fields) = @_;
+    my $row = '';
+    $row .= "\n";
+    $row .= "    section $title\n";
+    for my $n (0..scalar(@$state_sequence)-1)
+    {
+        my $state = lc $state_sequence->[$n]->[0];
+        my $cell = $fields->{$state};
+        if (defined $cell)
+        {
+            my $label = $labels->{$cell};
+            my $style = '';
+            my $year = lc $state_sequence->[$n]->[1];
+            if ($cell eq 'complete')
+            {
+                $style = '';
+            }
+            elsif ($cell eq 'started')
+            {
+                $style = '_started';
+            }
+            elsif ($cell eq 'expected')
+            {
+                $style = '_expected';
+            }
+            elsif ($cell eq 'incomplete')
+            {
+                $style = '_none';
+            }
+            $row .= sprintf "    %s    : %-18s, %i, 1y\n", $label, "$state$style", $year;
+        }
+    }
+    return $row;
+}
+
+
 # For each phase in order
 for my $phasenum (sort { $a <=> $b } keys %{ $plan->{'phases'} })
 {
@@ -188,55 +232,41 @@ EOM
     for my $component (sort { $a cmp $b } keys %states)
     {
         my $intended_state = $states{$component};
-        my $state = $current->{'64bit'}->{'ROM modules'}->{'components'}->{$component};
+        my $state = $current->{'64bit'}->{'ROM modules'}->{'components'}->{$component} // '';
         # Component <component> is intended to be in state <intended_state>
         # Component <component> is current in state <state> for ROM modules
+
+        my $start_num = ($last_expected_phase{$component} // -1) + 1;
+        my $end_num = $state_lookup->{$intended_state};
+        my $state_num = $state_lookup->{$state} // -1;
+
         if (!defined $state)
         {
             $state = 'No work';
         }
-        my $row = '';
-        $row .= "\n";
-        $row .= "    section $component\n";
-        my $intended_num = $state_lookup->{$intended_state};
-        my $current_num = $state eq 'No work' ? -1 : $state_lookup->{$state};
-        if (!defined $current_num)
-        {
-            die "State '$state' for component $component is not understood\n";
-        }
-        my $highest = $intended_num > $current_num ? $intended_num : $current_num;
-        for my $n (0..$highest)
-        {
-            my $label = $n <= $current_num ? $label_complete : $label_incomplete;
-            my $style = lc $state_sequence->[$n]->[0];
-            my $year = lc $state_sequence->[$n]->[1];
-            if ($n > $current_num)
-            {
-                if ($n <= ($last_expected_phase{$component} // -1))
-                {
-                    $style .= "_expected";
-                }
-                else
-                {
-                    $style .= "_none";
-                }
-            }
-            if ($n <= $intended_num &&
-                $n >= ($last_expected_phase{$component} // -1))
-            {
-                # This is something we intended to in this phase
-                $blocks_in_this_phase += 1;
-                if ($current_num >= $n)
-                {
-                    # And we've done this block!
-                    $blocks_completed_in_this_phase += 1;
-                }
-            }
 
-            $row .= sprintf "    %s    : %-18s, %i, 1y\n", $label, $style, $year;
+        my $fields = {};
+
+        for my $n ($start_num .. $end_num)
+        {
+            my $n_state = lc $state_sequence->[$n]->[0];
+            my $cell;
+            $blocks_in_this_phase += 1;
+            if ($n <= $state_num)
+            {
+                $cell = 'complete';
+                $blocks_completed_in_this_phase += 1;
+            }
+            else
+            {
+                $cell = 'incomplete';
+            }
+            $fields->{$n_state} = $cell;
         }
+
+        my $row = make_row($component, $fields);
         print $fh $row;
-        $last_expected_phase{$component} = $intended_num;
+        $last_expected_phase{$component} = $end_num;
 
         if (!defined $component_state{$component})
         {
@@ -304,17 +334,24 @@ gantt
 $headings
 EOM
 
-    my $lastrow = "$component_state{$component}->[-1]";
-    $lastrow =~ s/^.*_expected.*?\n//mg;
-    $lastrow =~ s/^.*_none.*?\n//mg;
-    $lastrow =~ s/section .*$/section Current status/m;
-    print $fh $lastrow;
+    my $state = $current->{'64bit'}->{'ROM modules'}->{'components'}->{$component} // '';
+
+    my $start_num = 0;
+    my $end_num = $state_lookup->{$state} // -1;
+
+    my $fields = {};
+    for my $n ($start_num .. $end_num)
+    {
+        my $n_state = lc $state_sequence->[$n]->[0];
+        $fields->{$n_state} = 'complete';
+    }
+
+    my $currentrow = make_row("Current status", $fields);
+
+    print $fh $currentrow;
 
     for my $row (@{ $component_state{$component} })
     {
-        $row =~ s/^.*_expected.*?\n//mg;
-        $row =~ s/_none/_expected/g;
-        $row =~ s/: ([a-z]+) /: ${1}_expected /g;
         print $fh $row;
     }
     close($fh);
