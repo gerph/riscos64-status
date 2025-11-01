@@ -1,6 +1,6 @@
 # Phase 1: Simple modules and stubs
 
-[![Progress of phase 1](https://gist.githubusercontent.com/gerph/c26e8457269506554ec1f7533d2f9aed/raw/ffa42a7f746d38a46a71daf5bb16ce001b790427/Progress-1.svg)](https://github.com/gerph/riscos64-status/wiki/Phase-1)
+[![Progress of phase 1](https://gist.githubusercontent.com/gerph/c26e8457269506554ec1f7533d2f9aed/raw/Progress-1.svg)](https://github.com/gerph/riscos64-status/wiki/Phase-1)
 
 ## Summary
 
