@@ -19,7 +19,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Open/Close template file |
+| [X]      | [X]       | Open/Close template file |
 | [ ]      | [ ]       | Handle wildcards for templates |
 | [ ]      | [ ]       | Read template from template file |
 | [ ]      | [ ]       | Size template from template file |
