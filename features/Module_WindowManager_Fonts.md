@@ -21,9 +21,9 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 |----------|-----------|-----------|
 | [ ]      | [ ]       | System font character definition |
 | [ ]      | [ ]       | NVRAM configuration of font |
-| [ ]      | [ ]       | Wimp$Font system variable |
-| [ ]      | [ ]       | Wimp$FontSize system variable |
-| [ ]      | [ ]       | Wimp$FontWidth system variable |
+| [ ]      | [ ]       | `Wimp$Font` system variable |
+| [ ]      | [ ]       | `Wimp$FontSize` system variable |
+| [ ]      | [ ]       | `Wimp$FontWidth` system variable |
 | [ ]      | [ ]       | System font use |
 | [ ]      | [ ]       | Antialiased font use |
 | [ ]      | [ ]       | Symbol substitution |
@@ -86,10 +86,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 
 ### Vectors
 
-
-| In 32bit | In 64 bit | Interface |
-|----------|-----------|-----------|
-| [ ]      | [ ]       | `?` |
+*None*
 
 
 ### Events

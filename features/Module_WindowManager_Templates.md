@@ -1,5 +1,11 @@
 # Module: WindowManager (Templates)
 
+## Summary
+
+The WindowManager can load template files. The operations to open, close, load templates into window blocks and read details about them are not specific to the WindowManager itself. They can be implemented without any reference to the rest of the WindowManager.
+
+This subcomponent implements that functionality independant of any other Wimp functions. This means that it can be provided well in advance of the rest of the system.
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
