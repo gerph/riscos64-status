@@ -15,6 +15,7 @@ all: \
 		wiki-update/Planning.md \
 		wiki-update/Progress.md \
 		wiki-update/Stacks.md \
+		wiki-update/Languages.md \
 		$(patsubst %,wiki-update/Phase-%.md,${PHASES})
 
 clean:
@@ -53,6 +54,9 @@ wiki-update/Planning.md: planning/Planning.md | wiki-update
 	cp $? $@
 
 wiki-update/Terminology.md: planning/Terminology.md | wiki-update
+	cp $? $@
+
+wiki-update/Languages.md: planning/Languages.md | wiki-update
 	cp $? $@
 
 wiki-update/Status.md: Status.md | wiki-update

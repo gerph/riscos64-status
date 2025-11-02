@@ -464,8 +464,6 @@ The table below shows information about various tools and their support:
 | Code compress | squeeze (Norcroft)     | C         | -         | N/A[^norcroft][^squeeze] | N/A            | N/A                  | N/A            |
 | Code compress | modsqz (Norcroft)      | C         | -         | N/A[^norcroft][^modsqz] | N/A             | N/A                  | N/A            |
 
-
-
 ### Additional tools
 
 | Tool         | Name                   | Lang      | C-state   | 64-state       | Linux                    | Mac                  | Windows        |
@@ -485,6 +483,8 @@ The table below shows information about various tools and their support:
 | Binary includes | binaof              | C         | -         | N/A[^norcroft][^binaof] | N/A             | N/A                  | N/A            |
 | Resource mods | modgen                | C         | -         | Functional[^modgen] | N/A                 | N/A                  | N/A            |
 | Resource includes | resgen            | C         | -         | N/A[^norcroft][^resgen] | N/A             | N/A                  | N/A            |
+
+See also [Languages](https://github.com/gerph/riscos64-status/wiki/Languages)
 
 [^norcroft]: The Norcroft toolchain only builds 32-bit binaries, so it is not useful to port this to RISC OS 64. As other compilers exist for AArch64 code, it is more sensible to use them instead of updating the aging Norcroft toolchain.
 [^cfront]: CFront hasn't even been attempted, as it is ancient and doesn't really support modern C++. It also doesn't built itself with C++ compilers.
