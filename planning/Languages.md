@@ -25,7 +25,7 @@ This page hopes to bring together information on languages which have been built
 | SED          | -               | Functional      | Gerph            | On request |
 | Awk          | -               | -               | -                | - |
 | Pascal       | -               | -               | -                | - |
-| Fortran      | GNU Fortran     | Functional      | Gerph            | On Request |
+| Fortran      | -               | -               | -                | - |
 | Python       | CPython         | -               | -                | - |
 | Python       | PocketPy        | Functional      | Gerph            | https://github.com/gerph/riscos64-pocketpy |
 | Perl         | Perl 5          | Functional      | Gerph            | On request |
@@ -37,4 +37,3 @@ This page hopes to bring together information on languages which have been built
 | Nim          | -               | -               | -                | - |
 | Lua          | -               | -               | -                | - |
 | PHP          | -               | -               | -                | - |
-

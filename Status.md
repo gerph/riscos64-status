@@ -492,8 +492,9 @@ The table below shows information about various tools and their support:
 | Tool         | Name                   | Lang      | C-state   | 64-state       | Linux                    | Mac                  | Windows        |
 |--------------|------------------------|-----------|-----------|----------------|--------------------------|----------------------|----------------|
 | Perl         | perl (5.001)           | C         | -         | Functional[^perl] |                       |                      |                |
+| Fortran      | GNU Fortran            | C         | -         |                | Functional[^riscos64-fortran] |                 |                |
 | Detokeniser  | basicdetokenise        | C         | -         |                |                          |                      |                |
-| Tokeniser    | basictokenise          | Perl      |           |                | Functional               | Functional                |                |
+| Tokeniser    | basictokenise          | Perl      |           |                | Functional               | Functional           |                |
 | Parser gen   | bison                  | C         | -         | Built[^bison]  |                          |                      |                |
 | OSLib gen    | defmod                 | C         | -         |                | N/A[^defmod]             |                      |                |
 | OSLib gen    | oslib parser           | Python    |           |                | Functional[^defmod]      | Works[^defmod]       |                |
@@ -527,6 +528,7 @@ See also [Languages](https://github.com/gerph/riscos64-status/wiki/Languages)
 [^riscos64-link]: The `riscos64-link` tool has been created as a wrapper around `ld` (with other tooling for function signatures and relocation code) to build RISC OS 64 binaries (AIF, RMF, Utility).
 [^riscos64-libfile]: The `riscos64-libfile` tool has been created as a wrapper around `ar`, which has `libfile` syntax to create libraries for RISC OS 64 (as a syntactic sugar).
 [^perl]: Perl in RISC OS 64 is functional, but cannot invoke commands due to the lack of `system` in the C library.
+[^riscos64-fortran]: GNU Fortran has not been ported to RISC OS 64. The Linux version can be used to build Fortran binaries to run on RISC OS 64.
 [^bison]: Bison has been built but not tested in its built form.
 [^flex]: Flex has been built but not tested in its built form.
 [^defmod]: Defmod relies on AArch32 output, so is not useful for AArch64.
