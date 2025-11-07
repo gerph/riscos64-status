@@ -19,13 +19,13 @@ This page hopes to bring together information on languages which have been built
 | Assembler    | ObjAsm via gas  | Functional      | Gerph            | https://github.com/gerph/objasm2gas/ |
 | C            | Norcroft        | Functional      | Gerph            | On request |
 | C            | GCC             | Functional      | Gerph            | https://github.com/gerph/riscos64-clib |
-| C            | TCC             | -               | -                |  |
+| C            | TCC             | -               | -                | - |
 | C++ (native) | Norcroft        | -               | -                | - |
 | C++ (CFront) | Norcroft        | -               | -                | - |
 | SED          | -               | Functional      | Gerph            | On request |
 | Awk          | -               | -               | -                | - |
 | Pascal       | -               | -               | -                | - |
-| Fortran      | -               | -               | -                | - |
+| Fortran      | GNU Fortran     | Functional      | Gerph            | On Request |
 | Python       | CPython         | -               | -                | - |
 | Python       | PocketPy        | Functional      | Gerph            | https://github.com/gerph/riscos64-pocketpy |
 | Perl         | Perl 5          | Functional      | Gerph            | On request |

@@ -155,6 +155,29 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | RemotePrinterSupport      | C     | -         | Built     |
 | RemotePrinterMessages     | Asm   |           |           |
 | WindowManager             | Asm/C |           |           |
+| Wimp:CommandWindow        | Asm/C |           |           |
+| Wimp:ErrorBox             | Asm/C |           |           |
+| Wimp:Fonts                | Asm/C |           |           |
+| Wimp:IconBorders          | Asm/C |           |           |
+| Wimp:IconRender           | Asm/C |           |           |
+| Wimp:Interaction          | Asm/C |           |           |
+| Wimp:Introspection        | Asm/C |           |           |
+| Wimp:Memory               | Asm/C |           |           |
+| Wimp:Menus                | Asm/C |           |           |
+| Wimp:Messages             | Asm/C |           |           |
+| Wimp:Pointer              | Asm/C |           |           |
+| Wimp:Polling              | Asm/C |           |           |
+| Wimp:SWIs                 | Asm/C |           |           |
+| Wimp:SpritePools          | Asm/C |           |           |
+| Wimp:SpriteRender         | Asm/C |           |           |
+| Wimp:Startup              | Asm/C |           |           |
+| Wimp:TaskManagement       | Asm/C |           |           |
+| Wimp:Templates            | Asm/C | Stub      | Stub      |
+| Wimp:TextRender           | Asm/C |           |           |
+| Wimp:Tiling               | Asm/C |           |           |
+| Wimp:WindowManagement     | Asm/C |           |           |
+| Wimp:WindowRender         | Asm/C |           |           |
+| Wimp:WindowStacking       | Asm/C |           |           |
 | FilterManager             | Asm   |           |           |
 | RedrawManager             | Asm   |           |           |
 | Desktop                   | Asm   |           |           |
