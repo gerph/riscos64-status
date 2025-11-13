@@ -12,7 +12,7 @@ This page hopes to bring together information on languages which have been built
 
 | Language     | Variant         | State           | Source           | URL |
 |--------------|-----------------|-----------------|------------------|--------|
-| BASIC        | BBC BASIC       | Development     | Steve Revill     | Not available |
+| BASIC        | BBC BASIC       | Built           | Steve Revill     | Not available |
 | BASIC        | SDL BASIC       | Functional      | Gerph            | https://github.com/gerph/riscos64-rtrussell-bbcbasic |
 | BASIC        | My BASIC        | Built           | Gerph            | https://github.com/gerph/riscos64-my_basic |
 | Assembler    | ObjAsm          | Functional      | Gerph            | On request |
@@ -35,5 +35,5 @@ This page hopes to bring together information on languages which have been built
 | Rust         | -               | -               | -                | - |
 | Zig          | -               | -               | -                | - |
 | Nim          | -               | -               | -                | - |
-| Lua          | -               | -               | -                | - |
+| Lua          | -               | Built           | Gerph            | https://github.com/gerph/riscos64-lua |
 | PHP          | -               | -               | -                | - |
