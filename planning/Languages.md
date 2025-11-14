@@ -18,7 +18,7 @@ This page hopes to bring together information on languages which have been built
 | Assembler    | ObjAsm          | Functional      | Gerph            | On request |
 | Assembler    | ObjAsm via gas  | Functional      | Gerph            | https://github.com/gerph/objasm2gas/ |
 | C            | Norcroft        | Functional      | Gerph            | On request |
-| C            | GCC             | Functional      | Gerph            | https://github.com/gerph/riscos64-clib |
+| C            | GCC             | -               | -                | - |
 | C            | TCC             | -               | -                | - |
 | C            | PicoC           | Functional      | Gerph            | https://gitlab.com/gerph/picoc |
 | C++ (native) | Norcroft        | -               | -                | - |
