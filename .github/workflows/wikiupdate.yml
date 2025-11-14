@@ -83,6 +83,10 @@ jobs:
           file_path: planning/Progress-1.svg
           file_type: text
 
+      - name: Sleep to prevent races
+        run: |
+          sleep 2
+
       - name: Upload percentages as gists (Phase 2)
         uses: exuanbo/actions-deploy-gist@v1
         with:
@@ -91,6 +95,10 @@ jobs:
           gist_file_name: Progress-2.svg
           file_path: planning/Progress-2.svg
           file_type: text
+
+      - name: Sleep to prevent races
+        run: |
+          sleep 2
 
       - name: Upload percentages as gists (Phase 3)
         uses: exuanbo/actions-deploy-gist@v1
@@ -101,6 +109,10 @@ jobs:
           file_path: planning/Progress-3.svg
           file_type: text
 
+      - name: Sleep to prevent races
+        run: |
+          sleep 2
+
       - name: Upload percentages as gists (Phase 4)
         uses: exuanbo/actions-deploy-gist@v1
         with:
@@ -109,6 +121,10 @@ jobs:
           gist_file_name: Progress-4.svg
           file_path: planning/Progress-4.svg
           file_type: text
+
+      - name: Sleep to prevent races
+        run: |
+          sleep 2
 
       - name: Upload percentages as gists (Phase 5)
         uses: exuanbo/actions-deploy-gist@v1
@@ -119,6 +135,10 @@ jobs:
           file_path: planning/Progress-5.svg
           file_type: text
 
+      - name: Sleep to prevent races
+        run: |
+          sleep 2
+
       - name: Upload percentages as gists (Phase 6)
         uses: exuanbo/actions-deploy-gist@v1
         with:
@@ -127,6 +147,10 @@ jobs:
           gist_file_name: Progress-6.svg
           file_path: planning/Progress-6.svg
           file_type: text
+
+      - name: Sleep to prevent races
+        run: |
+          sleep 2
 
       - name: Upload percentages as gists (Phase 7)
         uses: exuanbo/actions-deploy-gist@v1
