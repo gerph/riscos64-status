@@ -20,6 +20,7 @@ This page hopes to bring together information on languages which have been built
 | C            | Norcroft        | Functional      | Gerph            | On request |
 | C            | GCC             | Functional      | Gerph            | https://github.com/gerph/riscos64-clib |
 | C            | TCC             | -               | -                | - |
+| C            | PicoC           | Functional      | Gerph            | https://gitlab.com/gerph/picoc |
 | C++ (native) | Norcroft        | -               | -                | - |
 | C++ (CFront) | Norcroft        | -               | -                | - |
 | SED          | -               | Functional      | Gerph            | https://github.com/gerph/riscos64-status/tree/master/aif64 |
