@@ -22,13 +22,13 @@ This page hopes to bring together information on languages which have been built
 | C            | TCC             | -               | -                | - |
 | C++ (native) | Norcroft        | -               | -                | - |
 | C++ (CFront) | Norcroft        | -               | -                | - |
-| SED          | -               | Functional      | Gerph            | On request |
+| SED          | -               | Functional      | Gerph            | https://github.com/gerph/riscos64-status/tree/master/aif64 |
 | Awk          | -               | -               | -                | - |
 | Pascal       | -               | -               | -                | - |
 | Fortran      | -               | -               | -                | - |
 | Python       | CPython         | -               | -                | - |
 | Python       | PocketPy        | Functional      | Gerph            | https://github.com/gerph/riscos64-pocketpy |
-| Perl         | Perl 5          | Functional      | Gerph            | On request |
+| Perl         | Perl 5          | Functional      | Gerph            | https://github.com/gerph/riscos64-status/tree/master/aif64 |
 | Berry        | -               | Built           | Gerph            | https://github.com/gerph/riscos64-berry |
 | Prolog       | HU Prolog       | Built           | Gerph            | https://github.com/gerph/riscos-huprolog |
 | Go           | -               | -               | -                | - |
