@@ -23,6 +23,32 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 
 | Name                      | Lang  | C-state       | 64-state      |
 |---------------------------|-------|---------------|---------------|
+| Kernel:SystemInit         | Asm   |               |               |
+| Kernel:Introspection      | Asm   |               |               |
+| Kernel:Vectors            | Asm   |               |               |
+| Kernel:Modules            | Asm   |               |               |
+| Kernel:SWIs               | Asm   |               |               |
+| Kernel:Mode               | Asm   |               |               |
+| Kernel:Sprites            | Asm   |               |               |
+| Kernel:OSByte             | Asm   |               |               |
+| Kernel:OSWord             | Asm   |               |               |
+| Kernel:DAs                | Asm   |               |               |
+| Kernel:Modules            | Asm   | Stub          | Stub          |
+| Kernel:Vectors            | Asm   |               |               |
+| Kernel:Heap               | Asm   |               |               |
+| Kernel:VDU                | Asm   |               |               |
+| Kernel:MemManagement      | Asm   |               |               |
+| Kernel:DAs                | Asm   |               |               |
+| Kernel:VDU                | Asm   |               |               |
+| Kernel:Graphics           | Asm   |               |               |
+| Kernel:Sprites            | Asm   |               |               |
+| Kernel:Exceptions         | Asm   |               |               |
+| Kernel:ProgEnv            | Asm   |               |               |
+| Kernel:Time               | Asm   |               |               |
+| Kernel:Input              | Asm   |               |               |
+| Kernel:Mode               | Asm   |               |               |
+| Kernel:IRQs               | Asm   |               |               |
+| Kernel:Timers             | Asm   |               |               |
 | UtilityModule             | Asm   |               |               |
 | IRQ                       | Asm   |               |               |
 | TimerManager              | Asm   |               |               |
@@ -493,6 +519,7 @@ The table below shows information about various tools and their support:
 |--------------|------------------------|-----------|-----------|----------------|--------------------------|----------------------|----------------|
 | Perl         | perl (5.001)           | C         | -         | Functional[^perl] |                       |                      |                |
 | Fortran      | GNU Fortran            | C         | -         |                | Functional[^riscos64-fortran] |                 |                |
+| Rust         | Rust                   | C         | -         |                | Prototype[^rust]         |                 |                |
 | Detokeniser  | basicdetokenise        | C         | -         |                |                          |                      |                |
 | Tokeniser    | basictokenise          | Perl      |           |                | Functional               | Functional           |                |
 | Parser gen   | bison                  | C         | -         | Built[^bison]  |                          |                      |                |
@@ -529,6 +556,7 @@ See also [Languages](https://github.com/gerph/riscos64-status/wiki/Languages)
 [^riscos64-libfile]: The `riscos64-libfile` tool has been created as a wrapper around `ar`, which has `libfile` syntax to create libraries for RISC OS 64 (as a syntactic sugar).
 [^perl]: Perl in RISC OS 64 is functional, but cannot invoke commands due to the lack of `system` in the C library.
 [^riscos64-fortran]: GNU Fortran has not been ported to RISC OS 64. The Linux version can be used to build Fortran binaries to run on RISC OS 64.
+[^rust]: Prototype code has been built into a RISC OS AIF file from within Rust, and run on RISC OS 64.
 [^bison]: Bison has been built but not tested in its built form.
 [^flex]: Flex has been built but not tested in its built form.
 [^defmod]: Defmod relies on AArch32 output, so is not useful for AArch64.
