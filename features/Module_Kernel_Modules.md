@@ -17,9 +17,10 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Module header parsing |
+| [X]      | [X]       | Module header parsing |
 | [ ]      | [ ]       | Module architecture flag |
-| [ ]      | [ ]       | Reject invalid header/architecture |
+| [X]      | [X]       | Reject invalid header |
+| [ ]      | [ ]       | Reject invalid architecture |
 | [ ]      | [ ]       | Initialisation entry |
 | [ ]      | [ ]       | Initialisation with hardware address |
 | [ ]      | [ ]       | Start entry |
@@ -46,6 +47,8 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/)
 | [ ]      | [ ]       | Service_ModuleStatus preferred instance |
 | [ ]      | [ ]       | Module allocations DA |
 | [ ]      | [ ]       | Module area DA |
+| [ ]      | [ ]       | Module allocation for module |
+| [ ]      | [ ]       | Module allocation for module zeroinit |
 | [ ]      | [ ]       | Podule chunk enumeration |
 | [ ]      | [ ]       | ROM modules list |
 | [ ]      | [ ]       | Initialisation of only latest ROM resident versions |
