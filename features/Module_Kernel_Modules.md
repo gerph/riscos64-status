@@ -45,18 +45,18 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/)
 | [ ]      | [ ]       | Service_ModuleStatus initialised |
 | [ ]      | [ ]       | Service_ModuleStatus finalised |
 | [ ]      | [ ]       | Service_ModuleStatus preferred instance |
-| [ ]      | [ ]       | Module allocations DA |
-| [ ]      | [ ]       | Module area DA |
+| [X]      | [X]       | Module allocations DA |
+| [>]      | [>]       | Module area DA |
 | [ ]      | [ ]       | Module allocation for module |
 | [ ]      | [ ]       | Module allocation for module zeroinit |
 | [ ]      | [ ]       | Podule chunk enumeration |
 | [ ]      | [ ]       | ROM modules list |
 | [ ]      | [ ]       | Initialisation of only latest ROM resident versions |
 | [ ]      | [ ]       | Compressed modules |
-| [ ]      | [ ]       | Heap: describe |
-| [ ]      | [ ]       | Heap: claim |
-| [ ]      | [ ]       | Heap: free |
-| [ ]      | [ ]       | Heap: extend |
+| [>]      | [>]       | Heap: describe |
+| [>]      | [>]       | Heap: claim |
+| [>]      | [>]       | Heap: free |
+| [>]      | [>]       | Heap: extend |
 
 
 Note: There are many other features that should be handled.
