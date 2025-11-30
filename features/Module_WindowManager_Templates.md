@@ -23,7 +23,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [X]      | [X]       | Handle wildcards for templates |
 | [X]      | [X]       | Read template from template file |
 | [ ]      | [ ]       | Size template from template file |
-| [ ]      | [ ]       | Enumerate templates |
+| [X]      | [X]       | Enumerate templates |
 | [ ]      | [ ]       | Read non-template data from template file |
 | [X]      | [X]       | Handle indirected text |
 | [ ]      | [ ]       | Handle fonts |
