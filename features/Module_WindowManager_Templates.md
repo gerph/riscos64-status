@@ -22,11 +22,11 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [X]      | [X]       | Open/Close template file |
 | [X]      | [X]       | Handle wildcards for templates |
 | [X]      | [X]       | Read template from template file |
-| [ ]      | [ ]       | Size template from template file |
+| [X]      | [X]       | Size template from template file |
 | [X]      | [X]       | Enumerate templates |
-| [ ]      | [ ]       | Read non-template data from template file |
+| [X]      | [X]       | Read non-template data from template file |
 | [X]      | [X]       | Handle indirected text |
-| [ ]      | [ ]       | Handle fonts |
+| [>]      | [>]       | Handle fonts |
 
 ### Commands
 
@@ -41,6 +41,9 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [ ]      | [ ]       | `Wimp_OpenTemplate` (&400D9) |
 | [ ]      | [ ]       | `Wimp_CloseTemplate` (&400DA) |
 | [ ]      | [ ]       | `Wimp_LoadTemplate` (&400DB) |
+| [X]      | [X]       | Testing `WimpTemplates_OpenTemplate` |
+| [X]      | [X]       | Testing `WimpTemplates_CloseTemplate` |
+| [X]      | [X]       | Testing `WimpTemplates_LoadTemplate` |
 
 
 ### Services
