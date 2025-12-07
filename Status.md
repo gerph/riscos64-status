@@ -519,6 +519,7 @@ The table below shows information about various tools and their support:
 |--------------|------------------------|-----------|-----------|----------------|--------------------------|----------------------|----------------|
 | Perl         | perl (5.001)           | C         | -         | Functional[^perl] |                       |                      |                |
 | Fortran      | GNU Fortran            | C         | -         |                | Functional[^riscos64-fortran] |                 |                |
+| Pascal       | P2C (Gillespie)        | C         | -         |                | Functional[^riscos64-pascal] | Functional[^riscos64-pascal] |                |
 | Rust         | Rust                   | C         | -         |                | Prototype[^rust]         |                 |                |
 | Detokeniser  | basicdetokenise        | C         | -         |                |                          |                      |                |
 | Tokeniser    | basictokenise          | Perl      |           |                | Functional               | Functional           |                |
@@ -556,6 +557,7 @@ See also [Languages](https://github.com/gerph/riscos64-status/wiki/Languages)
 [^riscos64-libfile]: The `riscos64-libfile` tool has been created as a wrapper around `ar`, which has `libfile` syntax to create libraries for RISC OS 64 (as a syntactic sugar).
 [^perl]: Perl in RISC OS 64 is functional, but cannot invoke commands due to the lack of `system` in the C library.
 [^riscos64-fortran]: GNU Fortran has not been ported to RISC OS 64. The Linux version can be used to build Fortran binaries to run on RISC OS 64.
+[^riscos64-pascal]: P2C can be used to convert Pascal to C, which is then compiled by either the Norcroft or GNU compiler to create runnable code. Module code has been made work in the past but has not been tested.
 [^rust]: Prototype code has been built into a RISC OS AIF file from within Rust, and run on RISC OS 64.
 [^bison]: Bison has been built but not tested in its built form.
 [^flex]: Flex has been built but not tested in its built form.
