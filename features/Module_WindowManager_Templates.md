@@ -6,6 +6,8 @@ The WindowManager can load template files. The operations to open, close, load t
 
 This subcomponent implements that functionality independant of any other Wimp functions. This means that it can be provided well in advance of the rest of the system.
 
+The expectation is that there will be both command line versions of the implementation that can be used for testing, and a fake module which implements the equivalent of the WindowManager SWI calls. This should mean that the subsequent integration to create the WindowManager itself just has to hook the defined SWIs into the existing module.
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
@@ -26,7 +28,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [X]      | [X]       | Enumerate templates |
 | [X]      | [X]       | Read non-template data from template file |
 | [X]      | [X]       | Handle indirected text |
-| [>]      | [>]       | Handle fonts |
+| [X]      | [X]       | Handle fonts |
 
 ### Commands
 
@@ -38,12 +40,9 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Wimp_OpenTemplate` (&400D9) |
-| [ ]      | [ ]       | `Wimp_CloseTemplate` (&400DA) |
-| [ ]      | [ ]       | `Wimp_LoadTemplate` (&400DB) |
-| [X]      | [X]       | Testing `WimpTemplates_OpenTemplate` |
-| [X]      | [X]       | Testing `WimpTemplates_CloseTemplate` |
-| [X]      | [X]       | Testing `WimpTemplates_LoadTemplate` |
+| [X]      | [X]       | Implementation of `Wimp_OpenTemplate` interface in fake module |
+| [X]      | [X]       | Implementation of `Wimp_CloseTemplate` interface in fake module |
+| [X]      | [X]       | Implementation of `Wimp_LoadTemplate` interface in fake module |
 
 
 ### Services

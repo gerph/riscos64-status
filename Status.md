@@ -198,7 +198,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Wimp:SpriteRender         | Asm/C |           |           |
 | Wimp:Startup              | Asm/C |           |           |
 | Wimp:TaskManagement       | Asm/C |           |           |
-| Wimp:Templates            | Asm/C | Stub      | Stub      |
+| Wimp:Templates            | Asm/C | Functional | Functional |
 | Wimp:TextRender           | Asm/C |           |           |
 | Wimp:Tiling               | Asm/C |           |           |
 | Wimp:WindowManagement     | Asm/C |           |           |
