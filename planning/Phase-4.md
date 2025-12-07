@@ -30,6 +30,7 @@ implementation (if any should even be produced).
 
 | Name                      | Stack          | Functionality |
 |---------------------------|----------------|---------------|
+| Kernel:Introspection      | Kernel         | Functional |
 | Kernel:SystemInit         | Kernel         | Functional |
 | Kernel:MemManagement      | Kernel         | Functional |
 | Kernel:DAs                | Kernel         | Functional |

@@ -6,6 +6,17 @@ The Kernel is being worked on in parts, to allow it to have delineated
 implementation. This component will provide the interfaces for reading
 information about the OS itself and about hardware.
 
+Providing stub implementation functions for the different interfaces
+will allow us to get a simple implementation provisioned, and then
+expanded as we have more of the system that we can read information from.
+
+The expectation is that there will be both command line versions of the
+implementation that can be used for testing, and a fake module which
+implements the equivalent of the `OS_*` SWI calls.
+This should mean that the subsequent integration to create the Kernel
+itself just has to hook the defined SWIs into the existing code. Or
+that the code can be hooked into the existing Kernel.
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/)
