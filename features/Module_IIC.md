@@ -15,8 +15,8 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [X]      | [X]       | Rejects invalid addresses |
 
-*None found*
 
 ### Commands
 
@@ -29,7 +29,7 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `IIC_Control` (&240) |
+| [X]      | [X]       | `IIC_Control` (&240) |
 
 
 ### Services

@@ -53,7 +53,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | IRQ                       | Asm   |               |               |
 | TimerManager              | Asm   |               |               |
 | Podule                    | Asm   |               |               |
-| IIC                       | Asm   |               |               |
+| IIC                       | Asm   | Stub          | Stub          |
 | NVRAMHW                   | Asm   |               |               |
 | Conversions               | Asm   | Complete      | Complete      |
 | OSSWIs                    | Asm   |               |               |
