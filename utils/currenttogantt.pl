@@ -56,7 +56,7 @@ sub percent_colour {
         return "red";
     }
     elsif ($percent <= 30) {
-        return "orange";
+        return "darkorange";
     }
     elsif ($percent <= 40) {
         return "yellow";
@@ -68,7 +68,7 @@ sub percent_colour {
         return "green";
     }
 
-    return "brightgreen";
+    return "lightgreen";
 }
 
 my $state_sequence = [];
@@ -303,8 +303,8 @@ EOM
  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
   <text aria-hidden="true" x="275" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="430">Phase $phasenum</text>
   <text x="275" y="140" transform="scale(.1)" fill="#fff" textLength="430">Phase $phasenum</text>
-  <text aria-hidden="true" x="735" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)">$percent_int%</text>
-  <text x="735" y="140" transform="scale(.1)" fill="#fff">$percent_int%</text>
+  <text aria-hidden="true" x="735" y="150" fill="#fff" fill-opacity=".3" transform="scale(.1)">$percent_int%</text>
+  <text x="735" y="140" transform="scale(.1)" fill="#010101">$percent_int%</text>
  </g>
 </svg>
 EOM
