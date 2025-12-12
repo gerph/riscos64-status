@@ -84,7 +84,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | RTCAdjust                 | Asm   |           |           |
 | RTCHW                     | Asm   |           |           |
 | OSPointer                 | Asm   |           |           |
-| Hourglass                 | Asm   | Prototype[^hourglass] |           |
+| Hourglass                 | Asm   | Functional[^hourglass] | Functional[^hourglass] |
 | Portable                  | Asm   | Prototype | Prototype |
 | FileSwitch                | Asm   |           |           |
 | Squash                    | Asm/C |           |           |
@@ -324,7 +324,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 [^buffermanager]: Buffer vectors InsV, RemV, CnPV have very poor interfaces, which should not be propagated into RISC OS 64.
 [^ownerbanner]: Only the text part of the banner is currently implemented.
 [^spriteutils]: Does not support the vector handling yet.
-[^hourglass]: Although the base is in C, the generated sections are in assembler.
+[^hourglass]: Hourglass still has assembler code, but this has been ported to AArch64 (within a Python generation process).
 [^srevill]: Being worked on by Steve Revill.
 [^jstamp]: Completed by Julie Stamp.
 [^crash]: Current crashes when run.

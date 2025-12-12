@@ -21,6 +21,19 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/hourglass.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [X]      | [X]       | Can be turned on (default delay) |
+| [X]      | [X]       | Can be turned on (user delay) |
+| [X]      | [X]       | Can be turned off |
+| [X]      | [X]       | Can be smashed to destroy |
+| [X]      | [X]       | Can show percentage values |
+| [X]      | [X]       | Animates |
+| [X]      | [X]       | Restores prior colours |
+| [X]      | [X]       | Restores prior pointer state |
+| [X]      | [X]       | Restores prior colours and state on finalisation |
+| [X]      | [X]       | Uses own colours |
+| [ ]      | [ ]       | Can shows 2 LEDs |
+| [ ]      | [ ]       | Can shows 4 LEDs |
+| [ ]      | [ ]       | Can change its colours |
 
 *None found*
 
@@ -29,8 +42,8 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/hourglass.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [X]      | [ ]       | `*HOff` |
-| [X]      | [ ]       | `*HOn` |
+| [X]      | [X]       | `*HOff` |
+| [X]      | [X]       | `*HOn` |
 
 
 ### SWIs
@@ -38,13 +51,13 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/hourglass.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [X]      | [ ]       | `Hourglass_On` (&406C0) |
-| [X]      | [ ]       | `Hourglass_Off` (&406C1) |
-| [X]      | [ ]       | `Hourglass_Smash` (&406C2) |
-| [X]      | [ ]       | `Hourglass_Start` (&406C3) |
-| [X]      | [ ]       | `Hourglass_Percentage` (&406C4) |
-| [X]      | [ ]       | `Hourglass_LEDs` (&406C5) |
-| [X]      | [ ]       | `Hourglass_Colours` (&406C6) |
+| [X]      | [X]       | `Hourglass_On` (&406C0) |
+| [X]      | [X]       | `Hourglass_Off` (&406C1) |
+| [X]      | [X]       | `Hourglass_Smash` (&406C2) |
+| [X]      | [X]       | `Hourglass_Start` (&406C3) |
+| [X]      | [X]       | `Hourglass_Percentage` (&406C4) |
+| [ ]      | [ ]       | `Hourglass_LEDs` (&406C5) |
+| [ ]      | [ ]       | `Hourglass_Colours` (&406C6) |
 
 
 ### Services
@@ -58,9 +71,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/hourglass.html)
 ### Vectors
 
 
-| In 32bit | In 64 bit | Interface |
-|----------|-----------|-----------|
-| [ ]      | [ ]       | `TickerV` |
+*None*
 
 
 ### Events
