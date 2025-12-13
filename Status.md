@@ -56,7 +56,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | IIC                       | Asm   | Stub          | Stub          |
 | NVRAMHW                   | Asm   |               |               |
 | Conversions               | Asm   | Complete      | Complete      |
-| OSSWIs                    | Asm   |               |               |
+| OSSWIs                    | Asm   | Stub          | Stub          |
 | EvaluateExpression        | Asm   | Stub          | Stub          |
 | SystemVars                | Asm   | Automated     | Automated     |
 | FileTypes                 | Asm   | Complete      | Complete      |
@@ -181,29 +181,29 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | RemotePrinterSupport      | C     | -         | Built     |
 | RemotePrinterMessages     | Asm   |           |           |
 | WindowManager             | Asm/C |           |           |
-| Wimp:CommandWindow        | Asm/C |           |           |
-| Wimp:ErrorBox             | Asm/C |           |           |
-| Wimp:Fonts                | Asm/C |           |           |
+| Wimp:CommandWindow        | Asm   |           |           |
+| Wimp:ErrorBox             | Asm   |           |           |
+| Wimp:Fonts                | Asm   |           |           |
 | Wimp:IconBorders          | Asm/C |           |           |
-| Wimp:IconRender           | Asm/C |           |           |
-| Wimp:Interaction          | Asm/C |           |           |
-| Wimp:Introspection        | Asm/C |           |           |
-| Wimp:Memory               | Asm/C |           |           |
-| Wimp:Menus                | Asm/C |           |           |
-| Wimp:Messages             | Asm/C |           |           |
-| Wimp:Pointer              | Asm/C |           |           |
-| Wimp:Polling              | Asm/C |           |           |
-| Wimp:SWIs                 | Asm/C |           |           |
-| Wimp:SpritePools          | Asm/C |           |           |
-| Wimp:SpriteRender         | Asm/C |           |           |
-| Wimp:Startup              | Asm/C |           |           |
-| Wimp:TaskManagement       | Asm/C |           |           |
-| Wimp:Templates            | Asm/C | Functional | Functional |
-| Wimp:TextRender           | Asm/C |           |           |
+| Wimp:IconRender           | Asm   |           |           |
+| Wimp:Interaction          | Asm   |           |           |
+| Wimp:Introspection        | Asm   |           |           |
+| Wimp:Memory               | Asm   |           |           |
+| Wimp:Menus                | Asm   |           |           |
+| Wimp:Messages             | Asm   |           |           |
+| Wimp:Pointer              | Asm   |           |           |
+| Wimp:Polling              | Asm   |           |           |
+| Wimp:SWIs                 | Asm   |           |           |
+| Wimp:SpritePools          | Asm   |           |           |
+| Wimp:SpriteRender         | Asm   |           |           |
+| Wimp:Startup              | Asm   |           |           |
+| Wimp:TaskManagement       | Asm   |           |           |
+| Wimp:Templates            | Asm   | Functional | Functional |
+| Wimp:TextRender           | Asm   |           |           |
 | Wimp:Tiling               | Asm/C |           |           |
-| Wimp:WindowManagement     | Asm/C |           |           |
+| Wimp:WindowManagement     | Asm   |           |           |
 | Wimp:WindowRender         | Asm/C |           |           |
-| Wimp:WindowStacking       | Asm/C |           |           |
+| Wimp:WindowStacking       | Asm   |           |           |
 | FilterManager             | Asm   |           |           |
 | RedrawManager             | Asm   |           |           |
 | Desktop                   | Asm   |           |           |

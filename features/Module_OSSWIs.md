@@ -44,6 +44,9 @@
 | [ ]      | [ ]       | `OS_SubstituteArgs` handles `%*<number>` |
 | [ ]      | [ ]       | `OS_SubstituteArgs` appended unused arguments |
 | [ ]      | [ ]       | `OS_SubstituteArgs` handles quoted strings |
+| [X]      | [X]       | `OS_CRC` calculates correct checksums compared to Classic |
+| [ ]      | [ ]       | `OS_CRC` handles positive increments other than 1 |
+| [ ]      | [ ]       | `OS_CRC` handles negative increments |
 
 ### Commands
 
@@ -57,7 +60,7 @@
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [ ]      | [ ]       | `OS_Confirm` |
-| [ ]      | [ ]       | `OS_CRC` |
+| [X]      | [X]       | `OS_CRC` |
 | [ ]      | [ ]       | `OS_HeapSort` |
 | [ ]      | [ ]       | `OS_HeapSort32` |
 | [ ]      | [ ]       | `OS_PrettyPrint` |
