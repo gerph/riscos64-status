@@ -26,6 +26,8 @@ implements the equivalent of the `OS_EvaluateExpression` SWI calls.
 | [ ]      | [ ]       | Expands variables |
 | [ ]      | [ ]       | Operates on strings |
 | [ ]      | [ ]       | Operates on numbers |
+| [ ]      | [ ]       | Returns strings |
+| [ ]      | [ ]       | Returns numbers |
 | [ ]      | [ ]       | Precedence honoured |
 | [ ]      | [ ]       | `(` expressions |
 | [ ]      | [ ]       | `(` mismatch reported |

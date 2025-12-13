@@ -22,8 +22,18 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/resourcefs.html)
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [ ]      | [ ]       | Filesystem |
+| [X]      | [ ]       | Can register file lists |
+| [X]      | [ ]       | Can deregister file lists |
 | [X]      | [ ]       | Can list files |
 | [X]      | [ ]       | Can export files |
+| [ ]      | [ ]       | FS: Can enumerate registered files |
+| [ ]      | [ ]       | FS: Can generate implicit directories |
+| [ ]      | [ ]       | FS: Can open files |
+| [ ]      | [ ]       | FS: Can close files |
+| [ ]      | [ ]       | FS: Can load files |
+| [ ]      | [ ]       | FS: Can read bytes from open files |
+| [ ]      | [ ]       | FS: Can read blocks from open files |
+| [ ]      | [ ]       | FS: Can directory entry |
 
 
 ### Commands
