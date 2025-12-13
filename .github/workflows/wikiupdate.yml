@@ -85,7 +85,7 @@ jobs:
 
       - name: Sleep to prevent races
         run: |
-          sleep 2
+          sleep 4
 
       - name: Upload percentages as gists (Phase 2)
         uses: exuanbo/actions-deploy-gist@v1
@@ -98,7 +98,7 @@ jobs:
 
       - name: Sleep to prevent races
         run: |
-          sleep 2
+          sleep 4
 
       - name: Upload percentages as gists (Phase 3)
         uses: exuanbo/actions-deploy-gist@v1
@@ -111,7 +111,7 @@ jobs:
 
       - name: Sleep to prevent races
         run: |
-          sleep 2
+          sleep 4
 
       - name: Upload percentages as gists (Phase 4)
         uses: exuanbo/actions-deploy-gist@v1
@@ -124,7 +124,7 @@ jobs:
 
       - name: Sleep to prevent races
         run: |
-          sleep 2
+          sleep 4
 
       - name: Upload percentages as gists (Phase 5)
         uses: exuanbo/actions-deploy-gist@v1
@@ -137,7 +137,7 @@ jobs:
 
       - name: Sleep to prevent races
         run: |
-          sleep 2
+          sleep 4
 
       - name: Upload percentages as gists (Phase 6)
         uses: exuanbo/actions-deploy-gist@v1
@@ -150,7 +150,7 @@ jobs:
 
       - name: Sleep to prevent races
         run: |
-          sleep 2
+          sleep 4
 
       - name: Upload percentages as gists (Phase 7)
         uses: exuanbo/actions-deploy-gist@v1
