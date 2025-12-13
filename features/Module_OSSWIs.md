@@ -18,13 +18,16 @@
 | [ ]      | [ ]       | `OS_Confirm` handles keyboard |
 | [ ]      | [ ]       | `OS_Confirm` handles mouse |
 | [ ]      | [ ]       | `OS_Confirm` uses pointer |
-| [ ]      | [ ]       | `OS_HeapSort` handles cardinals |
-| [ ]      | [ ]       | `OS_HeapSort` handles integers |
-| [ ]      | [ ]       | `OS_HeapSort` handles cardinal pointers |
-| [ ]      | [ ]       | `OS_HeapSort` handles integer pointers |
-| [ ]      | [ ]       | `OS_HeapSort` handles strings insensitively |
-| [ ]      | [ ]       | `OS_HeapSort` handles strings sensitively |
+| [X]      | [X]       | `OS_HeapSort` handles cardinals |
+| [X]      | [X]       | `OS_HeapSort` handles integers |
+| [X]      | [X]       | `OS_HeapSort` handles cardinal pointers |
+| [X]      | [X]       | `OS_HeapSort` handles integer pointers |
+| [X]      | [X]       | `OS_HeapSort` handles strings insensitively |
+| [ ]      | [ ]       | `OS_HeapSort` handles strings insensitively (using locale) |
+| [X]      | [X]       | `OS_HeapSort` handles strings sensitively |
 | [ ]      | [ ]       | `OS_HeapSort` handles arbitrary comparison functions |
+| [X]      | [X]       | `OS_HeapSort` constructs object array |
+| [ ]      | [ ]       | `OS_HeapSort` sorts object array |
 | [ ]      | [ ]       | `OS_PrettyPrint` wraps text |
 | [ ]      | [ ]       | `OS_PrettyPrint` handles hard space |
 | [ ]      | [ ]       | `OS_PrettyPrint` uses current window width |
@@ -61,13 +64,13 @@
 |----------|-----------|-----------|
 | [ ]      | [ ]       | `OS_Confirm` |
 | [X]      | [X]       | `OS_CRC` |
-| [ ]      | [ ]       | `OS_HeapSort` |
+| [>]      | [>]       | `OS_HeapSort` |
 | [ ]      | [ ]       | `OS_HeapSort32` |
 | [ ]      | [ ]       | `OS_PrettyPrint` |
 | [ ]      | [ ]       | `OS_ReadArgs` |
 | [ ]      | [ ]       | `OS_SubstituteArgs` |
 | [ ]      | [ ]       | `OS_SubstituteArgs32` |
-| [ ]      | [ ]       | `OS_ReadRAMFSLimits` |
+| [X]      | [X]       | `OS_ReadRAMFSLimits` |
 
 
 ### Services
