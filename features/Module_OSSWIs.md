@@ -26,8 +26,9 @@
 | [ ]      | [ ]       | `OS_HeapSort` handles strings insensitively (using locale) |
 | [X]      | [X]       | `OS_HeapSort` handles strings sensitively |
 | [ ]      | [ ]       | `OS_HeapSort` handles arbitrary comparison functions |
-| [X]      | [X]       | `OS_HeapSort` constructs object array |
-| [ ]      | [ ]       | `OS_HeapSort` sorts object array |
+| [ ]      | [ ]       | `OS_HeapSort` constructs object array and sorts|
+| [X]      | [X]       | `OS_HeapSort32` constructs object array |
+| [ ]      | [ ]       | `OS_HeapSort32` sorts object array |
 | [ ]      | [ ]       | `OS_PrettyPrint` wraps text |
 | [ ]      | [ ]       | `OS_PrettyPrint` handles hard space |
 | [ ]      | [ ]       | `OS_PrettyPrint` uses current window width |
@@ -65,7 +66,7 @@
 | [ ]      | [ ]       | `OS_Confirm` |
 | [X]      | [X]       | `OS_CRC` |
 | [>]      | [>]       | `OS_HeapSort` |
-| [ ]      | [ ]       | `OS_HeapSort32` |
+| [>]      | [>]       | `OS_HeapSort32` |
 | [ ]      | [ ]       | `OS_PrettyPrint` |
 | [ ]      | [ ]       | `OS_ReadArgs` |
 | [ ]      | [ ]       | `OS_SubstituteArgs` |
