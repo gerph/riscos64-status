@@ -29,20 +29,20 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `OS_Byte 0` version |
-| [ ]      | [ ]       | `OS_Byte 129, 0, 255` version |
-| [ ]      | [ ]       | `OS_ReadSysInfo 0` (Configured Screen Size) |
-| [ ]      | [ ]       | `OS_ReadSysInfo 1` (Configured Mode) |
-| [ ]      | [ ]       | `OS_ReadSysInfo 2` (Chips And UniqueID) |
-| [ ]      | [ ]       | `OS_ReadSysInfo 3` (IO Features) |
-| [ ]      | [ ]       | `OS_ReadSysInfo 4` (Ethernet Address) |
-| [ ]      | [ ]       | `OS_ReadSysInfo 5` (Raw Unique ID) |
-| [ ]      | [ ]       | `OS_ReadSysInfo 6` (Kernel Value) |
-| [ ]      | [ ]       | `OS_ReadSysInfo 7` (Last Abort) |
-| [ ]      | [ ]       | `OS_ReadSysInfo 8` (Platform Class) |
-| [ ]      | [ ]       | `OS_ReadSysInfo 9` (ROM Information) |
-| [ ]      | [ ]       | `OS_ReadSysInfo 10` (OS Version) |
-| [ ]      | [ ]       | `OS_ReadSysInfo 11` (Debug Information) |
+| [X]      | [ ]       | `OS_Byte 0` version |
+| [X]      | [ ]       | `OS_Byte 129, 0, 255` version |
+| [>]      | [>]       | `OS_ReadSysInfo 0` (Configured Screen Size) |
+| [>]      | [>]       | `OS_ReadSysInfo 1` (Configured Mode) |
+| [>]      | [>]       | `OS_ReadSysInfo 2` (Chips And UniqueID) |
+| [>]      | [>]       | `OS_ReadSysInfo 3` (IO Features) |
+| [>]      | [>]       | `OS_ReadSysInfo 4` (Ethernet Address) |
+| [>]      | [>]       | `OS_ReadSysInfo 5` (Raw Unique ID) |
+| [>]      | [>]       | `OS_ReadSysInfo 6` (Kernel Value) |
+| [>]      | [>]       | `OS_ReadSysInfo 7` (Last Abort) |
+| [>]      | [>]       | `OS_ReadSysInfo 8` (Platform Class) |
+| [>]      | [>]       | `OS_ReadSysInfo 9` (ROM Information) |
+| [>]      | [>]       | `OS_ReadSysInfo 10` (OS Version) |
+| [>]      | [>]       | `OS_ReadSysInfo 11` (Debug Information) |
 | [ ]      | [ ]       | `OS_ReadSysInfo 12` (Read Extended MachineId) |
 | [ ]      | [ ]       | `OS_ReadSysInfo 13` (Validate Key Handler) |
 | [ ]      | [ ]       | `OS_ReadSysInfo 14` (IIC) |
@@ -74,7 +74,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/)
 |----------|-----------|-----------|
 | [ ]      | [ ]       | `OS_ReadMemMapInfo` (&51) |
 | [ ]      | [ ]       | `OS_ReadMemMapEntries` (&51) |
-| [ ]      | [ ]       | `OS_ReadSysInfo` (&58) |
+| [X]      | [X]       | `OS_ReadSysInfo` (&58) |
 | [ ]      | [ ]       | `OS_Memory` (&68) |
 | [ ]      | [ ]       | `OS_PlatformFeatures` (&6d) |
 
@@ -90,8 +90,8 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `ByteV` 0 |
-| [ ]      | [ ]       | `ByteV` 129, 0, 255 |
+| [X]      | [ ]       | `ByteV` 0 |
+| [X]      | [ ]       | `ByteV` 129, 0, 255 |
 
 
 ### Events

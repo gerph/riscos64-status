@@ -24,7 +24,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Name                      | Lang  | C-state       | 64-state      |
 |---------------------------|-------|---------------|---------------|
 | Kernel:SystemInit         | Asm   |               |               |
-| Kernel:Introspection      | Asm   |               |               |
+| Kernel:Introspection      | Asm   | Investigate   | Investigate   |
 | Kernel:Vectors            | Asm   |               |               |
 | Kernel:Modules            | Asm   |               |               |
 | Kernel:SWIs               | Asm   |               |               |
