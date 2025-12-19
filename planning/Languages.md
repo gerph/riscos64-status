@@ -38,3 +38,4 @@ This page hopes to bring together information on languages which have been built
 | Nim          | -               | -               | -                | - |
 | Lua          | -               | Built           | Gerph            | https://github.com/gerph/riscos64-lua |
 | PHP          | -               | -               | -                | - |
+| Wren         | -               | Built           | Gerph            | https://github.com/gerph/riscos64-wren |
