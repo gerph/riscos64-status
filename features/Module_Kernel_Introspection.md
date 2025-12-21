@@ -63,9 +63,13 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/)
 | [ ]      | [ ]       | `OS_ReadSysInfo 14` (IIC) |
 | [ ]      | [ ]       | `OS_ReadSysInfo 15` (EnumerateFooterEntries) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 15` (EnumerateFooterEntries) |
+| [X]      | [ ]       | `OS_Memory 6` (Read Physical Table Size) stub |
 | [ ]      | [ ]       | `OS_Memory 6` (Read Physical Table Size) |
+| [X]      | [ ]       | `OS_Memory 7` (Read Physical Table) stub |
 | [ ]      | [ ]       | `OS_Memory 7` (Read Physical Table) |
+| [X]      | [ ]       | `OS_Memory 8` (Amounts) stub |
 | [ ]      | [ ]       | `OS_Memory 8` (Amounts) |
+| [X]      | [ ]       | `OS_Memory 9` (IO Space) stub |
 | [ ]      | [ ]       | `OS_Memory 9` (IO Space) |
 | [X]      | [X]       | `OS_PlatformFeatures 0` (code features) stub |
 | [ ]      | [ ]       | `OS_PlatformFeatures 0` (code features) |
@@ -77,8 +81,10 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/)
 | [ ]      | [ ]       | `OS_PlatformFeatures 34` (CPU features) |
 | [X]      | [X]       | `OS_PlatformFeatures 64` (CPU registers) stub |
 | [X]      | [X]       | `OS_PlatformFeatures 64` (CPU registers) |
-| [ ]      | [ ]       | `OS_MemMapInfo` |
-| [ ]      | [ ]       | `OS_MemMapEntries` |
+| [X]      | [ ]       | `OS_ReadMemMapInfo` stub |
+| [ ]      | [ ]       | `OS_ReadMemMapInfo` |
+| [X]      | [ ]       | `OS_ReadMemMapEntries` stub |
+| [ ]      | [ ]       | `OS_ReadMemMapEntries` |
 
 
 
@@ -93,10 +99,10 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `OS_ReadMemMapInfo` (&51) |
-| [ ]      | [ ]       | `OS_ReadMemMapEntries` (&51) |
+| [X]      | [X]       | `OS_ReadMemMapInfo` (&51) |
+| [X]      | [X]       | `OS_ReadMemMapEntries` (&51) |
 | [X]      | [X]       | `OS_ReadSysInfo` (&58) |
-| [ ]      | [ ]       | `OS_Memory` (&68) |
+| [X]      | [X]       | `OS_Memory` (&68) |
 | [X]      | [X]       | `OS_PlatformFeatures` (&6d) |
 
 
