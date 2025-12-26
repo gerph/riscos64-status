@@ -24,6 +24,19 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/freenew.html)
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [ ]      | [ ]       | Default desktop application |
+| [ ]      | [ ]       | Can register filesystem |
+| [ ]      | [ ]       | Can deregister filesystem |
+| [ ]      | [ ]       | Can show free for filesystem |
+| [ ]      | [ ]       | Can show free for path |
+| [ ]      | [ ]       | Deregister filesystem closes open windows |
+| [ ]      | [ ]       | Internal support for ADFS |
+| [ ]      | [ ]       | Internal support for RamFS |
+| [ ]      | [ ]       | Internal support for SCSIFS |
+| [ ]      | [ ]       | Internal support for NetFS |
+| [ ]      | [ ]       | Internal support for NFS |
+| [ ]      | [ ]       | Internal support for PCCardFS |
+| [ ]      | [ ]       | Traps UpCallV to update windows |
+
 
 ### Commands
 
