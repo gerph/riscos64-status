@@ -27,6 +27,7 @@ This page hopes to bring together information on languages which have been built
 | Awk          | -               | -               | -                | - |
 | Pascal       | -               | -               | -                | - |
 | Fortran      | -               | -               | -                | - |
+| Javascript   | MicroQuickJS    | Built           | Gerph            | https://github.com/gerph/riscos64-mquickjs |
 | Python       | CPython         | -               | -                | - |
 | Python       | PocketPy        | Functional      | Gerph            | https://github.com/gerph/riscos64-pocketpy |
 | Perl         | Perl 5          | Functional      | Gerph            | https://github.com/gerph/riscos64-status/tree/master/aif64 |
