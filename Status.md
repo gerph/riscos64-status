@@ -148,7 +148,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | ZLib                      | C     | -         | Built     |
 | PNG                       | C     | -         |           |
 | ROMFonts                  | Asm   |           |           |
-| FontManager               | Asm   |           |           |
+| FontManager               | Asm   | Investigate | Investigate |
 | SuperSample               | Asm   |           |           |
 | ImageFileConvert          | C     | -         |           |
 | CompressJPEG              | C     | -         |           |
@@ -222,7 +222,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Filer                     | Asm/C |           |           |
 | FilerSWIs                 | Asm   |           |           |
 | Filer_Action              | C     | -         |           |
-| Free                      | Asm   |           |           |
+| Free                      | Asm   | Investigate | Investigate |
 | Pinboard                  | Asm   |           |           |
 | ClipboardHolder           | C     | -         |           |
 | WindowScroll              | C     | -         |           |
