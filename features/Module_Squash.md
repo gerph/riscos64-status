@@ -19,8 +19,14 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/squash.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [ ]      | [ ]       | Can compress data with fully specified output buffer |
+| [ ]      | [ ]       | Can compress data with small output buffer |
+| [ ]      | [ ]       | Can compress data with incomplete input data |
+| [ ]      | [ ]       | Can decompress data with fully specified output buffer |
+| [ ]      | [ ]       | Can decompress data with small output buffer |
+| [ ]      | [ ]       | Can decompress data with incomplete input data |
+| [ ]      | [ ]       | Reports corrupt data |
 
-*None found*
 
 ### Commands
 

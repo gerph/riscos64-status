@@ -18,8 +18,14 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [ ]      | [ ]       | Recognises utility header |
+| [ ]      | [ ]       | Rejects unheadered files (64-bit only) |
+| [ ]      | [ ]       | Rejects files for incorrect bitness |
+| [ ]      | [ ]       | Allocates space to run code |
+| [ ]      | [ ]       | Deallocates on code completion |
+| [ ]      | [ ]       | Ensures sufficient stack space |
 
-*None found*
+
 
 ### Commands
 

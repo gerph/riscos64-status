@@ -19,8 +19,18 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [ ]      | [ ]       | Supports registration of multiple voices |
+| [ ]      | [ ]       | Supports mapping of voices to channels |
+| [ ]      | [ ]       | Issues service when `Sound_Control` issued |
+| [ ]      | [ ]       | Can enumerate installed voices |
+| [ ]      | [ ]       | Can enumerate channel mappings |
+| [ ]      | [ ]       | Registers with SoundDMA / SharedSound |
+| [ ]      | [ ]       | Calls mapped channel voices on fill |
+| [ ]      | [ ]       | Performs transformation of Log handler to Linear PCM |
+| [ ]      | [ ]       | Provides lookup table for log/linear translation |
+| [ ]      | [ ]       | Re-registers on SoundDMA start |
+| [ ]      | [ ]       | Issues service on start and shutdown |
 
-*None found*
 
 ### Commands
 

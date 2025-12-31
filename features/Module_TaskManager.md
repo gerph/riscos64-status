@@ -21,8 +21,29 @@
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [ ]      | [ ]       | Default desktop application |
-| [ ]      | [ ]       | Desktop filer icon |
-| [ ]      | [ ]       | License info |
+| [ ]      | [ ]       | Desktop control icon |
+| [ ]      | [ ]       | License info window |
+| [ ]      | [ ]       | Displays running tasks |
+| [ ]      | [ ]       | Displays memory usage for tasks |
+| [ ]      | [ ]       | Displays module tasks separately |
+| [ ]      | [ ]       | Tracks task initialisation and shutdown |
+| [ ]      | [ ]       | Performs desktop shutdown |
+| [ ]      | [ ]       | Displays next and free memory |
+| [ ]      | [ ]       | Displays dynamic area usage |
+| [ ]      | [ ]       | Tracks dynamic area creation and removal |
+| [ ]      | [ ]       | Tracks dynamic area resizes |
+| [ ]      | [ ]       | Handles TaskWindow hot key |
+| [ ]      | [ ]       | Handles Command prompt hot key |
+| [ ]      | [ ]       | Can quit applications |
+| [ ]      | [ ]       | Confirmation of shutdown is configurable |
+| [ ]      | [ ]       | Reboot option after shutdown |
+| [ ]      | [ ]       | Automated reboot after shutdown is supported |
+| [ ]      | [ ]       | Automated poweroff after shutdown is supported |
+| [ ]      | [ ]       | Displays OS version in info box |
+| [ ]      | [ ]       | Can launch !Configure |
+| [ ]      | [ ]       | Can issue `Wimp_StartTask` queued from outside desktop |
+| [ ]      | [ ]       | Can run commands from menu |
+
 
 ### Commands
 

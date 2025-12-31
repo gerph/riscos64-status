@@ -21,6 +21,16 @@
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [ ]      | [ ]       | Hardware driver |
+| [ ]      | [ ]       | Issues service on start and shutdown |
+| [ ]      | [ ]       | Provides/calls Log handler |
+| [ ]      | [ ]       | Provides/calls Linear handler |
+| [ ]      | [ ]       | Provides/calls scheduler |
+| [ ]      | [ ]       | Enumerates provided sample rates |
+| [ ]      | [ ]       | Allows selection of sample rates |
+| [ ]      | [ ]       | Can disable sound |
+| [ ]      | [ ]       | Can route to speaker or jack |
+
+
 
 ### Commands
 
