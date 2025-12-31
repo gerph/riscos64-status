@@ -22,6 +22,40 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/draw.html)
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [ ]      | [ ]       | Graphics output |
+| [ ]      | [ ]       | Can thicken paths |
+| [ ]      | [ ]       | Can flatten paths |
+| [ ]      | [ ]       | Can create strokes paths |
+| [ ]      | [ ]       | Honours origin |
+| [ ]      | [ ]       | Honours graphics window |
+| [ ]      | [ ]       | Path: End (0) |
+| [ ]      | [ ]       | Path: Close with line (5) |
+| [ ]      | [ ]       | Path: Close with gap (4) |
+| [ ]      | [ ]       | Path: Move (2) |
+| [ ]      | [ ]       | Path: Move (no winding effects) (3) |
+| [ ]      | [ ]       | Path: Gap (7) |
+| [ ]      | [ ]       | Path: Line (8) |
+| [ ]      | [ ]       | Path: Bezier (6) |
+| [ ]      | [ ]       | Path: Continuation at new pointer (1) |
+| [ ]      | [ ]       | Dotted paths |
+| [ ]      | [ ]       | Line cap at start |
+| [ ]      | [ ]       | Line cap at end |
+| [ ]      | [ ]       | Line cap: Butt |
+| [ ]      | [ ]       | Line cap: Round |
+| [ ]      | [ ]       | Line cap: Square |
+| [ ]      | [ ]       | Line cap: Triangle |
+| [ ]      | [ ]       | Join: Mitre |
+| [ ]      | [ ]       | Join: Round |
+| [ ]      | [ ]       | Join: Bevelled |
+| [ ]      | [ ]       | Mitre limit honoured |
+| [ ]      | [ ]       | Winding: Even-odd |
+| [ ]      | [ ]       | Winding: Non-zero |
+| [ ]      | [ ]       | Winding: Positive |
+| [ ]      | [ ]       | Winding: Negative |
+| [ ]      | [ ]       | Fill non-boundary exterior |
+| [ ]      | [ ]       | Fill boundary exterior |
+| [ ]      | [ ]       | Fill non-boundary interior |
+| [ ]      | [ ]       | Fill boundary interior |
+| [ ]      | [ ]       | Matrix transform |
 
 ### Commands
 

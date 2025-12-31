@@ -18,8 +18,17 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/dragasprite.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [ ]      | [ ]       | Capture screen area |
+| [ ]      | [ ]       | Restore on redraw |
+| [ ]      | [ ]       | Draws new sprite over the captured area |
+| [ ]      | [ ]       | Sprite horizontal position honoured |
+| [ ]      | [ ]       | Sprite vertical position honoured |
+| [ ]      | [ ]       | Bounding box region honoured |
+| [ ]      | [ ]       | Bounding box to drag box |
+| [ ]      | [ ]       | Bounding box to pointer |
+| [ ]      | [ ]       | Drop shadow drawn |
+| [ ]      | [ ]       | Translucency |
 
-*None found*
 
 ### Commands
 

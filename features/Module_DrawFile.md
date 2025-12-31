@@ -25,6 +25,14 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/drawfile.html)
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [X]      | [ ]       | Image conversion |
+| [X]      | [ ]       | Render paths |
+| [X]      | [ ]       | Uses font tables |
+| [X]      | [ ]       | Render text |
+| [X]      | [ ]       | Render text areas |
+| [X]      | [ ]       | Render transformed text |
+| [X]      | [ ]       | External render unknown objects |
+| [X]      | [ ]       | Render object bounding boxes |
+| [X]      | [ ]       | Can calculate the bounding box |
 
 ### Commands
 

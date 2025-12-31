@@ -18,6 +18,12 @@
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [ ]      | [ ]       | Default desktop application |
+| [ ]      | [ ]       | Can select modes by string |
+| [ ]      | [ ]       | Menu of resolutions |
+| [ ]      | [ ]       | Divider between DARs |
+| [ ]      | [ ]       | Menu of depths |
+| [ ]      | [ ]       | Menu of refresh rates |
+| [ ]      | [ ]       | Greys impossible depths |
 
 ### Commands
 
