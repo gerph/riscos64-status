@@ -34,7 +34,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/freenew.html)
 | [>]      | [ ]       | Internal support for RamFS |
 | [>]      | [ ]       | Internal support for SCSIFS |
 | [>]      | [ ]       | Internal support for NetFS |
-| [ ]      | [ ]       | Internal support for NFS |
+| [>]      | [ ]       | Internal support for NFS |
 | [>]      | [ ]       | Internal support for PCCardFS |
 | [ ]      | [ ]       | Traps UpCallV to update windows |
 
