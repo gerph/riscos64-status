@@ -31,29 +31,29 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/)
 |----------|-----------|-----------|
 | [X]      | [ ]       | `OS_Byte 0` version |
 | [X]      | [ ]       | `OS_Byte 129, 0, 255` version |
-| [X]      | [ ]       | `OS_ReadSysInfo 0` (Configured Screen Size) stub|
+| [X]      | [X]       | `OS_ReadSysInfo 0` (Configured Screen Size) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 0` (Configured Screen Size) |
-| [X]      | [ ]       | `OS_ReadSysInfo 1` (Configured Mode) stub|
+| [X]      | [X]       | `OS_ReadSysInfo 1` (Configured Mode) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 1` (Configured Mode) |
-| [X]      | [ ]       | `OS_ReadSysInfo 2` (Chips And UniqueID) stub|
+| [X]      | [X]       | `OS_ReadSysInfo 2` (Chips And UniqueID) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 2` (Chips And UniqueID) |
-| [X]      | [ ]       | `OS_ReadSysInfo 3` (IO Features) stub|
+| [X]      | [X]       | `OS_ReadSysInfo 3` (IO Features) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 3` (IO Features) |
 | [X]      | [ ]       | `OS_ReadSysInfo 4` (Ethernet Address) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 4` (Ethernet Address) |
-| [X]      | [ ]       | `OS_ReadSysInfo 5` (Raw Unique ID) stub|
+| [X]      | [X]       | `OS_ReadSysInfo 5` (Raw Unique ID) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 5` (Raw Unique ID) |
-| [X]      | [ ]       | `OS_ReadSysInfo 6` (Kernel Value) stub|
+| [X]      | [X]       | `OS_ReadSysInfo 6` (Kernel Value) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 6` (Kernel Value) |
-| [X]      | [ ]       | `OS_ReadSysInfo 7` (Last Abort) stub|
+| [X]      | [X]       | `OS_ReadSysInfo 7` (Last Abort) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 7` (Last Abort) |
-| [X]      | [ ]       | `OS_ReadSysInfo 8` (Platform Class) stub|
+| [X]      | [X]       | `OS_ReadSysInfo 8` (Platform Class) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 8` (Platform Class) |
-| [X]      | [ ]       | `OS_ReadSysInfo 9` (ROM Information) stub|
+| [X]      | [X]       | `OS_ReadSysInfo 9` (ROM Information) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 9` (ROM Information) |
-| [X]      | [ ]       | `OS_ReadSysInfo 10` (OS Version) stub|
+| [X]      | [X]       | `OS_ReadSysInfo 10` (OS Version) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 10` (OS Version) |
-| [X]      | [ ]       | `OS_ReadSysInfo 11` (Debug Information) stub|
+| [X]      | [X]       | `OS_ReadSysInfo 11` (Debug Information) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 11` (Debug Information) |
 | [ ]      | [ ]       | `OS_ReadSysInfo 12` (Read Extended MachineId) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 12` (Read Extended MachineId) |
@@ -63,17 +63,17 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/)
 | [ ]      | [ ]       | `OS_ReadSysInfo 14` (IIC) |
 | [ ]      | [ ]       | `OS_ReadSysInfo 15` (EnumerateFooterEntries) stub|
 | [ ]      | [ ]       | `OS_ReadSysInfo 15` (EnumerateFooterEntries) |
-| [X]      | [ ]       | `OS_Memory 6` (Read Physical Table Size) stub |
+| [X]      | [X]       | `OS_Memory 6` (Read Physical Table Size) stub |
 | [ ]      | [ ]       | `OS_Memory 6` (Read Physical Table Size) |
-| [X]      | [ ]       | `OS_Memory 7` (Read Physical Table) stub |
+| [X]      | [X]       | `OS_Memory 7` (Read Physical Table) stub |
 | [ ]      | [ ]       | `OS_Memory 7` (Read Physical Table) |
-| [X]      | [ ]       | `OS_Memory 8` (Amounts) stub |
+| [X]      | [X]       | `OS_Memory 8` (Amounts) stub |
 | [ ]      | [ ]       | `OS_Memory 8` (Amounts) |
-| [X]      | [ ]       | `OS_Memory 9` (IO Space) stub |
+| [X]      | [X]       | `OS_Memory 9` (IO Space) stub |
 | [ ]      | [ ]       | `OS_Memory 9` (IO Space) |
 | [X]      | [X]       | `OS_PlatformFeatures 0` (code features) stub |
 | [ ]      | [ ]       | `OS_PlatformFeatures 0` (code features) |
-| [ ]      | [ ]       | `OS_PlatformFeatures 1` (MMU features) stub |
+| [X]      | [X]       | `OS_PlatformFeatures 1` (MMU features) stub |
 | [ ]      | [ ]       | `OS_PlatformFeatures 1` (MMU features) |
 | [X]      | [X]       | `OS_PlatformFeatures 33` (Cache features) stub |
 | [ ]      | [ ]       | `OS_PlatformFeatures 33` (Cache features) |
