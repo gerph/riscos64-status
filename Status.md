@@ -199,7 +199,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Wimp:Startup              | Asm   |           |           |
 | Wimp:TaskManagement       | Asm   |           |           |
 | Wimp:Templates            | Asm   | Functional | Functional |
-| Wimp:TextRender           | Asm   |           |           |
+| Wimp:TextRender           | Asm   | Investigate | Investigate |
 | Wimp:Tiling               | Asm/C |           |           |
 | Wimp:WindowManagement     | Asm   |           |           |
 | Wimp:WindowRender         | Asm/C |           |           |
