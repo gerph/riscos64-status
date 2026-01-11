@@ -12,6 +12,7 @@ name: Test all binaries
 # Controls when the action will run. Triggers the workflow on:
 #   * push on any branch.
 #   * tag creation for tags beginning with a 'v'
+#   * pull requests
 on:
   push:
     branches: ["master"]
@@ -22,8 +23,9 @@ on:
       - aif32/**
       - aif64/**
       - tests/**
-  # Pull request events happen on pull request state transitions, so we probably don't want this here.
+
   pull_request:
+    types: [opened, reopened, synchronize]
     branches: ["*"]
 
 concurrency:
