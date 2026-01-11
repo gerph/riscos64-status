@@ -12,5 +12,6 @@
 
 <!-- Describe the testing you have done manually to
      satisfy yourself that the change works as intended.
+     If automated tests have been updated, state this.
      Include output or pictures if necessary.
  -->
