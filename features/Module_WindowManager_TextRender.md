@@ -24,10 +24,10 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [X]      | [X]       | Text rendering |
 | [X]      | [X]       | Text sizing |
 | [X]      | [X]       | Text colouring |
-| [ ]      | [ ]       | Text uses WimpSymbols font |
+| [X]      | [X]       | Text uses WimpSymbols font |
 | [X]      | [X]       | Wimp$Font* honoured |
 | [X]      | [X]       | System font rendering |
-| [ ]      | [ ]       | System font rendering with scaling |
+| [X]      | [X]       | System font rendering with scaling |
 | [ ]      | [ ]       | Default font from NVRAM |
 | [ ]      | [ ]       | Truncate with ellipsis |
 | [ ]      | [ ]       | Read split point |
