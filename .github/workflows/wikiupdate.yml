@@ -63,7 +63,7 @@ jobs:
           REPO_NAME: riscos64-status
           MD_FOLDER: wiki-update
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         if: success() || failure()
         with:
           name: RISC OS 64 Progress
