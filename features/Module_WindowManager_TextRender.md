@@ -30,7 +30,8 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [X]      | [X]       | System font rendering with scaling |
 | [X]      | [X]       | Default font from NVRAM |
 | [ ]      | [ ]       | Truncate with ellipsis |
-| [ ]      | [ ]       | Read split point |
+| [X]      | [ ]       | Read split point |
+| [ ]      | [ ]       | Handle right-to-left text |
 
 ### Commands
 
@@ -44,7 +45,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 |----------|-----------|-----------|
 | [ ]      | [ ]       | `Wimp_TextColour` (&400F0) |
 | [ ]      | [ ]       | `Wimp_SetFontColours` (&400F3) |
-| [ ]      | [ ]       | `Wimp_TextOp` (&400F9) |
+| [X]      | [X]       | `Wimp_TextOp` (&400F9) |
 | [ ]      | [ ]       | `Wimp_ReadSysInfo 8` (&400F2) |
 
 
