@@ -43,10 +43,10 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Wimp_TextColour` (&400F0) |
-| [ ]      | [ ]       | `Wimp_SetFontColours` (&400F3) |
+| [X]      | [X]       | `Wimp_TextColour` (&400F0) |
+| [X]      | [X]       | `Wimp_SetFontColours` (&400F3) |
 | [X]      | [X]       | `Wimp_TextOp` (&400F9) |
-| [ ]      | [ ]       | `Wimp_ReadSysInfo 8` (&400F2) |
+| [X]      | [X]       | `Wimp_ReadSysInfo 8` (&400F2) |
 
 
 ### Services
