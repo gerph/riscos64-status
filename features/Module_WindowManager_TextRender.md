@@ -29,8 +29,8 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [X]      | [X]       | System font rendering |
 | [X]      | [X]       | System font rendering with scaling |
 | [X]      | [X]       | Default font from NVRAM |
-| [ ]      | [ ]       | Truncate with ellipsis |
-| [X]      | [ ]       | Read split point |
+| [X]      | [X]       | Truncate with ellipsis |
+| [X]      | [X]       | Read split point |
 | [ ]      | [ ]       | Handle right-to-left text |
 
 ### Commands
