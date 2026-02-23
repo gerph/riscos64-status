@@ -25,13 +25,20 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [X]      | [X]       | Text sizing |
 | [X]      | [X]       | Text colouring |
 | [X]      | [X]       | Text uses WimpSymbols font |
-| [X]      | [X]       | Wimp$Font* honoured |
+| [ ]      | [ ]       | Render flags: Bit 31: right justify |
+| [ ]      | [ ]       | Render flags: Bit 30: align baseline to system font |
+| [ ]      | [ ]       | Render flags: Bit 29: offsets within redraw window |
+| [ ]      | [ ]       | Render flags: Bit 28: centre vertically |
+| [ ]      | [ ]       | Sizing flags: Bit 31: coverage |
+| [X]      | [X]       | `Wimp$Font*` honoured |
 | [X]      | [X]       | System font rendering |
 | [X]      | [X]       | System font rendering with scaling |
 | [X]      | [X]       | Default font from NVRAM |
 | [X]      | [X]       | Truncate with ellipsis |
 | [X]      | [X]       | Read split point |
 | [ ]      | [ ]       | Handle right-to-left text |
+| [ ]      | [ ]       | Frees fonts on shutdown |
+
 
 ### Commands
 
