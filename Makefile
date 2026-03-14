@@ -4,6 +4,8 @@
 
 PHASES = 1 2 3 4 5 6 7
 
+UPDATE_MDS = $(wildcard updates/*.md)
+
 all: \
 		statistics.json \
 		statistics.md \
@@ -16,7 +18,8 @@ all: \
 		wiki-update/Progress.md \
 		wiki-update/Stacks.md \
 		wiki-update/Languages.md \
-		$(patsubst %,wiki-update/Phase-%.md,${PHASES})
+		$(patsubst %,wiki-update/Phase-%.md,${PHASES}) \
+		$(patsubst updates/%.md,wiki-update/%.md,${UPDATE_MDS})
 
 clean:
 	-rm statistics.json
@@ -57,6 +60,9 @@ wiki-update/Terminology.md: planning/Terminology.md | wiki-update
 	cp $? $@
 
 wiki-update/Languages.md: planning/Languages.md | wiki-update
+	cp $? $@
+
+wiki-update/Update%.md: updates/Update%.md | wiki-update
 	cp $? $@
 
 wiki-update/Status.md: Status.md | wiki-update
