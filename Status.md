@@ -201,6 +201,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Wimp:Templates            | Asm   | Functional | Functional |
 | Wimp:TextRender           | Asm   | Functional | Functional |
 | Wimp:Tiling               | Asm/C |           |           |
+| Wimp:ValidationStrings    | Asm   |           |           |
 | Wimp:WindowManagement     | Asm   |           |           |
 | Wimp:WindowRender         | Asm/C |           |           |
 | Wimp:WindowStacking       | Asm   |           |           |
