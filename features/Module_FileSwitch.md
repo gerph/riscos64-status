@@ -2,7 +2,8 @@
 
 ## Documentation
 
-URL: [PRM](http://www.riscos.com/support/developers/prm/fileswitchnew.html)
+* URL: [PRM](http://www.riscos.com/support/developers/prm/fileswitch.html)
+* URL: [PRM](http://www.riscos.com/support/developers/prm/fileswitchnew.html)
 
 ## Discovered features
 
@@ -29,8 +30,90 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/fileswitchnew.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [ ]      | [ ]       | Canonicalisation for `&`, `%`, `\` |
+| [ ]      | [ ]       | Path variable expansion |
+| [ ]      | [ ]       | Path variable expansion with `$` root |
+| [ ]      | [ ]       | `File$Path` file access |
+| [ ]      | [ ]       | Run calls for absolute |
+| [ ]      | [ ]       | Run calls for absolute checks AIF header|
+| [ ]      | [ ]       | Run calls for absolute: Compression services |
+| [ ]      | [ ]       | Run calls for utility |
+| [ ]      | [ ]       | Run calls for untyped |
+| [ ]      | [ ]       | Run calls for typed files |
+| [ ]      | [ ]       | Service announcements |
+| [ ]      | [ ]       | FS registration |
+| [ ]      | [ ]       | FS deregistration |
+| [ ]      | [ ]       | Public: Directory enumeration |
+| [ ]      | [ ]       | Public: Directory enumeration with wildcards |
+| [ ]      | [ ]       | FS: Directory enumeration |
+| [ ]      | [ ]       | Public: Object information |
+| [ ]      | [ ]       | Public: `*Info` date format from `Sys$DateFormat` |
+| [ ]      | [ ]       | Public: `*Cat` field width variable |
+| [ ]      | [ ]       | FS: Object information |
+| [ ]      | [ ]       | FS: `*Info`/`*Ex`/`*LEx` dispatch |
+| [ ]      | [ ]       | FS: `*FileInfo` dispatch |
+| [ ]      | [ ]       | FS: `*Cat`/`*LCat` dispatch |
+| [ ]      | [ ]       | FS: `*Cat`/`*LCat` dispatch |
+| [ ]      | [ ]       | Public: Open/close streams |
+| [ ]      | [ ]       | Public: Open directories |
+| [ ]      | [ ]       | Public: Open faulted for already open for write |
+| [ ]      | [ ]       | Public: Read byte/bytes |
+| [ ]      | [ ]       | Public: Write byte/bytes |
+| [ ]      | [ ]       | Public: Read/Set pointer |
+| [ ]      | [ ]       | Public: Read/Set extent |
+| [ ]      | [ ]       | Public: EOF check |
+| [ ]      | [ ]       | Public: SCB returned |
+| [ ]      | [ ]       | Public: Honour access on open files |
+| [ ]      | [ ]       | Public: Flush data |
+| [ ]      | [ ]       | Public: Upcalls on stream operations |
+| [ ]      | [ ]       | Public: Stream handle enumeration |
+| [ ]      | [ ]       | FS: Open/close streams |
+| [ ]      | [ ]       | FS: Read bytes buffered |
+| [ ]      | [ ]       | FS: Write bytes buffered |
+| [ ]      | [ ]       | FS: Read byte unbuffered |
+| [ ]      | [ ]       | FS: Write byte unbuffered |
+| [ ]      | [ ]       | FS: Read bytes unbuffered |
+| [ ]      | [ ]       | FS: Write bytes unbuffered |
+| [ ]      | [ ]       | FS: Read/Set pointer buffered |
+| [ ]      | [ ]       | FS: Read/Set pointer unbuffered |
+| [ ]      | [ ]       | FS: Read/Set extent buffered |
+| [ ]      | [ ]       | FS: Read/Set extent unbuffered |
+| [ ]      | [ ]       | FS: Flush data |
+| [ ]      | [ ]       | Public: Apply access attributes to file operations |
+| [ ]      | [ ]       | FS: Set file load/exec/attributes |
+| [ ]      | [ ]       | Public: Create file |
+| [ ]      | [ ]       | Public: Create directory |
+| [ ]      | [ ]       | Public: Delete file |
+| [ ]      | [ ]       | Public: Delete file faulted for open files|
+| [ ]      | [ ]       | FS: Create file |
+| [ ]      | [ ]       | FS: Create directory |
+| [ ]      | [ ]       | FS: Delete file |
+| [ ]      | [ ]       | FS: Upcalls on file operations |
+| [ ]      | [ ]       | Public: Load file to memory |
+| [ ]      | [ ]       | FS: Load file to memory |
+| [ ]      | [ ]       | FS: Load file to memory via open/read/close |
+| [ ]      | [ ]       | Public: Load file to memory synchronisation flag |
+| [ ]      | [ ]       | Public: Load file to memory for generic code |
+| [ ]      | [ ]       | Public: Load file with LoadType |
+| [ ]      | [ ]       | Public: Load file with LoadType |
+| [ ]      | [ ]       | Public: Save file from memory |
+| [ ]      | [ ]       | Public: Save file from memory with filetype |
+| [ ]      | [ ]       | FS: Save file from memory |
+| [ ]      | [ ]       | FS: Save file from memory via open/write/close |
+| [ ]      | [ ]       | Public: Change CSD/Lib/URD |
+| [ ]      | [ ]       | Public: Change CSD/Lib/URD sets variables |
+| [ ]      | [ ]       | Public: System variables updated on context changes |
+| [ ]      | [ ]       | Public: Rename across filesystems faulted |
+| [ ]      | [ ]       | FS: Rename files |
+| [ ]      | [ ]       | Public: Read/Set boot options |
+| [ ]      | [ ]       | Public: Boot from filesystem |
+| [ ]      | [ ]       | Public: Free space calls |
+| [ ]      | [ ]       | FS: Free space calls |
+| [ ]      | [ ]       | Public: Readonly filesystems |
+| [ ]      | [ ]       | Public: Interactive filesystems |
+| [ ]      | [ ]       | Public: Null length filenames |
 
-*None found*
+... and all the image FS extensions
 
 ### Commands
 
