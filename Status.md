@@ -277,6 +277,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | LegacyBBC                 | Asm   |           |           |
 | LegacyScreen              | Asm   |           |           |
 | BBCEconet                 | Asm   |           |           |
+| Joystick                  | Asm   | Prototype | Prototype |
 | SpriteUtils               | Asm   | Stub[^spriteutils] | Stub[^spriteutils] |
 | OwnerBanner               | Asm   | Functional[^ownerbanner] | Functional[^ownerbanner] |
 | IRQUtils                  | Asm   |           |           |

@@ -33,7 +33,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/16bitjoystick.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Joystick_Read` (&43F40) |
+| [X]      | [X]       | `Joystick_Read` (&43F40) |
 | [ ]      | [ ]       | `Joystick_CalibrateTopRight` (&43F41) |
 | [ ]      | [ ]       | `Joystick_CalibrateBottomLeft` (&43F42) |
 
