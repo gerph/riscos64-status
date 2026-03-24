@@ -51,7 +51,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Kernel:Timers             | Asm   |               |               |
 | UtilityModule             | Asm   |               |               |
 | IRQ                       | Asm   |               |               |
-| TimerManager              | Asm   |               |               |
+| TimerManager              | Asm   | Prototype     | Prototype     |
 | Podule                    | Asm   |               |               |
 | IIC                       | Asm   | Stub          | Stub          |
 | NVRAMHW                   | Asm   |               |               |
