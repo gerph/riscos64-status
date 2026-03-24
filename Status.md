@@ -231,7 +231,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | TaskWindow                | Asm   |           |           |
 | NetI                      | Asm   |           |           |
 | NetFS                     | Asm   |           |           |
-| NetStatus                 | Asm   |           |           |
+| NetStatus                 | Asm   | Functional | Functional |
 | NetFiler                  | Asm   |           |           |
 | NetPrint                  | Asm   |           |           |
 | MbufManager               | Asm   |           |           |

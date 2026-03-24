@@ -47,7 +47,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/netstatus.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `EconetV` |
+| [X]      | [X]       | `EconetV` |
 
 
 ### Events
