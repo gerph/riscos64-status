@@ -93,7 +93,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Messages                  | Asm   |           |           |
 | MessageTrans              | Asm   | Functional[^messagetrans] | Functional[^messagetrans] |
 | FSLock                    | Asm   |           |           |
-| TerritoryManager          | Asm   |           |           |
+| TerritoryManager          | Asm   | Functional[^territory] | Functional[^territory] |
 | UK                        | Asm   |           |           |
 | International             | Asm   |           |           |
 | SerialDeviceDriver        | Asm   |           |           |
@@ -333,6 +333,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 [^messagetrans]: Missing dictionary calls.
 [^bootcmds]: BootCommands works, but its implementation isn't sane for the `AppSize` command at all - it manipulates the RMA, not the application slot size.
 [^drawfile]: Built but doesn't work as the structures are not the right sizes in memory. Also doesn't have any colour mapping or IFC support.
+[^territory]: The TerritoryManager has been converted to C according to RISC OS Open's announcement in March 2026.
 
 ### ROM resources
 
