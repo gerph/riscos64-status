@@ -13,7 +13,8 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Nvram |
+| [X]      | [ ]       | NVRAM prototype |
+| [ ]      | [ ]       | NVRAM hardware |
 
 ### Commands
 
@@ -38,7 +39,7 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `NVRAMV` |
+| [X]      | [ ]       | `NVRAMV` |
 
 
 ### Events

@@ -54,7 +54,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | TimerManager              | Asm   | Prototype     | Prototype     |
 | Podule                    | Asm   |               |               |
 | IIC                       | Asm   | Stub          | Stub          |
-| NVRAMHW                   | Asm   |               |               |
+| NVRAMHW                   | Asm   | Prototype     | Prototype     |
 | Conversions               | Asm   | Complete      | Complete      |
 | OSSWIs                    | Asm   | Stub          | Stub          |
 | EvaluateExpression        | Asm   | Stub          | Stub          |
