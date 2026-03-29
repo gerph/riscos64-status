@@ -138,7 +138,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | DeviceFS                  | Asm   |           |           |
 | ParallelDeviceDriver      | Asm   |           |           |
 | ColourTrans               | Asm   |           |           |
-| Draw                      | Asm   |           |           |
+| Draw                      | Asm   | Stub      | Stub      |
 | SpriteExtend              | Asm/C |           |           |
 | ColourMap                 | C     | -         |           |
 | BlendTable                | C     | -         | Built     |

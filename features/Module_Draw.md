@@ -21,6 +21,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/draw.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [ ]      | [ ]       | Claims vector with R8 return |
 | [ ]      | [ ]       | Graphics output |
 | [ ]      | [ ]       | Can thicken paths |
 | [ ]      | [ ]       | Can flatten paths |
@@ -68,21 +69,21 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/draw.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Draw_ProcessPath` (&40700) |
+| [X]      | [X]       | `Draw_ProcessPath` (&40700) |
 | [ ]      | [ ]       | `Draw_ProcessPathFP` (&40701) |
-| [ ]      | [ ]       | `Draw_Fill` (&40702) |
+| [X]      | [X]       | `Draw_Fill` (&40702) |
 | [ ]      | [ ]       | `Draw_FillFP` (&40703) |
-| [ ]      | [ ]       | `Draw_Stroke` (&40704) |
+| [X]      | [X]       | `Draw_Stroke` (&40704) |
 | [ ]      | [ ]       | `Draw_StrokeFP` (&40705) |
-| [ ]      | [ ]       | `Draw_StrokePath` (&40706) |
+| [X]      | [X]       | `Draw_StrokePath` (&40706) |
 | [ ]      | [ ]       | `Draw_StrokePathFP` (&40707) |
-| [ ]      | [ ]       | `Draw_FlattenPath` (&40708) |
+| [X]      | [X]       | `Draw_FlattenPath` (&40708) |
 | [ ]      | [ ]       | `Draw_FlattenPathFP` (&40709) |
-| [ ]      | [ ]       | `Draw_TransformPath` (&4070A) |
+| [X]      | [X]       | `Draw_TransformPath` (&4070A) |
 | [ ]      | [ ]       | `Draw_TransformPathFP` (&4070B) |
-| [ ]      | [ ]       | `Draw_FillClipped` (&4070C) |
+| [X]      | [X]       | `Draw_FillClipped` (&4070C) |
 | [ ]      | [ ]       | `Draw_FillClippedFP` (&4070D) |
-| [ ]      | [ ]       | `Draw_StrokeClipped` (&4070E) |
+| [X]      | [X]       | `Draw_StrokeClipped` (&4070E) |
 | [ ]      | [ ]       | `Draw_StrokeClippedFP` (&4070F) |
 
 

@@ -15,6 +15,8 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [ ]      | [ ]       | Changing cache state |
+| [ ]      | [ ]       | Configurable cache state |
 
 *None found*
 
@@ -23,7 +25,7 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `*Cache` (on and off) |
+| [X]      | [X]       | `*Cache` (on and off) |
 | [ ]      | [ ]       | `*Configure Cache` |
 
 
