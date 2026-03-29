@@ -49,7 +49,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Kernel:Mode               | Asm   |               |               |
 | Kernel:IRQs               | Asm   |               |               |
 | Kernel:Timers             | Asm   |               |               |
-| UtilityModule             | Asm   |               |               |
+| UtilityModule             | Asm   | Stub          | Stub          |
 | IRQ                       | Asm   |               |               |
 | TimerManager              | Asm   | Prototype     | Prototype     |
 | Podule                    | Asm   |               |               |
