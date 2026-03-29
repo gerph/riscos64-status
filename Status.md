@@ -69,12 +69,12 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | ReadLine                  | Asm   | Functional    | Internals[^1] |
 | CLIV                      | Asm   |               |               |
 | VideoTTX                  | C     | -             | Built         |
-| VideoSW                   | Asm   |               |           |
-| VideoHWVIDC               | Asm   |               |           |
-| VideoHWVF                 | Asm   |               |           |
-| VideoGuard                | C     | Built         | Built     |
-| OSCommands                | Asm   | Stub          | Stub      |
-| FSCommands                | Asm   |               |           |
+| VideoSW                   | Asm   | Stub          | Stub          |
+| VideoHWVIDC               | Asm   |               |               |
+| VideoHWVF                 | Asm   |               |               |
+| VideoGuard                | C     | Built         | Built         |
+| OSCommands                | Asm   | Stub          | Stub          |
+| FSCommands                | Asm   |               |               |
 | ModuleCommands            | Asm   | Functional[^cmungehelp] | Functional[^cmungehelp] |
 | ARM                       | Asm   | Stub          | Stub[^arm] |
 | BufferManager             | Asm   | Stub          | Stub[^buffermanager] |
