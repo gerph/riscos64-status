@@ -24,7 +24,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Name                      | Lang  | C-state       | 64-state      |
 |---------------------------|-------|---------------|---------------|
 | Kernel:SystemInit         | Asm   |               |               |
-| Kernel:Introspection      | Asm   | Stub          | Stub            |
+| Kernel:Introspection      | Asm   | Stub          | Stub          |
 | Kernel:Vectors            | Asm   |               |               |
 | Kernel:Modules            | Asm   |               |               |
 | Kernel:SWIs               | Asm   |               |               |
@@ -74,7 +74,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | VideoHWVF                 | Asm   |               |               |
 | VideoGuard                | C     | Built         | Built         |
 | OSCommands                | Asm   | Stub          | Stub          |
-| FSCommands                | Asm   |               |               |
+| FSCommands                | Asm   | Functional[^cmungehelp] | Functional[^cmungehelp] |
 | ModuleCommands            | Asm   | Functional[^cmungehelp] | Functional[^cmungehelp] |
 | ARM                       | Asm   | Stub          | Stub[^arm] |
 | BufferManager             | Asm   | Stub          | Stub[^buffermanager] |
