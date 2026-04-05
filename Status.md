@@ -49,7 +49,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Kernel:Mode               | Asm   |               |               |
 | Kernel:IRQs               | Asm   |               |               |
 | Kernel:Timers             | Asm   |               |               |
-| UtilityModule             | Asm   | Stub          | Stub          |
+| UtilityModule             | Asm   | Functional    | Internals     |
 | IRQ                       | Asm   |               |               |
 | TimerManager              | Asm   | Prototype     | Prototype     |
 | Podule                    | Asm   |               |               |
@@ -148,7 +148,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | ZLib                      | C     | -         | Built     |
 | PNG                       | C     | -         |           |
 | ROMFonts                  | Asm   |           |           |
-| FontManager               | Asm   | Investigate | Investigate |
+| FontManager               | Asm   | Stub      | Stub      |
 | SuperSample               | Asm   |           |           |
 | ImageFileConvert          | C     | -         |           |
 | CompressJPEG              | C     | -         |           |

@@ -29,6 +29,20 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/fontmanager.html)
 |----------|-----------|-----------|
 | [ ]      | [ ]       | Graphics extension |
 | [ ]      | [ ]       | Graphics output |
+| [ ]      | [ ]       | Understands font qualifiers |
+| [ ]      | [ ]       | Parses Paint control sequences |
+| [ ]      | [ ]       | Executes Paint control sequences |
+| [ ]      | [ ]       | Supports current font |
+| [ ]      | [ ]       | Caches font bitmaps |
+| [ ]      | [ ]       | Sizing strings |
+| [ ]      | [ ]       | Matrix rendering |
+| [ ]      | [ ]       | Matrix sizing |
+| [ ]      | [ ]       | Reads RISC OS fonts |
+| [ ]      | [ ]       | Creates font menus |
+| [ ]      | [ ]       | Decodes font menus |
+| [ ]      | [ ]       | Convert font path to draw paths |
+| [ ]      | [ ]       | Font caret rendering |
+
 
 ### Commands
 
