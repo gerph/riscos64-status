@@ -23,11 +23,11 @@ environment, triggered on entry of the module.
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [X]      | [ ]       | Command line prompt shown with `CLI$Prompt` |
-| [X]      | [ ]       | Errors are reported |
-| [X]      | [ ]       | Exits are trapped |
-| [X]      | [ ]       | Errors are trapped |
-| [X]      | [ ]       | Aborts are trapped |
+| [X]      | [X]       | Command line prompt shown with `CLI$Prompt` |
+| [X]      | [X]       | Errors are reported |
+| [X]      | [X]       | Exits are trapped |
+| [X]      | [X]       | Errors are trapped |
+| [X]      | [X]       | Aborts are trapped |
 
 
 ### Commands
@@ -35,7 +35,7 @@ environment, triggered on entry of the module.
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [X]      | [ ]       | `*GOS` |
+| [X]      | [X]       | `*GOS` |
 
 
 ### SWIs
