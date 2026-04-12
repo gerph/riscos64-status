@@ -29,13 +29,12 @@
 | [ ]      | [ ]       | `OS_HeapSort` constructs object array and sorts|
 | [X]      | [X]       | `OS_HeapSort32` constructs object array |
 | [ ]      | [ ]       | `OS_HeapSort32` sorts object array |
-| [ ]      | [ ]       | `OS_PrettyPrint` wraps text |
-| [ ]      | [ ]       | `OS_PrettyPrint` handles hard space |
-| [ ]      | [ ]       | `OS_PrettyPrint` uses current window width |
-| [ ]      | [ ]       | `OS_PrettyPrint` handles parameter string |
-| [ ]      | [ ]       | `OS_PrettyPrint` handles user dictionaries |
+| [X]      | [X]       | `OS_PrettyPrint` wraps text |
+| [X]      | [X]       | `OS_PrettyPrint` handles hard space |
+| [X]      | [X]       | `OS_PrettyPrint` uses current window width |
+| [X]      | [X]       | `OS_PrettyPrint` handles parameter string |
+| [X]      | [X]       | `OS_PrettyPrint` handles user dictionaries |
 | [ ]      | [ ]       | `OS_PrettyPrint` uses MOS dictionary |
-| [ ]      | [ ]       | `OS_PrettyPrint` can read MOS dictionary |
 | [ ]      | [ ]       | `OS_PrettyPrint` can read MOS dictionary |
 | [ ]      | [ ]       | `OS_ReadArgs` handles named switches |
 | [ ]      | [ ]       | `OS_ReadArgs` A flag (always supplied) |
@@ -44,10 +43,10 @@
 | [ ]      | [ ]       | `OS_ReadArgs` S flag (boolean switch) |
 | [ ]      | [ ]       | `OS_ReadArgs` G flag (GSTrans) |
 | [ ]      | [ ]       | `OS_ReadArgs` handles quoted strings |
-| [ ]      | [ ]       | `OS_SubstituteArgs` handles `%<number>` |
-| [ ]      | [ ]       | `OS_SubstituteArgs` handles `%*<number>` |
-| [ ]      | [ ]       | `OS_SubstituteArgs` appended unused arguments |
-| [ ]      | [ ]       | `OS_SubstituteArgs` handles quoted strings |
+| [x]      | [X]       | `OS_SubstituteArgs` handles `%<number>` |
+| [x]      | [X]       | `OS_SubstituteArgs` handles `%*<number>` |
+| [x]      | [X]       | `OS_SubstituteArgs` appended unused arguments |
+| [x]      | [X]       | `OS_SubstituteArgs` handles quoted strings |
 | [X]      | [X]       | `OS_CRC` calculates correct checksums compared to Classic |
 | [ ]      | [ ]       | `OS_CRC` handles positive increments other than 1 |
 | [ ]      | [ ]       | `OS_CRC` handles negative increments |
