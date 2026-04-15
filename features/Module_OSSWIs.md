@@ -36,13 +36,13 @@
 | [X]      | [X]       | `OS_PrettyPrint` handles user dictionaries |
 | [ ]      | [ ]       | `OS_PrettyPrint` uses MOS dictionary |
 | [ ]      | [ ]       | `OS_PrettyPrint` can read MOS dictionary |
-| [ ]      | [ ]       | `OS_ReadArgs` handles named switches |
-| [ ]      | [ ]       | `OS_ReadArgs` A flag (always supplied) |
-| [ ]      | [ ]       | `OS_ReadArgs` K flag (keyword must be given) |
-| [ ]      | [ ]       | `OS_ReadArgs` E flag (evaluate expression) |
-| [ ]      | [ ]       | `OS_ReadArgs` S flag (boolean switch) |
-| [ ]      | [ ]       | `OS_ReadArgs` G flag (GSTrans) |
-| [ ]      | [ ]       | `OS_ReadArgs` handles quoted strings |
+| [X]      | [X]       | `OS_ReadArgs` handles named switches |
+| [X]      | [X]       | `OS_ReadArgs` A flag (always supplied) |
+| [X]      | [X]       | `OS_ReadArgs` K flag (keyword must be given) |
+| [X]      | [X]       | `OS_ReadArgs` E flag (evaluate expression) |
+| [X]      | [X]       | `OS_ReadArgs` S flag (boolean switch) |
+| [X]      | [X]       | `OS_ReadArgs` G flag (GSTrans) |
+| [X]      | [X]       | `OS_ReadArgs` handles quoted strings |
 | [x]      | [X]       | `OS_SubstituteArgs` handles `%<number>` |
 | [x]      | [X]       | `OS_SubstituteArgs` handles `%*<number>` |
 | [x]      | [X]       | `OS_SubstituteArgs` appended unused arguments |
@@ -66,10 +66,10 @@
 | [X]      | [X]       | `OS_CRC` |
 | [>]      | [>]       | `OS_HeapSort` |
 | [>]      | [>]       | `OS_HeapSort32` |
-| [ ]      | [ ]       | `OS_PrettyPrint` |
-| [ ]      | [ ]       | `OS_ReadArgs` |
-| [ ]      | [ ]       | `OS_SubstituteArgs` |
-| [ ]      | [ ]       | `OS_SubstituteArgs32` |
+| [>]      | [>]       | `OS_PrettyPrint` |
+| [X]      | [X]       | `OS_ReadArgs` |
+| [X]      | [X]       | `OS_SubstituteArgs` |
+| [X]      | [X]       | `OS_SubstituteArgs32` |
 | [X]      | [X]       | `OS_ReadRAMFSLimits` |
 
 

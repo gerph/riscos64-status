@@ -56,7 +56,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | IIC                       | Asm   | Stub          | Stub          |
 | NVRAMHW                   | Asm   | Prototype     | Prototype     |
 | Conversions               | Asm   | Complete      | Complete      |
-| OSSWIs                    | Asm   | Internals     | Internals     |
+| OSSWIs                    | Asm   | Functional    | Functional    |
 | EvaluateExpression        | Asm   | Internals     | Internals     |
 | SystemVars                | Asm   | Automated     | Automated     |
 | FileTypes                 | Asm   | Complete      | Complete      |
