@@ -32,11 +32,35 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/fontmanager.html)
 | [ ]      | [ ]       | Understands font qualifiers |
 | [ ]      | [ ]       | Parses Paint control sequences |
 | [ ]      | [ ]       | Executes Paint control sequences |
-| [ ]      | [ ]       | Supports current font |
+| [ ]      | [ ]       | Control: Move (9) |
+| [ ]      | [ ]       | Control: Move (11) |
+| [ ]      | [ ]       | Control: Matrix (27) |
+| [ ]      | [ ]       | Control: Matrix (28) |
+| [ ]      | [ ]       | Control: GCOL (17) |
+| [ ]      | [ ]       | Control: GCOL (18) |
+| [ ]      | [ ]       | Control: RGB (19) |
+| [ ]      | [ ]       | Control: Comment (21) |
+| [ ]      | [ ]       | Control: Underline (25) |
+| [ ]      | [ ]       | Control: Font (26) |
+| [ ]      | [ ]       | Supports current font on SWI bits |
 | [ ]      | [ ]       | Caches font bitmaps |
+| [ ]      | [ ]       | Future RGB after sizing |
+| [ ]      | [ ]       | Future font after sizing |
 | [ ]      | [ ]       | Sizing strings |
-| [ ]      | [ ]       | Matrix rendering |
-| [ ]      | [ ]       | Matrix sizing |
+| [ ]      | [ ]       | Sizing: Covered area |
+| [ ]      | [ ]       | Sizing: Ending baseline |
+| [ ]      | [ ]       | Sizing: Use OS units |
+| [ ]      | [ ]       | Sizing: Use matrix |
+| [ ]      | [ ]       | Sizing: Return matrix |
+| [ ]      | [ ]       | Sizing: For caret position |
+| [ ]      | [ ]       | Render: Matrix |
+| [ ]      | [ ]       | Render: Clipped |
+| [ ]      | [ ]       | Render: Justified |
+| [ ]      | [ ]       | Render: Rubout |
+| [ ]      | [ ]       | Render: Kerning |
+| [ ]      | [ ]       | Render: Writing direction |
+| [ ]      | [ ]       | Render: Use OS units |
+| [ ]      | [ ]       | ListFonts enumeration |
 | [ ]      | [ ]       | Reads RISC OS fonts |
 | [ ]      | [ ]       | Creates font menus |
 | [ ]      | [ ]       | Decodes font menus |
