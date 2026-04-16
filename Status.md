@@ -57,7 +57,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | NVRAMHW                   | Asm   | Prototype     | Prototype     |
 | Conversions               | Asm   | Complete      | Complete      |
 | OSSWIs                    | Asm   | Functional    | Functional    |
-| EvaluateExpression        | Asm   | Internals     | Internals     |
+| EvaluateExpression        | Asm   | Automated     | Automated     |
 | SystemVars                | Asm   | Automated     | Automated     |
 | FileTypes                 | Asm   | Complete      | Complete      |
 | FPEmulator                | Asm   |               |               |

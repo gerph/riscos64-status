@@ -23,46 +23,52 @@ implements the equivalent of the `OS_EvaluateExpression` SWI calls.
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Expands variables |
-| [ ]      | [ ]       | Operates on strings |
-| [ ]      | [ ]       | Operates on numbers |
-| [ ]      | [ ]       | Returns strings |
-| [ ]      | [ ]       | Returns numbers |
-| [ ]      | [ ]       | Precedence honoured |
-| [ ]      | [ ]       | `(` expressions |
-| [ ]      | [ ]       | `(` mismatch reported |
-| [ ]      | [ ]       | `*` multiply|
-| [ ]      | [ ]       | `/` division |
-| [ ]      | [ ]       | `MOD` modulo |
-| [ ]      | [ ]       | `+` as unary operator |
-| [ ]      | [ ]       | `-` as unary operator |
-| [ ]      | [ ]       | `+` as binary operator |
-| [ ]      | [ ]       | `-` as binary operator |
-| [ ]      | [ ]       | `<=` comparison |
-| [ ]      | [ ]       | `>=` comparison |
-| [ ]      | [ ]       | `=` comparison |
-| [ ]      | [ ]       | `<>` comparison |
-| [ ]      | [ ]       | `<` comparison |
-| [ ]      | [ ]       | `>` comparison |
-| [ ]      | [ ]       | `<<` shift |
-| [ ]      | [ ]       | `>>>` shift |
-| [ ]      | [ ]       | `>>` shift |
-| [ ]      | [ ]       | `STR` conversion |
-| [ ]      | [ ]       | `VAL` conversion |
-| [ ]      | [ ]       | `RIGHT` substring |
-| [ ]      | [ ]       | `INSTR` search |
-| [ ]      | [ ]       | `LEFT` substring |
-| [ ]      | [ ]       | `LEN` length |
-| [ ]      | [ ]       | `AND` binary operator |
-| [ ]      | [ ]       | `OR` binary operator |
-| [ ]      | [ ]       | `EOR` binary operator |
-| [ ]      | [ ]       | `NOT` binary operator |
-| [ ]      | [ ]       | `LEAFNAME` file leafname |
-| [ ]      | [ ]       | `DIRNAME` file dirname |
-| [ ]      | [ ]       | `CANONICALISE` file canonical name|
-| [ ]      | [ ]       | `TIMEFORMAT` format specifier |
-| [ ]      | [ ]       | `SET` variable state |
-| [ ]      | [ ]       | `MODULEVERSION` module version |
+| [X]      | [X]       | Expands variables |
+| [X]      | [X]       | Operates on strings |
+| [X]      | [X]       | Operates on numbers |
+| [X]      | [X]       | Returns strings |
+| [X]      | [X]       | Returns numbers |
+| [X]      | [X]       | Precedence honoured |
+| [X]      | [X]       | `(` expressions |
+| [X]      | [X]       | `(` mismatch reported |
+| [X]      | [X]       | `*` multiply|
+| [X]      | [X]       | `/` division |
+| [X]      | [X]       | `MOD` modulo |
+| [X]      | [X]       | `+` as unary operator |
+| [X]      | [X]       | `-` as unary operator |
+| [X]      | [X]       | `+` as binary operator |
+| [X]      | [X]       | `-` as binary operator |
+| [X]      | [X]       | `<=` comparison (number) |
+| [X]      | [X]       | `>=` comparison (number) |
+| [X]      | [X]       | `=` comparison (number) |
+| [X]      | [X]       | `<>` comparison (number) |
+| [X]      | [X]       | `<` comparison (number) |
+| [X]      | [X]       | `>` comparison (number) |
+| [X]      | [X]       | `<=` comparison (string) |
+| [X]      | [X]       | `>=` comparison (string) |
+| [X]      | [X]       | `=` comparison (string) |
+| [X]      | [X]       | `<>` comparison (string) |
+| [X]      | [X]       | `<` comparison (string) |
+| [X]      | [X]       | `>` comparison (string) |
+| [X]      | [X]       | `<<` shift |
+| [X]      | [X]       | `>>>` shift |
+| [X]      | [X]       | `>>` shift |
+| [X]      | [X]       | `STR` conversion |
+| [X]      | [X]       | `VAL` conversion |
+| [X]      | [X]       | `RIGHT` substring |
+| [X]      | [X]       | `INSTR` search |
+| [X]      | [X]       | `LEFT` substring |
+| [X]      | [X]       | `LEN` length |
+| [X]      | [X]       | `AND` binary operator |
+| [X]      | [X]       | `OR` binary operator |
+| [X]      | [X]       | `EOR` binary operator |
+| [X]      | [X]       | `NOT` unary operator |
+| [X]      | [X]       | `LEAFNAME` file leafname |
+| [X]      | [X]       | `DIRNAME` file dirname |
+| [X]      | [X]       | `CANONICALISE` file canonical name|
+| [X]      | [X]       | `TIMEFORMAT` format specifier |
+| [X]      | [X]       | `SET` variable state |
+| [X]      | [X]       | `MODULEVERSION` module version |
 
 
 
