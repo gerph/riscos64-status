@@ -25,8 +25,31 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/colourtrans.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [ ]      | [ ]       | Device-independent RGB colour selection |
+| [ ]      | [ ]       | Weighted least-squares colour mapping (R:2, G:4, B:1) |
+| [ ]      | [ ]       | Colour calibration for monitors and printers |
+| [ ]      | [ ]       | Pixel translation table generation for sprites |
+| [ ]      | [ ]       | Anti-aliasing colour range calculation for Font Manager |
+| [ ]      | [ ]       | Colour model conversion: RGB to CIE (XYZ) |
+| [ ]      | [ ]       | Colour model conversion: RGB to HSV |
+| [ ]      | [ ]       | Colour model conversion: RGB to CMYK |
+| [ ]      | [ ]       | Calibration table interpolation |
+| [ ]      | [ ]       | Colour mapping cache management |
+| [ ]      | [ ]       | Support for 2-colour modes |
+| [ ]      | [ ]       | Support for 4-colour modes |
+| [ ]      | [ ]       | Support for 16-colour modes |
+| [ ]      | [ ]       | Support for 256-colour compacted palettes |
+| [ ]      | [ ]       | Support for 256-colour fully-specified palettes |
+| [ ]      | [ ]       | Support for 16-bit palettes |
+| [ ]      | [ ]       | Support for 32-bit palettes |
+| [ ]      | [ ]       | PixTrans: Support for targetting 2-colour modes |
+| [ ]      | [ ]       | PixTrans: Support for targetting 4-colour modes |
+| [ ]      | [ ]       | PixTrans: Support for targetting 16-colour modes |
+| [ ]      | [ ]       | PixTrans: Support for targetting 256-colour compacted palettes |
+| [ ]      | [ ]       | PixTrans: Support for targetting 256-colour fully-specified palettes |
+| [ ]      | [ ]       | PixTrans: Support for targetting 16-bit palettes |
+| [ ]      | [ ]       | PixTrans: Support for targetting 32-bit palettes |
 
-*None found*
 
 ### Commands
 

@@ -29,7 +29,11 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/fontmanager.html)
 |----------|-----------|-----------|
 | [ ]      | [ ]       | Graphics extension |
 | [ ]      | [ ]       | Graphics output |
+| [ ]      | [ ]       | Anti-aliased rendering (up to 16 shades) |
+| [ ]      | [ ]       | Sub-pixel positioning |
+| [ ]      | [ ]       | Internal millipoint precision (1/72000 inch) |
 | [ ]      | [ ]       | Understands font qualifiers |
+| [ ]      | [ ]       | Supports Encodings |
 | [ ]      | [ ]       | Parses Paint control sequences |
 | [ ]      | [ ]       | Executes Paint control sequences |
 | [ ]      | [ ]       | Control: Move (9) |
@@ -53,6 +57,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/fontmanager.html)
 | [ ]      | [ ]       | Sizing: Use matrix |
 | [ ]      | [ ]       | Sizing: Return matrix |
 | [ ]      | [ ]       | Sizing: For caret position |
+| [ ]      | [ ]       | Line split point calculation |
 | [ ]      | [ ]       | Render: Matrix |
 | [ ]      | [ ]       | Render: Clipped |
 | [ ]      | [ ]       | Render: Justified |
@@ -62,10 +67,16 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/fontmanager.html)
 | [ ]      | [ ]       | Render: Use OS units |
 | [ ]      | [ ]       | ListFonts enumeration |
 | [ ]      | [ ]       | Reads RISC OS fonts |
+| [ ]      | [ ]       | Supports outline fonts |
+| [ ]      | [ ]       | Supports bitmap fonts |
 | [ ]      | [ ]       | Creates font menus |
 | [ ]      | [ ]       | Decodes font menus |
 | [ ]      | [ ]       | Convert font path to draw paths |
+| [ ]      | [ ]       | Font redirection to memory (Draw format) |
 | [ ]      | [ ]       | Font caret rendering |
+| [ ]      | [ ]       | Character bounding box calculations |
+| [ ]      | [ ]       | String bounding box calculations |
+| [ ]      | [ ]       | Supports font substitution |
 
 
 ### Commands
@@ -79,9 +90,11 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/fontmanager.html)
 | [ ]      | [ ]       | `*Configure FontMax3` |
 | [ ]      | [ ]       | `*Configure FontMax4` |
 | [ ]      | [ ]       | `*Configure FontMax5` |
+| [ ]      | [ ]       | `*Configure FontSize` |
 | [ ]      | [ ]       | `*FontCat` |
 | [ ]      | [ ]       | `*FontInstall` |
 | [ ]      | [ ]       | `*FontLibrary` |
+| [ ]      | [ ]       | `*FontList` |
 | [ ]      | [ ]       | `*FontRemove` |
 | [ ]      | [ ]       | `*LoadFontCache` |
 | [ ]      | [ ]       | `*SaveFontCache` |
