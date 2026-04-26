@@ -195,7 +195,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Wimp:Polling              | Asm   |           |           |
 | Wimp:SWIs                 | Asm   |           |           |
 | Wimp:SpritePools          | Asm   |           |           |
-| Wimp:SpriteRender         | Asm   |           |           |
+| Wimp:SpriteRender         | Asm   | Stub      | Stub      |
 | Wimp:Startup              | Asm   |           |           |
 | Wimp:TaskManagement       | Asm   |           |           |
 | Wimp:Templates            | Asm   | Functional | Functional |
