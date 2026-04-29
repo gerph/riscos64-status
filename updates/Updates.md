@@ -6,6 +6,7 @@ Status updates are usually posted to the RISC OS Open [64-bit forum](https://www
 
 Most recent updates first:
 
+* [2026-04-17](Update_2026-04-17) - Status update (April 2026).
 * [2026-03-14](Update_2026-03-14) - Status update (March 2026).
 * [2026-02-03](Update_2026-02-03) - Status update (February 2026).
 * [2025-12-12](Update_2025-12-12) - Status update (December 2025).
