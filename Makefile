@@ -5,13 +5,7 @@
 PHASES = 1 2 3 4 5 6 7
 
 UPDATE_MDS = $(wildcard updates/*.md)
-
-all: \
-		statistics.json \
-		statistics.md \
-		plan.json \
-		planning/Stack-Audio.mmd \
-		planning/Phase-1.mmd \
+WIKI_MDS = \
 		wiki-update/Terminology.md \
 		wiki-update/Status.md \
 		wiki-update/Planning.md \
@@ -21,6 +15,14 @@ all: \
 		$(patsubst %,wiki-update/Phase-%.md,${PHASES}) \
 		$(patsubst updates/%.md,wiki-update/%.md,${UPDATE_MDS})
 
+all: \
+		statistics.json \
+		statistics.md \
+		plan.json \
+		planning/Stack-Audio.mmd \
+		planning/Phase-1.mmd \
+		wiki-images
+
 clean:
 	-rm statistics.json
 	-rm statistics.md
@@ -28,6 +30,7 @@ clean:
 	-rm planning/*.mmd
 	-rm planning/*.svg
 	-rm -rf wiki-update
+	-rm -rf update-images
 
 statistics.json: utils/makestats.pl Status.md
 	utils/makestats.pl json > statistics.json
@@ -75,6 +78,14 @@ wiki-update/Phase-%.md: planning/Phase-%.md planning/Phase-1.mmd utils/generate-
 
 wiki-update:
 	mkdir -p wiki-update
+
+.PHONY: wiki-pages wiki-images
+wiki-pages:
+	-rm -rf wiki-update
+	$(MAKE) $(WIKI_MDS)
+
+wiki-images: wiki-pages utils/render-wiki-mermaid.pl
+	utils/render-wiki-mermaid.pl wiki-update update-images
 
 planning/Stack-Audio.svg: planning/Stack-Audio.svg
 	for i in planning/Stack-*.mmd ; do utils/mmdc $$i ; done

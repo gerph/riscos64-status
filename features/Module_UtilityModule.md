@@ -24,6 +24,7 @@ environment, triggered on entry of the module.
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [X]      | [X]       | Command line prompt shown with `CLI$Prompt` |
+| [ ]      | [ ]       | Starts when module is entered |
 | [X]      | [X]       | Errors are reported |
 | [X]      | [X]       | Exits are trapped |
 | [X]      | [X]       | Errors are trapped |

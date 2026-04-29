@@ -8,6 +8,23 @@
 set -e
 
 
+DEBUG=false
+
+if $DEBUG ; then
+    function debug() {
+        echo "DEBUG: $@" >&2
+        true
+    }
+else
+    function debug() {
+        true
+    }
+fi
+
+
+debug "Process mmdc: $@"
+
+
 ##
 # Remember the configuration file we're going to use.
 function set_configfile() {
@@ -56,6 +73,7 @@ for arg in "$@" ; do
         switch=
         if [[ "$arg" == '--pull' ]] ; then
             docker pull "minlag/mermaid-cli:$mermaidversion"
+            exit 0
         else
             mermaidargs+=("$arg")
             if [[ "$arg" == '-w' || "$arg" == '--width' || \
@@ -72,10 +90,15 @@ for arg in "$@" ; do
             elif [[ "$arg" == '-o' || "$arg" == '--output' ]] ; then
                 switch=output
                 nextfile=false
+
+            elif [[ "$arg" == '-i' || "$arg" == '--input' ]] ; then
+                switch=input
+                nextfile=false
+                continue
             fi
         fi
 
-    elif $nextfile ; then
+    elif $nextfile || [[ "$switch" == "input" ]] ; then
         # This is a filename to transform into the container
 
         file=$(realpath "$arg")
@@ -91,7 +114,11 @@ for arg in "$@" ; do
         fi
         argleaf=$(basename "$file")
 
-        mermaidargs+=("-i" "/data/$argleaf")
+        if [[ "$switch" != 'input' ]] ; then
+            mermaidargs+=("-i")
+        fi
+
+        mermaidargs+=("/data/$argleaf")
 
     elif [[ "$switch" == 'output' ]] ; then
         set_output "$arg"
@@ -122,6 +149,8 @@ EOM
 fi
 
 set +e
+
+debug "Running Docker container with: ${mermaidargs[@]}"
 
 docker run --rm -u "$(id -u):$(id -g)" "${dockerargs[@]}" "minlag/mermaid-cli:${mermaidversion}" "${mermaidargs[@]}"
 rc=$?
