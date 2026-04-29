@@ -61,7 +61,7 @@ trap cleanup EXIT
 
 
 dir=
-mermaidversion=latest
+mermaidversion=${MERMAID_VERSION:-11.12.0}
 mermaidargs=()
 dockerargs=()
 configfile=()

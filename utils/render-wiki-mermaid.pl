@@ -25,6 +25,7 @@ $imagebase =~ s!/$!!;
 
 $cachedir = $ENV{'WIKI_IMAGE_CACHE_DIR'} if !defined($cachedir) && exists($ENV{'WIKI_IMAGE_CACHE_DIR'});
 $cachedir = '.mermaid-cache' if !defined($cachedir);
+my $mermaidversion = $ENV{'MERMAID_VERSION'} || '11.12.0';
 
 die "Cannot find Wiki directory '$wikidir'\n" unless -d $wikidir;
 
@@ -84,7 +85,7 @@ for my $page (@pages)
 
             $diagram++;
             $diagrams++;
-            my $hash = substr(sha256_hex(join('', @mmd)), 0, 16);
+            my $hash = substr(sha256_hex("mermaid-cli:$mermaidversion\noutput:png\n", join('', @mmd)), 0, 16);
             my $imageleaf = sprintf("%s-%02d-%s.png", $pageleaf, $diagram, $hash);
             my $mmdfile = "$cachedir/$hash.mmd";
             my $pngfile = "$imagedir/$imageleaf";
