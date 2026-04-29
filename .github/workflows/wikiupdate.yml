@@ -36,7 +36,7 @@ jobs:
           utils/mmdc --pull
 
       - name: Restore Mermaid image cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .mermaid-cache
           key: mermaid-images-${{ runner.os }}-${{ hashFiles('planning/**/*.md', 'planning/**/*.mmd', 'features/**/*.md', 'Status.md', 'utils/*.pl') }}
