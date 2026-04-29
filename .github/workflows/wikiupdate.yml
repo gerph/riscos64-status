@@ -10,7 +10,7 @@ name: Wiki update
 #   * push on master.
 on:
   push:
-    branches: ["master"]
+    branches: ["master", "wiki-update-pngs"]
 
 concurrency:
   # Be nice to the build service and only submit a single job at a time.
@@ -29,8 +29,29 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v6
 
-      - name: Build all the documents
+      - name: Install Wiki image tools
         run: |
+          sudo apt-get update
+          sudo apt-get install -y libjson-perl openssh-client sshpass
+          utils/mmdc --pull
+
+      - name: Restore Mermaid image cache
+        uses: actions/cache@v4
+        with:
+          path: .mermaid-cache
+          key: mermaid-images-${{ runner.os }}-${{ hashFiles('planning/**/*.md', 'planning/**/*.mmd', 'features/**/*.md', 'Status.md', 'utils/*.pl') }}
+          restore-keys: |
+            mermaid-images-${{ runner.os }}-
+
+      - name: Build all the documents
+        env:
+          WIKI_IMAGE_BASE_URL: ${{ secrets.WIKI_IMAGE_BASE_URL }}
+          WIKI_IMAGE_CACHE_DIR: .mermaid-cache
+        run: |
+          if [ -z "$WIKI_IMAGE_BASE_URL" ]; then
+            echo "::error::WIKI_IMAGE_BASE_URL must be set to the public URL for update-images"
+            exit 1
+          fi
           make all
 
       - name: Report on progress statistics
@@ -52,6 +73,32 @@ jobs:
           echo '```' >> $GITHUB_STEP_SUMMARY
           echo >> $GITHUB_STEP_SUMMARY
 
+      - name: Upload Wiki images
+        env:
+          WIKI_IMAGE_SFTP_DEST: ${{ secrets.WIKI_IMAGE_SFTP_DEST }}
+          WIKI_IMAGE_SFTP_PASSWORD: ${{ secrets.WIKI_IMAGE_SFTP_PASSWORD }}
+        run: |
+          if [ -z "$WIKI_IMAGE_SFTP_DEST" ]; then
+            echo "::error::WIKI_IMAGE_SFTP_DEST must be set to the SFTP destination for update-images"
+            exit 1
+          fi
+          if [ -z "$WIKI_IMAGE_SFTP_PASSWORD" ]; then
+            echo "::error::WIKI_IMAGE_SFTP_PASSWORD must be set to the SFTP account password"
+            exit 1
+          fi
+
+          {
+            echo 'mput update-images/*.png'
+          } > sftp-update-images.txt
+
+          SSHPASS="$WIKI_IMAGE_SFTP_PASSWORD" sshpass -e sftp \
+            -o "BatchMode=no" \
+            -o "PreferredAuthentications=password" \
+            -o "PubkeyAuthentication=no" \
+            -o "StrictHostKeyChecking=no" \
+            -b sftp-update-images.txt \
+            "$WIKI_IMAGE_SFTP_DEST"
+
       # See: https://github.com/marketplace/actions/wiki-page-creator-action
       - name: Upload documents to Wiki
         uses: docker://decathlon/wiki-page-creator-action:latest
@@ -72,6 +119,7 @@ jobs:
             plan*.*
             planning/*.mmd
             planning/*.svg
+            update-images/*.png
 
       # https://github.com/marketplace/actions/deploy-to-gist
       - name: Upload percentages as gists (Phase 1)

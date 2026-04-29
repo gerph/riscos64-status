@@ -4,7 +4,8 @@ Test-*.xml
 plan.json
 statistics.*
 wiki-update/
+update-images/
+.mermaid-cache/
 *.elf
 *.syms
 tmp-*
-
