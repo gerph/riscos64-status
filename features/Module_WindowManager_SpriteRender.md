@@ -22,9 +22,9 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [X]      | [X]       | Render half size |
-| [ ]      | [ ]       | Render shaded |
-| [ ]      | [ ]       | Render selected |
-| [ ]      | [ ]       | Render selected + shaded |
+| [X]      | [ ]       | Render shaded |
+| [X]      | [ ]       | Render selected |
+| [X]      | [ ]       | Render selected + shaded |
 | [ ]      | [ ]       | Size the sprites (for current mode) |
 | [ ]      | [ ]       | Render with colourmapping for high depths |
 | [ ]      | [ ]       | Render clipped to graphics window |
