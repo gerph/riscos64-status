@@ -176,7 +176,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | PDumperE2                 | Asm   |           |           |
 | PDumperIW                 | Asm   |           |           |
 | PDumperLJ                 | Asm   |           |           |
-| PDriverPS                 | Asm   |           |           |
+| PDriverPS                 | Asm   | Stub[^pdriverps]      |           |
 | MakePSFont                | Asm   |           |           |
 | RemotePrinterSupport      | C     | -         | Built     |
 | RemotePrinterMessages     | Asm   |           |           |
@@ -334,6 +334,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 [^bootcmds]: BootCommands works, but its implementation isn't sane for the `AppSize` command at all - it manipulates the RMA, not the application slot size.
 [^drawfile]: Built but doesn't work as the structures are not the right sizes in memory. Also doesn't have any colour mapping or IFC support.
 [^territory]: The TerritoryManager has been converted to C according to RISC OS Open's announcement in March 2026.
+[^pdriverps]: Piers Wombwell has code which will manage the [PDriverPS](https://www.riscosopen.org/forum/forums/13/topics/20400) and others on the way; no build yes.
 
 ### ROM resources
 
