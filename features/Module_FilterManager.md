@@ -21,21 +21,23 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/filterman.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Registration with the WindowManager |
-| [ ]      | [ ]       | Dispatch of the PreFilters |
-| [ ]      | [ ]       | Dispatch of the PostFilters |
-| [ ]      | [ ]       | Dispatch of the RectFilters |
-| [ ]      | [ ]       | Dispatch of the CopyFilters |
-| [ ]      | [ ]       | Dispatch of the PostRectFilters |
-| [ ]      | [ ]       | Dispatch of the PostIconFilters |
-| [ ]      | [ ]       | Dispatch of the IconBorderFilters |
+| [ ]      | [ ]       | Registers with the Wimp |
+| [ ]      | [ ]       | Re-registers on WimpFilters service |
+| [ ]      | [ ]       | Dispatches Pre-filters |
+| [ ]      | [ ]       | Dispatches Post-filters |
+| [ ]      | [ ]       | Dispatches Rect-filters |
+| [ ]      | [ ]       | Dispatches Copy-filters |
+| [ ]      | [ ]       | Dispatches PostRect-filters |
+| [ ]      | [ ]       | Dispatches PostIcon-filters |
+| [ ]      | [ ]       | Dispatches IconBorder-filters |
+
 
 ### Commands
 
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [X]      | [X]       | `*Filters` |
+| [ ]      | [ ]       | `*Filters` |
 
 
 ### SWIs
