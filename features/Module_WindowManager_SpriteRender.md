@@ -22,9 +22,9 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [X]      | [X]       | Render half size |
-| [X]      | [ ]       | Render shaded |
-| [X]      | [ ]       | Render selected |
-| [X]      | [ ]       | Render selected + shaded |
+| [X]      | [X]       | Render shaded |
+| [X]      | [X]       | Render selected |
+| [X]      | [X]       | Render selected + shaded |
 | [ ]      | [ ]       | Size the sprites (for current mode) |
 | [ ]      | [ ]       | Render with colourmapping for high depths |
 | [ ]      | [ ]       | Render clipped to graphics window |
@@ -39,7 +39,11 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 ### SWIs
 
 
-*None*
+| In 32bit | In 64 bit | Interface |
+|----------|-----------|-----------|
+| [ ]      | [ ]       | `WimpSpriteRender_Size` (demo module) |
+| [ ]      | [ ]       | `WimpSpriteRender_Render` (demo module) |
+| [ ]      | [ ]       | `WimpSpriteRender_Tile` (demo module) |
 
 
 
