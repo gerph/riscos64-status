@@ -25,9 +25,9 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [X]      | [X]       | Render shaded |
 | [X]      | [X]       | Render selected |
 | [X]      | [X]       | Render selected + shaded |
-| [ ]      | [ ]       | Size the sprites (for current mode) |
+| [X]      | [X]       | Size the sprites (for current mode) |
 | [ ]      | [ ]       | Render with colourmapping for high depths |
-| [ ]      | [ ]       | Render clipped to graphics window |
+| [X]      | [X]       | Render clipped to graphics window |
 
 
 ### Commands
@@ -41,14 +41,12 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `WimpSpriteRender_Size` (demo module) |
-| [ ]      | [ ]       | `WimpSpriteRender_Render` (demo module) |
-| [ ]      | [ ]       | `WimpSpriteRender_Tile` (demo module) |
+| [X]      | [X]       | `WimpSpriteRender_Size` (demo module) |
+| [X]      | [X]       | `WimpSpriteRender_Render` (demo module) |
 
 
 
 ### Services
-
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
