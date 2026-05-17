@@ -37,19 +37,24 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_Reset` |
 | [ ]      | [ ]       | `Service_ModeChange` |
-| [ ]      | [ ]       | `Service_PDriverGetSharedMessagesFile` |
+| [ ]      | [ ]       | `Service_PDriverGetMessages` |
 | [ ]      | [ ]       | `Service_PDriverStarting` |
 | [ ]      | [ ]       | `Service_WimpReportError` |
 
+Service_PDumperStarting
 
 ### Vectors
 
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `?` |
+| [ ]      | [ ]       | `WrchV` |
+| [ ]      | [ ]       | `ByteV` |
 | [ ]      | [ ]       | `SpriteV` |
+| [ ]      | [ ]       | `DrawV` |
+| [ ]      | [ ]       | `ColourV` |
 
 
 ### Events
@@ -73,8 +78,8 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `?` |
 | [ ]      | [ ]       | `Service_PDriverGetMessages` |
+| [ ]      | [ ]       | `Service_PDumperStarting` |
 | [ ]      | [ ]       | `Service_PDumperDying` |
 | [ ]      | [ ]       | `Service_Print` |
 

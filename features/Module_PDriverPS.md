@@ -21,7 +21,6 @@
 |----------|-----------|-----------|
 | [ ]      | [ ]       | Graphics extension |
 | [ ]      | [ ]       | Printer driver |
-| [ ]      | [ ]       | Resourcefs files |
 
 ### Commands
 
@@ -37,13 +36,12 @@
 
 ### Services
 
-
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [ ]      | [ ]       | `Service_Reset` |
 | [ ]      | [ ]       | `Service_ModeChange` |
-| [ ]      | [ ]       | `Service_PDriverGetSharedMessagesFile` |
+| [ ]      | [ ]       | `Service_PDriverGetMessages` |
 | [ ]      | [ ]       | `Service_PDriverStarting` |
-| [ ]      | [ ]       | `Service_ResourceFSStarting` |
 | [ ]      | [ ]       | `Service_WimpReportError` |
 
 
@@ -52,8 +50,11 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `?` |
+| [ ]      | [ ]       | `WrchV` |
+| [ ]      | [ ]       | `ByteV` |
 | [ ]      | [ ]       | `SpriteV` |
+| [ ]      | [ ]       | `DrawV` |
+| [ ]      | [ ]       | `ColourV` |
 
 
 ### Events
@@ -111,6 +112,4 @@
 * `MakePSFont`
 * `MessageTrans`
 * `PDriver`
-* `ResourceFS`
-
-
+* `Wimp`
