@@ -185,7 +185,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Wimp:ErrorBox             | Asm   |           |           |
 | Wimp:Fonts                | Asm   |           |           |
 | Wimp:IconBorders          | Asm/C |           |           |
-| Wimp:IconRender           | Asm   |           |           |
+| Wimp:IconRender           | Asm   | Internals | Internals |
 | Wimp:Interaction          | Asm   |           |           |
 | Wimp:Introspection        | Asm   |           |           |
 | Wimp:Memory               | Asm   |           |           |

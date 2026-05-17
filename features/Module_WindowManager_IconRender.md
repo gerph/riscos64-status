@@ -21,28 +21,28 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 |----------|-----------|-----------|
 | [ ]      | [ ]       | Plain borders |
 | [ ]      | [ ]       | Filled background (desktop colours) |
-| [ ]      | [ ]       | Text in desktop font (system font) |
-| [ ]      | [ ]       | Text in desktop font (antialiased) |
-| [ ]      | [ ]       | Coloured text (desktop colours) |
-| [ ]      | [ ]       | Text in icon |
+| [X]      | [ ]       | Text in desktop font (system font) |
+| [X]      | [ ]       | Text in desktop font (antialiased) |
+| [X]      | [ ]       | Coloured text (desktop colours) |
+| [X]      | [ ]       | Text in icon |
 | [ ]      | [ ]       | Text in icon (12 chars) |
-| [ ]      | [ ]       | Text indirected |
-| [ ]      | [ ]       | Sprite in icon |
-| [ ]      | [ ]       | Sprite indirected (wimp pool) |
+| [X]      | [ ]       | Text indirected |
+| [X]      | [ ]       | Sprite in icon |
+| [X]      | [ ]       | Sprite indirected (wimp pool) |
 | [ ]      | [ ]       | Sprite indirected (window pool) |
-| [ ]      | [ ]       | Text+Sprite in icon |
-| [ ]      | [ ]       | Text+Sprite indirected (no S validation) |
-| [ ]      | [ ]       | Text+Sprite indirected (with S validation) |
-| [ ]      | [ ]       | Text left aligned |
-| [ ]      | [ ]       | Text right aligned |
-| [ ]      | [ ]       | Text centre aligned |
-| [ ]      | [ ]       | Text+Sprite left aligned |
-| [ ]      | [ ]       | Text+Sprite right aligned |
+| [X]      | [ ]       | Text+Sprite in icon |
+| [X]      | [ ]       | Text+Sprite indirected (no S validation) |
+| [X]      | [ ]       | Text+Sprite indirected (with S validation) |
+| [X]      | [ ]       | Text left aligned |
+| [X]      | [ ]       | Text right aligned |
+| [X]      | [ ]       | Text centre aligned |
+| [X]      | [ ]       | Text+Sprite left aligned |
+| [X]      | [ ]       | Text+Sprite right aligned |
 | [ ]      | [ ]       | Selected icon (colouring) |
 | [ ]      | [ ]       | Selected icon (text) |
 | [ ]      | [ ]       | Selected icon (sprite) |
 | [ ]      | [ ]       | Selected icon (sprite, with alternate) |
-| [ ]      | [ ]       | Small sprites |
+| [X]      | [ ]       | Small sprites |
 | [ ]      | [ ]       | Shaded icon without text |
 | [ ]      | [ ]       | Shaded icon text |
 | [ ]      | [ ]       | Shaded icon text and fill |
@@ -50,21 +50,21 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [ ]      | [ ]       | Shaded icon sprite and text |
 | [ ]      | [ ]       | Shaded icon sprite and text |
 | [ ]      | [ ]       | Shaded icon sprite, text and fill |
-| [ ]      | [ ]       | R1 validation |
-| [ ]      | [ ]       | R2 validation |
-| [ ]      | [ ]       | R3 validation |
-| [ ]      | [ ]       | R4 validation |
-| [ ]      | [ ]       | R5 validation |
-| [ ]      | [ ]       | R6 validation |
-| [ ]      | [ ]       | R7 validation |
-| [ ]      | [ ]       | R validation with wimp colour specifiers |
-| [ ]      | [ ]       | Text with true colour (C validation) |
-| [ ]      | [ ]       | Filled with true colour (C validation) |
-| [ ]      | [ ]       | Bordered with true colour (C validation) |
+| [X]      | [ ]       | R1 validation |
+| [X]      | [ ]       | R2 validation |
+| [X]      | [ ]       | R3 validation |
+| [X]      | [ ]       | R4 validation |
+| [X]      | [ ]       | R5 validation |
+| [X]      | [ ]       | R6 validation |
+| [X]      | [ ]       | R7 validation |
+| [X]      | [ ]       | R validation with wimp colour specifiers |
+| [X]      | [ ]       | Text with true colour (C validation) |
+| [X]      | [ ]       | Filled with true colour (C validation) |
+| [X]      | [ ]       | Bordered with true colour (C validation) |
 | [ ]      | [ ]       | R validation with true colour (C validation) |
-| [ ]      | [ ]       | Password (D validation) |
+| [X]      | [ ]       | Password (D validation) |
 | [ ]      | [ ]       | Font icons (F validation) |
-| [ ]      | [ ]       | Multi-line (L validation) |
+| [X]      | [ ]       | Multi-line (L validation) |
 | [ ]      | [ ]       | Multi-line (L validation + line spacing) |
 | [ ]      | [ ]       | Colourmap (T validation) |
 | [ ]      | [ ]       | Overlong text does not show outside icon |
@@ -74,7 +74,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [ ]      | [ ]       | Border outline calls IconBorder filter |
 | [ ]      | [ ]       | Border colouring calls IconBorder filter |
 | [ ]      | [ ]       | `Wimp_PlotIcon` plot outside of redraw loop |
-| [ ]      | [ ]       | `Wimp_PlotIcon` plot with window supplied ('KSAT') |
+| [X]      | [ ]       | `Wimp_PlotIcon` plot with window supplied ('KSAT') |
 
 
 For icon positioning table, consult: https://www.riscosopen.org/forum/forums/5/topics/18886
@@ -90,6 +90,7 @@ For icon positioning table, consult: https://www.riscosopen.org/forum/forums/5/t
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
+| [X]      | [ ]       | `WimpPlotIcon_PlotIcon` (&400E2) (Dummy module) |
 | [ ]      | [ ]       | `Wimp_PlotIcon` (&400E2) |
 
 
