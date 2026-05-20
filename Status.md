@@ -142,14 +142,14 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | SpriteExtend              | Asm/C |           |           |
 | ColourMap                 | C     | -         |           |
 | BlendTable                | C     | -         | Built     |
-| InverseTable              | Asm   |           |           |
+| InverseTable              | Asm   | Functional | Internals |
 | DrawFile                  | C     | -         | Built[^drawfile] |
 | FontMap                   | C     | -         |           |
 | ZLib                      | C     | -         | Built     |
 | PNG                       | C     | -         |           |
 | ROMFonts                  | Asm   |           |           |
 | FontManager               | Asm   | Stub      | Stub      |
-| SuperSample               | Asm   |           |           |
+| SuperSample               | Asm   | Functional | Internals |
 | ImageFileConvert          | C     | -         |           |
 | CompressJPEG              | C     | -         |           |
 | ConvertPNG                | C     | -         |           |

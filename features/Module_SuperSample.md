@@ -31,8 +31,8 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/supersample.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Super_Sample90` (&40D80) |
-| [ ]      | [ ]       | `Super_Sample45` (&40D81) |
+| [X]      | [ ]       | `Super_Sample90` (&40D80) |
+| [X]      | [ ]       | `Super_Sample45` (&40D81) |
 
 
 ### Services

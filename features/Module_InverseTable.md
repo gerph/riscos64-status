@@ -30,8 +30,8 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `InverseTable_Calculate` (&4BF40) |
-| [ ]      | [ ]       | `InverseTable_SpriteTable` (&4BF41) |
+| [X]      | [ ]       | `InverseTable_Calculate` (&4BF40) |
+| [X]      | [ ]       | `InverseTable_SpriteTable` (&4BF41) |
 
 
 ### Services
@@ -44,7 +44,7 @@
 | [ ]      | [ ]       | `Service_Reset` |
 | [ ]      | [ ]       | `Service_ResourceFSDying` |
 | [ ]      | [ ]       | `Service_ResourceFSStarted` |
-| [ ]      | [ ]       | `Service_SwitchingOutputToSprite` |
+| [X]      | [ ]       | `Service_SwitchingOutputToSprite` |
 
 
 ### Vectors
