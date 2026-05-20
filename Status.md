@@ -205,7 +205,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Wimp:WindowManagement     | Asm   |           |           |
 | Wimp:WindowRender         | Asm/C |           |           |
 | Wimp:WindowStacking       | Asm   |           |           |
-| FilterManager             | Asm   |           |           |
+| FilterManager             | Asm   | Internals | Internals |
 | RedrawManager             | Asm   |           |           |
 | Desktop                   | Asm   |           |           |
 | IconBorderBeveled         | C     | -         | Built     |

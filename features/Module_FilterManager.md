@@ -21,8 +21,14 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/filterman.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-
-*None found*
+| [ ]      | [ ]       | Registration with the WindowManager |
+| [ ]      | [ ]       | Dispatch of the PreFilters |
+| [ ]      | [ ]       | Dispatch of the PostFilters |
+| [ ]      | [ ]       | Dispatch of the RectFilters |
+| [ ]      | [ ]       | Dispatch of the CopyFilters |
+| [ ]      | [ ]       | Dispatch of the PostRectFilters |
+| [ ]      | [ ]       | Dispatch of the PostIconFilters |
+| [ ]      | [ ]       | Dispatch of the IconBorderFilters |
 
 ### Commands
 
@@ -37,20 +43,20 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/filterman.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Filter_RegisterPreFilter` (&42640) |
-| [ ]      | [ ]       | `Filter_RegisterPostFilter` (&42641) |
-| [ ]      | [ ]       | `Filter_DeRegisterPreFilter` (&42642) |
-| [ ]      | [ ]       | `Filter_DeRegisterPostFilter` (&42643) |
-| [ ]      | [ ]       | `Filter_RegisterRectFilter` (&42644) |
-| [ ]      | [ ]       | `Filter_DeRegisterRectFilter` (&42645) |
-| [ ]      | [ ]       | `Filter_RegisterCopyFilter` (&42646) |
-| [ ]      | [ ]       | `Filter_DeRegisterCopyFilter` (&42647) |
-| [ ]      | [ ]       | `Filter_RegisterPostRectFilter` (&42648) |
-| [ ]      | [ ]       | `Filter_DeRegisterPostRectFilter` (&42649) |
-| [ ]      | [ ]       | `Filter_RegisterPostIconFilter` (&4264A) |
-| [ ]      | [ ]       | `Filter_DeRegisterPostIconFilter` (&4264B) |
-| [ ]      | [ ]       | `Filter_RegisterIconBorderFilter` (&4264C) |
-| [ ]      | [ ]       | `Filter_DeRegisterIconBorderFilter` (&4264D) |
+| [X]      | [X]       | `Filter_RegisterPreFilter` (&42640) |
+| [X]      | [X]       | `Filter_RegisterPostFilter` (&42641) |
+| [X]      | [X]       | `Filter_DeRegisterPreFilter` (&42642) |
+| [X]      | [X]       | `Filter_DeRegisterPostFilter` (&42643) |
+| [X]      | [X]       | `Filter_RegisterRectFilter` (&42644) |
+| [X]      | [X]       | `Filter_DeRegisterRectFilter` (&42645) |
+| [X]      | [X]       | `Filter_RegisterCopyFilter` (&42646) |
+| [X]      | [X]       | `Filter_DeRegisterCopyFilter` (&42647) |
+| [X]      | [X]       | `Filter_RegisterPostRectFilter` (&42648) |
+| [X]      | [X]       | `Filter_DeRegisterPostRectFilter` (&42649) |
+| [X]      | [X]       | `Filter_RegisterPostIconFilter` (&4264A) |
+| [X]      | [X]       | `Filter_DeRegisterPostIconFilter` (&4264B) |
+| [X]      | [X]       | `Filter_RegisterIconBorderFilter` (&4264C) |
+| [X]      | [X]       | `Filter_DeRegisterIconBorderFilter` (&4264D) |
 
 
 ### Services
@@ -88,8 +94,8 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/filterman.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Service_FilterManagerDying` |
-| [ ]      | [ ]       | `Service_FilterManagerInstalled` |
+| [X]      | [X]       | `Service_FilterManagerDying` |
+| [X]      | [X]       | `Service_FilterManagerInstalled` |
 
 
 ### Vectors
