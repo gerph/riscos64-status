@@ -21,51 +21,51 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [X]      | [ ]       | `SpriteV` internal dispatch |
+| [X]      | [X]       | `SpriteV` internal dispatch |
 | [ ]      | [ ]       | SpriteOp &2   (2)  : ScreenSave |
 | [ ]      | [ ]       | SpriteOp &3   (3)  : ScreenLoad |
 
-| [X]      | [ ]       | SpriteOp &8   (8)  : ReadAreaCB |
-| [X]      | [ ]       | SpriteOp &9   (9)  : ClearSprites |
-| [X]      | [ ]       | SpriteOp &a   (10) : LoadSpriteFile |
-| [X]      | [ ]       | SpriteOp &b   (11) : MergeSpriteFile |
-| [X]      | [ ]       | SpriteOp &c   (12) : SaveSpriteFile |
-| [X]      | [ ]       | SpriteOp &11  (17) : CheckSpriteArea |
+| [X]      | [X]       | SpriteOp &8   (8)  : ReadAreaCB |
+| [X]      | [X]       | SpriteOp &9   (9)  : ClearSprites |
+| [X]      | [X]       | SpriteOp &a   (10) : LoadSpriteFile |
+| [X]      | [X]       | SpriteOp &b   (11) : MergeSpriteFile |
+| [X]      | [X]       | SpriteOp &c   (12) : SaveSpriteFile |
+| [X]      | [X]       | SpriteOp &11  (17) : CheckSpriteArea |
 
-| [X]      | [ ]       | SpriteOp &18  (24) : SelectSprite |
-| [X]      | [ ]       | SpriteOp &28  (40) : ReadSpriteSize |
-| [X]      | [ ]       | SpriteOp &d   (13) : ReturnName |
+| [X]      | [X]       | SpriteOp &18  (24) : SelectSprite |
+| [X]      | [X]       | SpriteOp &28  (40) : ReadSpriteSize |
+| [X]      | [X]       | SpriteOp &d   (13) : ReturnName |
 
-| [X]      | [ ]       | SpriteOp &f   (15) : CreateSprite |
+| [X]      | [X]       | SpriteOp &f   (15) : CreateSprite |
 | [ ]      | [ ]       | SpriteOp &10  (16) : GetSpriteUserCoords |
 | [ ]      | [ ]       | SpriteOp &e   (14) : GetSprite |
 
-| [X]      | [ ]       | SpriteOp &19  (25) : DeleteSprite |
-| [X]      | [ ]       | SpriteOp &1a  (26) : RenameSprite |
-| [X]      | [ ]       | SpriteOp &1b  (27) : CopySprite |
-| [X]      | [ ]       | SpriteOp &23  (35) : AppendSprite |
+| [X]      | [X]       | SpriteOp &19  (25) : DeleteSprite |
+| [X]      | [X]       | SpriteOp &1a  (26) : RenameSprite |
+| [X]      | [X]       | SpriteOp &1b  (27) : CopySprite |
+| [X]      | [X]       | SpriteOp &23  (35) : AppendSprite |
 
-| [X]      | [ ]       | SpriteOp &1f  (31) : InsertRow |
-| [X]      | [ ]       | SpriteOp &20  (32) : DeleteRow |
-| [X]      | [ ]       | SpriteOp &2d  (45) : InsertCol |
-| [X]      | [ ]       | SpriteOp &2e  (46) : DeleteCol |
-| [X]      | [ ]       | SpriteOp &39  (57) : InsertDeleteRows |
-| [X]      | [ ]       | SpriteOp &3a  (58) : InsertDeleteColumns |
-| [X]      | [ ]       | SpriteOp &21  (33) : FlipAboutXAxis |
-| [X]      | [ ]       | SpriteOp &2f  (47) : FlipAboutYAxis |
-| [X]      | [ ]       | SpriteOp &36  (54) : RemoveLeftHandWastage |
+| [X]      | [X]       | SpriteOp &1f  (31) : InsertRow |
+| [X]      | [X]       | SpriteOp &20  (32) : DeleteRow |
+| [X]      | [X]       | SpriteOp &2d  (45) : InsertCol |
+| [X]      | [X]       | SpriteOp &2e  (46) : DeleteCol |
+| [X]      | [X]       | SpriteOp &39  (57) : InsertDeleteRows |
+| [X]      | [X]       | SpriteOp &3a  (58) : InsertDeleteColumns |
+| [X]      | [X]       | SpriteOp &21  (33) : FlipAboutXAxis |
+| [X]      | [X]       | SpriteOp &2f  (47) : FlipAboutYAxis |
+| [X]      | [X]       | SpriteOp &36  (54) : RemoveLeftHandWastage |
 
 | [ ]      | [ ]       | SpriteOp &24  (36) : SetPointerShape |
 
-| [X]      | [ ]       | SpriteOp &25  (37) : CreateRemovePalette |
-| [X]      | [ ]       | SpriteOp &1d  (29) : CreateMask |
-| [X]      | [ ]       | SpriteOp &1e  (30) : RemoveMask |
-| [X]      | [ ]       | SpriteOp &26  (38) : CreateRemoveAlphaMask |
+| [X]      | [X]       | SpriteOp &25  (37) : CreateRemovePalette |
+| [X]      | [X]       | SpriteOp &1d  (29) : CreateMask |
+| [X]      | [X]       | SpriteOp &1e  (30) : RemoveMask |
+| [X]      | [X]       | SpriteOp &26  (38) : CreateRemoveAlphaMask |
 
-| [X]      | [ ]       | SpriteOp &29  (41) : ReadPixelColour |
-| [X]      | [ ]       | SpriteOp &2a  (42) : WritePixelColour |
-| [X]      | [ ]       | SpriteOp &2b  (43) : ReadPixelMask |
-| [X]      | [ ]       | SpriteOp &2c  (44) : WritePixelMask |
+| [X]      | [X]       | SpriteOp &29  (41) : ReadPixelColour |
+| [X]      | [X]       | SpriteOp &2a  (42) : WritePixelColour |
+| [X]      | [X]       | SpriteOp &2b  (43) : ReadPixelMask |
+| [X]      | [X]       | SpriteOp &2c  (44) : WritePixelMask |
 
 | [ ]      | [ ]       | SpriteOp &33  (51) : PaintCharScaled |
 | [ ]      | [ ]       | SpriteOp &1c  (28) : PutSprite |

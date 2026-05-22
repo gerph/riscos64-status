@@ -29,10 +29,9 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Kernel:Modules            | Asm   |               |               |
 | Kernel:SWIs               | Asm   |               |               |
 | Kernel:Mode               | Asm   |               |               |
-| Kernel:Sprites            | Asm   |               |               |
+| Kernel:Sprites            | Asm   | Internals     | Internals     |
 | Kernel:OSByte             | Asm   |               |               |
 | Kernel:OSWord             | Asm   |               |               |
-| Kernel:DAs                | Asm   |               |               |
 | Kernel:Modules            | Asm   | Stub          | Stub          |
 | Kernel:Vectors            | Asm   |               |               |
 | Kernel:Heap               | Asm   |               |               |
