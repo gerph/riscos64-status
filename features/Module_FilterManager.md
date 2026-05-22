@@ -35,7 +35,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/filterman.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `*Filters` |
+| [X]      | [X]       | `*Filters` |
 
 
 ### SWIs
