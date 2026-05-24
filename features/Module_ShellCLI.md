@@ -24,7 +24,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/shellcli.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Notice on how to return to desktop |
+| [X]      | [ ]       | Notice on how to return to desktop |
 | [ ]      | [ ]       | Command line prompt shown with `CLI$Prompt` |
 | [ ]      | [ ]       | Errors are reported |
 | [ ]      | [ ]       | Exits are trapped |
@@ -37,7 +37,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/shellcli.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `*ShellCLI` |
+| [X]      | [ ]       | `*ShellCLI` |
 
 
 ### SWIs
@@ -45,8 +45,8 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/shellcli.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Shell_Create` (&805C0) |
-| [ ]      | [ ]       | `Shell_Destroy` (&805C1) |
+| [X]      | [ ]       | `Shell_Create` (&805C0) |
+| [X]      | [ ]       | `Shell_Destroy` (&805C1) |
 
 
 ### Services

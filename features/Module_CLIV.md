@@ -24,22 +24,22 @@ from modules, filesystems and aliases.
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Cli processor |
-| [ ]      | [ ]       | Terminators for strings are 0, 10, 13 |
-| [ ]      | [ ]       | Leading space and `*` characters skipped |
-| [ ]      | [ ]       | Leading `|` or terminating character makes the command return without error |
-| [ ]      | [ ]       | Command length must not exceed limit. |
+| [X]      | [ ]       | Cli processor |
+| [X]      | [ ]       | Terminators for strings are 0, 10, 13 |
+| [X]      | [ ]       | Leading space and `*` characters skipped |
+| [X]      | [ ]       | Leading `|` or terminating character makes the command return without error |
+| [X]      | [ ]       | Command length must not exceed limit. |
 | [ ]      | [ ]       | Parse any redirection in the CLI in the form `{` ` ` redirection ` ` filename `}` (for `>`, `<` and `>>`) |
 | [ ]      | [ ]       | Redirection may be repeated within the `{}` string. |
-| [ ]      | [ ]       | Filesystem name prefixes of -<fs>- or <fs>: change the temporary filesystem |
+| [X]      | [ ]       | Filesystem name prefixes of -<fs>- or <fs>: change the temporary filesystem |
 | [ ]      | [ ]       | Module name prefix of `<module>:` directs to just that module. |
 | [ ]      | [ ]       | Module name prefix of `Module#<module>:` case insensitive. |
 | [ ]      | [ ]       | Modules selected by prefix are made preferred. |
 | [ ]      | [ ]       | Leading `/` causes a file to be run. |
-| [ ]      | [ ]       | Leading `%` skips alias checks. |
-| [ ]      | [ ]       | `.` is looked up in aliases first, but if fails, becomes an explicit `FSControl_CAT` |
-| [ ]      | [ ]       | Command is checked against `Alias$<command>` with `.` terminator treated as a wildcard. |
-| [ ]      | [ ]       | Aliases have `OS_SubstituteArgs` to replace `%` sequences. |
+| [X]      | [ ]       | Leading `%` skips alias checks. |
+| [X]      | [ ]       | `.` is looked up in aliases first, but if fails, becomes an explicit `FSControl_CAT` |
+| [X]      | [ ]       | Command is checked against `Alias$<command>` with `.` terminator treated as a wildcard. |
+| [X]      | [ ]       | Aliases have `OS_SubstituteArgs` to replace `%` sequences. |
 | [ ]      | [ ]       | Look at the module table for all commands (non-FS commands) |
 | [ ]      | [ ]       | Look at the module table for the FS commands of the current FS |
 | [ ]      | [ ]       | Look at the module table for the FS commands of the secondary FS |
@@ -75,7 +75,7 @@ from modules, filesystems and aliases.
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `CliV` |
+| [X]      | [ ]       | `CliV` |
 
 
 ### Events

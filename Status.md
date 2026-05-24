@@ -28,19 +28,17 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Kernel:Vectors            | Asm   |               |               |
 | Kernel:Modules            | Asm   |               |               |
 | Kernel:SWIs               | Asm   |               |               |
-| Kernel:Mode               | Asm   |               |               |
-| Kernel:Sprites            | Asm   | Internals     | Internals     |
 | Kernel:OSByte             | Asm   |               |               |
 | Kernel:OSWord             | Asm   |               |               |
 | Kernel:Modules            | Asm   | Stub          | Stub          |
 | Kernel:Vectors            | Asm   |               |               |
-| Kernel:Heap               | Asm   |               |               |
+| Kernel:Heap               | Asm   | Internals     | Internals     |
 | Kernel:VDU                | Asm   |               |               |
 | Kernel:MemManagement      | Asm   |               |               |
 | Kernel:DAs                | Asm   |               |               |
 | Kernel:VDU                | Asm   |               |               |
 | Kernel:Graphics           | Asm   |               |               |
-| Kernel:Sprites            | Asm   |               |               |
+| Kernel:Sprites            | Asm   | Internals     | Internals[^1] |
 | Kernel:Exceptions         | Asm   |               |               |
 | Kernel:ProgEnv            | Asm   |               |               |
 | Kernel:Time               | Asm   |               |               |
@@ -66,7 +64,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | DiagnosticDump            | C     | -             |               |
 | CFrontDemangler           | C     | -             |               |
 | ReadLine                  | Asm   | Functional    | Internals[^1] |
-| CLIV                      | Asm   |               |               |
+| CLIV                      | Asm   | Internals     | Internals[^1] |
 | VideoTTX                  | C     | -             | Built         |
 | VideoSW                   | Asm   | Stub          | Stub          |
 | VideoHWVIDC               | Asm   |               |               |
@@ -131,7 +129,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | WaveSynth                 | Asm   |           |           |
 | StringLib                 | Asm   |           |           |
 | Percussion                | Asm   |           |           |
-| SoundScheduler            | Asm   |           |           |
+| SoundScheduler            | Asm   | Internals | Internals |
 | SharedSound               | Asm   |           |           |
 | SystemBell                | Asm   | Functional | Functional |
 | DeviceFS                  | Asm   |           |           |
@@ -215,7 +213,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | IconBorderPlain           | C     | -         | Built     |
 | IconBorderRound           | C     | -         |           |
 | TaskManager               | Asm   |           |           |
-| ShellCLI                  | Asm   |           |           |
+| ShellCLI                  | Asm   | Internals | Internals |
 | DisplayManager            | Asm   |           |           |
 | DragASprite               | Asm   |           |           |
 | DragAnObject              | Asm   |           |           |
