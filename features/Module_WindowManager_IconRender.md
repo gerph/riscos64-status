@@ -19,8 +19,8 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Plain borders |
-| [ ]      | [ ]       | Filled background (desktop colours) |
+| [X]      | [ ]       | Plain borders |
+| [X]      | [ ]       | Filled background (desktop colours) |
 | [X]      | [ ]       | Text in desktop font (system font) |
 | [X]      | [ ]       | Text in desktop font (antialiased) |
 | [X]      | [ ]       | Coloured text (desktop colours) |
@@ -41,7 +41,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [ ]      | [ ]       | Selected icon (colouring) |
 | [ ]      | [ ]       | Selected icon (text) |
 | [ ]      | [ ]       | Selected icon (sprite) |
-| [ ]      | [ ]       | Selected icon (sprite, with alternate) |
+| [X]      | [ ]       | Selected icon (sprite, with alternate) |
 | [X]      | [ ]       | Small sprites |
 | [ ]      | [ ]       | Shaded icon without text |
 | [ ]      | [ ]       | Shaded icon text |
@@ -67,7 +67,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
 | [X]      | [ ]       | Multi-line (L validation) |
 | [ ]      | [ ]       | Multi-line (L validation + line spacing) |
 | [ ]      | [ ]       | Colourmap (T validation) |
-| [ ]      | [ ]       | Overlong text does not show outside icon |
+| [X]      | [ ]       | Overlong text does not show outside icon |
 | [ ]      | [ ]       | Oversized sprite does not show outside icon |
 | [ ]      | [ ]       | Border fill calls IconBorder filter |
 | [ ]      | [ ]       | Border sizing calls IconBorder filter |
