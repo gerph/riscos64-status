@@ -80,7 +80,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | DMAManager                | Asm   |           |           |
 | RTCAdjust                 | Asm   |           |           |
 | RTCHW                     | Asm   |           |           |
-| OSPointer                 | Asm   |           |           |
+| OSPointer                 | Asm   | Functional | Internals[^1] |
 | Hourglass                 | Asm   | Functional[^hourglass] | Functional[^hourglass] |
 | Portable                  | Asm   | Prototype | Prototype |
 | FileSwitch                | Asm   |           |           |

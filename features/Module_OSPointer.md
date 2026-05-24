@@ -16,8 +16,8 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Buffers |
-| [ ]      | [ ]       | Os swis |
+| [X]      | [X]       | Buffers |
+| [X]      | [X]       | Os swis |
 
 ### Commands
 
@@ -36,9 +36,9 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Service_BufferStarting` |
-| [ ]      | [ ]       | `Service_DisplayChanged` |
-| [ ]      | [ ]       | `Service_ModeChange` |
+| [X]      | [X]       | `Service_BufferStarting` |
+| [X]      | [X]       | `Service_DisplayChanged` |
+| [X]      | [X]       | `Service_ModeChange` |
 
 
 ### Vectors
@@ -46,11 +46,11 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `ByteV` |
-| [ ]      | [ ]       | `EventV` |
-| [ ]      | [ ]       | `KEYV` |
-| [ ]      | [ ]       | `MouseV` |
-| [ ]      | [ ]       | `WordV` |
+| [X]      | [X]       | `ByteV` |
+| [X]      | [X]       | `EventV` |
+| [X]      | [X]       | `KEYV` |
+| [X]      | [X]       | `MouseV` |
+| [X]      | [X]       | `WordV` |
 
 
 ### Events
@@ -58,8 +58,8 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Event_Expansion` |
-| [ ]      | [ ]       | `Event_VSync` |
+| [X]      | [X]       | `Event_Expansion` |
+| [X]      | [X]       | `Event_VSync` |
 
 
 ### UpCalls
@@ -83,11 +83,11 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `INSV` |
-| [ ]      | [ ]       | `KEYV` |
-| [ ]      | [ ]       | `PointerV` |
-| [ ]      | [ ]       | `REMV` |
-| [ ]      | [ ]       | `VideoV` |
+| [X]      | [X]       | `INSV` |
+| [X]      | [X]       | `KEYV` |
+| [X]      | [X]       | `PointerV` |
+| [X]      | [X]       | `REMV` |
+| [X]      | [X]       | `VideoV` |
 
 
 ### Events
@@ -95,9 +95,9 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Event_Expansion` |
-| [ ]      | [ ]       | `Event_Keyboard` |
-| [ ]      | [ ]       | `Event_Mouse` |
+| [X]      | [X]       | `Event_Expansion` |
+| [X]      | [X]       | `Event_Keyboard` |
+| [X]      | [X]       | `Event_Mouse` |
 
 
 ### UpCalls
