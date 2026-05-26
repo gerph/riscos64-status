@@ -14,7 +14,7 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Image conversion |
+| [X]      | [X]       | Image conversion |
 
 ### Commands
 

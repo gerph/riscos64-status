@@ -159,7 +159,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | ConvertSprite             | C     | -         |           |
 | ConvertSun                | C     | -         | Built     |
 | ConvertXBM                | C     | -         | Built     |
-| ConvertClear              | Asm   |           |           |
+| ConvertClear              | Asm   | Functional | Functional |
 | ImageFileRender           | C     | -         | Functional |
 | ImageFileRender_Artworks  | C     | -         |           |
 | Zipper                    | C     | -         |           |
