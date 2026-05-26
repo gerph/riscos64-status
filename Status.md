@@ -65,7 +65,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | CFrontDemangler           | C     | -             |               |
 | ReadLine                  | Asm   | Functional    | Internals[^1] |
 | CLIV                      | Asm   | Internals     | Internals[^1] |
-| VideoTTX                  | C     | -             | Built         |
+| VideoTTX                  | C     | -             | Functional    |
 | VideoSW                   | Asm   | Stub          | Stub          |
 | VideoHWVIDC               | Asm   |               |               |
 | VideoHWVF                 | Asm   |               |               |
@@ -74,7 +74,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | FSCommands                | Asm   | Functional[^cmungehelp] | Functional[^cmungehelp] |
 | ModuleCommands            | Asm   | Functional[^cmungehelp] | Functional[^cmungehelp] |
 | ARM                       | Asm   | Stub          | Stub[^arm] |
-| BufferManager             | Asm   | Stub          | Stub[^buffermanager] |
+| BufferManager             | Asm   | Internals | Internals[^buffermanager] |
 | Debugger                  | Asm   | Functional[^debugger] | Functional[^debugger] |
 | RTC                       | Asm   | Functional    | Internals[^1]   |
 | DMAManager                | Asm   |           |           |
@@ -276,15 +276,15 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | BBCEconet                 | Asm   |           |           |
 | Joystick                  | Asm   | Prototype | Prototype |
 | SpriteUtils               | Asm   | Stub[^spriteutils] | Stub[^spriteutils] |
-| OwnerBanner               | Asm   | Functional[^ownerbanner] | Functional[^ownerbanner] |
+| OwnerBanner               | Asm   | Functional | Functional |
 | IRQUtils                  | Asm   |           |           |
 | WindowUtils               | Asm   |           |           |
 | CallASWI                  | Asm   |           |           |
 | BootNet                   | Asm   |           |           |
 | AUNMsgs                   | Asm   |           |           |
 | !Alarm                    | BASIC |           |           |
-| LibraryHelp               | C     | -         | Functional     |
-| ErrorLog                  | C     | -         | Built     |
+| LibraryHelp               | C     | -         | Functional |
+| ErrorLog                  | C     | -         | Functional |
 
 ### New ROM modules
 
@@ -314,14 +314,13 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | IconBorderSkins           | C     | -         | Built     |
 
 
-[^1]: Vector claims are not supported yet in RISC OS Pyromaniac or CMunge.
+[^1]: Vector claims are not supported yet in 64-bit in RISC OS Pyromaniac or CMunge.
 
 [^cmungehelp]: CMunge does not support help code yet.
 [^cmungegeneric]: CMunge does not support generic veneers yet.
 [^debugger]: Debugger Functional in 32bit and 64bit, and decodes ARM, Thumb and AArch64.
 [^arm]: Stub created which has a dummy *Command and that's it.
 [^buffermanager]: Buffer vectors InsV, RemV, CnPV have very poor interfaces, which should not be propagated into RISC OS 64.
-[^ownerbanner]: Only the text part of the banner is currently implemented.
 [^spriteutils]: Does not support the vector handling yet.
 [^hourglass]: Hourglass still has assembler code, but this has been ported to AArch64 (within a Python generation process).
 [^srevill]: Being worked on by Steve Revill.

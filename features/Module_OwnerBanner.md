@@ -18,8 +18,8 @@
 |----------|-----------|-----------|
 | [X]      | [X]       | System banner text on startup |
 | [X]      | [X]       | System banner user name/address text on startup |
-| [ ]      | [ ]       | System banner graphics on startup |
-| [ ]      | [ ]       | System banner graphics on start desktop |
+| [X]      | [X]       | System banner graphics on startup |
+| [X]      | [X]       | System banner graphics on start desktop |
 
 ### Commands
 
@@ -38,7 +38,7 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `Service_DesktopWelcome` |
+| [X]      | [X]       | `Service_DesktopWelcome` |
 | [X]      | [X]       | `Service_OSInitBanner` |
 
 

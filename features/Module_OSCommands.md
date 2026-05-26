@@ -18,8 +18,7 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-
-*None found*
+| [ ]      | [ ]       | `*Help` code commands |
 
 ### Commands
 
@@ -33,10 +32,10 @@
 | [X]      | [X]       | `*Echo` |
 | [X]      | [X]       | `*Error` |
 | [X]      | [X]       | `*FX` |
-| [ ]      | [ ]       | `*FileCommands` |
+| [ ]      | [ ]       | `*Help FileCommands` |
 | [ ]      | [ ]       | `*GO` |
 | [ ]      | [ ]       | `*GOS` |
-| [ ]      | [ ]       | `*Help` |
+| [X]      | [X]       | `*Help` |
 | [X]      | [X]       | `*IF` |
 | [ ]      | [ ]       | `*Ignore` |
 | [X]      | [X]       | `*Key` |
