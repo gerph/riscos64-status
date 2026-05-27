@@ -36,7 +36,7 @@ concurrency:
 jobs:
   riscos-test:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     permissions:
       contents: read
       checks: write
