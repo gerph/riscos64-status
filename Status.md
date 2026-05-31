@@ -204,7 +204,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Wimp:WindowStacking       | Asm   |           |           |
 | FilterManager             | Asm   | Internals | Internals |
 | RedrawManager             | Asm   |           |           |
-| Desktop                   | Asm   |           |           |
+| Desktop                   | Asm   | Internals | Internals |
 | IconBorderBeveled         | C     | -         | Built     |
 | IconBorderFob             | C     | -         | Built     |
 | IconBorderCrossy          | C     | -         | Built     |

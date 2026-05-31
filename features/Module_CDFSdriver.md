@@ -29,48 +29,48 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `CD_ReadData` (&41241) |
-| [ ]      | [ ]       | `CD_SeekTo` (&41242) |
-| [ ]      | [ ]       | `CD_DriveStatus` (&41243) |
-| [ ]      | [ ]       | `CD_DriveReady` (&41244) |
-| [ ]      | [ ]       | `CD_GetParameters` (&41245) |
-| [ ]      | [ ]       | `CD_SetParameters` (&41246) |
-| [ ]      | [ ]       | `CD_OpenDrawer` (&41247) |
-| [ ]      | [ ]       | `CD_EjectButton` (&41248) |
-| [ ]      | [ ]       | `CD_EnquireAddress` (&41249) |
-| [ ]      | [ ]       | `CD_EnquireDataMode` (&4124A) |
-| [ ]      | [ ]       | `CD_PlayAudio` (&4124B) |
-| [ ]      | [ ]       | `CD_PlayTrack` (&4124C) |
-| [ ]      | [ ]       | `CD_AudioPause` (&4124D) |
-| [ ]      | [ ]       | `CD_EnquireTrack` (&4124E) |
-| [ ]      | [ ]       | `CD_ReadSubChannel` (&4124F) |
-| [ ]      | [ ]       | `CD_CheckDrive` (&41250) |
-| [ ]      | [ ]       | `CD_DiscChanged` (&41251) |
-| [ ]      | [ ]       | `CD_StopDisc` (&41252) |
-| [ ]      | [ ]       | `CD_DiscUsed` (&41253) |
-| [ ]      | [ ]       | `CD_AudioStatus` (&41254) |
-| [ ]      | [ ]       | `CD_Inquiry` (&41255) |
-| [ ]      | [ ]       | `CD_DiscHasChanged` (&41256) |
-| [ ]      | [ ]       | `CD_Control` (&41257) |
-| [ ]      | [ ]       | `CD_Supported` (&41258) |
-| [ ]      | [ ]       | `CD_Prefetch` (&41259) |
-| [ ]      | [ ]       | `CD_Reset` (&4125A) |
-| [ ]      | [ ]       | `CD_CloseDrawer` (&4125B) |
-| [ ]      | [ ]       | `CD_IsDrawerLocked` (&4125C) |
-| [ ]      | [ ]       | `CD_AudioControl` (&4125D) |
+| [x]      | [x]       | `CD_ReadData` (&41241) |
+| [x]      | [x]       | `CD_SeekTo` (&41242) |
+| [x]      | [x]       | `CD_DriveStatus` (&41243) |
+| [x]      | [x]       | `CD_DriveReady` (&41244) |
+| [x]      | [x]       | `CD_GetParameters` (&41245) |
+| [x]      | [x]       | `CD_SetParameters` (&41246) |
+| [x]      | [x]       | `CD_OpenDrawer` (&41247) |
+| [x]      | [x]       | `CD_EjectButton` (&41248) |
+| [x]      | [x]       | `CD_EnquireAddress` (&41249) |
+| [x]      | [x]       | `CD_EnquireDataMode` (&4124A) |
+| [x]      | [x]       | `CD_PlayAudio` (&4124B) |
+| [x]      | [x]       | `CD_PlayTrack` (&4124C) |
+| [x]      | [x]       | `CD_AudioPause` (&4124D) |
+| [x]      | [x]       | `CD_EnquireTrack` (&4124E) |
+| [x]      | [x]       | `CD_ReadSubChannel` (&4124F) |
+| [x]      | [x]       | `CD_CheckDrive` (&41250) |
+| [x]      | [x]       | `CD_DiscChanged` (&41251) |
+| [x]      | [x]       | `CD_StopDisc` (&41252) |
+| [x]      | [x]       | `CD_DiscUsed` (&41253) |
+| [x]      | [x]       | `CD_AudioStatus` (&41254) |
+| [x]      | [x]       | `CD_Inquiry` (&41255) |
+| [x]      | [x]       | `CD_DiscHasChanged` (&41256) |
+| [x]      | [x]       | `CD_Control` (&41257) |
+| [x]      | [x]       | `CD_Supported` (&41258) |
+| [x]      | [x]       | `CD_Prefetch` (&41259) |
+| [x]      | [x]       | `CD_Reset` (&4125A) |
+| [x]      | [x]       | `CD_CloseDrawer` (&4125B) |
+| [x]      | [x]       | `CD_IsDrawerLocked` (&4125C) |
+| [x]      | [x]       | `CD_AudioControl` (&4125D) |
 | [ ]      | [ ]       | `CD_LastError` (&4125E) |
-| [ ]      | [ ]       | `CD_AudioLevel` (&4125F) |
-| [ ]      | [ ]       | `CD_Register` (&41260) |
-| [ ]      | [ ]       | `CD_Unregister` (&41261) |
+| [x]      | [x]       | `CD_AudioLevel` (&4125F) |
+| [x]      | [x]       | `CD_Register` (&41260) |
+| [x]      | [x]       | `CD_Unregister` (&41261) |
 | [ ]      | [ ]       | `CD_ByteCopy` (&41262) |
-| [ ]      | [ ]       | `CD_Identify` (&41263) |
-| [ ]      | [ ]       | `CD_ConvertToLBA` (&41264) |
-| [ ]      | [ ]       | `CD_ConvertToMSF` (&41265) |
-| [ ]      | [ ]       | `CD_ReadAudio` (&41266) |
-| [ ]      | [ ]       | `CD_ReadUserData` (&41267) |
-| [ ]      | [ ]       | `CD_SeekUserData` (&41268) |
-| [ ]      | [ ]       | `CD_GetAudioParms` (&41269) |
-| [ ]      | [ ]       | `CD_SetAudioParms` (&4126A) |
+| [x]      | [x]       | `CD_Identify` (&41263) |
+| [x]      | [x]       | `CD_ConvertToLBA` (&41264) |
+| [x]      | [x]       | `CD_ConvertToMSF` (&41265) |
+| [x]      | [x]       | `CD_ReadAudio` (&41266) |
+| [x]      | [x]       | `CD_ReadUserData` (&41267) |
+| [x]      | [x]       | `CD_SeekUserData` (&41268) |
+| [x]      | [x]       | `CD_GetAudioParms` (&41269) |
+| [x]      | [x]       | `CD_SetAudioParms` (&4126A) |
 
 
 ### Services
@@ -133,5 +133,4 @@
 * `CD`
 * `MessageTrans`
 * `SCSI`
-
 

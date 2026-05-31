@@ -23,16 +23,16 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/desktop.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Draws banner on entry to desktop |
-| [ ]      | [ ]       | Supports compressed sprite area |
-| [ ]      | [ ]       | Launches standard apps by configuration |
+| [X]      | [ ]       | Draws banner on entry to desktop |
+| [X]      | [ ]       | Supports compressed sprite area |
+| [X]      | [ ]       | Launches standard apps by configuration |
 
 ### Commands
 
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `*Desktop` |
+| [X]      | [ ]       | `*Desktop` |
 
 
 ### SWIs
