@@ -32,15 +32,15 @@
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [ ]      | [ ]       | `DDEUtils_Prefix` (&42580) |
-| [ ]      | [ ]       | `DDEUtils_SetCLSize` (&42581) |
-| [ ]      | [ ]       | `DDEUtils_SetCL` (&42582) |
-| [ ]      | [ ]       | `DDEUtils_GetCLSize` (&42583) |
-| [ ]      | [ ]       | `DDEUtils_GetCl` (&42584) |
-| [ ]      | [ ]       | `DDEUtils_ThrowbackRegister` (&42585) |
-| [ ]      | [ ]       | `DDEUtils_ThrowbackUnRegister` (&42586) |
-| [ ]      | [ ]       | `DDEUtils_ThrowbackStart` (&42587) |
-| [ ]      | [ ]       | `DDEUtils_ThrowbackSend` (&42588) |
-| [ ]      | [ ]       | `DDEUtils_ThrowbackEnd` (&42589) |
+| [X]      | [X]       | `DDEUtils_SetCLSize` (&42581) |
+| [X]      | [X]       | `DDEUtils_SetCL` (&42582) |
+| [X]      | [X]       | `DDEUtils_GetCLSize` (&42583) |
+| [X]      | [X]       | `DDEUtils_GetCl` (&42584) |
+| [X]      | [X]       | `DDEUtils_ThrowbackRegister` (&42585) |
+| [X]      | [X]       | `DDEUtils_ThrowbackUnRegister` (&42586) |
+| [X]      | [X]       | `DDEUtils_ThrowbackStart` (&42587) |
+| [X]      | [X]       | `DDEUtils_ThrowbackSend` (&42588) |
+| [X]      | [X]       | `DDEUtils_ThrowbackEnd` (&42589) |
 | [ ]      | [ ]       | `DDEUtils_ReadPrefix` (&4258A) |
 
 

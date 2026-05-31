@@ -116,7 +116,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | BASIC64                   | Asm   |           |           |
 | BASICTrans                | Asm   |           |           |
 | Obey                      | Asm   | Complete[^jstamp]      |           |
-| DDEUtils                  | Asm   |           |           |
+| DDEUtils                  | Asm   | Internals | Internals |
 | PathUtils                 | C     | -         | Functional |
 | SysLog                    | C     | -         |           |
 | BootCommands              | C     | -         | Functional[^bootcmds] |
@@ -218,7 +218,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | DragASprite               | Asm   |           |           |
 | DragAnObject              | Asm   |           |           |
 | Filer                     | Asm/C |           |           |
-| FilerSWIs                 | Asm   |           |           |
+| FilerSWIs                 | Asm   | Internals | Internals |
 | Filer_Action              | C     | -         |           |
 | Free                      | Asm   | Investigate | Investigate |
 | Pinboard                  | Asm   |           |           |
@@ -230,7 +230,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | NetFS                     | Asm   |           |           |
 | NetStatus                 | Asm   | Functional | Functional |
 | NetFiler                  | Asm   |           |           |
-| NetPrint                  | Asm   |           |           |
+| NetPrint                  | Asm   | Internals | Internals  |
 | MbufManager               | Asm   |           |           |
 | Internet                  | C     | -         |           |
 | InetServices              | C     | -         |           |
@@ -264,7 +264,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | TextGadgets               | C     | -         |           |
 | ImageFileGadget           | C     | -         |           |
 | CDFSResources             | Asm   |           |           |
-| CDFSdriver                | Asm   |           |           |
+| CDFSdriver                | Asm   | Internals | Internals |
 | CDFSSoftATAPI             | Asm   |           |           |
 | CDFSSoftChinonEESOX       | Asm   |           |           |
 | CDFSSoftHitachiEESOX      | Asm   |           |           |

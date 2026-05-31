@@ -32,9 +32,9 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/netprint.html)
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
 | [ ]      | [ ]       | `*Configure PS` |
-| [ ]      | [ ]       | `*ListPS` |
-| [ ]      | [ ]       | `*PS` |
-| [ ]      | [ ]       | `*SetPS` |
+| [X]      | [ ]       | `*ListPS` |
+| [X]      | [ ]       | `*PS` |
+| [X]      | [ ]       | `*SetPS` |
 
 
 ### SWIs
@@ -42,15 +42,15 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/netprint.html)
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | `NetPrint_ReadPSNumber` (&40200) |
-| [ ]      | [ ]       | `NetPrint_SetPSNumber` (&40201) |
-| [ ]      | [ ]       | `NetPrint_ReadPSName` (&40202) |
-| [ ]      | [ ]       | `NetPrint_SetPSName` (&40203) |
-| [ ]      | [ ]       | `NetPrint_ReadPSTimeouts` (&40204) |
-| [ ]      | [ ]       | `NetPrint_SetPSTimeouts` (&40205) |
-| [ ]      | [ ]       | `NetPrint_BindPSName` (&40206) |
-| [ ]      | [ ]       | `NetPrint_ListServers` (&40207) |
-| [ ]      | [ ]       | `NetPrint_ConvertStatusToString` (&40208) |
+| [X]      | [X]       | `NetPrint_ReadPSNumber` (&40200) |
+| [X]      | [X]       | `NetPrint_SetPSNumber` (&40201) |
+| [X]      | [X]       | `NetPrint_ReadPSName` (&40202) |
+| [X]      | [X]       | `NetPrint_SetPSName` (&40203) |
+| [X]      | [X]       | `NetPrint_ReadPSTimeouts` (&40204) |
+| [X]      | [X]       | `NetPrint_SetPSTimeouts` (&40205) |
+| [X]      | [X]       | `NetPrint_BindPSName` (&40206) |
+| [X]      | [X]       | `NetPrint_ListServers` (&40207) |
+| [X]      | [X]       | `NetPrint_ConvertStatusToString` (&40208) |
 
 
 ### Services
