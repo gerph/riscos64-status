@@ -165,7 +165,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Zipper                    | C     | -         |           |
 | PrinterBuffer             | Asm   | Functional | Functional |
 | PDriver                   | Asm   |           |           |
-| PDriverDP                 | Asm   |           |           |
+| PDriverDP                 | Asm   | Prototype[^pdriverdp]     |           |
 | PDumperSupport            | Asm   |           |           |
 | PDumper24                 | Asm   |           |           |
 | PDumperCX                 | Asm   |           |           |
@@ -173,7 +173,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | PDumperE2                 | Asm   |           |           |
 | PDumperIW                 | Asm   |           |           |
 | PDumperLJ                 | Asm   |           |           |
-| PDriverPS                 | Asm   | Stub[^pdriverps]      |           |
+| PDriverPS                 | Asm   | Functional[^pdriverps]      |           |
 | MakePSFont                | Asm   |           |           |
 | RemotePrinterSupport      | C     | -         | Built     |
 | RemotePrinterMessages     | Asm   |           |           |
@@ -331,6 +331,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 [^drawfile]: Built but doesn't work as the structures are not the right sizes in memory. Also doesn't have any colour mapping or IFC support.
 [^territory]: The TerritoryManager has been converted to C according to RISC OS Open's announcement in March 2026.
 [^pdriverps]: Piers Wombwell has code which will manage the [PDriverPS](https://www.riscosopen.org/forum/forums/13/topics/20400) and others on the way; no build yes.
+[^pdriverdp]: Piers Wombwell has built this, but it's not been properly tested yet.
 
 ### ROM resources
 
