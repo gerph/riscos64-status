@@ -182,7 +182,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Wimp:ErrorBox             | Asm   |           |           |
 | Wimp:Fonts                | Asm   |           |           |
 | Wimp:IconBorders          | Asm/C |           |           |
-| Wimp:IconRender           | Asm   | Internals | Internals |
+| Wimp:IconRender           | Asm   | Functional | Functional |
 | Wimp:Interaction          | Asm   |           |           |
 | Wimp:Introspection        | Asm   |           |           |
 | Wimp:Memory               | Asm   |           |           |
