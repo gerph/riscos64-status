@@ -34,8 +34,8 @@ junitxml_testsuite_name="$(basename "$0")"
 ##
 # Clean up the temporary directory we created.
 function junitxml_cleanup() {
-    if [[ "$(uname -s)" == 'Darwin' ]] ; then
-        # On OSX, '--one-file-system' does not exist.
+    if [[ "$(uname -s)" == 'Darwin' || -h /bin/ls ]] ; then
+        # On OSX and in BusyBox, '--one-file-system' does not exist.
         rm -rf "${junitxml_tempdir}"
     else
         rm -rf --one-file-system "${junitxml_tempdir}"
@@ -247,10 +247,7 @@ function junitxml_output() {
     local line
 
     echo -n > "$output"
-    while IFS= read line ; do
-        echo "$line"
-        echo "$line" | sed -E $'s/\x1b\[([0-9]*;*)*[a-z]//g; s/\x0f|\x1b\\(B//g' >> "$output"
-    done
+    tee >(sed -E $'s/\x1b\[([0-9]*;*)*[a-z]//g; s/\x0f|\x1b\\(B//g' >> "$output")
     junitxml_timestamp > "$(junitxml_logname "endtime")"
 }
 

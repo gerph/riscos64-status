@@ -49,11 +49,10 @@
 | [ ]      | [ ]       | Public: Object information |
 | [ ]      | [ ]       | Public: `*Info` date format from `Sys$DateFormat` |
 | [ ]      | [ ]       | Public: `*Cat` field width variable |
-| [ ]      | [ ]       | FS: Object information |
+| [X]      | [ ]       | FS: Object information |
 | [ ]      | [ ]       | FS: `*Info`/`*Ex`/`*LEx` dispatch |
 | [ ]      | [ ]       | FS: `*FileInfo` dispatch |
-| [ ]      | [ ]       | FS: `*Cat`/`*LCat` dispatch |
-| [ ]      | [ ]       | FS: `*Cat`/`*LCat` dispatch |
+| [X]      | [ ]       | FS: `*Cat`/`*LCat` dispatch |
 | [ ]      | [ ]       | Public: Open/close streams |
 | [ ]      | [ ]       | Public: Open directories |
 | [ ]      | [ ]       | Public: Open faulted for already open for write |
@@ -103,6 +102,7 @@
 | [ ]      | [ ]       | Public: Change CSD/Lib/URD |
 | [ ]      | [ ]       | Public: Change CSD/Lib/URD sets variables |
 | [ ]      | [ ]       | Public: System variables updated on context changes |
+| [ ]      | [ ]       | Public: Rename |
 | [ ]      | [ ]       | Public: Rename across filesystems faulted |
 | [ ]      | [ ]       | FS: Rename files |
 | [ ]      | [ ]       | Public: Read/Set boot options |
@@ -111,7 +111,10 @@
 | [ ]      | [ ]       | FS: Free space calls |
 | [ ]      | [ ]       | Public: Readonly filesystems |
 | [ ]      | [ ]       | Public: Interactive filesystems |
-| [ ]      | [ ]       | Public: Null length filenames |
+| [>]      | [>]       | Public: Wipe files |
+| [>]      | [>]       | Public: Count files |
+| [>]      | [>]       | Public: Copy files |
+
 
 ... and all the image FS extensions
 

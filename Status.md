@@ -33,10 +33,9 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Kernel:Modules            | Asm   | Stub          | Stub          |
 | Kernel:Vectors            | Asm   |               |               |
 | Kernel:Heap               | Asm   | Internals     | Internals     |
-| Kernel:VDU                | Asm   |               |               |
 | Kernel:MemManagement      | Asm   |               |               |
 | Kernel:DAs                | Asm   |               |               |
-| Kernel:VDU                | Asm   |               |               |
+| Kernel:VDU                | Asm   | Stub          | Setub         |
 | Kernel:Graphics           | Asm   |               |               |
 | Kernel:Sprites            | Asm   | Internals     | Internals[^1] |
 | Kernel:Exceptions         | Asm   |               |               |
@@ -83,7 +82,7 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | OSPointer                 | Asm   | Functional | Internals[^1] |
 | Hourglass                 | Asm   | Functional[^hourglass] | Functional[^hourglass] |
 | Portable                  | Asm   | Prototype | Prototype |
-| FileSwitch                | Asm   |           |           |
+| FileSwitch                | Asm   | Stub      | Stub      |
 | Squash                    | Asm/C |           |           |
 | ResourceFS                | Asm   | Internals | Internals |
 | ResourceFiler             | Asm   |           |           |
@@ -134,10 +133,10 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | SystemBell                | Asm   | Functional | Functional |
 | DeviceFS                  | Asm   |           |           |
 | ParallelDeviceDriver      | Asm   |           |           |
-| ColourTrans               | Asm   |           |           |
+| ColourTrans               | Asm   | Stub      | Stub      |
 | Draw                      | Asm   | Stub      | Stub      |
 | SpriteExtend              | Asm/C |           |           |
-| ColourMap                 | C     | -         |           |
+| ColourMap                 | C     | -         | Stub      |
 | BlendTable                | C     | -         | Built     |
 | InverseTable              | Asm   | Functional | Internals |
 | DrawFile                  | C     | -         | Built[^drawfile] |
