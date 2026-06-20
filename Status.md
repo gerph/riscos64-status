@@ -33,9 +33,9 @@ Details of the terminology can be found in the [Terminology document](Terminolog
 | Kernel:Modules            | Asm   | Stub          | Stub          |
 | Kernel:Vectors            | Asm   |               |               |
 | Kernel:Heap               | Asm   | Internals     | Internals     |
-| Kernel:MemManagement      | Asm   |               |               |
+| Kernel:MemManagement      | Asm   | Stub          | Stub          |
 | Kernel:DAs                | Asm   |               |               |
-| Kernel:VDU                | Asm   | Stub          | Setub         |
+| Kernel:VDU                | Asm   | Stub          | Stub          |
 | Kernel:Graphics           | Asm   |               |               |
 | Kernel:Sprites            | Asm   | Internals     | Internals[^1] |
 | Kernel:Exceptions         | Asm   |               |               |

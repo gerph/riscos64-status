@@ -33,7 +33,7 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/fontmanager.html)
 | [ ]      | [ ]       | Sub-pixel positioning |
 | [ ]      | [ ]       | Internal millipoint precision (1/72000 inch) |
 | [ ]      | [ ]       | Understands font qualifiers |
-| [ ]      | [ ]       | Supports Encodings |
+| [>]      | [ ]       | Supports Encodings |
 | [ ]      | [ ]       | Parses Paint control sequences |
 | [ ]      | [ ]       | Executes Paint control sequences |
 | [ ]      | [ ]       | Control: Move (9) |
@@ -69,11 +69,11 @@ URL: [PRM](http://www.riscos.com/support/developers/prm/fontmanager.html)
 | [ ]      | [ ]       | Reads RISC OS fonts |
 | [ ]      | [ ]       | Supports outline fonts |
 | [ ]      | [ ]       | Supports bitmap fonts |
-| [ ]      | [ ]       | Creates font menus |
+| [>]      | [ ]       | Creates font menus |
 | [ ]      | [ ]       | Decodes font menus |
 | [ ]      | [ ]       | Convert font path to draw paths |
 | [ ]      | [ ]       | Font redirection to memory (Draw format) |
-| [ ]      | [ ]       | Font caret rendering |
+| [>]      | [ ]       | Font caret rendering |
 | [ ]      | [ ]       | Character bounding box calculations |
 | [ ]      | [ ]       | String bounding box calculations |
 | [ ]      | [ ]       | Supports font substitution |
