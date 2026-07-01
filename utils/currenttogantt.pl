@@ -6,7 +6,7 @@
 use warnings;
 use strict;
 
-use JSON;
+use JSON::PP;
 
 # Whether the earlier phase information is included in each new phase.
 # (if I set this to 1, GitHub refuses to render the later phases)
@@ -23,7 +23,7 @@ while (my $line = <$jfh>)
 {
     $json .= $line;
 }
-my $plan = from_json($json);
+my $plan = decode_json($json);
 
 
 # Read the totals for the current
@@ -34,7 +34,7 @@ while (my $line = <$jfh>)
 {
     $json .= $line;
 }
-my $current = from_json($json);
+my $current = decode_json($json);
 
 
 my %state_colours = (

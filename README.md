@@ -20,6 +20,8 @@ for each component can be found in the Wiki.
 
 The progress on [each phase of the development](https://github.com/gerph/riscos64-status/wiki/Progress) is also available.
 
+The repository update workflow is described in [HOWTO-UPDATE.md](HOWTO-UPDATE.md).
+
 
 
 ## Built components

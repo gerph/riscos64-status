@@ -6,7 +6,7 @@
 use warnings;
 use strict;
 
-use JSON;
+use JSON::PP;
 
 my $planjson = shift || die "Syntax: $0 <plans.json> <output.md>";
 my $output = shift || die "Syntax: $0 <plans.json> <output.md>";
@@ -34,7 +34,7 @@ while (my $line = <$jfh>)
     $json .= $line;
 }
 
-my $plan = from_json($json);
+my $plan = decode_json($json);
 
 for my $stack (sort { $a cmp $b } keys %{ $plan->{'stacks'} })
 {

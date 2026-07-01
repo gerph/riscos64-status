@@ -6,7 +6,7 @@
 use warnings;
 use strict;
 
-use JSON;
+use JSON::PP;
 
 my $phase = shift || die "Syntax: $0 <phase> <output.md>";
 my $output = shift || die "Syntax: $0 <phase> <output.md>";

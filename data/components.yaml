@@ -1,0 +1,4067 @@
+
+- key: ROM modules:Kernel:SystemInit
+  name: Kernel:SystemInit
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Kernel:Introspection
+  name: Kernel:Introspection
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: Stub
+  owner: Gerph
+  source: https://github.com/gerph/riscos-kernel-introspection
+
+- key: ROM modules:Kernel:Vectors
+  name: Kernel:Vectors
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  owner: Gerph
+  source: ''
+
+- key: ROM modules:Kernel:Modules
+  name: Kernel:Modules
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Kernel:SWIs
+  name: Kernel:SWIs
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Kernel:OSByte
+  name: Kernel:OSByte
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Kernel:OSWord
+  name: Kernel:OSWord
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Kernel:Modules#2
+  name: Kernel:Modules
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: Stub
+  source: ''
+
+- key: ROM modules:Kernel:Vectors#2
+  name: Kernel:Vectors
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  owner: Gerph
+  source: https://github.com/gerph/riscos-vector
+
+- key: ROM modules:Kernel:Heap
+  name: Kernel:Heap
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Internals
+  status_64: Internals
+  source: ''
+
+- key: ROM modules:Kernel:MemManagement
+  name: Kernel:MemManagement
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: Stub
+  source: ''
+
+- key: ROM modules:Kernel:DAs
+  name: Kernel:DAs
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Kernel:VDU
+  name: Kernel:VDU
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: Stub
+  source: ''
+
+- key: ROM modules:Kernel:Graphics
+  name: Kernel:Graphics
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Kernel:Sprites
+  name: Kernel:Sprites
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Internals
+  status_64: Internals
+  notes_64:
+  - '1'
+  source: ''
+
+- key: ROM modules:Kernel:Exceptions
+  name: Kernel:Exceptions
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Kernel:ProgEnv
+  name: Kernel:ProgEnv
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Kernel:Time
+  name: Kernel:Time
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Kernel:Input
+  name: Kernel:Input
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Kernel:Mode
+  name: Kernel:Mode
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Kernel:IRQs
+  name: Kernel:IRQs
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Kernel:Timers
+  name: Kernel:Timers
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:UtilityModule
+  name: UtilityModule
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  source: ''
+
+- key: ROM modules:IRQ
+  name: IRQ
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:TimerManager
+  name: TimerManager
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Prototype
+  status_64: Prototype
+  owner: Gerph
+  source: https://github.com/gerph/riscos-timermanager
+
+- key: ROM modules:Podule
+  name: Podule
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:IIC
+  name: IIC
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: Stub
+  source: ''
+
+- key: ROM modules:NVRAMHW
+  name: NVRAMHW
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Prototype
+  status_64: Prototype
+  owner: Gerph
+  source: https://github.com/gerph/riscos-nvramhw
+
+- key: ROM modules:Conversions
+  name: Conversions
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Complete
+  status_64: Complete
+  source: ''
+
+- key: ROM modules:OSSWIs
+  name: OSSWIs
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  source: ''
+
+- key: ROM modules:EvaluateExpression
+  name: EvaluateExpression
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Automated
+  status_64: Automated
+  source: ''
+
+- key: ROM modules:SystemVars
+  name: SystemVars
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Automated
+  status_64: Automated
+  owner: Gerph
+  source: https://github.com/gerph/riscos-systemvars
+
+- key: ROM modules:FileTypes
+  name: FileTypes
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Complete
+  status_64: Complete
+  source: ''
+
+- key: ROM modules:FPEmulator
+  name: FPEmulator
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:SharedCLibrary
+  name: SharedCLibrary
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:UnSqueezeAIF
+  name: UnSqueezeAIF
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:AppPatcher
+  name: AppPatcher
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:DiagnosticDump
+  name: DiagnosticDump
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:CFrontDemangler
+  name: CFrontDemangler
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ReadLine
+  name: ReadLine
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Internals
+  notes_64:
+  - '1'
+  source: ''
+
+- key: ROM modules:CLIV
+  name: CLIV
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Internals
+  status_64: Internals
+  notes_64:
+  - '1'
+  source: ''
+
+- key: ROM modules:VideoTTX
+  name: VideoTTX
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  source: ''
+
+- key: ROM modules:VideoSW
+  name: VideoSW
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: Stub
+  source: ''
+
+- key: ROM modules:VideoHWVIDC
+  name: VideoHWVIDC
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:VideoHWVF
+  name: VideoHWVF
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:VideoGuard
+  name: VideoGuard
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: Built
+  status_64: Built
+  source: ''
+
+- key: ROM modules:OSCommands
+  name: OSCommands
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: Stub
+  owner: Gerph
+  source: https://github.com/gerph/riscos-gos
+
+- key: ROM modules:FSCommands
+  name: FSCommands
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  notes_32:
+  - cmungehelp
+  notes_64:
+  - cmungehelp
+  source: ''
+
+- key: ROM modules:ModuleCommands
+  name: ModuleCommands
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  notes_32:
+  - cmungehelp
+  notes_64:
+  - cmungehelp
+  source: ''
+
+- key: ROM modules:ARM
+  name: ARM
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: Stub
+  notes_64:
+  - arm
+  source: ''
+
+- key: ROM modules:BufferManager
+  name: BufferManager
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Internals
+  status_64: Internals
+  notes_64:
+  - buffermanager
+  source: ''
+
+- key: ROM modules:Debugger
+  name: Debugger
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  notes_32:
+  - debugger
+  notes_64:
+  - debugger
+  owner: Gerph
+  source: https://github.com/gerph/riscos-debugger-c
+
+- key: ROM modules:RTC
+  name: RTC
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Internals
+  notes_64:
+  - '1'
+  source: ''
+
+- key: ROM modules:DMAManager
+  name: DMAManager
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:RTCAdjust
+  name: RTCAdjust
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:RTCHW
+  name: RTCHW
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:OSPointer
+  name: OSPointer
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Internals
+  notes_64:
+  - '1'
+  source: ''
+
+- key: ROM modules:Hourglass
+  name: Hourglass
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  notes_32:
+  - hourglass
+  notes_64:
+  - hourglass
+  owner: Gerph
+  source: https://github.com/gerph/riscos-hourglass-maker
+
+- key: ROM modules:Portable
+  name: Portable
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Prototype
+  status_64: Prototype
+  owner: Gerph
+  source: https://github.com/gerph/riscos-portable-prototype
+
+- key: ROM modules:FileSwitch
+  name: FileSwitch
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: Stub
+  source: ''
+
+- key: ROM modules:Squash
+  name: Squash
+  section: ROM modules
+  kind: module
+  lang: Asm/C
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ResourceFS
+  name: ResourceFS
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Internals
+  status_64: Internals
+  source: ''
+
+- key: ROM modules:ResourceFiler
+  name: ResourceFiler
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Messages
+  name: Messages
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:MessageTrans
+  name: MessageTrans
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  notes_32:
+  - messagetrans
+  notes_64:
+  - messagetrans
+  source: ''
+
+- key: ROM modules:FSLock
+  name: FSLock
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:TerritoryManager
+  name: TerritoryManager
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  notes_32:
+  - territory
+  notes_64:
+  - territory
+  source: ''
+
+- key: ROM modules:UK
+  name: UK
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:International
+  name: International
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:SerialDeviceDriver
+  name: SerialDeviceDriver
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:SerialDeviceSupport
+  name: SerialDeviceSupport
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Mouse
+  name: Mouse
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:SerialMouse
+  name: SerialMouse
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:PS2Driver
+  name: PS2Driver
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:InternationalKeyboard
+  name: InternationalKeyboard
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:KeyInput
+  name: KeyInput
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:FileCore
+  name: FileCore
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ADFS
+  name: ADFS
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ADFSFiler
+  name: ADFSFiler
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:RamFS
+  name: RamFS
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:RAMFSFiler
+  name: RAMFSFiler
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:CDFS
+  name: CDFS
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:CDFSFiler
+  name: CDFSFiler
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:DOSFS
+  name: DOSFS
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:SystemDevices
+  name: SystemDevices
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:PipeFS
+  name: PipeFS
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:AIF
+  name: AIF
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:TransientUtility
+  name: TransientUtility
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:BASIC
+  name: BASIC
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: ''
+  notes_32:
+  - srevill
+  source: ''
+
+- key: ROM modules:BASIC64
+  name: BASIC64
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:BASICTrans
+  name: BASICTrans
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Obey
+  name: Obey
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Complete
+  status_64: ''
+  notes_32:
+  - jstamp
+  owner: Julie Stamp
+  source: https://gitlab.riscosopen.org/jstamp/Obey/-/tree/CObey
+
+- key: ROM modules:DDEUtils
+  name: DDEUtils
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Internals
+  status_64: Internals
+  owner: Gerph
+  source: Private
+
+- key: ROM modules:PathUtils
+  name: PathUtils
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  source: ''
+
+- key: ROM modules:SysLog
+  name: SysLog
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:BootCommands
+  name: BootCommands
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  notes_64:
+  - bootcmds
+  source: ''
+
+- key: ROM modules:GameModes
+  name: GameModes
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ScreenModes
+  name: ScreenModes
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ScreenBlanker
+  name: ScreenBlanker
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: Investigate
+  source: ''
+
+- key: ROM modules:ScrSaver
+  name: ScrSaver
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:SoundDMA
+  name: SoundDMA
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:SoundChannels
+  name: SoundChannels
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:WaveSynth
+  name: WaveSynth
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:StringLib
+  name: StringLib
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Percussion
+  name: Percussion
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:SoundScheduler
+  name: SoundScheduler
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Internals
+  status_64: Internals
+  source: ''
+
+- key: ROM modules:SharedSound
+  name: SharedSound
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:SystemBell
+  name: SystemBell
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  source: ''
+
+- key: ROM modules:DeviceFS
+  name: DeviceFS
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ParallelDeviceDriver
+  name: ParallelDeviceDriver
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ColourTrans
+  name: ColourTrans
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: Stub
+  source: ''
+
+- key: ROM modules:Draw
+  name: Draw
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: Stub
+  owner: Gerph
+  source: https://github.com/gerph/riscos-draw-c
+
+- key: ROM modules:SpriteExtend
+  name: SpriteExtend
+  section: ROM modules
+  kind: module
+  lang: Asm/C
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ColourMap
+  name: ColourMap
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Stub
+  source: ''
+
+- key: ROM modules:BlendTable
+  name: BlendTable
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:InverseTable
+  name: InverseTable
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Internals
+  source: ''
+
+- key: ROM modules:DrawFile
+  name: DrawFile
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  notes_64:
+  - drawfile
+  source: ''
+
+- key: ROM modules:FontMap
+  name: FontMap
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ZLib
+  name: ZLib
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:PNG
+  name: PNG
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ROMFonts
+  name: ROMFonts
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:FontManager
+  name: FontManager
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: Stub
+  source: ''
+
+- key: ROM modules:SuperSample
+  name: SuperSample
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Internals
+  source: ''
+
+- key: ROM modules:ImageFileConvert
+  name: ImageFileConvert
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:CompressJPEG
+  name: CompressJPEG
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ConvertPNG
+  name: ConvertPNG
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ConvertBMP
+  name: ConvertBMP
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:ConvertDoom
+  name: ConvertDoom
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:ConvertGIF
+  name: ConvertGIF
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:ConvertICO
+  name: ConvertICO
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:ConvertPCX
+  name: ConvertPCX
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:ConvertPNM
+  name: ConvertPNM
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:ConvertSprite
+  name: ConvertSprite
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ConvertSun
+  name: ConvertSun
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:ConvertXBM
+  name: ConvertXBM
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:ConvertClear
+  name: ConvertClear
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  source: ''
+
+- key: ROM modules:ImageFileRender
+  name: ImageFileRender
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  source: ''
+
+- key: ROM modules:ImageFileRender_Artworks
+  name: ImageFileRender_Artworks
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Zipper
+  name: Zipper
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:PrinterBuffer
+  name: PrinterBuffer
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  source: ''
+
+- key: ROM modules:PDriver
+  name: PDriver
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:PDriverDP
+  name: PDriverDP
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Prototype
+  status_64: ''
+  notes_32:
+  - pdriverdp
+  source: ''
+
+- key: ROM modules:PDumperSupport
+  name: PDumperSupport
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:PDumper24
+  name: PDumper24
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:PDumperCX
+  name: PDumperCX
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:PDumperDM
+  name: PDumperDM
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:PDumperE2
+  name: PDumperE2
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:PDumperIW
+  name: PDumperIW
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:PDumperLJ
+  name: PDumperLJ
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:PDriverPS
+  name: PDriverPS
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: ''
+  notes_32:
+  - pdriverps
+  source: ''
+
+- key: ROM modules:MakePSFont
+  name: MakePSFont
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:RemotePrinterSupport
+  name: RemotePrinterSupport
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:RemotePrinterMessages
+  name: RemotePrinterMessages
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:WindowManager
+  name: WindowManager
+  section: ROM modules
+  kind: module
+  lang: Asm/C
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:CommandWindow
+  name: Wimp:CommandWindow
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:ErrorBox
+  name: Wimp:ErrorBox
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:Fonts
+  name: Wimp:Fonts
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:IconBorders
+  name: Wimp:IconBorders
+  section: ROM modules
+  kind: module
+  lang: Asm/C
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:IconRender
+  name: Wimp:IconRender
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  owner: Gerph
+  source: https://github.com/gerph/riscos-wimp-iconrender
+
+- key: ROM modules:Wimp:Interaction
+  name: Wimp:Interaction
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:Introspection
+  name: Wimp:Introspection
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:Memory
+  name: Wimp:Memory
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:Menus
+  name: Wimp:Menus
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:Messages
+  name: Wimp:Messages
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:Pointer
+  name: Wimp:Pointer
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:Polling
+  name: Wimp:Polling
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:SWIs
+  name: Wimp:SWIs
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:SpritePools
+  name: Wimp:SpritePools
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:SpriteRender
+  name: Wimp:SpriteRender
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  owner: Gerph
+  source: https://github.com/gerph/riscos-wimp-spriterender
+
+- key: ROM modules:Wimp:Startup
+  name: Wimp:Startup
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:TaskManagement
+  name: Wimp:TaskManagement
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:Templates
+  name: Wimp:Templates
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  owner: Gerph
+  source: https://github.com/gerph/riscos-wimp-templates
+
+- key: ROM modules:Wimp:TextRender
+  name: Wimp:TextRender
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  owner: Gerph
+  source: https://github.com/gerph/riscos-wimp-textrender
+
+- key: ROM modules:Wimp:Tiling
+  name: Wimp:Tiling
+  section: ROM modules
+  kind: module
+  lang: Asm/C
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:ValidationStrings
+  name: Wimp:ValidationStrings
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  owner: Gerph
+  source: https://github.com/gerph/riscos-wimp-validationstrings
+
+- key: ROM modules:Wimp:WindowManagement
+  name: Wimp:WindowManagement
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:WindowRender
+  name: Wimp:WindowRender
+  section: ROM modules
+  kind: module
+  lang: Asm/C
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Wimp:WindowStacking
+  name: Wimp:WindowStacking
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:FilterManager
+  name: FilterManager
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Internals
+  status_64: Internals
+  source: ''
+
+- key: ROM modules:RedrawManager
+  name: RedrawManager
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Desktop
+  name: Desktop
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Internals
+  status_64: Internals
+  source: ''
+
+- key: ROM modules:IconBorderBeveled
+  name: IconBorderBeveled
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:IconBorderFob
+  name: IconBorderFob
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  owner: Gerph
+  source: https://github.com/gerph/iconborders-fob
+
+- key: ROM modules:IconBorderCrossy
+  name: IconBorderCrossy
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:IconBorderLoop
+  name: IconBorderLoop
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:IconBorderPlainPopping
+  name: IconBorderPlainPopping
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:IconBorderPlain
+  name: IconBorderPlain
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM modules:IconBorderRound
+  name: IconBorderRound
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:TaskManager
+  name: TaskManager
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ShellCLI
+  name: ShellCLI
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Internals
+  status_64: Internals
+  source: ''
+
+- key: ROM modules:DisplayManager
+  name: DisplayManager
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:DragASprite
+  name: DragASprite
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:DragAnObject
+  name: DragAnObject
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Filer
+  name: Filer
+  section: ROM modules
+  kind: module
+  lang: Asm/C
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:FilerSWIs
+  name: FilerSWIs
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Internals
+  status_64: Internals
+  source: ''
+
+- key: ROM modules:Filer_Action
+  name: Filer_Action
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Free
+  name: Free
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Investigate
+  status_64: Investigate
+  source: ''
+
+- key: ROM modules:Pinboard
+  name: Pinboard
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ClipboardHolder
+  name: ClipboardHolder
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:WindowScroll
+  name: WindowScroll
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ColourPicker
+  name: ColourPicker
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:TaskWindow
+  name: TaskWindow
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:NetI
+  name: NetI
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:NetFS
+  name: NetFS
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:NetStatus
+  name: NetStatus
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  owner: Gerph
+  source: https://github.com/gerph/riscos-netstatus
+
+- key: ROM modules:NetFiler
+  name: NetFiler
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:NetPrint
+  name: NetPrint
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Internals
+  status_64: Internals
+  source: ''
+
+- key: ROM modules:MbufManager
+  name: MbufManager
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Internet
+  name: Internet
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:InetServices
+  name: InetServices
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Resolver
+  name: Resolver
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:MimeMap
+  name: MimeMap
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: Built
+  status_64: Built
+  source: ''
+
+- key: ROM modules:InternetTime
+  name: InternetTime
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:InetConfigure
+  name: InetConfigure
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:DHCPClient
+  name: DHCPClient
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ZeroConf
+  name: ZeroConf
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:RouterDiscovery
+  name: RouterDiscovery
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Freeway
+  name: Freeway
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:FreewayHosts
+  name: FreewayHosts
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ShareFS
+  name: ShareFS
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:LanManFS
+  name: LanManFS
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Toolbox
+  name: Toolbox
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  owner: Gerph
+  source: https://github.com/gerph/riscos-toolbox
+
+- key: ROM modules:Window
+  name: Window
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Menu
+  name: Menu
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Iconbar
+  name: Iconbar
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ColourDbox
+  name: ColourDbox
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ColourMenu
+  name: ColourMenu
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:DCS
+  name: DCS
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:FileInfo
+  name: FileInfo
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:FontDbox
+  name: FontDbox
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:FontMenu
+  name: FontMenu
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:PrintDbox
+  name: PrintDbox
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ProgInfo
+  name: ProgInfo
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:SaveAs
+  name: SaveAs
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Scale
+  name: Scale
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:GDivider
+  name: GDivider
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ToolAction
+  name: ToolAction
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:TextGadgets
+  name: TextGadgets
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:ImageFileGadget
+  name: ImageFileGadget
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: ROM modules:CDFSResources
+  name: CDFSResources
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:CDFSdriver
+  name: CDFSdriver
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Internals
+  status_64: Internals
+  source: ''
+
+- key: ROM modules:CDFSSoftATAPI
+  name: CDFSSoftATAPI
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:CDFSSoftChinonEESOX
+  name: CDFSSoftChinonEESOX
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:CDFSSoftHitachiEESOX
+  name: CDFSSoftHitachiEESOX
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:CDFSSoftPhilipsEESOX
+  name: CDFSSoftPhilipsEESOX
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:CDFSSoftSonyEESOX
+  name: CDFSSoftSonyEESOX
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:CDFSSoftToshibaEESOX
+  name: CDFSSoftToshibaEESOX
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:LegacyBBC
+  name: LegacyBBC
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:LegacyScreen
+  name: LegacyScreen
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:BBCEconet
+  name: BBCEconet
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:Joystick
+  name: Joystick
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Prototype
+  status_64: Prototype
+  owner: Gerph
+  source: https://github.com/gerph/riscos-joystick-ai
+
+- key: ROM modules:SpriteUtils
+  name: SpriteUtils
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Stub
+  status_64: Stub
+  notes_32:
+  - spriteutils
+  notes_64:
+  - spriteutils
+  source: ''
+
+- key: ROM modules:OwnerBanner
+  name: OwnerBanner
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: Functional
+  status_64: Functional
+  source: ''
+
+- key: ROM modules:IRQUtils
+  name: IRQUtils
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:WindowUtils
+  name: WindowUtils
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:CallASWI
+  name: CallASWI
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:BootNet
+  name: BootNet
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:AUNMsgs
+  name: AUNMsgs
+  section: ROM modules
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:!Alarm
+  name: '!Alarm'
+  section: ROM modules
+  kind: module
+  lang: BASIC
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: ROM modules:LibraryHelp
+  name: LibraryHelp
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  source: ''
+
+- key: ROM modules:ErrorLog
+  name: ErrorLog
+  section: ROM modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  source: ''
+
+- key: New ROM modules:SystemVarsDefaults
+  name: SystemVarsDefaults
+  section: New ROM modules
+  kind: module
+  status_32: Functional
+  status_64: Functional
+  source: ''
+
+- key: System modules:RateTracker
+  name: RateTracker
+  section: System modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Additional modules:IconBorderBeveled
+  name: IconBorderBeveled
+  section: Additional modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Additional modules:IconBorderCrossy
+  name: IconBorderCrossy
+  section: Additional modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Additional modules:IconBorderFob
+  name: IconBorderFob
+  section: Additional modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  owner: Gerph
+  source: https://github.com/gerph/iconborders-fob
+
+- key: Additional modules:IconBorderPlain
+  name: IconBorderPlain
+  section: Additional modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Additional modules:IconBorderPlainPopping
+  name: IconBorderPlainPopping
+  section: Additional modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Additional modules:IconBorderSkins
+  name: IconBorderSkins
+  section: Additional modules
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: ROM resources:BootMenu
+  name: BootMenu
+  section: ROM resources
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  notes_64:
+  - network
+  - link
+  source: ''
+
+- key: ROM resources:Repeat
+  name: Repeat
+  section: ROM resources
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Library files:ForHooks
+  name: ForHooks
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Library files:ImgConvert
+  name: ImgConvert
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Library files:MiniJTran
+  name: MiniJTran
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Library files:AddApp
+  name: AddApp
+  section: Library files
+  filetype: Utility
+  kind: utility
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Library files:AppSize
+  name: AppSize
+  section: Library files
+  filetype: Utility
+  kind: utility
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Library files:CDReinit
+  name: CDReinit
+  section: Library files
+  filetype: Utility
+  kind: utility
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Library files:ClrMonitor
+  name: ClrMonitor
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Library files:Do
+  name: Do
+  section: Library files
+  filetype: Utility
+  kind: utility
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Library files:FontChange
+  name: FontChange
+  section: Library files
+  filetype: BASIC
+  kind: basic
+  lang: Script
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Library files:ForHooks#2
+  name: ForHooks
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Library files:HOff
+  name: HOff
+  section: Library files
+  filetype: BASIC
+  kind: basic
+  lang: Script
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Library files:HOn
+  name: HOn
+  section: Library files
+  filetype: BASIC
+  kind: basic
+  lang: Script
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Library files:IfThere
+  name: IfThere
+  section: Library files
+  filetype: Utility
+  kind: utility
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Library files:LoadCMOS
+  name: LoadCMOS
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - libsupport
+  source: ''
+
+- key: Library files:MD5Hash
+  name: MD5Hash
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Library files:MiniGZip
+  name: MiniGZip
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - libzlib
+  source: ''
+
+- key: Library files:MiniGrep
+  name: MiniGrep
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Library files:MiniUnzip
+  name: MiniUnzip
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Library files:MiniZip
+  name: MiniZip
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Library files:Repeat
+  name: Repeat
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - csystem
+  source: ''
+
+- key: Library files:SafeLogon
+  name: SafeLogon
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Library files:ScanLibs
+  name: ScanLibs
+  section: Library files
+  filetype: BASIC
+  kind: basic
+  lang: Script
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Library files:SysPaths
+  name: SysPaths
+  section: Library files
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - libsupport
+  source: ''
+
+- key: Library files:X
+  name: X
+  section: Library files
+  filetype: Utility
+  kind: utility
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Boot utilities:AddToRMA
+  name: AddToRMA
+  section: Boot utilities
+  filetype: Utility
+  kind: utility
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Boot utilities:BandLimit
+  name: BandLimit
+  section: Boot utilities
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Boot utilities:BootLog
+  name: BootLog
+  section: Boot utilities
+  filetype: Module
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Boot utilities:BootRun
+  name: BootRun
+  section: Boot utilities
+  filetype: Obey
+  kind: obey
+  lang: Script
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Boot utilities:BootVars
+  name: BootVars
+  section: Boot utilities
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - libsupport
+  source: ''
+
+- key: Boot utilities:CheckMouse
+  name: CheckMouse
+  section: Boot utilities
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Boot utilities:DeskCheck
+  name: DeskCheck
+  section: Boot utilities
+  filetype: BASIC
+  kind: basic
+  lang: Script
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Boot utilities:DeskRun
+  name: DeskRun
+  section: Boot utilities
+  filetype: Obey
+  kind: obey
+  lang: Script
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Boot utilities:Desktop
+  name: Desktop
+  section: Boot utilities
+  filetype: Desktop
+  kind: desktop
+  lang: Script
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Boot utilities:ErrorLog
+  name: ErrorLog
+  section: Boot utilities
+  filetype: Module
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Boot utilities:FileCoreCheck
+  name: FileCoreCheck
+  section: Boot utilities
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - csystem
+  source: ''
+
+- key: Boot utilities:FreePool
+  name: FreePool
+  section: Boot utilities
+  filetype: Utility
+  kind: utility
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Boot utilities:HWScan
+  name: HWScan
+  section: Boot utilities
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Boot utilities:LibraryHelp
+  name: LibraryHelp
+  section: Boot utilities
+  filetype: Module
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  source: ''
+
+- key: Boot utilities:MemFix
+  name: MemFix
+  section: Boot utilities
+  filetype: Module
+  kind: module
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Boot utilities:AppPatcher
+  name: AppPatcher
+  section: Boot utilities
+  filetype: Module
+  kind: module
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Boot utilities:SetChoices
+  name: SetChoices
+  section: Boot utilities
+  filetype: Obey
+  kind: obey
+  lang: Script
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Boot utilities:ShrinkRMA
+  name: ShrinkRMA
+  section: Boot utilities
+  filetype: Utility
+  kind: utility
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Boot utilities:Softload
+  name: Softload
+  section: Boot utilities
+  filetype: Absolute
+  kind: absolute
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Boot utilities:UnplugTbox
+  name: UnplugTbox
+  section: Boot utilities
+  filetype: BASIC
+  kind: basic
+  lang: Script
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Boot utilities:VProtect
+  name: VProtect
+  section: Boot utilities
+  filetype: Module
+  kind: module
+  lang: Binary
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Libraries:C library
+  name: C library
+  section: Libraries
+  kind: library
+  lang: C/Asm
+  status_32: '-'
+  status_64: Functional
+  notes_64:
+  - clib
+  owner: Gerph
+  source: https://github.com/gerph/riscos64-clib
+
+- key: Libraries:OSLib
+  name: OSLib
+  section: Libraries
+  kind: library
+  lang: DSL/Asm
+  status_32: ''
+  status_64: Complete
+  notes_64:
+  - oslib
+  owner: Gerph
+  source: https://github.com/gerph/riscos64-oslib
+
+- key: Libraries:Base64
+  name: Base64
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:ANTMemLib
+  name: ANTMemLib
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:AOFLink
+  name: AOFLink
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - aoflink
+  source: ''
+
+- key: Libraries:Asm
+  name: Asm
+  section: Libraries
+  kind: library
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  owner: Gerph
+  source: https://github.com/gerph/riscos-libasm
+
+- key: Libraries:AsmDebug
+  name: AsmDebug
+  section: Libraries
+  kind: library
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Libraries:Base64#2
+  name: Base64
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:CLX
+  name: CLX
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:Configure
+  name: Configure
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - libtoolbox
+  source: ''
+
+- key: Libraries:DES
+  name: DES
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:Desk
+  name: Desk
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:DeskLib
+  name: DeskLib
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:FindResolver
+  name: FindResolver
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - network
+  source: ''
+
+- key: Libraries:Fortify
+  name: Fortify
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:GResolve
+  name: GResolve
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - network
+  source: ''
+
+- key: Libraries:GetOpt
+  name: GetOpt
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:IFCLib
+  name: IFCLib
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:INIRead
+  name: INIRead
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:Interact
+  name: Interact
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:Interfaces
+  name: Interfaces
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - network
+  source: ''
+
+- key: Libraries:JBacktrace
+  name: JBacktrace
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - architecture
+  source: ''
+
+- key: Libraries:JavaScript
+  name: JavaScript
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:LongLong
+  name: LongLong
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:MD5
+  name: MD5
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:MemCheck
+  name: MemCheck
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - architecture
+  source: ''
+
+- key: Libraries:MiniDump
+  name: MiniDump
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:ModMalloc
+  name: ModMalloc
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:ModuleTask
+  name: ModuleTask
+  section: Libraries
+  kind: library
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Libraries:ModuleWrap
+  name: ModuleWrap
+  section: Libraries
+  kind: library
+  lang: Asm
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Libraries:PBTS
+  name: PBTS
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:PlainArgv
+  name: PlainArgv
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:PNG
+  name: PNG
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:RISC_OSLibSA
+  name: RISC_OSLibSA
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:ROLib
+  name: ROLib
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:RegExp
+  name: RegExp
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:Resolver
+  name: Resolver
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - network
+  source: ''
+
+- key: Libraries:SCLStubsG
+  name: SCLStubsG
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - architecture
+  source: ''
+
+- key: Libraries:SHA1
+  name: SHA1
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:SQLite
+  name: SQLite
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:Support
+  name: Support
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  notes_64:
+  - support
+  source: ''
+
+- key: Libraries:TCPIPLibs
+  name: TCPIPLibs
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:TGRlib
+  name: TGRlib
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:TIFF
+  name: TIFF
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:TaskWindow
+  name: TaskWindow
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  notes_64:
+  - libtoolbox
+  source: ''
+
+- key: Libraries:Throwback
+  name: Throwback
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:URLFetch
+  name: URLFetch
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:WebImage:WebImage
+  name: WebImage:WebImage
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:WebImage:XBM
+  name: WebImage:XBM
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:WebImage:GIF
+  name: WebImage:GIF
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:WimpKeyName
+  name: WimpKeyName
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:Zipper
+  name: Zipper
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Libraries:ZLib
+  name: ZLib
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: ''
+  source: ''
+
+- key: Libraries:mDNSCore
+  name: mDNSCore
+  section: Libraries
+  kind: library
+  lang: C
+  status_32: '-'
+  status_64: Built
+  source: ''
+
+- key: Primary toolchain:cc (Norcroft)
+  name: cc (Norcroft)
+  section: Primary toolchain
+  tool: C Compiler
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  source: ''
+
+- key: Primary toolchain:gcc (GCC)
+  name: gcc (GCC)
+  section: Primary toolchain
+  tool: C Compiler
+  kind: tool
+  lang: C
+  status_32: ''
+  status_64: N/A
+  linux: Functional
+  mac: Via Docker
+  windows: Via WSL?
+  notes_64:
+  - gcc
+  notes_linux:
+  - riscos64-cc
+  source: ''
+
+- key: Primary toolchain:tcc (as compiler)
+  name: tcc (as compiler)
+  section: Primary toolchain
+  tool: C Compiler
+  kind: tool
+  lang: C
+  status_32: ''
+  status_64: Functional
+  linux: 'No'
+  mac: Functional
+  notes_64:
+  - tcc
+  notes_mac:
+  - tcc
+  source: ''
+
+- key: Primary toolchain:c++ (Norcroft)
+  name: c++ (Norcroft)
+  section: Primary toolchain
+  tool: C++ Compiler
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  - cfront
+  source: ''
+
+- key: Primary toolchain:objasm (Norcroft)
+  name: objasm (Norcroft)
+  section: Primary toolchain
+  tool: Assembler
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  source: ''
+
+- key: Primary toolchain:gas (GCC)
+  name: gas (GCC)
+  section: Primary toolchain
+  tool: Assembler
+  kind: tool
+  lang: C
+  status_32: ''
+  status_64: N/A
+  linux: Functional
+  mac: Via Docker
+  windows: Via WSL?
+  notes_64:
+  - gas
+  notes_linux:
+  - riscos64-objasm
+  source: ''
+
+- key: Primary toolchain:link (Norcroft)
+  name: link (Norcroft)
+  section: Primary toolchain
+  tool: Linker
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  source: ''
+
+- key: Primary toolchain:ld (BinUtils)
+  name: ld (BinUtils)
+  section: Primary toolchain
+  tool: Linker
+  kind: tool
+  lang: C
+  status_32: ''
+  status_64: N/A
+  linux: Functional
+  mac: Via Docker
+  windows: Via WSL?
+  notes_64:
+  - ld
+  notes_linux:
+  - riscos64-link
+  source: ''
+
+- key: Primary toolchain:tcc (as linker)
+  name: tcc (as linker)
+  section: Primary toolchain
+  tool: Linker
+  kind: tool
+  lang: C
+  status_32: ''
+  status_64: Built
+  linux: 'No'
+  mac: Built
+  notes_64:
+  - tcc
+  notes_mac:
+  - tcc
+  source: ''
+
+- key: Primary toolchain:libfile (Norcroft)
+  name: libfile (Norcroft)
+  section: Primary toolchain
+  tool: Lib maker
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  source: ''
+
+- key: Primary toolchain:makealf
+  name: makealf
+  section: Primary toolchain
+  tool: Lib maker
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - makealf
+  source: ''
+
+- key: Primary toolchain:ar (BinUtils)
+  name: ar (BinUtils)
+  section: Primary toolchain
+  tool: Lib maker
+  kind: tool
+  lang: C
+  status_32: ''
+  status_64: N/A
+  linux: Functional
+  mac: Via Docker
+  windows: Via WSL?
+  notes_64:
+  - ar
+  notes_linux:
+  - riscos64-libfile
+  source: ''
+
+- key: Primary toolchain:cmhg (Norcroft)
+  name: cmhg (Norcroft)
+  section: Primary toolchain
+  tool: Module header
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  - cmhg
+  source: ''
+
+- key: Primary toolchain:cmunge
+  name: cmunge
+  section: Primary toolchain
+  tool: Module header
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  linux: Functional
+  mac: Functional
+  windows: N/A
+  notes_64:
+  - cmunge
+  owner: Gerph
+  source: https://github.com/gerph/riscos-cmunge
+
+- key: Primary toolchain:amu (Norcroft)
+  name: amu (Norcroft)
+  section: Primary toolchain
+  tool: Make tool
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  source: ''
+
+- key: Primary toolchain:make (GNU)
+  name: make (GNU)
+  section: Primary toolchain
+  tool: Make tool
+  kind: tool
+  lang: C
+  status_32: ''
+  status_64: N/A
+  linux: Functional
+  mac: Functional
+  windows: Via WSL?
+  notes_64:
+  - make
+  notes_linux:
+  - make
+  notes_mac:
+  - make
+  source: ''
+
+- key: Primary toolchain:aoftoc (Norcroft)
+  name: aoftoc (Norcroft)
+  section: Primary toolchain
+  tool: AOF-to-C
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  source: ''
+
+- key: Primary toolchain:binaof (Norcroft)
+  name: binaof (Norcroft)
+  section: Primary toolchain
+  tool: Bin-to-AOF
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  source: ''
+
+- key: Primary toolchain:decaof (Norcroft)
+  name: decaof (Norcroft)
+  section: Primary toolchain
+  tool: Decode AOF
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  source: ''
+
+- key: Primary toolchain:squeeze (Norcroft)
+  name: squeeze (Norcroft)
+  section: Primary toolchain
+  tool: Code compress
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  - squeeze
+  source: ''
+
+- key: Primary toolchain:modsqz (Norcroft)
+  name: modsqz (Norcroft)
+  section: Primary toolchain
+  tool: Code compress
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  - modsqz
+  source: ''
+
+- key: Additional tools:perl (5.001)
+  name: perl (5.001)
+  section: Additional tools
+  tool: Perl
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  notes_64:
+  - perl
+  source: ''
+
+- key: Additional tools:GNU Fortran
+  name: GNU Fortran
+  section: Additional tools
+  tool: Fortran
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: ''
+  linux: Functional
+  notes_linux:
+  - riscos64-fortran
+  source: ''
+
+- key: Additional tools:P2C (Gillespie)
+  name: P2C (Gillespie)
+  section: Additional tools
+  tool: Pascal
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: ''
+  linux: Functional
+  mac: Functional
+  notes_linux:
+  - riscos64-pascal
+  notes_mac:
+  - riscos64-pascal
+  source: ''
+
+- key: Additional tools:Rust
+  name: Rust
+  section: Additional tools
+  tool: Rust
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: ''
+  linux: Prototype
+  notes_linux:
+  - rust
+  source: ''
+
+- key: Additional tools:basicdetokenise
+  name: basicdetokenise
+  section: Additional tools
+  tool: Detokeniser
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: ''
+  owner: Gerph
+  source: https://github.com/gerph/riscos-basic-detokenise
+
+- key: Additional tools:basictokenise
+  name: basictokenise
+  section: Additional tools
+  tool: Tokeniser
+  kind: tool
+  lang: Perl
+  status_32: ''
+  status_64: ''
+  linux: Functional
+  mac: Functional
+  source: ''
+
+- key: Additional tools:bison
+  name: bison
+  section: Additional tools
+  tool: Parser gen
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: Built
+  notes_64:
+  - bison
+  source: ''
+
+- key: Additional tools:defmod
+  name: defmod
+  section: Additional tools
+  tool: OSLib gen
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: ''
+  linux: N/A
+  notes_linux:
+  - defmod
+  source: ''
+
+- key: Additional tools:oslib parser
+  name: oslib parser
+  section: Additional tools
+  tool: OSLib gen
+  kind: tool
+  lang: Python
+  status_32: ''
+  status_64: ''
+  linux: Functional
+  mac: Works
+  notes_linux:
+  - defmod
+  notes_mac:
+  - defmod
+  owner: Gerph
+  source: https://github.com/gerph/riscos-oslib-parser
+
+- key: Additional tools:flex
+  name: flex
+  section: Additional tools
+  tool: Lex analyser
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: Built
+  notes_64:
+  - flex
+  source: ''
+
+- key: Additional tools:hdrtoh
+  name: hdrtoh
+  section: Additional tools
+  tool: Header maker
+  kind: tool
+  lang: Perl
+  status_32: ''
+  status_64: ''
+  source: ''
+
+- key: Additional tools:kitten
+  name: kitten
+  section: Additional tools
+  tool: Cat file
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  notes_64:
+  - kitten
+  source: ''
+
+- key: Additional tools:modservices
+  name: modservices
+  section: Additional tools
+  tool: Mod decoder
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  notes_64:
+  - modservices
+  source: ''
+
+- key: Additional tools:sed
+  name: sed
+  section: Additional tools
+  tool: Stream edit
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: Built
+  notes_64:
+  - sed
+  source: ''
+
+- key: Additional tools:vtranslate
+  name: vtranslate
+  section: Additional tools
+  tool: Version Trans
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  notes_64:
+  - vtranslate
+  source: ''
+
+- key: Additional tools:binaof
+  name: binaof
+  section: Additional tools
+  tool: Binary includes
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  - binaof
+  source: ''
+
+- key: Additional tools:modgen
+  name: modgen
+  section: Additional tools
+  tool: Resource mods
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: Functional
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - modgen
+  source: ''
+
+- key: Additional tools:resgen
+  name: resgen
+  section: Additional tools
+  tool: Resource includes
+  kind: tool
+  lang: C
+  status_32: '-'
+  status_64: N/A
+  linux: N/A
+  mac: N/A
+  windows: N/A
+  notes_64:
+  - norcroft
+  - resgen
+  source: ''

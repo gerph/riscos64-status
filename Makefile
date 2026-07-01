@@ -32,11 +32,15 @@ clean:
 	-rm -rf wiki-update
 	-rm -rf update-images
 
-statistics.json: utils/makestats.pl Status.md
-	utils/makestats.pl json > statistics.json
+STATUS_DATA = \
+		data/components.yaml \
+		data/status-notes.yaml
 
-statistics.md: utils/makestats.pl Status.md
-	utils/makestats.pl md > statistics.md
+statistics.json: utils/makestats.py utils/status_catalog.py $(STATUS_DATA)
+	python3 utils/makestats.py json > statistics.json
+
+statistics.md: utils/makestats.py utils/status_catalog.py $(STATUS_DATA)
+	python3 utils/makestats.py md > statistics.md
 
 plan.json: utils/plantogantt.pl $(patsubst %,planning/Phase-%.md,${PHASES})
 
@@ -68,13 +72,12 @@ wiki-update/Languages.md: planning/Languages.md | wiki-update
 wiki-update/Update%.md: updates/Update%.md | wiki-update
 	cp $? $@
 
-wiki-update/Status.md: Status.md | wiki-update
-	utils/fixupfootnotes.pl $? tmp-status.md
-	utils/linkmodulefeatures.pl tmp-status.md $@
+wiki-update/Status.md: Status.md utils/linkmodulefeatures.py utils/status_catalog.py $(STATUS_DATA) | wiki-update
+	python3 utils/linkmodulefeatures.py Status.md $@
 
-wiki-update/Phase-%.md: planning/Phase-%.md planning/Phase-1.mmd utils/generate-phases.pl | wiki-update
+wiki-update/Phase-%.md: planning/Phase-%.md planning/Phase-1.mmd utils/generate-phases.pl utils/linkmodulefeatures.py utils/status_catalog.py $(STATUS_DATA) | wiki-update
 	utils/generate-phases.pl $* tmp-phase-$*.md
-	utils/linkmodulefeatures.pl tmp-phase-$*.md $@
+	python3 utils/linkmodulefeatures.py tmp-phase-$*.md $@
 
 wiki-update:
 	mkdir -p wiki-update

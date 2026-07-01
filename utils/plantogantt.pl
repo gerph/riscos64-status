@@ -28,7 +28,7 @@
 use warnings;
 use strict;
 
-use JSON;
+use JSON::PP;
 
 my $format = shift;
 if (!defined $format)
