@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+from contextlib import redirect_stderr, redirect_stdout
+from io import StringIO
 from pathlib import Path
 import sys
 import tempfile
@@ -12,6 +14,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT / "utils"))
 
 import linkmodulefeatures  # type: ignore  # noqa: E402
+import makestats  # type: ignore  # noqa: E402
 from status_catalog import (  # type: ignore  # noqa: E402
     compute_statistics,
     derive_repository_facts,
@@ -57,14 +60,16 @@ class StatusPipelineTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tempdir:
             status_output = Path(tempdir) / "Status.md"
             modules_dir = Path(tempdir) / "wiki-update"
-            rc = linkmodulefeatures.main(
-                [
-                    "linkmodulefeatures.py",
-                    str(REPO_ROOT / "Status.md"),
-                    str(status_output),
-                    str(modules_dir),
-                ]
-            )
+            stderr = StringIO()
+            with redirect_stderr(stderr):
+                rc = linkmodulefeatures.main(
+                    [
+                        "linkmodulefeatures.py",
+                        str(REPO_ROOT / "Status.md"),
+                        str(status_output),
+                        str(modules_dir),
+                    ]
+                )
             self.assertEqual(rc, 0)
             content = status_output.read_text(encoding="utf-8")
             self.assertIn("### ROM modules", content)
@@ -79,14 +84,16 @@ class StatusPipelineTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tempdir:
             status_output = Path(tempdir) / "Status.md"
             modules_dir = Path(tempdir) / "wiki-update"
-            linkmodulefeatures.main(
-                [
-                    "linkmodulefeatures.py",
-                    str(REPO_ROOT / "Status.md"),
-                    str(status_output),
-                    str(modules_dir),
-                ]
-            )
+            stderr = StringIO()
+            with redirect_stderr(stderr):
+                linkmodulefeatures.main(
+                    [
+                        "linkmodulefeatures.py",
+                        str(REPO_ROOT / "Status.md"),
+                        str(status_output),
+                        str(modules_dir),
+                    ]
+                )
 
             territory = (modules_dir / "Module_TerritoryManager.md").read_text(encoding="utf-8")
             self.assertIn("## Status summary", territory)
@@ -102,6 +109,18 @@ class StatusPipelineTests(unittest.TestCase):
         self.assertIn("Module_LibraryHelp.md", mapping)
         self.assertIn("Module_TimerManager.md", mapping)
         self.assertIn("Module_BootCommands.md", mapping)
+
+    def test_processor_warns_for_missing_owner_when_status_set(self) -> None:
+        stdout = StringIO()
+        stderr = StringIO()
+        with redirect_stdout(stdout), redirect_stderr(stderr):
+            rc = makestats.main(["makestats.py", "json"])
+
+        self.assertEqual(rc, 0)
+        warnings = stderr.getvalue()
+        self.assertIn("Warning: no owner for TerritoryManager", warnings)
+        self.assertNotIn("Warning: no owner for Kernel:SystemInit", warnings)
+        self.assertNotIn("Warning: no owner for gcc (GCC)", warnings)
 
 
 if __name__ == "__main__":

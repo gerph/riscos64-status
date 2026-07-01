@@ -211,6 +211,21 @@ def validate_components(components: Sequence[dict], notes: Dict[str, str]) -> No
                     raise ValueError(f"Component {key} referenced unknown note {note_id!r}")
 
 
+def owner_warnings(components: Sequence[dict]) -> List[str]:
+    warnings: List[str] = []
+    for component in components:
+        owner = str(component.get("owner", "")).strip()
+        if owner:
+            continue
+
+        for field in ("status_32", "status_64"):
+            value = component.get(field, "")
+            if value not in {"", "-", "N/A"}:
+                warnings.append(f"Warning: no owner for {component['name']}")
+                break
+    return warnings
+
+
 def _normalise_32_state(component: dict) -> Optional[str]:
     raw = component.get("status_32", "")
     if raw == "N/A":

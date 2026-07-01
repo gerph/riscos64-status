@@ -7,7 +7,14 @@ import json
 import sys
 from pathlib import Path
 
-from status_catalog import compute_statistics, load_components, load_notes, render_statistics_markdown, validate_components
+from status_catalog import (
+    compute_statistics,
+    load_components,
+    load_notes,
+    owner_warnings,
+    render_statistics_markdown,
+    validate_components,
+)
 
 
 def main(argv: list[str]) -> int:
@@ -16,6 +23,8 @@ def main(argv: list[str]) -> int:
     components = load_components(repo_root / "data" / "components.yaml")
     notes = load_notes(repo_root / "data" / "status-notes.yaml")
     validate_components(components, notes)
+    for warning in owner_warnings(components):
+        print(warning, file=sys.stderr)
     stats = compute_statistics(components)
 
     if output_format == "json":

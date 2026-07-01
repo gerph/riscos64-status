@@ -71,6 +71,7 @@
   lang: Asm
   status_32: Stub
   status_64: Stub
+  owner: Gerph
   source: ''
 
 - key: ROM modules:Kernel:Vectors#2
@@ -90,6 +91,7 @@
   lang: Asm
   status_32: Internals
   status_64: Internals
+  owner: Gerph
   source: ''
 
 - key: ROM modules:Kernel:MemManagement
@@ -99,6 +101,7 @@
   lang: Asm
   status_32: Stub
   status_64: Stub
+  owner: Gerph
   source: ''
 
 - key: ROM modules:Kernel:DAs
@@ -117,6 +120,7 @@
   lang: Asm
   status_32: Stub
   status_64: Stub
+  owner: Gerph
   source: ''
 
 - key: ROM modules:Kernel:Graphics
@@ -137,6 +141,7 @@
   status_64: Internals
   notes_64:
   - '1'
+  owner: Gerph
   source: ''
 
 - key: ROM modules:Kernel:Exceptions
@@ -209,7 +214,8 @@
   lang: Asm
   status_32: Functional
   status_64: Functional
-  source: ''
+  owner: Gerph
+  source: https://github.com/gerph/riscos-gos
 
 - key: ROM modules:IRQ
   name: IRQ
@@ -246,6 +252,7 @@
   lang: Asm
   status_32: Stub
   status_64: Stub
+  owner: Gerph
   source: ''
 
 - key: ROM modules:NVRAMHW
@@ -265,6 +272,7 @@
   lang: Asm
   status_32: Complete
   status_64: Complete
+  owner: Gerph
   source: ''
 
 - key: ROM modules:OSSWIs
@@ -274,6 +282,7 @@
   lang: Asm
   status_32: Functional
   status_64: Functional
+  owner: Gerph
   source: ''
 
 - key: ROM modules:EvaluateExpression
@@ -283,6 +292,7 @@
   lang: Asm
   status_32: Automated
   status_64: Automated
+  owner: Gerph
   source: ''
 
 - key: ROM modules:SystemVars
@@ -302,6 +312,7 @@
   lang: Asm
   status_32: Complete
   status_64: Complete
+  owner: Gerph
   source: ''
 
 - key: ROM modules:FPEmulator
@@ -367,6 +378,7 @@
   status_64: Internals
   notes_64:
   - '1'
+  owner: Gerph
   source: ''
 
 - key: ROM modules:CLIV
@@ -378,6 +390,7 @@
   status_64: Internals
   notes_64:
   - '1'
+  owner: Gerph
   source: ''
 
 - key: ROM modules:VideoTTX
@@ -387,6 +400,7 @@
   lang: C
   status_32: '-'
   status_64: Functional
+  owner: Gerph
   source: ''
 
 - key: ROM modules:VideoSW
@@ -396,6 +410,7 @@
   lang: Asm
   status_32: Stub
   status_64: Stub
+  owner: Gerph
   source: ''
 
 - key: ROM modules:VideoHWVIDC
@@ -423,6 +438,7 @@
   lang: C
   status_32: Built
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:OSCommands
@@ -446,6 +462,7 @@
   - cmungehelp
   notes_64:
   - cmungehelp
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ModuleCommands
@@ -459,6 +476,7 @@
   - cmungehelp
   notes_64:
   - cmungehelp
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ARM
@@ -470,6 +488,7 @@
   status_64: Stub
   notes_64:
   - arm
+  owner: Gerph
   source: ''
 
 - key: ROM modules:BufferManager
@@ -481,6 +500,7 @@
   status_64: Internals
   notes_64:
   - buffermanager
+  owner: Gerph
   source: ''
 
 - key: ROM modules:Debugger
@@ -506,6 +526,7 @@
   status_64: Internals
   notes_64:
   - '1'
+  owner: Gerph
   source: ''
 
 - key: ROM modules:DMAManager
@@ -544,6 +565,7 @@
   status_64: Internals
   notes_64:
   - '1'
+  owner: Gerph
   source: ''
 
 - key: ROM modules:Hourglass
@@ -577,6 +599,7 @@
   lang: Asm
   status_32: Stub
   status_64: Stub
+  owner: Gerph
   source: ''
 
 - key: ROM modules:Squash
@@ -595,6 +618,7 @@
   lang: Asm
   status_32: Internals
   status_64: Internals
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ResourceFiler
@@ -626,6 +650,7 @@
   - messagetrans
   notes_64:
   - messagetrans
+  owner: Gerph
   source: ''
 
 - key: ROM modules:FSLock
@@ -648,7 +673,8 @@
   - territory
   notes_64:
   - territory
-  source: ''
+  owner: macpato82
+  source: https://github.com/macpato82/TerritoryManager/
 
 - key: ROM modules:UK
   name: UK
@@ -729,6 +755,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:FileCore
@@ -848,6 +875,7 @@
   status_64: ''
   notes_32:
   - srevill
+  owner: Steve Revill
   source: ''
 
 - key: ROM modules:BASIC64
@@ -897,6 +925,7 @@
   lang: C
   status_32: '-'
   status_64: Functional
+  owner: Gerph
   source: ''
 
 - key: ROM modules:SysLog
@@ -906,6 +935,7 @@
   lang: C
   status_32: '-'
   status_64: ''
+  owner: Gerph
   source: ''
 
 - key: ROM modules:BootCommands
@@ -917,6 +947,7 @@
   status_64: Functional
   notes_64:
   - bootcmds
+  owner: Gerph
   source: ''
 
 - key: ROM modules:GameModes
@@ -944,6 +975,7 @@
   lang: Asm
   status_32: ''
   status_64: Investigate
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ScrSaver
@@ -1007,6 +1039,7 @@
   lang: Asm
   status_32: Internals
   status_64: Internals
+  owner: Gerph
   source: ''
 
 - key: ROM modules:SharedSound
@@ -1025,6 +1058,7 @@
   lang: Asm
   status_32: Functional
   status_64: Functional
+  owner: Gerph
   source: ''
 
 - key: ROM modules:DeviceFS
@@ -1052,6 +1086,7 @@
   lang: Asm
   status_32: Stub
   status_64: Stub
+  owner: Gerph
   source: ''
 
 - key: ROM modules:Draw
@@ -1080,6 +1115,7 @@
   lang: C
   status_32: '-'
   status_64: Stub
+  owner: Gerph
   source: ''
 
 - key: ROM modules:BlendTable
@@ -1089,6 +1125,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:InverseTable
@@ -1098,6 +1135,7 @@
   lang: Asm
   status_32: Functional
   status_64: Internals
+  owner: Gerph
   source: ''
 
 - key: ROM modules:DrawFile
@@ -1109,6 +1147,7 @@
   status_64: Built
   notes_64:
   - drawfile
+  owner: Gerph
   source: ''
 
 - key: ROM modules:FontMap
@@ -1118,6 +1157,7 @@
   lang: C
   status_32: '-'
   status_64: ''
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ZLib
@@ -1127,6 +1167,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:PNG
@@ -1136,6 +1177,7 @@
   lang: C
   status_32: '-'
   status_64: ''
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ROMFonts
@@ -1154,6 +1196,7 @@
   lang: Asm
   status_32: Stub
   status_64: Stub
+  owner: Gerph
   source: ''
 
 - key: ROM modules:SuperSample
@@ -1163,6 +1206,7 @@
   lang: Asm
   status_32: Functional
   status_64: Internals
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ImageFileConvert
@@ -1199,6 +1243,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ConvertDoom
@@ -1208,6 +1253,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ConvertGIF
@@ -1217,6 +1263,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ConvertICO
@@ -1226,6 +1273,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ConvertPCX
@@ -1235,6 +1283,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ConvertPNM
@@ -1244,6 +1293,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ConvertSprite
@@ -1262,6 +1312,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ConvertXBM
@@ -1271,6 +1322,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ConvertClear
@@ -1280,6 +1332,7 @@
   lang: Asm
   status_32: Functional
   status_64: Functional
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ImageFileRender
@@ -1289,6 +1342,7 @@
   lang: C
   status_32: '-'
   status_64: Functional
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ImageFileRender_Artworks
@@ -1316,6 +1370,7 @@
   lang: Asm
   status_32: Functional
   status_64: Functional
+  owner: Gerph
   source: ''
 
 - key: ROM modules:PDriver
@@ -1336,6 +1391,7 @@
   status_64: ''
   notes_32:
   - pdriverdp
+  owner: Piers Wombwell
   source: ''
 
 - key: ROM modules:PDumperSupport
@@ -1410,6 +1466,7 @@
   status_64: ''
   notes_32:
   - pdriverps
+  owner: Piers Wombwell
   source: ''
 
 - key: ROM modules:MakePSFont
@@ -1428,6 +1485,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:RemotePrinterMessages
@@ -1676,6 +1734,7 @@
   lang: Asm
   status_32: Internals
   status_64: Internals
+  owner: Gerph
   source: ''
 
 - key: ROM modules:RedrawManager
@@ -1694,6 +1753,7 @@
   lang: Asm
   status_32: Internals
   status_64: Internals
+  owner: Gerph
   source: ''
 
 - key: ROM modules:IconBorderBeveled
@@ -1703,6 +1763,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:IconBorderFob
@@ -1722,6 +1783,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:IconBorderLoop
@@ -1731,6 +1793,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:IconBorderPlainPopping
@@ -1740,6 +1803,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:IconBorderPlain
@@ -1749,6 +1813,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:IconBorderRound
@@ -1758,6 +1823,7 @@
   lang: C
   status_32: '-'
   status_64: ''
+  owner: Gerph
   source: ''
 
 - key: ROM modules:TaskManager
@@ -1776,6 +1842,7 @@
   lang: Asm
   status_32: Internals
   status_64: Internals
+  owner: Gerph
   source: ''
 
 - key: ROM modules:DisplayManager
@@ -1783,9 +1850,10 @@
   section: ROM modules
   kind: module
   lang: Asm
-  status_32: ''
-  status_64: ''
-  source: ''
+  status_32: 'Built'
+  status_64: 'Built'
+  owner: macpato82
+  source: 'https://github.com/macpato82/DisplayManager'
 
 - key: ROM modules:DragASprite
   name: DragASprite
@@ -1821,6 +1889,7 @@
   lang: Asm
   status_32: Internals
   status_64: Internals
+  owner: Gerph
   source: ''
 
 - key: ROM modules:Filer_Action
@@ -1839,6 +1908,7 @@
   lang: Asm
   status_32: Investigate
   status_64: Investigate
+  owner: Gerph
   source: ''
 
 - key: ROM modules:Pinboard
@@ -1930,6 +2000,7 @@
   lang: Asm
   status_32: Internals
   status_64: Internals
+  owner: Gerph
   source: ''
 
 - key: ROM modules:MbufManager
@@ -1975,6 +2046,7 @@
   lang: C
   status_32: Built
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM modules:InternetTime
@@ -2237,6 +2309,7 @@
   lang: Asm
   status_32: Internals
   status_64: Internals
+  owner: Gerph
   source: ''
 
 - key: ROM modules:CDFSSoftATAPI
@@ -2341,6 +2414,7 @@
   - spriteutils
   notes_64:
   - spriteutils
+  owner: Gerph
   source: ''
 
 - key: ROM modules:OwnerBanner
@@ -2350,6 +2424,7 @@
   lang: Asm
   status_32: Functional
   status_64: Functional
+  owner: Gerph
   source: ''
 
 - key: ROM modules:IRQUtils
@@ -2413,6 +2488,7 @@
   lang: C
   status_32: '-'
   status_64: Functional
+  owner: Gerph
   source: ''
 
 - key: ROM modules:ErrorLog
@@ -2422,6 +2498,7 @@
   lang: C
   status_32: '-'
   status_64: Functional
+  owner: Gerph
   source: ''
 
 - key: New ROM modules:SystemVarsDefaults
@@ -2430,6 +2507,7 @@
   kind: module
   status_32: Functional
   status_64: Functional
+  owner: Gerph
   source: ''
 
 - key: System modules:RateTracker
@@ -2439,6 +2517,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Additional modules:IconBorderBeveled
@@ -2448,6 +2527,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Additional modules:IconBorderCrossy
@@ -2457,6 +2537,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Additional modules:IconBorderFob
@@ -2476,6 +2557,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Additional modules:IconBorderPlainPopping
@@ -2485,6 +2567,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Additional modules:IconBorderSkins
@@ -2494,6 +2577,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: ROM resources:BootMenu
@@ -2507,6 +2591,7 @@
   notes_64:
   - network
   - link
+  owner: Gerph
   source: ''
 
 - key: ROM resources:Repeat
@@ -2527,6 +2612,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Library files:ImgConvert
@@ -2537,6 +2623,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Library files:MiniJTran
@@ -2547,6 +2634,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Library files:AddApp
@@ -2587,6 +2675,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Library files:Do
@@ -2617,6 +2706,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Library files:HOff
@@ -2637,6 +2727,7 @@
   lang: Script
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Library files:IfThere
@@ -2669,6 +2760,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Library files:MiniGZip
@@ -2691,6 +2783,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Library files:MiniUnzip
@@ -2701,6 +2794,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Library files:MiniZip
@@ -2711,6 +2805,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Library files:Repeat
@@ -2733,6 +2828,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Library files:ScanLibs
@@ -2743,6 +2839,7 @@
   lang: Script
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Library files:SysPaths
@@ -2755,6 +2852,7 @@
   status_64: ''
   notes_64:
   - libsupport
+  owner: Gerph
   source: ''
 
 - key: Library files:X
@@ -2775,6 +2873,7 @@
   lang: Asm
   status_32: ''
   status_64: ''
+  owner: Gerph
   source: ''
 
 - key: Boot utilities:BandLimit
@@ -2785,6 +2884,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Boot utilities:BootLog
@@ -2795,6 +2895,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Boot utilities:BootRun
@@ -2827,6 +2928,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Boot utilities:DeskCheck
@@ -2867,6 +2969,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Boot utilities:FileCoreCheck
@@ -2899,6 +3002,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Boot utilities:LibraryHelp
@@ -2909,6 +3013,7 @@
   lang: C
   status_32: '-'
   status_64: Functional
+  owner: Gerph
   source: ''
 
 - key: Boot utilities:MemFix
@@ -3012,6 +3117,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:ANTMemLib
@@ -3039,7 +3145,7 @@
   section: Libraries
   kind: library
   lang: Asm
-  status_32: ''
+  status_32: Functional
   status_64: ''
   owner: Gerph
   source: https://github.com/gerph/riscos-libasm
@@ -3053,15 +3159,6 @@
   status_64: ''
   source: ''
 
-- key: Libraries:Base64#2
-  name: Base64
-  section: Libraries
-  kind: library
-  lang: C
-  status_32: '-'
-  status_64: Built
-  source: ''
-
 - key: Libraries:CLX
   name: CLX
   section: Libraries
@@ -3069,6 +3166,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:Configure
@@ -3089,6 +3187,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:Desk
@@ -3127,6 +3226,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:GResolve
@@ -3147,6 +3247,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:IFCLib
@@ -3156,6 +3257,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:INIRead
@@ -3165,6 +3267,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:Interact
@@ -3174,6 +3277,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:Interfaces
@@ -3223,6 +3327,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:MemCheck
@@ -3306,6 +3411,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:ROLib
@@ -3315,6 +3421,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:RegExp
@@ -3324,6 +3431,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:Resolver
@@ -3355,6 +3463,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:SQLite
@@ -3375,6 +3484,7 @@
   status_64: Built
   notes_64:
   - support
+  owner: Gerph
   source: ''
 
 - key: Libraries:TCPIPLibs
@@ -3422,6 +3532,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:URLFetch
@@ -3431,6 +3542,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:WebImage:WebImage
@@ -3440,6 +3552,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:WebImage:XBM
@@ -3449,6 +3562,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:WebImage:GIF
@@ -3458,6 +3572,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:WimpKeyName
@@ -3467,6 +3582,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:Zipper
@@ -3476,6 +3592,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Libraries:ZLib
@@ -3494,6 +3611,7 @@
   lang: C
   status_32: '-'
   status_64: Built
+  owner: Gerph
   source: ''
 
 - key: Primary toolchain:cc (Norcroft)
@@ -3542,6 +3660,7 @@
   - tcc
   notes_mac:
   - tcc
+  owner: Gerph
   source: ''
 
 - key: Primary toolchain:c++ (Norcroft)
@@ -3638,6 +3757,7 @@
   - tcc
   notes_mac:
   - tcc
+  owner: Gerph
   source: ''
 
 - key: Primary toolchain:libfile (Norcroft)
@@ -3766,6 +3886,7 @@
   windows: N/A
   notes_64:
   - norcroft
+  owner: Gerph
   source: ''
 
 - key: Primary toolchain:binaof (Norcroft)
@@ -3781,6 +3902,7 @@
   windows: N/A
   notes_64:
   - norcroft
+  owner: Gerph
   source: ''
 
 - key: Primary toolchain:decaof (Norcroft)
@@ -3796,6 +3918,7 @@
   windows: N/A
   notes_64:
   - norcroft
+  owner: Gerph
   source: ''
 
 - key: Primary toolchain:squeeze (Norcroft)
@@ -3812,6 +3935,7 @@
   notes_64:
   - norcroft
   - squeeze
+  owner: Gerph
   source: ''
 
 - key: Primary toolchain:modsqz (Norcroft)
@@ -3828,6 +3952,7 @@
   notes_64:
   - norcroft
   - modsqz
+  owner: Gerph
   source: ''
 
 - key: Additional tools:perl (5.001)
@@ -3840,6 +3965,7 @@
   status_64: Functional
   notes_64:
   - perl
+  owner: Gerph
   source: ''
 
 - key: Additional tools:GNU Fortran
@@ -3869,6 +3995,7 @@
   - riscos64-pascal
   notes_mac:
   - riscos64-pascal
+  owner: Gerph
   source: ''
 
 - key: Additional tools:Rust
@@ -3905,6 +4032,7 @@
   status_64: ''
   linux: Functional
   mac: Functional
+  owner: Gerph
   source: ''
 
 - key: Additional tools:bison
@@ -3917,6 +4045,7 @@
   status_64: Built
   notes_64:
   - bison
+  owner: Gerph
   source: ''
 
 - key: Additional tools:defmod
@@ -3930,6 +4059,7 @@
   linux: N/A
   notes_linux:
   - defmod
+  owner: Gerph
   source: ''
 
 - key: Additional tools:oslib parser
@@ -3959,6 +4089,7 @@
   status_64: Built
   notes_64:
   - flex
+  owner: Gerph
   source: ''
 
 - key: Additional tools:hdrtoh
@@ -3969,6 +4100,7 @@
   lang: Perl
   status_32: ''
   status_64: ''
+  owner: Gerph
   source: ''
 
 - key: Additional tools:kitten
@@ -3981,6 +4113,7 @@
   status_64: Functional
   notes_64:
   - kitten
+  owner: Gerph
   source: ''
 
 - key: Additional tools:modservices
@@ -3993,6 +4126,7 @@
   status_64: Functional
   notes_64:
   - modservices
+  owner: Gerph
   source: ''
 
 - key: Additional tools:sed
@@ -4005,6 +4139,7 @@
   status_64: Built
   notes_64:
   - sed
+  owner: Gerph
   source: ''
 
 - key: Additional tools:vtranslate
@@ -4017,6 +4152,7 @@
   status_64: Functional
   notes_64:
   - vtranslate
+  owner: Gerph
   source: ''
 
 - key: Additional tools:binaof
@@ -4033,6 +4169,7 @@
   notes_64:
   - norcroft
   - binaof
+  owner: Gerph
   source: ''
 
 - key: Additional tools:modgen
@@ -4048,6 +4185,7 @@
   windows: N/A
   notes_64:
   - modgen
+  owner: Gerph
   source: ''
 
 - key: Additional tools:resgen
@@ -4064,4 +4202,5 @@
   notes_64:
   - norcroft
   - resgen
+  owner: Gerph
   source: ''

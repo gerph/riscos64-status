@@ -23,6 +23,7 @@ from status_catalog import (
     load_notes,
     note_ids_for_field,
     note_reference,
+    owner_warnings,
     resolve_feature_page,
     validate_components,
 )
@@ -349,6 +350,8 @@ def main(argv: list[str]) -> int:
     components = load_components(repo_root / "data" / "components.yaml")
     notes = load_notes(repo_root / "data" / "status-notes.yaml")
     validate_components(components, notes)
+    for warning in owner_warnings(components):
+        print(warning, file=sys.stderr)
     repo_facts = derive_repository_facts(components, repo_root)
     page_records = feature_page_map(components, feature_dir)
 
