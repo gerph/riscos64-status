@@ -64,26 +64,6 @@
   status_64: ''
   source: ''
 
-- key: ROM modules:Kernel:Modules#2
-  name: Kernel:Modules
-  section: ROM modules
-  kind: module
-  lang: Asm
-  status_32: Stub
-  status_64: Stub
-  owner: Gerph
-  source: ''
-
-- key: ROM modules:Kernel:Vectors#2
-  name: Kernel:Vectors
-  section: ROM modules
-  kind: module
-  lang: Asm
-  status_32: ''
-  status_64: ''
-  owner: Gerph
-  source: https://github.com/gerph/riscos-vector
-
 - key: ROM modules:Kernel:Heap
   name: Kernel:Heap
   section: ROM modules
@@ -2696,17 +2676,6 @@
   lang: Script
   status_32: ''
   status_64: ''
-  source: ''
-
-- key: Library files:ForHooks#2
-  name: ForHooks
-  section: Library files
-  filetype: Absolute
-  kind: absolute
-  lang: C
-  status_32: '-'
-  status_64: Built
-  owner: Gerph
   source: ''
 
 - key: Library files:HOff

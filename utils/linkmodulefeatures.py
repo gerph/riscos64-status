@@ -235,10 +235,12 @@ def copy_feature_page(
 
         incomplete += len(re.findall(r" \[ \] ", line))
         complete += len(re.findall(r" \[X\] ", line))
+        complete += len(re.findall(r" \[x\] ", line))
         inprogress += len(re.findall(r" \[>\] ", line))
 
         line = line.replace(" [ ] ", " :black_square_button: ")
         line = line.replace(" [X] ", " :white_check_mark: ")
+        line = line.replace(" [x] ", " :white_check_mark: ")
         line = line.replace(" [>] ", " :arrow_forward: ")
         accum.append(line)
 
