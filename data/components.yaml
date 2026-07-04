@@ -1829,7 +1829,7 @@
   name: DisplayManager
   section: ROM modules
   kind: module
-  lang: Asm
+  lang: C
   status_32: 'Built'
   status_64: 'Built'
   owner: Martin Eastwood
@@ -1857,7 +1857,7 @@
   name: Filer
   section: ROM modules
   kind: module
-  lang: Asm/C
+  lang: C
   status_32: 'Internals'
   status_64: 'Stub'
   owner: Martin Eastwood
