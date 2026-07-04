@@ -1832,7 +1832,7 @@
   lang: Asm
   status_32: 'Built'
   status_64: 'Built'
-  owner: macpato82
+  owner: Martin Eastwood
   source: 'https://github.com/macpato82/DisplayManager'
 
 - key: ROM modules:DragASprite
@@ -1858,8 +1858,9 @@
   section: ROM modules
   kind: module
   lang: Asm/C
-  status_32: ''
-  status_64: ''
+  status_32: 'Internals'
+  status_64: 'Stub'
+  owner: Martin Eastwood
   source: ''
 
 - key: ROM modules:FilerSWIs
