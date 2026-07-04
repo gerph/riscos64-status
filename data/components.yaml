@@ -2117,8 +2117,7 @@
   lang: C
   status_32: '-'
   status_64: ''
-  owner: Gerph
-  source: https://github.com/gerph/riscos-toolbox
+  source: ''
 
 - key: ROM modules:Window
   name: Window

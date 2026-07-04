@@ -34,11 +34,10 @@ def render_status_tables(
     notes: OrderedDict[str, str],
     repo_root: Path,
     feature_dir: Path,
-) -> tuple[str, list[str]]:
+) -> str:
     feature_pages = feature_page_map(components, feature_dir)
     note_numbers = OrderedDict((note_id, index) for index, note_id in enumerate(notes, start=1))
     lines: list[str] = []
-    used_notes: set[str] = set()
     sections = OrderedDict()
     for component in components:
         sections.setdefault(component["section"], []).append(component)
@@ -59,6 +58,8 @@ def render_status_tables(
         divider = "|" + "|".join("-" * (len(column) + 2) for column in columns) + "|"
         lines.append(header)
         lines.append(divider)
+        section_notes: list[str] = []
+        section_used_notes: set[str] = set()
 
         for component in section_components:
             page = resolve_feature_page(component, feature_dir)
@@ -79,27 +80,47 @@ def render_status_tables(
                 elif column == "C-state":
                     cell = display_value(component.get("status_32", ""))
                     for note_id in note_ids_for_field(component, "notes_32"):
-                        used_notes.add(note_id)
+                        if note_id not in section_used_notes:
+                            section_used_notes.add(note_id)
+                            section_notes.append(
+                                f"<sup><a name=\"status-note-{note_id}\"></a>note {note_numbers[note_id]}</sup>: {notes[note_id]}"
+                            )
                         cell += note_reference(note_id, note_numbers)
                 elif column == "64-state":
                     cell = display_value(component.get("status_64", ""))
                     for note_id in note_ids_for_field(component, "notes_64"):
-                        used_notes.add(note_id)
+                        if note_id not in section_used_notes:
+                            section_used_notes.add(note_id)
+                            section_notes.append(
+                                f"<sup><a name=\"status-note-{note_id}\"></a>note {note_numbers[note_id]}</sup>: {notes[note_id]}"
+                            )
                         cell += note_reference(note_id, note_numbers)
                 elif column == "Linux":
                     cell = display_value(component.get("linux", ""))
                     for note_id in note_ids_for_field(component, "notes_linux"):
-                        used_notes.add(note_id)
+                        if note_id not in section_used_notes:
+                            section_used_notes.add(note_id)
+                            section_notes.append(
+                                f"<sup><a name=\"status-note-{note_id}\"></a>note {note_numbers[note_id]}</sup>: {notes[note_id]}"
+                            )
                         cell += note_reference(note_id, note_numbers)
                 elif column == "Mac":
                     cell = display_value(component.get("mac", ""))
                     for note_id in note_ids_for_field(component, "notes_mac"):
-                        used_notes.add(note_id)
+                        if note_id not in section_used_notes:
+                            section_used_notes.add(note_id)
+                            section_notes.append(
+                                f"<sup><a name=\"status-note-{note_id}\"></a>note {note_numbers[note_id]}</sup>: {notes[note_id]}"
+                            )
                         cell += note_reference(note_id, note_numbers)
                 elif column == "Windows":
                     cell = display_value(component.get("windows", ""))
                     for note_id in note_ids_for_field(component, "notes_windows"):
-                        used_notes.add(note_id)
+                        if note_id not in section_used_notes:
+                            section_used_notes.add(note_id)
+                            section_notes.append(
+                                f"<sup><a name=\"status-note-{note_id}\"></a>note {note_numbers[note_id]}</sup>: {notes[note_id]}"
+                            )
                         cell += note_reference(note_id, note_numbers)
                 elif column == "Owner":
                     cell = component.get("owner", "")
@@ -109,17 +130,13 @@ def render_status_tables(
                     cell = ""
                 values.append(cell)
             lines.append("| " + " | ".join(values) + " |")
+
+        if section_notes:
+            lines.append("")
+            lines.extend(section_notes)
         lines.append("")
 
-    note_lines = []
-    if used_notes:
-        for note_id, note_text in notes.items():
-            if note_id not in used_notes:
-                continue
-            note_lines.append(
-                f"<sup><a name=\"status-note-{note_id}\"></a>note {note_numbers[note_id]}</sup>: {note_text}"
-            )
-    return "\n".join(lines).rstrip() + "\n", note_lines
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def format_repo_summary(fact) -> str:
@@ -328,11 +345,9 @@ def link_table_names(text: str, components_by_name: dict[str, list[dict]], featu
 def render_status_template(
     template: str,
     tables: str,
-    note_lines: list[str],
 ) -> str:
     output = template.replace("<!-- STATUS_TABLES -->", tables.rstrip())
-    note_block = "\n".join(note_lines)
-    output = output.replace("<!-- STATUS_NOTES -->", note_block)
+    output = output.replace("<!-- STATUS_NOTES -->", "")
     if not output.endswith("\n"):
         output += "\n"
     return output
@@ -362,8 +377,8 @@ def main(argv: list[str]) -> int:
 
     copied_pages: set[str] = set()
     if "<!-- STATUS_TABLES -->" in template:
-        tables, note_lines = render_status_tables(components, notes, repo_root, feature_dir)
-        output_text = render_status_template(template, tables, note_lines)
+        tables = render_status_tables(components, notes, repo_root, feature_dir)
+        output_text = render_status_template(template, tables)
         copied_pages.update(page_records.keys())
     else:
         name_map: dict[str, list[dict]] = {}

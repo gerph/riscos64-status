@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 
-from contextlib import redirect_stderr, redirect_stdout
+from contextlib import redirect_stderr
 from io import StringIO
 from pathlib import Path
 import sys
@@ -14,13 +14,13 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT / "utils"))
 
 import linkmodulefeatures  # type: ignore  # noqa: E402
-import makestats  # type: ignore  # noqa: E402
 from status_catalog import (  # type: ignore  # noqa: E402
     compute_statistics,
     derive_repository_facts,
     feature_page_map,
     load_components,
     load_notes,
+    owner_warnings,
     validate_components,
 )
 
@@ -79,6 +79,18 @@ class StatusPipelineTests(unittest.TestCase):
             self.assertIn("| Name | Lang | C-state | 64-state | Owner | Source |", content)
             self.assertIn("| [Debugger](Module_Debugger) | Asm | Functional", content)
             self.assertIn("| Gerph | [GitHub](https://github.com/gerph/riscos-debugger-c) |", content)
+            self.assertIn(
+                "<sup><a name=\"status-note-territory\"></a>note 15</sup>: The TerritoryManager",
+                content,
+            )
+            self.assertLess(
+                content.index("<sup><a name=\"status-note-territory\"></a>note 15</sup>"),
+                content.index("### New ROM modules"),
+            )
+            self.assertLess(
+                content.index("<sup><a name=\"status-note-bison\"></a>note 50</sup>: Bison has been built"),
+                content.index("See also [Languages]"),
+            )
 
     def test_feature_headers_are_generated_for_single_mismatch_and_duplicate_pages(self) -> None:
         with tempfile.TemporaryDirectory() as tempdir:
@@ -111,16 +123,23 @@ class StatusPipelineTests(unittest.TestCase):
         self.assertIn("Module_BootCommands.md", mapping)
 
     def test_processor_warns_for_missing_owner_when_status_set(self) -> None:
-        stdout = StringIO()
-        stderr = StringIO()
-        with redirect_stdout(stdout), redirect_stderr(stderr):
-            rc = makestats.main(["makestats.py", "json"])
+        warnings = owner_warnings(
+            [
+                {"name": "Warn32", "status_32": "Functional", "status_64": "", "owner": ""},
+                {"name": "Warn64", "status_32": "-", "status_64": "Built", "owner": "  "},
+                {"name": "IgnoreBlank", "status_32": "", "status_64": "", "owner": ""},
+                {"name": "IgnoreDash", "status_32": "-", "status_64": "-", "owner": ""},
+                {"name": "IgnoreNA", "status_32": "", "status_64": "N/A", "owner": ""},
+                {"name": "HasOwner", "status_32": "Functional", "status_64": "", "owner": "Gerph"},
+            ]
+        )
 
-        self.assertEqual(rc, 0)
-        warnings = stderr.getvalue()
-        self.assertIn("Warning: no owner for TerritoryManager", warnings)
-        self.assertNotIn("Warning: no owner for Kernel:SystemInit", warnings)
-        self.assertNotIn("Warning: no owner for gcc (GCC)", warnings)
+        self.assertIn("Warning: no owner for Warn32", warnings)
+        self.assertIn("Warning: no owner for Warn64", warnings)
+        self.assertNotIn("Warning: no owner for IgnoreBlank", warnings)
+        self.assertNotIn("Warning: no owner for IgnoreDash", warnings)
+        self.assertNotIn("Warning: no owner for IgnoreNA", warnings)
+        self.assertNotIn("Warning: no owner for HasOwner", warnings)
 
 
 if __name__ == "__main__":
