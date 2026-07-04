@@ -32,7 +32,6 @@ from status_catalog import (
 def render_status_tables(
     components: list[dict],
     notes: OrderedDict[str, str],
-    repo_root: Path,
     feature_dir: Path,
 ) -> str:
     feature_pages = feature_page_map(components, feature_dir)
@@ -133,7 +132,9 @@ def render_status_tables(
 
         if section_notes:
             lines.append("")
-            lines.extend(section_notes)
+            for note in section_notes:
+                lines.append(note)
+                lines.append("")
         lines.append("")
 
     return "\n".join(lines).rstrip() + "\n"
@@ -377,7 +378,7 @@ def main(argv: list[str]) -> int:
 
     copied_pages: set[str] = set()
     if "<!-- STATUS_TABLES -->" in template:
-        tables = render_status_tables(components, notes, repo_root, feature_dir)
+        tables = render_status_tables(components, notes, feature_dir)
         output_text = render_status_template(template, tables)
         copied_pages.update(page_records.keys())
     else:

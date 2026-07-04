@@ -91,6 +91,22 @@ class StatusPipelineTests(unittest.TestCase):
                 content.index("<sup><a name=\"status-note-bison\"></a>note 50</sup>: Bison has been built"),
                 content.index("See also [Languages]"),
             )
+            self.assertIn(
+                "<sup><a name=\"status-note-territory\"></a>note 15</sup>: The TerritoryManager",
+                content,
+            )
+            self.assertIn(
+                "announcement in March 2026.\n\n<sup><a name=\"status-note-srevill\"></a>note 9</sup>:",
+                content,
+            )
+            self.assertIn(
+                "| ZLib | C | - |  |  |  |",
+                content,
+            )
+            libraries_section = content[
+                content.index("### Libraries"):content.index("## Tools")
+            ]
+            self.assertNotIn("[ZLib](Module_ZLib)", libraries_section)
 
     def test_feature_headers_are_generated_for_single_mismatch_and_duplicate_pages(self) -> None:
         with tempfile.TemporaryDirectory() as tempdir:

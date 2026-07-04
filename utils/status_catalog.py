@@ -306,19 +306,21 @@ def render_statistics_markdown(stats: dict) -> str:
     return "\n".join(lines)
 
 
-def feature_page_candidates(name: str, override: Optional[str] = None) -> List[str]:
+def feature_page_candidates(record: dict, override: Optional[str] = None) -> List[str]:
     if override:
         return [override]
 
+    name = record["name"]
     base = name.replace(":", "_")
-    candidates = [f"Module_{base}.md"]
-    if base.startswith("Wimp_"):
+    prefix = "Lib" if record.get("section") == "Libraries" else "Module"
+    candidates = [f"{prefix}_{base}.md"]
+    if prefix == "Module" and base.startswith("Wimp_"):
         candidates.append(f"Module_{base.replace('Wimp_', 'WindowManager_', 1)}.md")
     return candidates
 
 
 def resolve_feature_page(record: dict, feature_dir: Path) -> Optional[str]:
-    for candidate in feature_page_candidates(record["name"], record.get("feature_page")):
+    for candidate in feature_page_candidates(record, record.get("feature_page")):
         if (feature_dir / candidate).exists():
             return candidate
     return None
