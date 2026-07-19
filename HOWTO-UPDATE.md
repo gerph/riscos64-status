@@ -145,7 +145,7 @@ Review these outputs after regeneration:
 
 - `wiki-update/Status.md`
   - row appears in the right section
-  - `Owner` and `Source` columns look correct
+  - `Claimant` (how we present `owner` fields) and `Source` columns look correct
   - notes are rendered correctly
 - `wiki-update/Module_*.md`
   - generated status summary reflects the YAML row

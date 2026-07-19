@@ -121,7 +121,7 @@ def render_status_tables(
                                 f"<sup><a name=\"status-note-{note_id}\"></a>note {note_numbers[note_id]}</sup>: {notes[note_id]}"
                             )
                         cell += note_reference(note_id, note_numbers)
-                elif column == "Owner":
+                elif column == "Claimant":
                     cell = component.get("owner", "")
                 elif column == "Source":
                     cell = format_source(component.get("source", ""))
@@ -162,7 +162,7 @@ def build_feature_header(records: list[dict], repo_facts) -> str:
         "",
         "## Status summary",
         "",
-        "| Component | Section | 32-bit | 64-bit | Owner | Source | Repo summary |",
+        "| Component | Section | 32-bit | 64-bit | Claimant | Source | Repo summary |",
         "|-----------|---------|--------|--------|-------|--------|--------------|",
     ]
     for record in records:

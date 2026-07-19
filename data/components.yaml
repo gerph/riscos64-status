@@ -672,6 +672,7 @@
   lang: Asm
   status_32: ''
   status_64: ''
+  owner: Gerph
   source: ''
 
 - key: ROM modules:SerialDeviceDriver
@@ -699,6 +700,7 @@
   lang: Asm
   status_32: ''
   status_64: ''
+  owner: Gerph
   source: ''
 
 - key: ROM modules:SerialMouse
@@ -708,6 +710,7 @@
   lang: Asm
   status_32: ''
   status_64: ''
+  owner: Gerph
   source: ''
 
 - key: ROM modules:PS2Driver
@@ -717,6 +720,7 @@
   lang: Asm
   status_32: ''
   status_64: ''
+  owner: Gerph
   source: ''
 
 - key: ROM modules:InternationalKeyboard

@@ -45,21 +45,21 @@ STATE_SEQUENCE = [
 
 SECTION_SCHEMAS = OrderedDict(
     [
-        ("ROM modules", ("Name", "Lang", "C-state", "64-state", "Owner", "Source")),
-        ("New ROM modules", ("Name", "C-state", "64-state", "Owner", "Source")),
-        ("System modules", ("Name", "Lang", "C-state", "64-state", "Owner", "Source")),
-        ("Additional modules", ("Name", "Lang", "C-state", "64-state", "Owner", "Source")),
-        ("ROM resources", ("Name", "Filetype", "Lang", "C-state", "64-state", "Owner", "Source")),
-        ("Library files", ("Name", "Filetype", "Lang", "C-state", "64-state", "Owner", "Source")),
-        ("Boot utilities", ("Name", "Filetype", "Lang", "C-state", "64-state", "Owner", "Source")),
-        ("Libraries", ("Name", "Lang", "C-state", "64-state", "Owner", "Source")),
+        ("ROM modules", ("Name", "Lang", "C-state", "64-state", "Claimant", "Source")),
+        ("New ROM modules", ("Name", "C-state", "64-state", "Claimant", "Source")),
+        ("System modules", ("Name", "Lang", "C-state", "64-state", "Claimant", "Source")),
+        ("Additional modules", ("Name", "Lang", "C-state", "64-state", "Claimant", "Source")),
+        ("ROM resources", ("Name", "Filetype", "Lang", "C-state", "64-state", "Claimant", "Source")),
+        ("Library files", ("Name", "Filetype", "Lang", "C-state", "64-state", "Claimant", "Source")),
+        ("Boot utilities", ("Name", "Filetype", "Lang", "C-state", "64-state", "Claimant", "Source")),
+        ("Libraries", ("Name", "Lang", "C-state", "64-state", "Claimant", "Source")),
         (
             "Primary toolchain",
-            ("Tool", "Name", "Lang", "C-state", "64-state", "Linux", "Mac", "Windows", "Owner", "Source"),
+            ("Tool", "Name", "Lang", "C-state", "64-state", "Linux", "Mac", "Windows", "Claimant", "Source"),
         ),
         (
             "Additional tools",
-            ("Tool", "Name", "Lang", "C-state", "64-state", "Linux", "Mac", "Windows", "Owner", "Source"),
+            ("Tool", "Name", "Lang", "C-state", "64-state", "Linux", "Mac", "Windows", "Claimant", "Source"),
         ),
     ]
 )
@@ -214,7 +214,7 @@ def validate_components(components: Sequence[dict], notes: Dict[str, str]) -> No
 def owner_warnings(components: Sequence[dict]) -> List[str]:
     warnings: List[str] = []
     for component in components:
-        owner = str(component.get("owner", "")).strip()
+        owner = str(component.get("Claimant", "")).strip()
         if owner:
             continue
 

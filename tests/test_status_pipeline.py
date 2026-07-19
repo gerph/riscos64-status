@@ -76,7 +76,7 @@ class StatusPipelineTests(unittest.TestCase):
             self.assertIn("## Libraries", content)
             self.assertIn("### Primary toolchain", content)
             self.assertIn("status-note-territory", content)
-            self.assertIn("| Name | Lang | C-state | 64-state | Owner | Source |", content)
+            self.assertIn("| Name | Lang | C-state | 64-state | Claimants | Source |", content)
             self.assertIn("| [Debugger](Module_Debugger) | Asm | Functional", content)
             self.assertIn("| Gerph | [GitHub](https://github.com/gerph/riscos-debugger-c) |", content)
             self.assertIn(
