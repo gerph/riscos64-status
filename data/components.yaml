@@ -631,7 +631,7 @@
   notes_64:
   - messagetrans
   owner: Gerph
-  source: ''
+  source: https://github.com/gerph/riscos-messagetrans
 
 - key: ROM modules:FSLock
   name: FSLock
@@ -670,10 +670,10 @@
   section: ROM modules
   kind: module
   lang: Asm
-  status_32: ''
-  status_64: ''
+  status_32: 'Functional'
+  status_64: 'Internals'
   owner: Gerph
-  source: ''
+  source: https://github.com/gerph/riscos-international/
 
 - key: ROM modules:SerialDeviceDriver
   name: SerialDeviceDriver
@@ -698,30 +698,30 @@
   section: ROM modules
   kind: module
   lang: Asm
-  status_32: ''
-  status_64: ''
+  status_32: 'Internals'
+  status_64: 'Internals'
   owner: Gerph
-  source: ''
+  source: https://github.com/gerph/riscos-mouse
 
 - key: ROM modules:SerialMouse
   name: SerialMouse
   section: ROM modules
   kind: module
   lang: Asm
-  status_32: ''
-  status_64: ''
+  status_32: 'Internals'
+  status_64: 'Internals'
   owner: Gerph
-  source: ''
+  source: https://github.com/gerph/riscos-serialmouse
 
 - key: ROM modules:PS2Driver
   name: PS2Driver
   section: ROM modules
   kind: module
   lang: Asm
-  status_32: ''
-  status_64: ''
+  status_32: 'Internals'
+  status_64: 'Internals'
   owner: Gerph
-  source: ''
+  source: https://github.com/gerph/riscos-ps2driver
 
 - key: ROM modules:InternationalKeyboard
   name: InternationalKeyboard
