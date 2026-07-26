@@ -33,7 +33,7 @@ from modules, filesystems and aliases.
 | [ ]      | [ ]       | Redirection may be repeated within the `{}` string. |
 | [X]      | [ ]       | Filesystem name prefixes of -<fs>- or <fs>: change the temporary filesystem |
 | [ ]      | [ ]       | Module name prefix of `<module>:` directs to just that module. |
-| [ ]      | [ ]       | Module name prefix of `Module#<module>:` case insensitive. |
+| [X]      | [ ]       | Module name prefix of `Module#<module>:` case insensitive. |
 | [ ]      | [ ]       | Modules selected by prefix are made preferred. |
 | [ ]      | [ ]       | Leading `/` causes a file to be run. |
 | [X]      | [ ]       | Leading `%` skips alias checks. |
@@ -43,7 +43,7 @@ from modules, filesystems and aliases.
 | [ ]      | [ ]       | Look at the module table for all commands (non-FS commands) |
 | [ ]      | [ ]       | Look at the module table for the FS commands of the current FS |
 | [ ]      | [ ]       | Look at the module table for the FS commands of the secondary FS |
-| [ ]      | [ ]       | Issue `Service_UKCommand` |
+| [X]      | [ ]       | Issue `Service_UKCommand` |
 | [ ]      | [ ]       | `FSControl_RUN` to execute an actual command |
 | [ ]      | [ ]       | Report error for unknown command |
 | [ ]      | [ ]       | Handle module init/final to cache/uncache commands |
@@ -75,7 +75,7 @@ from modules, filesystems and aliases.
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [X]      | [ ]       | `CliV` |
+| [ ]      | [ ]       | `CliV` |
 
 
 ### Events
