@@ -1616,6 +1616,7 @@
   lang: Asm
   status_32: ''
   status_64: ''
+  owner: Gerph
   source: ''
 
 - key: ROM modules:Wimp:SpriteRender
@@ -1673,6 +1674,7 @@
   lang: Asm/C
   status_32: ''
   status_64: ''
+  owner: Gerph
   source: ''
 
 - key: ROM modules:Wimp:ValidationStrings
@@ -1692,7 +1694,8 @@
   lang: Asm
   status_32: ''
   status_64: ''
-  source: ''
+  owner: Gerph
+  source: https://github.com/gerph/riscos-wimp-window
 
 - key: ROM modules:Wimp:WindowRender
   name: Wimp:WindowRender
