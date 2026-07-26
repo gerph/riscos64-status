@@ -359,7 +359,7 @@
   notes_64:
   - '1'
   owner: Gerph
-  source: ''
+  source: https://github.com/gerph/riscos-readline
 
 - key: ROM modules:CLIV
   name: CLIV
