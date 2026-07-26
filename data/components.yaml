@@ -756,9 +756,10 @@
   section: ROM modules
   kind: module
   lang: Asm
-  status_32: ''
+  status_32: 'Functional'
   status_64: ''
-  source: ''
+  owner: macpato82
+  source: 'https://github.com/macpato82/ADFS'
 
 - key: ROM modules:ADFSFiler
   name: ADFSFiler
