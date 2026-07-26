@@ -546,7 +546,7 @@
   notes_64:
   - '1'
   owner: Gerph
-  source: ''
+  source: https://github.com/gerph/riscos-ospointer
 
 - key: ROM modules:Hourglass
   name: Hourglass
