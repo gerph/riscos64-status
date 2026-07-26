@@ -13,26 +13,30 @@
 
 | In 32bit | In 64 bit | Interface |
 |----------|-----------|-----------|
-| [ ]      | [ ]       | Text character caching |
-| [ ]      | [ ]       | Text rendering |
+| [X]      | [X]       | Text character caching |
+| [X]      | [X]       | Text colour selection |
+| [X]      | [X]       | Text rendering |
 | [ ]      | [ ]       | Text box clear |
 | [ ]      | [ ]       | Text cursor rendering |
-| [ ]      | [ ]       | Graphics base change |
-| [ ]      | [ ]       | Graphics rectangle |
-| [ ]      | [ ]       | Graphics triangle |
-| [ ]      | [ ]       | Graphics parallelogram |
+| [X]      | [X]       | Graphics base change |
+| [X]      | [X]       | Graphics colour selection |
+| [ ]      | [ ]       | Graphics colour selection with patterns |
+| [ ]      | [ ]       | Graphics primitives |
+| [X]      | [X]       | Graphics rectangle |
+| [X]      | [X]       | Graphics triangle |
+| [X]      | [X]       | Graphics parallelogram |
 | [ ]      | [ ]       | Graphics block copy |
-| [ ]      | [ ]       | Graphics circle outline |
-| [ ]      | [ ]       | Graphics circle fill |
-| [ ]      | [ ]       | Graphics circle arc |
-| [ ]      | [ ]       | Graphics circle segment |
-| [ ]      | [ ]       | Graphics circle sector |
+| [X]      | [X]       | Graphics circle outline |
+| [X]      | [X]       | Graphics circle fill |
+| [X]      | [X]       | Graphics circle arc |
+| [X]      | [X]       | Graphics circle segment |
+| [X]      | [X]       | Graphics circle sector |
 | [ ]      | [ ]       | Graphics ellipse outline |
 | [ ]      | [ ]       | Graphics ellipse fill |
-| [ ]      | [ ]       | Graphics fill right |
-| [ ]      | [ ]       | Graphics fill left/right |
+| [ ]      | [ ]       | Graphics line fill right |
+| [ ]      | [ ]       | Graphics line fill left/right |
 | [ ]      | [ ]       | Graphics flood fill |
-| [ ]      | [ ]       | Graphics poly-HLine |
+| [X]      | [X]       | Graphics poly-HLine |
 
 
 ### Commands

@@ -388,10 +388,10 @@
   section: ROM modules
   kind: module
   lang: Asm
-  status_32: Stub
-  status_64: Stub
+  status_32: Internals
+  status_64: Internals
   owner: Gerph
-  source: ''
+  source: https://github.com/gerph/riscos-videosw
 
 - key: ROM modules:VideoHWVIDC
   name: VideoHWVIDC
