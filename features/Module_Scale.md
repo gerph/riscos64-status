@@ -1,5 +1,15 @@
 # Module: Scale
 
+## Summary
+
+Scale is a Toolbox scale/zoom selection object class. It packages a standard scale dialogue and uses the normal Toolbox object, task and filter lifecycle.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

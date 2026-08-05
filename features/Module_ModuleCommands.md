@@ -1,5 +1,15 @@
 # Module: ModuleCommands
 
+## Summary
+
+ModuleCommands implements command-line operations on the module chain (listing, loading, killing and inspecting modules), using the Kernel's OS_Module interface.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

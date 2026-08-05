@@ -1,8 +1,18 @@
 # Module: DeviceFS
 
+## Summary
+
+DeviceFS is a pseudo-filesystem and device registry for character and block devices. Drivers register devices/objects with it; it implements FileSwitch-facing stream operations, manages buffers and thresholds, and translates buffer/device activity into device callbacks, upcalls and events.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/devicefs.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

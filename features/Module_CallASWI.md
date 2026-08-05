@@ -1,5 +1,15 @@
 # Module: CallASWI
 
+## Summary
+
+CallASWI is a compatibility support module for old RISC OS releases, supplying the mechanism required to call arbitrary SWIs from assembler/application code where the native environment lacks the newer facility.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

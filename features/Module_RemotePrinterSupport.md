@@ -1,5 +1,15 @@
 # Module: RemotePrinterSupport
 
+## Summary
+
+library-initialisation-code: _rps_initialisemodule
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

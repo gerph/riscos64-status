@@ -1,5 +1,15 @@
 # Module: NetI
 
+## Summary
+
+cmhg header file for NetI module
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

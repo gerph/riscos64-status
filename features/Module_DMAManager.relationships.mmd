@@ -1,0 +1,19 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-hwsupport-dma.
+flowchart LR
+  context[/"Low-level transfer service for hardware drivers; SoundDMA uses the sound channels, and DMA-capable hardware…"/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Reset / Service_ResourceFSStarting / Service_PagesUnsafe"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["DMAManager"]:::process
+  api(["DMA_RegisterChannel, DMA_DeregisterChannel, DMA_QueueTransfer, DMA_TerminateTransfer"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["SoundCtrl"]):::terminal
+  consumer1 -->|"invokes DMA_DeregisterChannel"| api
+  target1(["ResourceFS"]):::terminal
+  focus -->|"ResourceFS_DeregisterFiles"| target1
+  target2(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

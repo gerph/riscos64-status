@@ -1,8 +1,18 @@
 # Module: DragAnObject
 
+## Summary
+
+DragAnObj supplies standard desktop drag feedback for arbitrary objects, allowing a Wimp client to present and move a dragged object consistently.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/draganobject.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

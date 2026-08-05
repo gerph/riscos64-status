@@ -41,7 +41,7 @@ jobs:
         uses: actions/cache@v6
         with:
           path: .mermaid-cache
-          key: mermaid-images-${{ runner.os }}-${{ hashFiles('planning/**/*.md', 'planning/**/*.mmd', 'features/**/*.md', 'Status.md', 'utils/*.pl', 'utils/mmdc') }}
+          key: mermaid-images-${{ runner.os }}-${{ hashFiles('planning/**/*.md', 'planning/**/*.mmd', 'features/**/*.md', 'features/**/*.mmd', 'Status.md', 'utils/*.pl', 'utils/mmdc') }}
           restore-keys: |
             mermaid-images-${{ runner.os }}-
 

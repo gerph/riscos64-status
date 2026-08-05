@@ -1,5 +1,15 @@
 # Module: ColourMenu
 
+## Summary
+
+ColourMenu is a Toolbox menu object for choosing colours; its pre/post filters and submenu service integration make it usable as a normal Toolbox menu hierarchy node.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

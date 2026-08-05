@@ -1,5 +1,10 @@
 # Module: ConvertSprite
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

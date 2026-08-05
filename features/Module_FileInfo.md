@@ -1,5 +1,15 @@
 # Module: FileInfo
 
+## Summary
+
+FileInfo is a Toolbox object class for displaying/editing file information in standard UI. Like other Toolbox classes it has object/task/filter/create/show/hide lifecycle layers rather than owning the Wimp directly.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

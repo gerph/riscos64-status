@@ -1,5 +1,15 @@
 # Module: SpriteUtils
 
+## Summary
+
+SpriteUtils is a sprite manipulation utility module. It claims an OS vector and provides shared sprite functions used by graphical clients, with separate message and workspace support.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

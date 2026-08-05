@@ -1,8 +1,18 @@
 # Module: WindowManager
 
+## Summary
+
+Wimp is the Window Manager Protocol implementation: it owns RISC OS desktop windows, icons, menus, pointer/keyboard dispatch and task-to-task Wimp messaging. It is the foundational desktop service used by Filer, Pinboard, Switcher, TaskWindow, Toolbox and almost every GUI application; it reacts to memory/mode/resource changes so those clients see a consistent desktop.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/wimp.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

@@ -1,9 +1,19 @@
 # Module: ColourTrans
 
+## Summary
+
+Colours is the ColourTrans/colour-translation rendering service. It tracks mode, calibration and palette-related changes and is used by rendering clients to map colours correctly between sprites, screen modes and output contexts.
+
+
 
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/colourtrans.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

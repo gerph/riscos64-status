@@ -1,9 +1,19 @@
 # Module: BufferManager
 
+## Summary
+
+BufferManager owns shared character buffers used by DeviceFS-backed drivers. It links devices to buffers, schedules filling/emptying, and drives the BufferFilling/BufferEmptying upcall path used by serial and parallel-style devices.
+
+
 
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/bufferman.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

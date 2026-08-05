@@ -1,5 +1,10 @@
 # Module: AppPatcher
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

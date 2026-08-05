@@ -1,0 +1,17 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-networking-inetconfigure.
+flowchart LR
+  context[/"Administrative client of DCI/Internet configuration and desktop configuration resources."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_DCIProtocolStatus / Service_DCIDriverStatus"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["InetConfigure"]:::process
+  api(["*Mod_Command"]):::terminal
+  focus -->|"provides"| api
+  target1(["DHCPClient"]):::terminal
+  focus -->|"DHCPClient_Control"| target1
+  target2(["RouterDiscovery"]):::terminal
+  focus -->|"RouterDiscovery_Control"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

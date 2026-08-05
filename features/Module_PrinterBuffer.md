@@ -1,5 +1,15 @@
 # Module: PrinterBuffer
 
+## Summary
+
+PrinterBuffer is the OS printer output buffer and driver bridge. It is started/reinitialised when the Kernel buffer system starts.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

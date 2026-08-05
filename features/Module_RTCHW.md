@@ -1,5 +1,10 @@
 # Module: RTCHW
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

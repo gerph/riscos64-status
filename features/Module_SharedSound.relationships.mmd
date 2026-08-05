@@ -1,0 +1,17 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-audio-sharedsound2.
+flowchart LR
+  lifecycle[/"Service_Sound / Service_TaskManagerAcknowledgements / Service_SoundDriver"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["SharedSound"]:::process
+  api(["SharedSound_InstallHandler, SharedSound_RemoveHandler, SharedSound_HandlerInfo, SharedSound_HandlerVolume"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["SharedSoundBuffer"]):::terminal
+  consumer1 -->|"invokes SharedSound_HandlerVolume"| api
+  consumer2(["RateTracker"]):::terminal
+  consumer2 -->|"invokes SharedSound_HandlerInfo"| api
+  target1(["SoundScheduler"]):::terminal
+  focus -->|"Sound_Configure"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

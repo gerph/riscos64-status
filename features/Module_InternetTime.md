@@ -1,5 +1,15 @@
 # Module: InternetTime
 
+## Summary
+
+InternetTime collects Internet/DCI network statistics and uses Internet events to update its state; it is the network-time/status support module rather than a transport driver.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

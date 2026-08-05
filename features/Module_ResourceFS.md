@@ -1,8 +1,18 @@
 # Module: ResourceFS
 
+## Summary
+
+ResourceFS is the ROM/RMA resource filing system. Modules register embedded, named resource files (messages, sprites, templates, etc.); ResourceFS links them into Resources: and notifies consumers after the combined resource namespace changes.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/resourcefs.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

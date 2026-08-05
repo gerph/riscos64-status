@@ -1,5 +1,15 @@
 # Module: ConvertBMP
 
+## Summary
+
+ConvertBMP is an ImageFileConvert plugin that converts BMP/DIB images to RISC OS sprites and can produce BMP from sprites. It registers its capability through the common ImageFileConvert interface rather than imposing a format-specific API on applications.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

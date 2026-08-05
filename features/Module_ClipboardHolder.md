@@ -1,5 +1,15 @@
 # Module: ClipboardHolder
 
+## Summary
+
+ClipboardHolder is the desktop clipboard holder. It owns copy/paste data, can save/restore it as files, processes Wimp messages, and can publish clipboard changes through the Freeway distributed-clipboard protocol.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

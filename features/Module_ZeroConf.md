@@ -1,5 +1,15 @@
 # Module: ZeroConf
 
+## Summary
+
+ZeroConf configures IPv4 link-local addressing and associated zero-configuration state for an interface. It monitors driver/protocol/Internet state, provides control/status/statistics SWIs, and uses Internet events plus deferred callbacks while probing/defending addresses.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

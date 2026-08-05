@@ -1,5 +1,15 @@
 # Module: PathUtils
 
+## Summary
+
+PathUtils is a small path-manipulation utility module. It enumerates a search path, joins path components and removes a component without requiring each caller to reimplement RISC OS path syntax.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

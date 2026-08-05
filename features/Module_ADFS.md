@@ -1,9 +1,19 @@
 # Module: ADFS
 
+## Summary
+
+ADFS is the Acorn Disc Filing System hardware/filesystem driver. It exposes FileCore-compatible low-level disc operations for floppy and IDE/ATA hard drives, mediates controller-specific operations (including podule IDE), and is the principal physical-disc backend used by FileCore.
+
+
 
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/adfsnew.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

@@ -1,5 +1,15 @@
 # Module: Percussion
 
+## Summary
+
+Percussion is a SoundChannels voice-generator module, supplying percussion synthesis routines that SoundChannels can install and invoke for attached channels. It tracks SoundChannels coming and going, and refreshes localised voice names when ResourceFS starts.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

@@ -1,8 +1,18 @@
 # Module: MessageTrans
 
+## Summary
+
+MessageTrans is the system message-catalogue service. It opens message files, looks up tokens with parameter substitution, constructs translated Wimp menus and manages file descriptors/caching for localised application messages.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/messagetrans.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

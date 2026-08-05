@@ -1,0 +1,14 @@
+%% Generated from riscos-component-interfaces.json; curated against its evidence.
+flowchart LR
+  context[/"Sits between OS_CLI callers and command providers"/]:::block
+  context -->|"invokes CliV vector"| focus
+  focus["CLIV"]:::process
+  focus -->|"provides"| api(["CliV vector: parses/dispatches * commands"]):::terminal
+  lifecycle[/"Service_ModuleStatus"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus -->|"issues Service_SyntaxError"| commands(["command-providing modules"]):::terminal
+  focus -->|"MessageTrans_Lookup / OpenFile / Dictionary"| msgtrans(["MessageTrans"]):::terminal
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

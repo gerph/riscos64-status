@@ -1,8 +1,18 @@
 # Module: Debugger
 
+## Summary
+
+Debugger is the low-level RISC OS debugger/disassembler module, including ARM and Thumb disassembly support plus debugger workspace, floating-point and option handling.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/debugger.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

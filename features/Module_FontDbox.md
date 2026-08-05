@@ -1,5 +1,15 @@
 # Module: FontDbox
 
+## Summary
+
+FontDbox is a Toolbox font-selection dialogue object: it maintains the selected font, size/aspect and sample text, reacts to font changes, and delivers object events through Toolbox filters.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

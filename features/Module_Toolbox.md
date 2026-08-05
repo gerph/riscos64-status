@@ -1,5 +1,15 @@
 # Module: Toolbox
 
+## Summary
+
+Toolbox is the object-oriented GUI framework above Wimp. It creates, shows, hides, copies and destroys objects from templates; registers object modules and Wimp filters; owns Toolbox task lifetime; raises Toolbox events; and provides timers/resources. Object-class modules register with it rather than having applications manipulate all Wimp details directly.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

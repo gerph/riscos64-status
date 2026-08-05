@@ -1,0 +1,17 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-toolbox-fontdbox.
+flowchart LR
+  context[/"Registers with Toolbox and receives per-task lifecycle services."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_ToolboxStarting / Service_ToolboxTaskBorn / Service_ToolboxTaskDied"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["FontDbox"]:::process
+  api(["FontDbox_ClassSWI, FontDbox_PostFilter, FontDbox_PreFilter"]):::terminal
+  focus -->|"provides"| api
+  target1(["Toolbox"]):::terminal
+  focus -->|"Toolbox_CreateObject"| target1
+  target2(["ResourceFS"]):::terminal
+  focus -->|"ResourceFS_DeregisterFiles"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

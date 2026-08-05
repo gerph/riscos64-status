@@ -1,5 +1,15 @@
 # Module: ColourDbox
 
+## Summary
+
+ColourDbox is a Toolbox colour-selection dialogue object, normally coordinating with the Colour Picker to edit a chosen colour and delivering the result as Toolbox events.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

@@ -1,5 +1,15 @@
 # Module: OSPointer
 
+## Summary
+
+OSPointer owns system pointer/cursor state and updates it across display and buffer lifecycle changes.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

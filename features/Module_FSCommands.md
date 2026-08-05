@@ -1,5 +1,15 @@
 # Module: FSCommands
 
+## Summary
+
+FSCommands supplies the kernel-level *command implementations that operate through FileSwitch/filing systems (catalogue, directory, copy/rename-style filesystem commands).
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

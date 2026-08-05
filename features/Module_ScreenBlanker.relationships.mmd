@@ -1,0 +1,23 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-video-render-scrblank.
+flowchart LR
+  context[/"Issues Service_ScreenBlanked and Service_ScreenRestored; ScreenSaver/ScrSaver components coordinate policy…"/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Reset / Service_ModeChange / Service_ScreenBlanked"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["ScreenBlanker"]:::process
+  api(["ScreenBlanker_* interface"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["WindowManager"]):::terminal
+  consumer1 -->|"invokes ScreenBlanker_Control"| api
+  consumer2(["BatMgr"]):::terminal
+  consumer2 -->|"invokes ScreenBlanker_Control"| api
+  consumer3(["Portable"]):::terminal
+  consumer3 -->|"invokes ScreenBlanker_Control"| api
+  target1(["Portable"]):::terminal
+  focus -->|"Portable_ReadFeatures"| target1
+  target2(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

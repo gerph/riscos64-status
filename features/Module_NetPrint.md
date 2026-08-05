@@ -1,8 +1,18 @@
 # Module: NetPrint
 
+## Summary
+
+NetPrint supplies a network printer filing-system/device interface over Econet. It claims Econet ports, registers a FileSwitch filesystem endpoint and implements unbuffered printer-byte output to remote printers.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/netprint.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

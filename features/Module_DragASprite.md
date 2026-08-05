@@ -1,8 +1,18 @@
 # Module: DragASprite
 
+## Summary
+
+DragASprit supplies sprite-based drag feedback, the companion primitive for clients that need to drag an image/sprite rather than an abstract object.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/dragasprite.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

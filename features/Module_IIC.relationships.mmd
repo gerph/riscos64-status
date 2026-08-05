@@ -1,0 +1,19 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-hwsupport-iic.
+flowchart LR
+  context[/"Hardware transport used by RTC and portable battery-management facilities; clients serialise peripheral…"/]:::block
+  context -->|"architecture"| focus
+  focus["IIC"]:::process
+  api(["IIC_Control"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["Portable"]):::terminal
+  consumer1 -->|"invokes IIC_Control"| api
+  consumer2(["RTCAdjust"]):::terminal
+  consumer2 -->|"invokes IIC_Control"| api
+  consumer3(["NVRAMHW"]):::terminal
+  consumer3 -->|"invokes IIC_Control"| api
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

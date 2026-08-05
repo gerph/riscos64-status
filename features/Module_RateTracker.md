@@ -1,5 +1,15 @@
 # Module: RateTracker
 
+## Summary
+
+RateTracker is a policy module for SharedSound: once per second it enumerates active SharedSound handlers and sets the global sound-system rate to the highest requested rate, avoiding needless upsampling and protecting the best active source's quality.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

@@ -1,5 +1,15 @@
 # Module: Messages
 
+## Summary
+
+Messages is the UK/global message-resource provider. It registers its embedded message files in ResourceFS and restores them on ResourceFSStarting; MessageTrans then opens and translates these files for other components.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

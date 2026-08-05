@@ -1,0 +1,13 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-programmer-obey.
+flowchart LR
+  context[/"Its service handler observes Service_NewApplication and it claims an OS vector while running command files…"/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Reset / Service_NewApplication"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["Obey"]:::process
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

@@ -1,5 +1,15 @@
 # Module: DHCPClient
 
+## Summary
+
+DHCPClient configures IPv4 network interfaces dynamically through DHCP, maintains leases/state and contributes DCI statistics.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

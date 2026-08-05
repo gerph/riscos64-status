@@ -1,5 +1,15 @@
 # Module: ImageFileRender
 
+## Summary
+
+ImageFileRender is the pluggable image-renderer registry and common rendering API. Renderer modules register/deregister capabilities; callers render, obtain bounds, transform images, declare fonts and enumerate renderer metadata without knowing a particular file format.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

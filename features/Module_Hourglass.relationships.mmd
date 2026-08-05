@@ -1,0 +1,21 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-video-render-hourglass.
+flowchart LR
+  context[/"Uses OS_Word pointer-shape/palette operations and timing to animate the busy cursor; desktop/application…"/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Error"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["Hourglass"]:::process
+  api(["Hourglass_* interface"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["TaskManager"]):::terminal
+  consumer1 -->|"invokes Hourglass_LEDs"| api
+  consumer2(["NetStatus"]):::terminal
+  consumer2 -->|"invokes Hourglass_Colours"| api
+  consumer3(["NFS"]):::terminal
+  consumer3 -->|"invokes Hourglass_Off"| api
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

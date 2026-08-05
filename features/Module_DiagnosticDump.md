@@ -1,5 +1,15 @@
 # Module: DiagnosticDump
 
+## Summary
+
+DiagnosticDump records C-program abnormal-exit/backtrace diagnostics. It captures register/stack/memory details, writes dump records, and by default opens a Filer window for the result; configurable options control enablement, detail and automatic viewing.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

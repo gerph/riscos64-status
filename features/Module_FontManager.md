@@ -1,8 +1,18 @@
 # Module: FontManager
 
+## Summary
+
+Fonts is the Font Manager: it manages font resources and rendering/printing support, reacts to mode, reset, Wimp error and territory changes, and issues the internationalisation service used by other text/rendering components.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/fontmanager.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

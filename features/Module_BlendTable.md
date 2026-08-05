@@ -1,5 +1,10 @@
 # Module: BlendTable
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

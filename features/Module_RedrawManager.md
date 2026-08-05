@@ -1,5 +1,15 @@
 # Module: RedrawManager
 
+## Summary
+
+RedrawManager is a redraw callback coordinator layered on the Wimp filter mechanism. Clients register callbacks with Redraw_AddCallBack/Redraw_RemoveCallBack; it hooks the dynamically allocated Wimp filter vector while present and announces its installation/removal through service calls.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

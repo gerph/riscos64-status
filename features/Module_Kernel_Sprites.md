@@ -1,6 +1,6 @@
 # Module: Kernel (Sprites)
 
-## Overview
+## Summary
 
 The Kernel is being worked on in parts, to allow it to have delineated
 implementation. This component will provide the sprite manipulation

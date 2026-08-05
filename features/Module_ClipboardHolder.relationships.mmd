@@ -1,0 +1,12 @@
+%% Generated from riscos-component-interfaces.json; curated against its evidence.
+flowchart LR
+  lifecycle[/"Service_StartWimp / FreewayStarting / InternetVars / ShutDownComplete"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["ClipboardHolder"]:::process
+  focus -->|"provides"| api(["ClipboardHolder_Copy / _Paste"]):::terminal
+  focus -->|"Wimp_Poll / SendMessage / CloseDown"| wimp(["Wimp"]):::terminal
+  focus -->|"Freeway_Write / Register"| freeway(["Freeway"]):::terminal
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

@@ -1,8 +1,18 @@
 # Module: International
 
+## Summary
+
+International is the central locale/internationalisation broker. It supplies the International service interface used to locate country-specific behaviour and resources, and restores its ResourceFS files when ResourceFS restarts.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/international.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

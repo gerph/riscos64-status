@@ -1,5 +1,10 @@
 # Module: ConvertGIF
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

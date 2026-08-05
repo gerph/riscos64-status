@@ -1,5 +1,15 @@
 # Module: WindowScroll
 
+## Summary
+
+WindowScroll is an EventV-based desktop helper that converts configured scrollable gadgets/windows into Wimp scroll requests. It remembers pending scroll state and understands parent/front/behind Wimp window relationships rather than providing a new window system.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

@@ -1,9 +1,19 @@
 # Module: CompressJPEG
 
+## Summary
+
+CompressJPEG is the JPEG compression module, adapting the Independent JPEG Group codec to RISC OS module/SWI use. It is the compression-side counterpart to JPEG decoding/rendering components.
+
+
 
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/compressjpeg.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

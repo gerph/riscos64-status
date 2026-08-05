@@ -1,5 +1,15 @@
 # Module: ARM
 
+## Summary
+
+ARM is the early ARM processor support module. It exposes processor/cache configuration commands and supplies the processor-specific support expected by the kernel on non-ARM3 machines.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

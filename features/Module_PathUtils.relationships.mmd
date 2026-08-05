@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-programmer-pathutils.
+flowchart LR
+  context[/"General service for command-line tools and applications manipulating RISC OS paths."/]:::block
+  context -->|"architecture"| focus
+  focus["PathUtils"]:::process
+  api(["PathUtils_EnumeratePath, PathUtils_JoinPath, PathUtils_RemovePath"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["FontManager"]):::terminal
+  consumer1 -->|"invokes PathUtils_EnumeratePath"| api
+  consumer2(["LibraryHelp"]):::terminal
+  consumer2 -->|"invokes PathUtils_EnumeratePath"| api
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

@@ -1,0 +1,17 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-filesys-imagefs-dosfs.
+flowchart LR
+  context[/"Runs as a FileSwitch filing-system provider over a block device/image."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Memory / Service_StartUpFS / Service_Reset"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["DOSFS"]:::process
+  api(["DOSFS_DiscFormat, DOSFS_LayoutStructure"]):::terminal
+  focus -->|"provides"| api
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_CloseFile"| target1
+  target2(["MimeMap"]):::terminal
+  focus -->|"MimeMap_Translate"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

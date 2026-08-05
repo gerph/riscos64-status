@@ -1,8 +1,18 @@
 # Module: FileCore
 
+## Summary
+
+FileCore is RISC OS's core disc-format and block-filesystem engine. It manages FileCore-format maps, directories, allocation, mounting, formatting, sector I/O/cache and disc records while delegating actual media operations to ADFS/SCSIFS-compatible drivers.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/filecorenew.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

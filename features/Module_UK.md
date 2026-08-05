@@ -1,5 +1,15 @@
 # Module: UK
 
+## Summary
+
+UK is the concrete United Kingdom territory plug-in: it supplies UK date/time/calendar, collation/transform and symbol tables, installs UK$Path and opens UK message resources when the Territory Manager is available.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

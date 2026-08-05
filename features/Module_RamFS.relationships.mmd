@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-filesys-ramfs-ramfs.
+flowchart LR
+  context[/"Provides a FileSwitch filesystem endpoint and a dynamic-area-backed pseudo-disc."/]:::block
+  context -->|"architecture"| focus
+  focus["RamFS"]:::process
+  api(["RAMFS_DiscOp, RAMFS_Drives, RAMFS_FreeSpace, RAMFS_DescribeDisc"]):::terminal
+  focus -->|"provides"| api
+  target1(["FileCore"]):::terminal
+  focus -->|"FileCore_Create"| target1
+  target2(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-filesys-ramfs-ramfsfiler.
+flowchart LR
+  context[/"Depends on RAMFS and the desktop Filer/Wimp interfaces; it is not the RAM filesystem module."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Reset / Service_StartFiler / Service_StartedFiler"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["RAMFSFiler"]:::process
+  target1(["WindowManager"]):::terminal
+  focus -->|"Wimp_CommandWindow"| target1
+  target2(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_CloseFile"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

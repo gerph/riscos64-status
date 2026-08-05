@@ -1,0 +1,24 @@
+%% Generated from riscos-component-interfaces.json; curated against its evidence.
+flowchart LR
+  context[/"Desktop event/message substrate consumed by Filer, Pinboard, Switcher and Toolbox"/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Memory / Service_ModeChange / ResourceFS services"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  extensions[/"FilterManager / RedrawManager"/]:::block
+  extensions -->|"extends event/redraw processing"| focus
+  focus["Wimp (WindowManager)"]:::process
+  focus -->|"provides"| api(["Wimp_* SWIs: windows, icons, menus, messages"]):::terminal
+  filer(["Filer"]):::terminal
+  filer -->|"invokes SWI"| api
+  pinboard(["Pinboard"]):::terminal
+  pinboard -->|"invokes SWI"| api
+  switcher(["TaskManager (Switcher)"]):::terminal
+  switcher -->|"invokes SWI"| api
+  taskwindow(["TaskWindow"]):::terminal
+  taskwindow -->|"invokes SWI"| api
+  toolbox(["Toolbox"]):::terminal
+  toolbox -->|"invokes SWI"| api
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

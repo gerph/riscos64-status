@@ -1,5 +1,15 @@
 # Module: ScrSaver
 
+## Summary
+
+ScrSaver is the screen-blanker manager. It responds to blanking/restoration and desktop start/shutdown lifecycle services, allowing screen-saver modules/settings to be coordinated with actual screen state.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

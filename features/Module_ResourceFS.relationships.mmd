@@ -1,0 +1,23 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-filesys-resourcefs-resourcefs.
+flowchart LR
+  context[/"Resource-providing modules call ResourceFS_RegisterFiles/DeregisterFiles."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_FSRedeclare / Service_TerritoryStarted"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["ResourceFS"]:::process
+  api(["ResourceFS_RegisterFiles, ResourceFS_DeregisterFiles"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["Alarm"]):::terminal
+  consumer1 -->|"invokes ResourceFS_DeregisterFiles"| api
+  consumer2(["Chars"]):::terminal
+  consumer2 -->|"invokes ResourceFS_DeregisterFiles"| api
+  consumer3(["Help"]):::terminal
+  consumer3 -->|"invokes ResourceFS_DeregisterFiles"| api
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target1
+  target2(["TerrMgr"]):::terminal
+  focus -->|"Territory_UpperCaseTable"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

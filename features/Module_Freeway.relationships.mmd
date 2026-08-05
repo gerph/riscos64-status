@@ -1,0 +1,23 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-networking-aun-access-freeway.
+flowchart LR
+  context[/"ShareFS and Omni access clients use it as a transport; it discovers DCI drivers and tracks Internet status."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_DCIDriverStatus / Service_DCIProtocolStatus / Service_MessageFileClosed"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["Freeway"]:::process
+  api(["Freeway_Register, Freeway_Write, Freeway_Read, Freeway_Enumerate"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["ShareFS"]):::terminal
+  consumer1 -->|"invokes Freeway_Enumerate"| api
+  consumer2(["FreewayHosts"]):::terminal
+  consumer2 -->|"invokes Freeway_Register"| api
+  consumer3(["Resolver"]):::terminal
+  consumer3 -->|"invokes Freeway_Enumerate"| api
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_CloseFile"| target1
+  target2(["NetI"]):::terminal
+  focus -->|"Econet_EnumerateMap"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

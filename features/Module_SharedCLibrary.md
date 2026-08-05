@@ -1,5 +1,15 @@
 # Module: SharedCLibrary
 
+## Summary
+
+SCL is the Shared C Library module and its associated run-time. It provides a shared implementation of the Norcroft C library for applications/modules, manages its run-time/module initialisation, and carries ResourceFS messages for C-library diagnostics.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

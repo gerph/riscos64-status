@@ -1,5 +1,15 @@
 # Module: RouterDiscovery
 
+## Summary
+
+RouterDiscovery implements ICMP Router Discovery per interface, allowing host/router/remove control and reporting status/statistics.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

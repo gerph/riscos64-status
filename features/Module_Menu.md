@@ -1,5 +1,15 @@
 # Module: Menu
 
+## Summary
+
+Menu is the Toolbox object class for hierarchical menus. It is a Toolbox/Window-filter participant and responds to Toolbox submenu service calls so object modules can contribute nested menus.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

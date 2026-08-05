@@ -1,5 +1,15 @@
 # Module: ShareFS
 
+## Summary
+
+ShareFS exports selected local filesystem shares over the Freeway remote-filesystem transport and receives remote filesystem messages to create/manage accessible shares.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

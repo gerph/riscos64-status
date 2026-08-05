@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-filesys-fileswitch.
+flowchart LR
+  context[/"It is the principal client-facing layer above every filing system."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Serviced / Service_Memory / Service_StartUpFS"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["FileSwitch"]:::process
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target1
+  target2(["WindowManager"]):::terminal
+  focus -->|"Wimp_ClaimFreeMemory"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

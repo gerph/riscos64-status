@@ -1,5 +1,15 @@
 # Module: InetConfigure
 
+## Summary
+
+InetConfigure is the configuration/UI companion for Internet networking. It watches DCI protocol and driver state and applies or presents interface configuration rather than implementing an IP stack itself.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

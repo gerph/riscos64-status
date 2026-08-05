@@ -1,5 +1,15 @@
 # Module: OSCommands
 
+## Summary
+
+OSCommands supplies general built-in star commands that are separated from the Kernel image but use its OS services.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

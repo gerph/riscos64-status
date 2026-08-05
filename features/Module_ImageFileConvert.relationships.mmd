@@ -1,0 +1,21 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-video-render-imagefileconvert.
+flowchart LR
+  context[/"Hosts format-specific converter modules (BMP, GIF, PNG, JPEG, etc.)."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_ImageFileRender_Started / Service_ImageFileRender_RendererChanged / Service_ImageFileRender_Dying"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["ImageFileConvert"]:::process
+  api(["ImageFileConvert_Convert, ImageFileConvert_MiscOp, ImageFileConvert_ConverterInfo, ImageFileConvert_Register"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["ConvertSprite"]):::terminal
+  consumer1 -->|"invokes ImageFileConvert_ConverterInfo"| api
+  consumer2(["ConvertBMP"]):::terminal
+  consumer2 -->|"invokes ImageFileConvert_Deregister"| api
+  consumer3(["ConvertClear"]):::terminal
+  consumer3 -->|"invokes ImageFileConvert_Deregister"| api
+  target1(["ImageFileRender"]):::terminal
+  focus -->|"ImageFileRender_Deregister"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

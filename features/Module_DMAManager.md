@@ -1,5 +1,15 @@
 # Module: DMAManager
 
+## Summary
+
+DMAManager arbitrates IOMD DMA channels for podules, floppy, parallel, sound and network transfers. Clients register logical channels and queue/suspend/terminate transfers; it claims device interrupt vectors and pauses unsafe memory transfers across the PagesUnsafe/PagesSafe protocol.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

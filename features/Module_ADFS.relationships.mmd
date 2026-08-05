@@ -1,0 +1,23 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-filesys-adfs-adfs.
+flowchart LR
+  context[/"FileCore calls its FileCore-style DiscOp/drive interfaces to mount, identify and access media."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Serviced"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["ADFS"]:::process
+  api(["ADFS_DiscOp, ADFS_HDC, ADFS_Drives, ADFS_FreeSpace"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["ADFSFiler"]):::terminal
+  consumer1 -->|"invokes ADFS_DescribeDisc"| api
+  consumer2(["Free"]):::terminal
+  consumer2 -->|"invokes ADFS_DescribeDisc"| api
+  consumer3(["Desktop"]):::terminal
+  consumer3 -->|"invokes ADFS_Drives"| api
+  target1(["FileCore"]):::terminal
+  focus -->|"FileCore_Create"| target1
+  target2(["Portable"]):::terminal
+  focus -->|"Portable_Control"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-video-render-fonts-manager.
+flowchart LR
+  context[/"Used by Wimp, Draw, DrawFile, Toolbox font objects and FontMap."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Reset / Service_Print / Service_ModeChange"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["FontManager"]:::process
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_CloseFile"| target1
+  target2(["PathUtils"]):::terminal
+  focus -->|"PathUtils_EnumeratePath"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

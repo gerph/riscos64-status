@@ -4,6 +4,11 @@
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/netstatus.html)
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

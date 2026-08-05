@@ -13,6 +13,7 @@ from status_catalog import (
     FEATURE_HEADER_BEGIN,
     FEATURE_HEADER_END,
     GROUP_TRANSITIONS,
+    RELATIONSHIPS_MARKER,
     SECTION_SCHEMAS,
     component_display_name,
     derive_repository_facts,
@@ -24,6 +25,7 @@ from status_catalog import (
     note_ids_for_field,
     note_reference,
     owner_warnings,
+    render_relationships_block,
     resolve_feature_page,
     validate_components,
 )
@@ -285,6 +287,8 @@ def copy_feature_page(
     completeness += "|" + "".join(f" {value} |" for value in table_values) + "\n\n"
 
     text = "".join(accum).replace(BADGE_PLACEHOLDER, completeness)
+    if RELATIONSHIPS_MARKER in text:
+        text = text.replace(RELATIONSHIPS_MARKER, render_relationships_block(source))
     destination.write_text(text, encoding="utf-8")
 
 

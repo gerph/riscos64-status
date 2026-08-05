@@ -1,5 +1,10 @@
 # Module: ErrorLog
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

@@ -1,5 +1,10 @@
 # Module: NVRAMHW
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

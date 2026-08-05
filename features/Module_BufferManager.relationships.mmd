@@ -1,0 +1,23 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-hwsupport-buffers.
+flowchart LR
+  context[/"Central buffering layer below DeviceFS and its device drivers. DeviceFS claims the upcall vector and…"/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Reset / Service_ResourceFSStarted / Service_ResourceFSStarting"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["BufferManager"]:::process
+  api(["Buffer_Create, Buffer_Remove, Buffer_LinkDevice, Buffer_UnlinkDevice"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["DeviceFS"]):::terminal
+  consumer1 -->|"invokes Buffer_Create"| api
+  consumer2(["Serial"]):::terminal
+  consumer2 -->|"invokes Buffer_InternalInfo"| api
+  consumer3(["ParallelDeviceDriver"]):::terminal
+  consumer3 -->|"invokes Buffer_InternalInfo"| api
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_CloseFile"| target1
+  target2(["ResourceFS"]):::terminal
+  focus -->|"ResourceFS_DeregisterFiles"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

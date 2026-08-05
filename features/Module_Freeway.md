@@ -1,5 +1,15 @@
 # Module: Freeway
 
+## Summary
+
+Freeway is the AUN remote-access transport. It registers clients, transports framed request/reply data over available network drivers and reports asynchronous transport events/status.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

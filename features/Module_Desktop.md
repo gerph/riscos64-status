@@ -1,8 +1,18 @@
 # Module: Desktop
 
+## Summary
+
+The Desktop module is the session-level desktop coordinator. Its service handler is deliberately small: it mediates the Service_Serviced protocol used while the desktop is being assembled, rather than implementing the Wimp itself. It belongs above Wimp, Filer and Pinboard in the boot-time desktop stack.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/desktop.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

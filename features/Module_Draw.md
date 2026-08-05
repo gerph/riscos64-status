@@ -1,8 +1,18 @@
 # Module: Draw
 
+## Summary
+
+DrawMod is the Draw graphics module implementation: it interprets and renders RISC OS Draw vector graphics, with the separate DrawFile module exposing its public rendering SWIs.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/draw.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

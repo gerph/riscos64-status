@@ -1,8 +1,18 @@
 # Module: Hourglass
 
+## Summary
+
+Hourglass is the standard busy/progress pointer module. It maintains nested busy and percentage state, changes pointer/palette data and exposes the Hourglass SWI chunk for On, Off, Smash, Start and progress operations.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/hourglass.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

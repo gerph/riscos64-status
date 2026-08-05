@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-video-render-imagefilerenderartworks.
+flowchart LR
+  lifecycle[/"Service_ImageFileRender_Started / Service_ImageFileRender_Dying"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["ImageFileRender_Artworks"]:::process
+  api(["IFRArtworks_Render, IFRArtworks_BBox"]):::terminal
+  focus -->|"provides"| api
+  target1(["ImageFileRender"]):::terminal
+  focus -->|"ImageFileRender_Deregister"| target1
+  target2(["WindowManager"]):::terminal
+  focus -->|"Wimp_ReadPalette"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

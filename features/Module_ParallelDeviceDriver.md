@@ -1,5 +1,15 @@
 # Module: ParallelDeviceDriver
 
+## Summary
+
+ParallelDeviceDriver implements the parallel-printer/device port across IOC, IOMD/IOEB and FastCent variants. It uses DeviceFS streams and BufferManager buffering to provide interrupt-driven parallel output.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

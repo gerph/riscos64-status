@@ -1,0 +1,13 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-kernelext-printerbuffer.
+flowchart LR
+  context[/"Consumes Service_BufferStarting and feeds the configured printer device/driver."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_BufferStarting"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["PrinterBuffer"]:::process
+  target1(["BufferManager"]):::terminal
+  focus -->|"Buffer_Deregister"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

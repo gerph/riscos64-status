@@ -1,5 +1,15 @@
 # Module: FPEmulator
 
+## Summary
+
+FPEmulator is the floating-point accelerator/emulator support module. It handles unsupported floating-point instructions and supplies the legacy floating-point environment on hardware without an appropriate coprocessor.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

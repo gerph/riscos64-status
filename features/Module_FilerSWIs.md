@@ -1,8 +1,18 @@
 # Module: FilerSWIs
 
+## Summary
+
+FilerSWIs is the programmatic façade for driving the desktop Filer. It exposes Filer-oriented operations to modules and applications and cleans up its Wimp-side state at Service_WimpCloseDown.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/fileraction.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

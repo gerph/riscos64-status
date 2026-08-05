@@ -1,5 +1,15 @@
 # Module: MimeMap
 
+## Summary
+
+* C Module Header for MimeMap module
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

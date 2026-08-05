@@ -1,0 +1,19 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-video-render-fontmap.
+flowchart LR
+  context[/"A Font Manager companion used by font-aware applications and renderers."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_ResourceFSStarting / Service_FontsChanged"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["FontMap"]:::process
+  api(["FontMap_Translate"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["ConvertWMF"]):::terminal
+  consumer1 -->|"invokes FontMap_Translate"| api
+  target1(["ResourceFS"]):::terminal
+  focus -->|"ResourceFS_DeregisterFiles"| target1
+  target2(["Hourglass"]):::terminal
+  focus -->|"Hourglass_Off"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

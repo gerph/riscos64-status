@@ -1,9 +1,19 @@
 # Module: BASIC
 
+## Summary
+
+BASIC is the RISC OS BBC BASIC interpreter module, responsible for executing BASIC programs and providing the BASIC command/runtime environment.
+
+
 
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/basic.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

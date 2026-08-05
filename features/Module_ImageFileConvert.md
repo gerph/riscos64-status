@@ -1,5 +1,15 @@
 # Module: ImageFileConvert
 
+## Summary
+
+ImageFileConvert is the companion pluggable image-converter registry. It lets converter modules register their formats and lets callers convert/enumerate/query converters through one API; it tracks ImageFileRender lifetime because conversion can require rendering support.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

@@ -1,8 +1,18 @@
 # Module: PipeFS
 
+## Summary
+
+PipeFS is an in-memory pipe filing system used to expose producer/consumer streams through normal RISC OS file handles. It deliberately has no private SWI chunk; its public interface is the FileSwitch filing-system protocol.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/pipefs.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

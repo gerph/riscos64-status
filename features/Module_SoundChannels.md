@@ -1,5 +1,15 @@
 # Module: SoundChannels
 
+## Summary
+
+SoundChannels is the Level 1 legacy sound synthesiser and mixer. It exposes the SOUND-style control SWIs, manages channel control blocks and attached voice generators, and is called by SoundDMA to fill each 8-bit mu-law buffer. It converts foreground Sound_Control requests into channel gate/update state, provides volume and pitch control, and publishes a Service_SoundControl interception point so another module can suppress or alter a requested note.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

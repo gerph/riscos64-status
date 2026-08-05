@@ -1,0 +1,17 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-networking-aun-internet.
+flowchart LR
+  context[/"Uses DCI driver/protocol status services to attach interfaces and MbufManager for packet storage."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_PreReset / Service_InetServices / Service_MessageFileClosed"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["Internet"]:::process
+  api(["Socket_Creat, Socket_Bind, Socket_Listen, Socket_Accept"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["Net"]):::terminal
+  consumer1 -->|"invokes Socket"| api
+  consumer2(["NetI"]):::terminal
+  consumer2 -->|"invokes Socket"| api
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

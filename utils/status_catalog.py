@@ -96,6 +96,60 @@ FEATURE_HEADER_BEGIN = "<!-- GENERATED STATUS HEADER BEGIN -->"
 FEATURE_HEADER_END = "<!-- GENERATED STATUS HEADER END -->"
 BADGE_PLACEHOLDER = "<!-- badges -->"
 
+# Marker left in features/Module_*.md and features/Lib_*.md source by
+# utils/apply_relationship_docs.py inside a "## Relationships" section. At wiki
+# generation time it is replaced with the component's curated relationship
+# diagram (from a sibling *.relationships.mmd file) plus a fixed legend, kept
+# as a *separate* Mermaid diagram so it renders at its own size instead of
+# shrinking the main diagram to make room for it.
+RELATIONSHIPS_MARKER = "RELATIONSHIPS-HERE"
+
+RELATIONSHIP_LEGEND_MMD = """flowchart LR
+  subgraph legend["Legend"]
+    lprocess["Component / service"]:::process
+    lterminal(["Public API / consumer boundary"]):::terminal
+    lblock[/"State / external provider"/]:::block
+    ldecision{"Decision"}:::decision
+  end
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;"""
+
+
+def relationship_diagram_path(feature_page_path: Path) -> Path:
+    """Path of the curated relationship diagram belonging to a feature page,
+    e.g. features/Module_CLIV.md -> features/Module_CLIV.relationships.mmd.
+
+    Deliberately not the bare ".mmd" sibling used by the "Development status"
+    section above (source.with_suffix(".mmd")): that name is already claimed
+    for a different diagram wrapped a different way, and a relationship
+    diagram must not collide with it.
+    """
+    return feature_page_path.with_name(feature_page_path.stem + ".relationships.mmd")
+
+
+def render_relationships_block(feature_page_path: Path) -> str:
+    """Render the replacement for RELATIONSHIPS_MARKER: the component's own
+    curated diagram (if one has been generated yet) followed by the fixed
+    legend, each as its own fenced Mermaid diagram."""
+    diagram_path = relationship_diagram_path(feature_page_path)
+    if not diagram_path.exists():
+        return "_Relationship diagram not yet generated._\n"
+
+    diagram = diagram_path.read_text(encoding="utf-8").rstrip("\n")
+    lines = [
+        "```mermaid",
+        diagram,
+        "```",
+        "",
+        "```mermaid",
+        RELATIONSHIP_LEGEND_MMD,
+        "```",
+        "",
+    ]
+    return "\n".join(lines)
+
 MANUAL_ARTIFACT_ALIASES = {
     "BootCommands": ["BootCmds"],
     "FileCoreCheck": ["FileCoreCk"],

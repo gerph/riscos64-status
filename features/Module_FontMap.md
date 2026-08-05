@@ -1,5 +1,15 @@
 # Module: FontMap
 
+## Summary
+
+FontMap translates font identifiers/mappings for clients that need stable mapping across the Font Manager's current font set; it reloads resources and reacts to font changes.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

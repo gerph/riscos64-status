@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gitlab.gerph.org/riscos/riscos/data/riscos-component-interfaces.schema.json",
+  "title": "RISC OS component interface catalogue",
+  "description": "Evidence-backed catalogue of RISC OS source-tree components (modules and libraries) and their interfaces and relationships, as produced by the analysing-riscos-source-trees collection process. This schema documents data/riscos-component-interfaces.json so its structure can be understood without reading the full (very large) data file.",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "repository", "components"],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Version of this catalogue format, e.g. \"1.0\"."
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of when the catalogue was generated."
+    },
+    "repository": {
+      "type": "object",
+      "description": "Metadata about the source tree that was analysed.",
+      "required": ["path", "git_url", "submodules_examined", "components_catalogued"],
+      "properties": {
+        "path": { "type": "string", "description": "Filesystem path of the analysed source tree." },
+        "git_url": { "type": "string", "description": "Git URL of the superproject." },
+        "submodules_examined": { "type": "integer", "description": "Count of .gitmodules entries examined." },
+        "components_catalogued": { "type": "integer", "description": "Count of entries in components[]." }
+      }
+    },
+    "submodules_unavailable": {
+      "type": "array",
+      "description": "Declared submodules that could not be checked out or read. Not an assertion that they are non-components.",
+      "items": {
+        "type": "object",
+        "required": ["path", "analysis_status"],
+        "properties": {
+          "path": { "type": "string" },
+          "declared_git_url": { "type": ["string", "null"] },
+          "analysis_status": { "type": "string", "description": "e.g. \"unavailable checkout\"." }
+        }
+      }
+    },
+    "extraction_notes": {
+      "type": "string",
+      "description": "Free-text notes on extraction methodology and caveats that apply to the whole catalogue."
+    },
+    "components": {
+      "type": "array",
+      "description": "One entry per catalogued module or library.",
+      "items": { "$ref": "#/$defs/component" }
+    }
+  },
+  "$defs": {
+    "evidenceItem": {
+      "type": "object",
+      "description": "A single source-tree reference backing a claim.",
+      "required": ["file", "extractor"],
+      "properties": {
+        "file": { "type": "string", "description": "Path of the source file, relative to the repository root." },
+        "line": { "type": ["integer", "null"], "description": "1-based line number, or null when not line-specific." },
+        "extractor": {
+          "type": "string",
+          "description": "How this evidence was found, e.g. \"assembly:SWI\", \"cmhg:swi-decoding-table\", \"expert source analysis\". A leading \"dynamic \" value on a related field indicates a register-driven payload that could not be statically resolved."
+        },
+        "excerpt": { "type": "string", "description": "Optional short quoted source excerpt." }
+      }
+    },
+    "interfaceItem": {
+      "type": "object",
+      "description": "A named interface point (SWI, service, vector, upcall, event, callback) with its supporting evidence. An empty array of interfaceItems means the extractor found no instance of that interface kind, not that it is proved absent.",
+      "required": ["name", "evidence", "confidence"],
+      "properties": {
+        "name": { "type": "string", "description": "Interface name, e.g. a SWI or service name. May be \"dynamic ...\" when register-driven." },
+        "offset": { "type": ["integer", "null"], "description": "SWI offset from the chunk base; only present on provided SWIs." },
+        "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidenceItem" } },
+        "confidence": { "$ref": "#/$defs/confidence" }
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "Analyst confidence in this claim."
+    },
+    "description": {
+      "type": "object",
+      "required": ["text", "evidence", "basis", "confidence"],
+      "properties": {
+        "text": { "type": "string", "description": "Prose description of the component's purpose and responsibilities." },
+        "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidenceItem" } },
+        "basis": {
+          "type": "string",
+          "description": "How the description was derived, e.g. \"expert source analysis\" vs a metadata fallback."
+        },
+        "confidence": { "$ref": "#/$defs/confidence" }
+      }
+    },
+    "relationship": {
+      "type": "object",
+      "description": "A directed relationship from this component to another component or interface. Mechanically derived SWI/service relations are retained alongside semantic relationships such as registration, layering, and callback dispatch.",
+      "required": ["kind", "evidence", "confidence"],
+      "properties": {
+        "target_component": {
+          "type": ["string", "null"],
+          "description": "id of the target component, when a specific component could be identified; null for architectural relationships with no single target."
+        },
+        "target_interface": {
+          "type": ["string", "null"],
+          "description": "Name of the interface being used on the target, e.g. a SWI name; null when not interface-specific."
+        },
+        "kind": {
+          "type": "string",
+          "description": "Relationship verb, e.g. \"invokes SWI\", \"issues service call\", \"architectural relationship\", or a bespoke semantic kind such as \"registers with\"."
+        },
+        "detail": {
+          "type": "string",
+          "description": "Free-text explanation, present mainly on \"architectural relationship\" entries that have no single named target."
+        },
+        "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidenceItem" } },
+        "confidence": { "$ref": "#/$defs/confidence" }
+      }
+    },
+    "component": {
+      "type": "object",
+      "required": ["id", "submodule", "name", "kind", "description", "build", "interfaces", "commands", "relationships", "documentation", "analysis"],
+      "properties": {
+        "id": { "type": "string", "description": "Stable path-derived identifier, e.g. \"sources-apps-alarm\"." },
+        "submodule": {
+          "type": "object",
+          "required": ["path", "git_url", "declared_git_url", "branch"],
+          "properties": {
+            "path": { "type": "string", "description": "Path within the source tree, e.g. \"Sources/Apps/Alarm\"." },
+            "git_url": { "type": "string", "description": "Resolved Git URL." },
+            "declared_git_url": { "type": "string", "description": "Git URL as declared in .gitmodules, e.g. a relative \"../foo.git\"." },
+            "branch": { "type": "string" },
+            "commit": { "type": ["string", "null"] }
+          }
+        },
+        "name": { "type": "string", "description": "Human-readable component name. Not guaranteed unique across the catalogue, and not guaranteed to match the features/Module_*.md filename or data/components.yaml name (see AGENTS.md for the alias table bridging these)." },
+        "kind": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["module", "library"] },
+          "minItems": 1,
+          "description": "One or both of \"module\"/\"library\"."
+        },
+        "description": { "$ref": "#/$defs/description" },
+        "build": {
+          "type": "object",
+          "required": ["signals", "component_name", "module_exports", "library_exports"],
+          "properties": {
+            "signals": { "type": "array", "items": { "type": "string" }, "description": "Build-metadata signals that justified the kind classification." },
+            "component_name": { "type": "string" },
+            "module_exports": { "type": "array", "items": { "type": "string" } },
+            "library_exports": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "interfaces": {
+          "type": "object",
+          "required": ["swi", "services", "vectors", "upcalls", "events", "callbacks", "interrupt_handlers"],
+          "properties": {
+            "swi": {
+              "type": "object",
+              "required": ["prefix", "chunk_base", "provides", "calls"],
+              "properties": {
+                "prefix": { "type": ["string", "null"], "description": "Public SWI name prefix, e.g. \"ResourceFS\"." },
+                "chunk_base": { "type": ["string", "null"], "description": "Allocated SWI chunk base, if known." },
+                "provides": { "type": "array", "items": { "$ref": "#/$defs/interfaceItem" } },
+                "calls": { "type": "array", "items": { "$ref": "#/$defs/interfaceItem" }, "description": "SWIs this component is observed to invoke (evidence of issued interactions, not necessarily every call at runtime)." }
+              }
+            },
+            "services": {
+              "type": "object",
+              "required": ["issues", "handles"],
+              "properties": {
+                "issues": { "type": "array", "items": { "$ref": "#/$defs/interfaceItem" } },
+                "handles": { "type": "array", "items": { "$ref": "#/$defs/interfaceItem" } }
+              }
+            },
+            "vectors": {
+              "type": "object",
+              "required": ["handles", "issues", "releases"],
+              "properties": {
+                "handles": { "type": "array", "items": { "$ref": "#/$defs/interfaceItem" } },
+                "issues": { "type": "array", "items": { "$ref": "#/$defs/interfaceItem" } },
+                "releases": { "type": "array", "items": { "$ref": "#/$defs/interfaceItem" } }
+              }
+            },
+            "upcalls": {
+              "type": "object",
+              "required": ["issues", "handles"],
+              "properties": {
+                "issues": { "type": "array", "items": { "$ref": "#/$defs/interfaceItem" } },
+                "handles": { "type": "array", "items": { "$ref": "#/$defs/interfaceItem" } }
+              }
+            },
+            "events": {
+              "type": "object",
+              "required": ["issues", "handles"],
+              "properties": {
+                "issues": { "type": "array", "items": { "$ref": "#/$defs/interfaceItem" } },
+                "handles": { "type": "array", "items": { "$ref": "#/$defs/interfaceItem" } }
+              }
+            },
+            "callbacks": {
+              "type": "object",
+              "required": ["registers", "removes"],
+              "properties": {
+                "registers": { "type": "array", "items": { "$ref": "#/$defs/interfaceItem" } },
+                "removes": { "type": "array", "items": { "$ref": "#/$defs/interfaceItem" } }
+              }
+            },
+            "interrupt_handlers": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/interfaceItem" },
+              "description": "IRQ handler veneers declared by the component, e.g. from a CMHG irq-handlers table."
+            }
+          }
+        },
+        "commands": {
+          "type": "array",
+          "description": "*Commands implemented by the component.",
+          "items": { "$ref": "#/$defs/interfaceItem" }
+        },
+        "relationships": {
+          "type": "array",
+          "description": "Directed relationships from this component to others; see references/component-diagrams.md in the analysing-riscos-source-trees skill for how these are turned into diagrams.",
+          "items": { "$ref": "#/$defs/relationship" }
+        },
+        "documentation": {
+          "type": "array",
+          "description": "Paths to README or other documentation files found alongside the component.",
+          "items": { "type": "string" }
+        },
+        "analysis": {
+          "type": "object",
+          "required": ["status", "limitations"],
+          "properties": {
+            "status": { "type": "string", "description": "e.g. \"static-source-inventory\"." },
+            "limitations": { "type": "array", "items": { "type": "string" }, "description": "Caveats about what this analysis could and could not determine for this component." },
+            "interface_evidence": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/evidenceItem" },
+              "description": "Additional evidence added by semantic/expert review, beyond the mechanically extracted interfaceItem evidence."
+            }
+          }
+        }
+      }
+    }
+  }
+}

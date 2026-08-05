@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-programmer-minidump.
+flowchart LR
+  context[/"Handles Service_APCSBacktrace to capture an APCS backtrace."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_APCSBacktrace"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["DiagnosticDump"]:::process
+  api(["DiagnosticDump_Write"]):::terminal
+  focus -->|"provides"| api
+  target1(["TaskManager"]):::terminal
+  focus -->|"TaskManager_StartTask"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

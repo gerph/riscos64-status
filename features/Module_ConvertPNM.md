@@ -1,5 +1,10 @@
 # Module: ConvertPNM
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

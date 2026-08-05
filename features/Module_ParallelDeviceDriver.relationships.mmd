@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-hwsupport-parallel.
+flowchart LR
+  context[/"Registers the parallel port with DeviceFS; DMA may be involved on capable hardware. It is selected as a…"/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Reset / Service_DeviceFSStarting / Service_DeviceFSDying"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["ParallelDeviceDriver"]:::process
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target1
+  target2(["ResourceFS"]):::terminal
+  focus -->|"ResourceFS_DeregisterFiles"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

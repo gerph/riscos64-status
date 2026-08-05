@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-hwsupport-sound-sound1.
+flowchart LR
+  lifecycle[/"Service_Serviced / Service_Reset / Service_Sound"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["SoundChannels"]:::process
+  api(["Sound_Volume, Sound_SoundLog, Sound_LogScale, Sound_InstallVoice"]):::terminal
+  focus -->|"provides"| api
+  target1(["SoundScheduler"]):::terminal
+  focus -->|"Sound_AttachNamedVoice"| target1
+  target2(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

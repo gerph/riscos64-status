@@ -1,5 +1,15 @@
 # Module: ADFSFiler
 
+## Summary
+
+ADFSFiler is the desktop filer client for ADFS volumes: it registers its resources, starts with the Filer, and presents mounted ADFS discs rather than implementing disc access itself.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

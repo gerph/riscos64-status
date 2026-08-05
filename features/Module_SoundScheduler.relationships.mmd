@@ -1,0 +1,19 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-hwsupport-sound-sound2.
+flowchart LR
+  lifecycle[/"Service_Reset / Service_Sound / Service_Sound/Service_SoundLevel0Alive"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["SoundScheduler"]:::process
+  api(["Sound_QInit, Sound_QSchedule, Sound_QRemove, Sound_QFree"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["SoundChannels"]):::terminal
+  consumer1 -->|"invokes Sound_AttachNamedVoice"| api
+  consumer2(["RateTracker"]):::terminal
+  consumer2 -->|"invokes Sound_Configure"| api
+  consumer3(["SharedSound"]):::terminal
+  consumer3 -->|"invokes Sound_Configure"| api
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

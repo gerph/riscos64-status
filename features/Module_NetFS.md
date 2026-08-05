@@ -1,8 +1,18 @@
 # Module: NetFS
 
+## Summary
+
+NetFS is the classic Econet/AUN network filing system. It maps RISC OS file operations onto remote file servers, manages network login/catalogue/cache state and supplies a FileSwitch filing-system entry.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/netfs.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

@@ -1,5 +1,7 @@
 # Module: WindowManager (Introspection)
 
+## Summary
+
 The WindowManager provides a few calls for reading information about itself
 and the system's configuration. These can largely be implemented before the
 functions themselves, providing dummy or error responses.

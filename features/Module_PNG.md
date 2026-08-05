@@ -1,5 +1,15 @@
 # Module: PNG
 
+## Summary
+
+PNG is the RISC OS PNG codec module, exposing SWIs to inspect PNG signatures/chunks/metadata, configure decoding and process image data. It requires ZLib for deflate compression and integrates with Wimp task lifecycle for task-associated processing.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

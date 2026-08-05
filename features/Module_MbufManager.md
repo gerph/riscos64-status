@@ -1,5 +1,15 @@
 # Module: MbufManager
 
+## Summary
+
+mbufmanager implements the mbuf packet-buffer primitives used by the TCP/IP stack: allocating, chaining and copying packet data and maintaining core buffer state.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

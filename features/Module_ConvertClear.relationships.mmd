@@ -1,0 +1,13 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-video-render-convertclear.
+flowchart LR
+  context[/"Provides format-specific conversion through ImageFileConvert_Register, and handles…"/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_ImageFileConvert_Started"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["ConvertClear"]:::process
+  target1(["ImageFileConvert"]):::terminal
+  focus -->|"ImageFileConvert_Deregister"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

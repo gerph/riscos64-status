@@ -1,0 +1,17 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-programmer-debugger.
+flowchart LR
+  context[/"Provides Debugger_Disassemble and Debugger_DisassembleThumb for debugger/DDT/tool clients."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Reset"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["Debugger"]:::process
+  api(["Debugger_* interface"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["Toolbox"]):::terminal
+  consumer1 -->|"invokes Debugger_EndDebug"| api
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

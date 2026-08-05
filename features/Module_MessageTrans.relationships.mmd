@@ -1,0 +1,17 @@
+%% Generated from riscos-component-interfaces.json; curated against its evidence.
+flowchart LR
+  filesystems[/"ResourceFS / filing systems"/]:::block
+  filesystems -->|"message files"| focus
+  lifecycle[/"Service_ResourceFSStarted / Dying / Service_TerritoryStarted"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["MessageTrans"]:::process
+  focus -->|"provides"| api(["MessageTrans_Lookup / OpenFile / MakeMenus / GSLookup"]):::terminal
+  cliv(["CLIV"]):::terminal
+  cliv -->|"invokes SWI"| api
+  many(["almost every module & desktop application"]):::terminal
+  many -->|"invokes SWI: token lookup"| api
+  focus -->|"issues Service_MessageFileClosed"| clients(["clients holding message-file handles"]):::terminal
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

@@ -1,5 +1,15 @@
 # Module: RTCAdjust
 
+## Summary
+
+RTCAdjust is a small Real Time Clock adjustment module, providing the platform mechanism to correct/maintain the hardware clock's time relative to system time.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

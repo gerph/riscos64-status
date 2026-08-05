@@ -1,8 +1,18 @@
 # Module: ShellCLI
 
+## Summary
+
+ShellCLI supplies a command-line shell within the desktop environment, coordinating shell execution with Wimp task lifetime and memory availability.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/shellcli.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

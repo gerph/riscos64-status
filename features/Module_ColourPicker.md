@@ -1,5 +1,15 @@
 # Module: ColourPicker
 
+## Summary
+
+ColourPicker is the system colour-selection service. It lets applications register colour models, open/read/update/close dialogues and set colours; it reacts to Wimp, mode, palette, territory and resource changes and advertises its availability by service call.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

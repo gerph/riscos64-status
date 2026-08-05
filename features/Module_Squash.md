@@ -1,8 +1,18 @@
 # Module: Squash
 
+## Summary
+
+Squash is a restartable, lossless streaming compression/decompression module. Its store-to-store SWI interface was designed so a caller can resume work when buffers are exhausted, rather than needing the full input/output in memory.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/squash.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

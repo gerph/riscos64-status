@@ -1,5 +1,15 @@
 # Module: ScreenBlanker
 
+## Summary
+
+ScreenBlanker is the low-level screen blanking controller. It performs the blank/restore transition and broadcasts the matching lifecycle services for saver/user-interface components.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

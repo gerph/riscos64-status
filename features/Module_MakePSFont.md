@@ -1,8 +1,18 @@
 # Module: MakePSFont
 
+## Summary
+
+library-initialisation-code: _makepsf_initialisemodule
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/makepsfont.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

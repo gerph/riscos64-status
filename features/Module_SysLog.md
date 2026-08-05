@@ -1,5 +1,15 @@
 # Module: SysLog
 
+## Summary
+
+SysLog supplies system logging facilities, including configuration, host-name lookup, ticker/callback scheduling and a server. It follows Internet interface-status changes so logging transport state is correctly updated during network bring-up/shutdown.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

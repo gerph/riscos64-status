@@ -1,8 +1,18 @@
 # Module: SerialDeviceDriver
 
+## Summary
+
+SerialDeviceDriver implements the standard serial port using supported 6551 and 710 controller variants. It registers serial streams with DeviceFS and uses BufferManager for interrupt-driven receive/transmit.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/serparpt.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

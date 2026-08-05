@@ -1,6 +1,6 @@
 # Module: Kernel (OS_Byte)
 
-## Overview
+## Summary
 
 The Kernel is being worked on in parts, to allow it to have delineated
 implementation. This component provides `OS_Byte` implementation. The

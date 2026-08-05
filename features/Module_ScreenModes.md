@@ -1,5 +1,15 @@
 # Module: ScreenModes
 
+## Summary
+
+ScreenModes supplies the screen-mode catalogue/query interface and participates in mode enumeration/extension. It issues Service_ModeFileChanged when the configured mode definitions change.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

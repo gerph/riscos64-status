@@ -1,5 +1,15 @@
 # Module: ProgInfo
 
+## Summary
+
+ProgInfo is the Toolbox program-information/about dialogue object, packaging application metadata in standard desktop UI.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

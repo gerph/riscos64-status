@@ -1,5 +1,10 @@
 # Module: BootNet
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

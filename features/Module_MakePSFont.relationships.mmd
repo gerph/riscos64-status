@@ -1,0 +1,17 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-printing2-engine-makepsfont.
+flowchart LR
+  focus["MakePSFont"]:::process
+  api(["MakePSFont_MakeFont"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["PDModules"]):::terminal
+  consumer1 -->|"invokes MakePSFont_MakeFont"| api
+  consumer2(["PDriverPS"]):::terminal
+  consumer2 -->|"invokes MakePSFont_MakeFont"| api
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_CloseFile"| target1
+  target2(["TML_HostFS"]):::terminal
+  focus -->|"HostFS_HostVdu"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

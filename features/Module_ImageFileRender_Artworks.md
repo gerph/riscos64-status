@@ -1,5 +1,10 @@
 # Module: ImageFileRender_Artworks
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

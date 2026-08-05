@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-hwsupport-arm.
+flowchart LR
+  context[/"CPU-specific counterpart to ARM3Support; it works directly with processor control/cache state and has…"/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_ResourceFSStarting"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["ARM"]:::process
+  target1(["ResourceFS"]):::terminal
+  focus -->|"ResourceFS_DeregisterFiles"| target1
+  target2(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_OpenFile"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

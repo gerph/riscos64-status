@@ -1,5 +1,15 @@
 # Module: InetServices
 
+## Summary
+
+InetServices is the system network service-name database/utility. It resolves service names to ports and protocols, decodes socket errors and can construct a services menu.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

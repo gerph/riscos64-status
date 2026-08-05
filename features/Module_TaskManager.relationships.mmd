@@ -1,0 +1,23 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-desktop-switcher.
+flowchart LR
+  context[/"Runs on Wimp and integrates with Filer start/dying notifications."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Reset / Service_ModeChange / Service_StartWimp"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["TaskManager"]:::process
+  api(["TaskManager_* interface"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["Filer"]):::terminal
+  consumer1 -->|"invokes TaskManager_TaskNameFromHandle"| api
+  consumer2(["FilterMgr"]):::terminal
+  consumer2 -->|"invokes TaskManager_TaskNameFromHandle"| api
+  consumer3(["Pinboard"]):::terminal
+  consumer3 -->|"invokes TaskManager_TaskNameFromHandle"| api
+  target1(["WindowManager"]):::terminal
+  focus -->|"Wimp_BlockCopy"| target1
+  target2(["Hourglass"]):::terminal
+  focus -->|"Hourglass_LEDs"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

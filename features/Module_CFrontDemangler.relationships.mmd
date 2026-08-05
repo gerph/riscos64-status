@@ -1,0 +1,13 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-programmer-cfrontdemangler.
+flowchart LR
+  context[/"Useful to Debugger/DiagnosticDump-style symbol presentation but independent of the desktop."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_APCSBacktrace"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["CFrontDemangler"]:::process
+  api(["*Mod_Command"]):::terminal
+  focus -->|"provides"| api
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

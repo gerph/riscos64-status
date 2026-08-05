@@ -1,8 +1,18 @@
 # Module: Mouse
 
+## Summary
+
+Mouse is the platform mouse driver. It samples/decodes the physical mouse and feeds movement/button changes into the RISC OS pointer/input path, with device-specific configuration and ResourceFS messages.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/kbdmouse.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

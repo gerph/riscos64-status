@@ -1,5 +1,15 @@
 # Module: StringLib
 
+## Summary
+
+StringLib is a SoundChannels voice-generator module providing string instrument synthesis routines. It re-registers its voices when SoundChannels returns and refreshes localised names after ResourceFS starts.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

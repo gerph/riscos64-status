@@ -1,8 +1,18 @@
 # Module: Pinboard
 
+## Summary
+
+Pinboard is the desktop-background and pinned-object application. It starts after Wimp and Filer, owns the backdrop/desktop icons and responds to memory/resource changes so the persistent desktop presentation can be rebuilt.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/pinboard.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

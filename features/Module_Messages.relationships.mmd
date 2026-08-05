@@ -1,0 +1,13 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-internat-messages.
+flowchart LR
+  context[/"Provider to ResourceFS and MessageTrans consumers."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_ResourceFSStarting"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["Messages"]:::process
+  target1(["ResourceFS"]):::terminal
+  focus -->|"ResourceFS_DeregisterFiles"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

@@ -1,0 +1,19 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-desktop-redrawmanager.
+flowchart LR
+  context[/"Depends on FilterMgr for Wimp filtering."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_FilterManagerInstalled / Service_FilterManagerDying"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["RedrawManager"]:::process
+  api(["Redraw_AddCallBack, Redraw_RemoveCallBack"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["Window"]):::terminal
+  consumer1 -->|"invokes Redraw_AddCallBack"| api
+  target1(["FilterMgr"]):::terminal
+  focus -->|"Filter_DeRegisterPostIconFilter"| target1
+  target2(["WindowManager"]):::terminal
+  focus -->|"Wimp_SetColour"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

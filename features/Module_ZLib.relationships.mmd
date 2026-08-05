@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-programmer-zlib.
+flowchart LR
+  context[/"Required by PNG and usable by compression/archive/image clients."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_WimpCloseDown / Service_TaskManagerAcknowledgements"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["ZLib"]:::process
+  api(["ZLib_Compress, ZLib_Decompress, ZLib_CRC32, ZLib_Adler32"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["Zipper"]):::terminal
+  consumer1 -->|"invokes ZLib_TaskAssociate"| api
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

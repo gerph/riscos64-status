@@ -1,0 +1,19 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-printing2-engine-pdumpersupport.
+flowchart LR
+  lifecycle[/"Service_Serviced / Service_PDriverGetMessages"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["PDumperSupport"]:::process
+  api(["PDumper_* interface"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["PDumperCX"]):::terminal
+  consumer1 -->|"invokes PDumper_Claim"| api
+  consumer2(["PDumperSP"]):::terminal
+  consumer2 -->|"invokes PDumper_StartJob"| api
+  consumer3(["PDModules"]):::terminal
+  consumer3 -->|"invokes PDumper_LookupError"| api
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_CloseFile"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

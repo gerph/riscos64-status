@@ -1,0 +1,13 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-video-render-jcompmod.
+flowchart LR
+  context[/"Used by image/export clients needing JPEG encoding."/]:::block
+  context -->|"architecture"| focus
+  focus["CompressJPEG"]:::process
+  api(["CompressJPEG_Start, CompressJPEG_WriteLine, CompressJPEG_Finish, CompressJPEG_Comment"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["SprExtend"]):::terminal
+  consumer1 -->|"invokes CompressJPEG_Transcode"| api
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

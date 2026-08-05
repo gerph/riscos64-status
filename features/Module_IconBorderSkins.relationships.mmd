@@ -1,0 +1,13 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-desktop-iconborders-skins.
+flowchart LR
+  lifecycle[/"Service_FilterManagerInstalled / Service_ModeChange / Service_SwitchingOutputToSprite"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["IconBorderSkins"]:::process
+  target1(["FilterMgr"]):::terminal
+  focus -->|"Filter_DeRegisterIconBorderFilter"| target1
+  target2(["WindowManager"]):::terminal
+  focus -->|"Wimp_Extend"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

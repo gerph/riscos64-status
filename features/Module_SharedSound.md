@@ -1,5 +1,15 @@
 # Module: SharedSound
 
+## Summary
+
+SharedSound is a higher-level multiplexing sound framework: clients install named sample-producing handlers, while SharedSound selects and drives them through either SoundDMA's 16-bit linear-handler interface or the legacy SoundChannels path. It tracks sound-system restarts, can resample handlers to the chosen hardware rate, and also registers as a SoundDriver recording driver.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

@@ -1,5 +1,15 @@
 # Module: DDEUtils
 
+## Summary
+
+DDEUtils is the desktop development-environment utility module. Its source is organised around variable, vector, callback and Throwback support, making common development/debugger protocols available to clients.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

@@ -1,8 +1,18 @@
 # Module: Internet
 
+## Summary
+
+Internet is the RISC OS TCP/IP stack and Berkeley-socket API module. It supplies Socket_* calls for TCP/UDP/IP sockets, select/ioctl and vector I/O; it attaches to DCI-4 network drivers and can invoke packet filters/InetServices.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/internet.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

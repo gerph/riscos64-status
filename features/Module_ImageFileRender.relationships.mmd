@@ -1,0 +1,21 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-video-render-imagefilerender.
+flowchart LR
+  context[/"Converter and format-specific renderer modules register with it."/]:::block
+  context -->|"architecture"| focus
+  focus["ImageFileRender"]:::process
+  api(["ImageFileRender_Render, ImageFileRender_BBox, ImageFileRender_Transform, ImageFileRender_DeclareFonts"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["Pinboard"]):::terminal
+  consumer1 -->|"invokes ImageFileRender_BBox"| api
+  consumer2(["ConvertSprite"]):::terminal
+  consumer2 -->|"invokes ImageFileRender_BBox"| api
+  consumer3(["Filer"]):::terminal
+  consumer3 -->|"invokes ImageFileRender_BBox"| api
+  target1(["DrawFile"]):::terminal
+  focus -->|"DrawFile_BBox"| target1
+  target2(["WindowManager"]):::terminal
+  focus -->|"Wimp_ReadPalette"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

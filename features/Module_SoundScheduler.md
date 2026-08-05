@@ -1,5 +1,15 @@
 # Module: SoundScheduler
 
+## Summary
+
+SoundScheduler is the Level 2 timed event queue and dispatcher for the legacy sound system. SoundDMA invokes its installed dispatch entry once per sound buffer. Its SWIs initialise, schedule, remove and query time-wheel events; queued work can be a Sound_ControlPacked request, an arbitrary routine, or an SWI. It also generates the RISC OS Event_Sound Level 2 tempo event when the beat counter wraps.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

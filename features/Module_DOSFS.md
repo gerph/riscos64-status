@@ -1,8 +1,18 @@
 # Module: DOSFS
 
+## Summary
+
+DOSFS is a MultiFS image filing system for mounting and accessing PC DOS/FAT discs (or images). It translates DOS names, timestamps and on-disc layout into RISC OS filing-system operations and participates in the format-identification protocol.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/dosfsnew.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

@@ -1,0 +1,23 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-hwsupport-devicefs.
+flowchart LR
+  context[/"Contract layer between FileSwitch/BufferManager and hardware device drivers such as Serial, Parallel, Mouse…"/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Reset / Service_FSRedeclare / Service_ResourceFSStarting"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["DeviceFS"]:::process
+  api(["DeviceFS_Register, DeviceFS_Deregister, DeviceFS_RegisterObjects, DeviceFS_DeregisterObjects"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["SerialDeviceDriver"]):::terminal
+  consumer1 -->|"invokes DeviceFS_Deregister"| api
+  consumer2(["Serial"]):::terminal
+  consumer2 -->|"invokes DeviceFS_Deregister"| api
+  consumer3(["ParallelDeviceDriver"]):::terminal
+  consumer3 -->|"invokes DeviceFS_Register"| api
+  target1(["BufferManager"]):::terminal
+  focus -->|"Buffer_Create"| target1
+  target2(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_CloseFile"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

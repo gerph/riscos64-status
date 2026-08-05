@@ -1,8 +1,18 @@
 # Module: Free
 
+## Summary
+
+Free is the desktop free-space provider registry. Filing-system-specific backends (ADFS, NFS, SCSI and PCCardFS) register with its two public SWIs so the desktop Free application can obtain a consistent free-space view.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/freenew.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

@@ -1,5 +1,15 @@
 # Module: Conversions
 
+## Summary
+
+Conversions implements standard number/string and character conversion helpers used by core OS SWIs and commands, separated from the kernel for modular builds.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

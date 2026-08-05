@@ -1,5 +1,10 @@
 # Module: IconBorderLoop
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

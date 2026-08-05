@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-kernelext-ospointer.
+flowchart LR
+  context[/"Handles Service_ModeChange, Service_DisplayChanged and Service_BufferStarting to keep the pointer valid…"/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_ModeChange / Service_BufferStarting / Service_DisplayChanged"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["OSPointer"]:::process
+  target1(["BufferManager"]):::terminal
+  focus -->|"Buffer_Deregister"| target1
+  target2(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

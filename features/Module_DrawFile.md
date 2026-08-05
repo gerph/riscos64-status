@@ -1,8 +1,18 @@
 # Module: DrawFile
 
+## Summary
+
+DrawFile provides the stable SWI interface for rendering Draw files, calculating their bounding boxes and declaring their fonts. It is the consumer-facing wrapper around Draw module rendering.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/drawfile.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

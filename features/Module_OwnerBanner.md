@@ -1,5 +1,15 @@
 # Module: OwnerBanner
 
+## Summary
+
+OwnerBanner contributes a configurable ownership/welcome banner during OS and desktop startup. It reads system/mode information and responds to the banner services rather than supplying a public SWI interface.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

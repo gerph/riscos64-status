@@ -1,5 +1,10 @@
 # Module: FreewayHosts
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

@@ -1,9 +1,19 @@
 # Module: FileSwitch
 
+## Summary
+
+FileSwitch is the generic pathname/file-handle layer of RISC OS. It implements the OS_Find, OS_File, OS_GBPB, OS_Args and OS_FSControl family, canonicalises paths, tracks open streams/current directories and dispatches operations to the active filing system (for example FileCore, NetFS or ResourceFS).
+
+
 ## Documentation
 
 * URL: [PRM](http://www.riscos.com/support/developers/prm/fileswitch.html)
 * URL: [PRM](http://www.riscos.com/support/developers/prm/fileswitchnew.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

@@ -1,5 +1,10 @@
 # Module: VideoHWVIDC
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

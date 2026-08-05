@@ -1,6 +1,6 @@
 # Module: SystemVars
 
-## Overview
+## Summary
 
 SystemVars handles the environment variables registration and reading.
 In RISC OS Select it also handled:
@@ -9,6 +9,11 @@ In RISC OS Select it also handled:
 * Setting of the default variables.
 
 These functions might be split into a separate component.
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

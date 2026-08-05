@@ -1,8 +1,18 @@
 # Module: Filer
 
+## Summary
+
+Filer is the interactive file-system browser. It opens and manages directory windows, displays objects and invokes file actions; it also participates in disc-dismount, territory/message-resource and renderer protocols so directory windows remain valid when the surrounding system changes.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/filers.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

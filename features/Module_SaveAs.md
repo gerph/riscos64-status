@@ -1,5 +1,15 @@
 # Module: SaveAs
 
+## Summary
+
+SaveAs is the Toolbox save/export dialogue object. It handles the standard RISC OS drag-to-save protocol and reports the application's save selection through Toolbox events.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

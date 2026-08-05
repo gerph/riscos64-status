@@ -1,5 +1,15 @@
 # Module: PS2Driver
 
+## Summary
+
+PS2Driver is the hardware driver for PS/2 keyboard/mouse devices. It decodes PS/2 protocol traffic, supplies the system input path and carries configuration/message support for the device.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

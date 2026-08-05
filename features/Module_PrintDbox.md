@@ -1,5 +1,15 @@
 # Module: PrintDbox
 
+## Summary
+
+PrintDbox is the Toolbox printing dialogue object. It supplies standard printer/options UI and passes the application's decision back through Toolbox events.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

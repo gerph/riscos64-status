@@ -1,5 +1,15 @@
 # Module: ConvertClear
 
+## Summary
+
+ConvertClear is an ImageFileConvert converter plug-in for the Clear image/screen format. It registers with ImageFileConvert and follows its start/dying/converter-changed service lifecycle.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

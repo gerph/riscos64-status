@@ -1,5 +1,15 @@
 # Module: Switcher
 
+## Summary
+
+Switcher is the desktop task-switcher and task-management UI. It tracks Wimp/Filer lifetime, screen-mode and dynamic-area changes, and TaskManager acknowledgements so it can show and switch the set of runnable desktop tasks, including their resource use.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

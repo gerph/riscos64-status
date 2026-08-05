@@ -1,5 +1,15 @@
 # Module: Display
 
+## Summary
+
+Display is the desktop display-configuration/front-end component. It responds to mode, calibration and palette changes and to the Wimp/Filer start sequence, presenting and maintaining the user's display settings.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

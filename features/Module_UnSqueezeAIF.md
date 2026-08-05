@@ -1,5 +1,15 @@
 # Module: UnSqueezeAIF
 
+## Summary
+
+UnSqueezeAIF is the loader-side decompressor for squashed AIF executables. It expands compressed application images so that RISC OS can execute them, rather than providing a general filesystem compression service.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

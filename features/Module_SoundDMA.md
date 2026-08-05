@@ -1,5 +1,15 @@
 # Module: SoundDMA
 
+## Summary
+
+SoundDMA is the Level 0 hardware sound-output driver. It owns and refills the double-buffered sound DMA stream across the supported VIDC/MEMC/IOMD variants (including the VIDC1 A5000 path and VIDC20/IOMD or MEMC configurations). It accepts the legacy 8-bit mu-law multi-channel stream from SoundChannels, then—when configured for 16-bit output—converts it to signed 16-bit stereo, optionally lets an installed linear mixer overwrite or mix the buffer, and performs mono/oversampling processing. At each DMA buffer interrupt it invokes the registered Level 2 SoundScheduler before the Level 1 fill routine. This is the hardware-facing root of the traditional three-level RISC OS sound system.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

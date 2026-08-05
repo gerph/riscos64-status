@@ -1,9 +1,19 @@
 # Module: BASICTrans
 
+## Summary
+
+BASICTrans is BASIC's token/message translation service: it maps BASIC keywords/tokens and reports translated messages for tools that need to read or present BASIC source.
+
+
 
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/basic.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

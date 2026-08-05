@@ -1,5 +1,15 @@
 # Module: CFrontDemangler
 
+## Summary
+
+CFrontDemangler decodes legacy C++/CFront-mangled symbol names into human-readable forms, principally for diagnostic and debugger tooling.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

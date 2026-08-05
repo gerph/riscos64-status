@@ -6,6 +6,11 @@ The command line interpreter provides an interface for the execution of commands
 from modules, filesystems and aliases.
 
 
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

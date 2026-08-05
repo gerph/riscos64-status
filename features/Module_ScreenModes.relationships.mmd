@@ -1,0 +1,19 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-video-useri-scrmodes.
+flowchart LR
+  context[/"Sits between ModeFiles/monitor descriptions and Display/Wimp configuration UI."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_EnumerateScreenModes / Service_ModeExtension / Service_DisplayChanged"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["ScreenModes"]:::process
+  api(["ScreenModes_ReadInfo"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["ScrnSetup"]):::terminal
+  consumer1 -->|"invokes ScreenModes_ReadInfo"| api
+  consumer2(["DisplayManager"]):::terminal
+  consumer2 -->|"invokes ScreenModes_ReadInfo"| api
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_CloseFile"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

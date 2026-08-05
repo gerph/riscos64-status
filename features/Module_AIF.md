@@ -1,5 +1,15 @@
 # Module: AIF
 
+## Summary
+
+AIF is the executable-image handler for Acorn Image Format programs. It processes AIF files, invokes applications, provides debug/environment/file-I/O support and participates in FileSwitch redeclaration and UKCompression service protocols.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

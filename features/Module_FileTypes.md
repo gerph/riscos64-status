@@ -1,5 +1,15 @@
 # Module: FileTypes
 
+## Summary
+
+FileTypes provides the system filetype database/resources used by filing systems and desktop applications to map numeric RISC OS filetypes to names, MIME-like metadata and display associations. It has no SWI API: its contribution is module/resource/service data.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

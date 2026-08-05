@@ -1,8 +1,18 @@
 # Module: SuperSample
 
+## Summary
+
+Super is the supersampling image utility module. Its stated purpose is to convert 1-bpp images to 4-bpp by 4x4 reduction, with Sample90 and Sample45 operations/matrices for the supported sampling transforms.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/supersample.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

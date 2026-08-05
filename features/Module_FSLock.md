@@ -1,5 +1,15 @@
 # Module: FSLock
 
+## Summary
+
+FSLock provides a lock/status control service for filing systems, including a deferred callback used to discover hard-drive names. It is a policy/control adjunct, not a filesystem implementation.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

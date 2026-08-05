@@ -1,0 +1,23 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-filesys-netfs-netfs.
+flowchart LR
+  context[/"Uses Econet SWIs for protection/network presence and tells the system that NetFS is available with…"/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_UKCommand / Service_Reset / Service_FSRedeclare"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["NetFS"]:::process
+  api(["NetFS_* interface"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["NetFiler"]):::terminal
+  consumer1 -->|"invokes NetFS_EnableCache"| api
+  consumer2(["BBCEconet"]):::terminal
+  consumer2 -->|"invokes NetFS_DoFSOp"| api
+  consumer3(["NetFiler"]):::terminal
+  consumer3 -->|"invokes NetFS_EnableCache"| api
+  target1(["NetI"]):::terminal
+  focus -->|"Econet_AbandonReceive"| target1
+  target2(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_CopyError"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

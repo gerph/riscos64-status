@@ -1,5 +1,15 @@
 # Module: FontMenu
 
+## Summary
+
+FontMenu is a Toolbox menu object that presents fonts and rebuilds when the Font Manager reports a font-set change.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

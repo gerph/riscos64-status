@@ -1,5 +1,15 @@
 # Module: IIC
 
+## Summary
+
+IIC is the low-level I²C bus controller module. Its Control SWI performs transfers to supported on-board peripherals including the RTC/CMOS and portable battery-management microcontrollers.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

@@ -1,5 +1,15 @@
 # Module: SystemBell
 
+## Summary
+
+SystemBell provides the default system bell and allows an external bell provider to take over.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

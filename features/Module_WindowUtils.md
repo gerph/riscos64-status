@@ -1,5 +1,15 @@
 # Module: WindowUtils
 
+## Summary
+
+WimpUtils (titled WindowUtils) is a small support module providing reusable Wimp window utility operations for desktop applications.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

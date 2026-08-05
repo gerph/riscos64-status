@@ -1,8 +1,18 @@
 # Module: Joystick
 
+## Summary
+
+Joystick exposes the machine joystick hardware through a small Joystick SWI interface, converting physical joystick state into the standard RISC OS joystick representation.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/16bitjoystick.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 

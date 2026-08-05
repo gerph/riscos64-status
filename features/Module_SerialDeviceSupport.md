@@ -1,5 +1,15 @@
 # Module: SerialDeviceSupport
 
+## Summary
+
+SerialDeviceSupport is common support for serial drivers, separating shared serial configuration/device logic from the hardware-specific Serial and DualSerial drivers.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-desktop-shellcli.
+flowchart LR
+  context[/"Its change history records Service_WimpCloseDown handling to veto/coordinate Wimp task closure and…"/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_Memory / Service_Reset / Service_WimpCloseDown"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["ShellCLI"]:::process
+  target1(["WindowManager"]):::terminal
+  focus -->|"Wimp_CloseDown"| target1
+  target2(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_CloseFile"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

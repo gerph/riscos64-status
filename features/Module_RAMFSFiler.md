@@ -1,5 +1,15 @@
 # Module: RAMFSFiler
 
+## Summary
+
+RAMFSFiler is the desktop Filer companion for RAMFS. It supplies RAMFS volume icons, menu actions and Filer message handling; RAMFS owns the in-memory filesystem implementation.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

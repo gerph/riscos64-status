@@ -1,0 +1,17 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-video-useri-picker.
+flowchart LR
+  context[/"Used by Toolbox ColourDbox/ColourMenu and direct SWI clients."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_ModeChange / Service_WimpCloseDown / Service_ResourceFSStarted"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["ColourPicker"]:::process
+  api(["ColourPicker_RegisterModel, ColourPicker_DeregisterModel, ColourPicker_OpenDialogue…"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["ColourDbox"]):::terminal
+  consumer1 -->|"invokes ColourPicker_CloseDialogue"| api
+  target1(["TML_HostFS"]):::terminal
+  focus -->|"HostFS_HostVdu"| target1
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

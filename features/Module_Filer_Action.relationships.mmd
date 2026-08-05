@@ -1,0 +1,13 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-desktop-fileract.
+flowchart LR
+  context[/"Used by Filer and by callers of the FilerAction interface."/]:::block
+  context -->|"architecture"| focus
+  focus["Filer_Action"]:::process
+  target1(["WindowManager"]):::terminal
+  focus -->|"Wimp_StartTask"| target1
+  target2(["TerrMgr"]):::terminal
+  focus -->|"Territory_Collate"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

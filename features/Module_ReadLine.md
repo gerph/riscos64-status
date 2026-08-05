@@ -1,5 +1,15 @@
 # Module: ReadLine
 
+## Summary
+
+ReadLine implements the interactive line editor used by command prompts and other OS text-input clients.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 * Uses console input

@@ -1,5 +1,15 @@
 # Module: KeyInput
 
+## Summary
+
+KeyInput is a keyboard-input helper/driver module. Its SWIs test or scan one/multiple keys, and it intercepts KeyV (with old-vector chaining) to implement the input semantics.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

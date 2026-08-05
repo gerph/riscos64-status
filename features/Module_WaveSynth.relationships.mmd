@@ -1,0 +1,13 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-hwsupport-sound-voices-wavesynth.
+flowchart LR
+  lifecycle[/"Service_Sound / Service_ResourceFSStarted"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["WaveSynth"]:::process
+  target1(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_CloseFile"| target1
+  target2(["SoundScheduler"]):::terminal
+  focus -->|"Sound_Configure"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

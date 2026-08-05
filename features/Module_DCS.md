@@ -1,5 +1,15 @@
 # Module: DCS
 
+## Summary
+
+DCS (Device Control/Configuration-style dialogue) is a Toolbox object class with its own quit-class handling, used for standard dialogue interaction rather than an independent desktop subsystem.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

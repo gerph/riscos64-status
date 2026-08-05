@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-audio-ratetracker.
+flowchart LR
+  lifecycle[/"Service_SoundControl / Service_Sound / Service_Sound/Service_SoundLevel0Configure"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["RateTracker"]:::process
+  api(["*command_code"]):::terminal
+  focus -->|"provides"| api
+  target1(["SoundScheduler"]):::terminal
+  focus -->|"Sound_Configure"| target1
+  target2(["SharedSound"]):::terminal
+  focus -->|"SharedSound_HandlerInfo"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

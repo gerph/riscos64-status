@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-hwsupport-systemdevs.
+flowchart LR
+  context[/"System integration layer for built-in hardware, collaborating with DeviceFS and individual board drivers."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_FSRedeclare / Service_ResourceFSStarting"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["SystemDevices"]:::process
+  target1(["ResourceFS"]):::terminal
+  focus -->|"ResourceFS_DeregisterFiles"| target1
+  target2(["MessageTrans"]):::terminal
+  focus -->|"MessageTrans_ErrorLookup"| target2
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

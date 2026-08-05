@@ -1,5 +1,15 @@
 # Module: Iconbar
 
+## Summary
+
+Iconbar is the Toolbox object class for an application's Wimp icon-bar icon and its menu/event interaction.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

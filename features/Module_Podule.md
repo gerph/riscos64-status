@@ -1,5 +1,15 @@
 # Module: Podule
 
+## Summary
+
+Podule is the expansion-card manager. It enumerates podule ROMs, validates ROM data, exposes podule information/control to software and provides the commands and support needed by expansion-card drivers.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

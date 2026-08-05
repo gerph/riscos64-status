@@ -1,0 +1,15 @@
+%% Generated from riscos-component-interfaces.json by generate_relationship_diagrams.py; component id: sources-video-render-drawfile.
+flowchart LR
+  context[/"Uses Draw/Font services to render vector graphics."/]:::block
+  context -->|"architecture"| focus
+  lifecycle[/"Service_ResourceFSStarting"/]:::block
+  lifecycle -->|"lifecycle change"| focus
+  focus["DrawFile"]:::process
+  api(["DrawFile_Render, DrawFile_BBox, DrawFile_DeclareFonts"]):::terminal
+  focus -->|"provides"| api
+  consumer1(["ImageFileRender"]):::terminal
+  consumer1 -->|"invokes DrawFile_BBox"| api
+  classDef terminal fill:#FFD700,stroke:#000000,stroke-width:2px;
+  classDef process fill:#CAFF70,stroke:#000000,stroke-width:2px;
+  classDef decision fill:#BFEFFF,stroke:#000000,stroke-width:2px;
+  classDef block fill:#FFBBFF,stroke:#9B30FF,stroke-width:2px;

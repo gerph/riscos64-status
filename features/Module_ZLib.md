@@ -1,5 +1,15 @@
 # Module: ZLib
 
+## Summary
+
+ZLib is the shared RISC OS wrapper for the zlib lossless in-memory compression library. It offers a simple Squash-compatible SWI interface as well as a direct zlib replacement interface, so clients need not link their own copy.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

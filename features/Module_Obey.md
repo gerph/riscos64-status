@@ -1,5 +1,15 @@
 # Module: Obey
 
+## Summary
+
+Obey implements execution of RISC OS Obey command files, the command-script mechanism used during boot and application setup.
+
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
+
 ## Discovered features
 
 

@@ -1,8 +1,18 @@
 # Module: RamFS
 
+## Summary
+
+RAMFS is a volatile RAM-backed FileCore-compatible filing system. It supplies disc/drive/free-space and sector operations while storing the filesystem in a dynamic area rather than persistent media.
+
+
 ## Documentation
 
 URL: [PRM](http://www.riscos.com/support/developers/prm/ramfs.html)
+
+
+## Relationships
+
+RELATIONSHIPS-HERE
 
 ## Discovered features
 
